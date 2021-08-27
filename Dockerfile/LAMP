@@ -6,15 +6,14 @@ FROM base
 ############################
 # Variable d'environnement #
 ############################
-ARG WEB="/var/www/html"
 
-# Certificat:
+ARG LIENS="https://raw.githubusercontent.com/dexter74/Linux/main/APPZ/Docker/Images/LAMP/0.DockerFile?token=AAAIYQ2UYO2L4CUHER37OS3BFBMFK"
 ARG PAYS="FR"
 ARG REGION="Haute-Savoie"
 ARG VILLE="Annecy"
 ARG TYPE="Personnel"
 ARG FQDN="LAMP.LAN"
-ARG LIENS=""
+ARG WEB="/var/www/html"
 
 #######################################
 # Mise à jour de la liste des paquets #
@@ -52,6 +51,13 @@ RUN apt install -y -qq openssl ;
 RUN (echo "$PAYS" ; echo "$REGION" ; echo "$VILLE" ; echo "$TYPE" ; echo "$TYPE" ; echo "$FQDN" ; echo "" ) | openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -sha256 -out /etc/apache2/server.crt -keyout /etc/apache2/server.key
 RUN chmod 440 /etc/apache2/server.crt
 
+###########################
+# Remplacement de fichier #
+###########################
+
+wget ${LIENS} /${WEB}/test.conf
+
+
 ##########################
 # Activation des modules #
 ##########################
@@ -62,7 +68,6 @@ RUN a2enmod rewrite
 # Activation du site SSL #
 ##########################
 RUN a2ensite default-ssl
-
 
 ##############################
 # Désactivation du site HTTP #

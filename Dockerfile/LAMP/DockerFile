@@ -96,6 +96,4 @@ WORKDIR ${WEB}
 ##########################
 # Lancement du conteneur #
 ##########################
-ENTRYPOINT apache2ctl -D FOREGROUND
-
-#  service mysql start && 
+ENTRYPOINT  service mariadb start && apache2ctl -D FOREGROUND

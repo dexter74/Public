@@ -34,6 +34,7 @@ RUN apt install -y -qq apache2 ;
 # Installation de MariaDB #
 ###########################
 RUN apt install -y -qq mariadb-server ;
+RUN groupadd -r mysql ;
 
 #######################
 # Installation de PHP #

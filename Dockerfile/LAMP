@@ -6,7 +6,6 @@ FROM base
 ############################
 # Variable d'environnement #
 ############################
-
 ARG LIENS="https://raw.githubusercontent.com/dexter74/Linux/main/APPZ/Docker/Images/LAMP/0.DockerFile?token=AAAIYQ2UYO2L4CUHER37OS3BFBMFK"
 ARG PAYS="FR"
 ARG REGION="Haute-Savoie"
@@ -54,8 +53,9 @@ RUN chmod 440 /etc/apache2/server.crt
 ###########################
 # Remplacement de fichier #
 ###########################
+RUN wget ${LIENS} /${WEB}/test.conf
 
-wget ${LIENS} /${WEB}/test.conf
+
 
 
 ##########################

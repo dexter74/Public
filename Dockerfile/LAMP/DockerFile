@@ -96,4 +96,4 @@ WORKDIR ${WEB}
 ##########################
 # Lancement du conteneur #
 ##########################
-ENTRYPOINT  service mariadb start && apache2ctl -D FOREGROUND
+ENTRYPOINT service mariadb start && apache2ctl -D FOREGROUND

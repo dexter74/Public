@@ -55,9 +55,6 @@ RUN chmod 440 /etc/apache2/server.crt
 ###########################
 RUN wget ${LIENS} /${WEB}/test.conf
 
-
-
-
 ##########################
 # Activation des modules #
 ##########################

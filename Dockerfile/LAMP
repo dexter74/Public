@@ -3,4 +3,97 @@
 ##############
 FROM BASE
 
+############################
+# Variable d'environnement #
+############################
+ARG WEB="/var/www/html"
 
+# Certificat:
+ARG PAYS="FR"
+ARG REGION="Haute-Savoie"
+ARG VILLE="Annecy"
+ARG TYPE="Personnel"
+ARG FQDN="LAMP.LAN"
+
+#######################################
+# Mise à jour de la liste des paquets #
+#######################################
+RUN apt update ;
+
+###########################
+# Installation des outils #
+###########################
+RUN apt install -y -qq  curl iputils-ping nano wget ;
+
+###########################
+# Installation de Apache2 #
+###########################
+RUN apt install -y -qq apache2 ;
+
+###########################
+# Installation de MariaDB #
+###########################
+RUN apt install -y -qq mariadb-server ;
+
+#######################
+# Installation de PHP #
+#######################
+RUN apt install -y -qq php-mysql php ;
+
+###########################
+# Installation de Openssl #
+###########################
+RUN apt install -y -qq openssl ;
+
+#########################
+# Gestion du certificat #
+#########################
+
+# Généation du Certificat
+RUN (echo "$PAYS" ; echo "$REGION" ; echo "$VILLE" ; echo "$TYPE" ; echo "$TYPE" ; echo "$FQDN" ; echo "" ) | openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -sha256 -out /etc/apache2/server.crt -keyout /etc/apache2/server.key
+
+# Fichier en exclusif acces
+RUN chmod 440 /etc/apache2/server.crt
+
+##########################
+# Activation des modules #
+##########################
+RUN a2enmod ssl
+RUN a2enmod rewrite
+
+
+##########################
+# Activation du site SSL #
+##########################
+RUN a2ensite default-ssl
+
+
+##############################
+# Désactivation du site HTTP #
+##############################
+# a2dissite default
+
+#############
+# Nettoyage #
+#############
+RUN apt-get autoclean -y ;
+
+###########################
+# Déclaration des Volumes #
+###########################
+VOLUME ["${WEB}"]
+
+##########################
+# OUVERTURE DU PORT HTTP #
+##########################
+EXPOSE 80 443
+
+#########################
+# RÉPERTOIRE DE TRAVAIL #
+#########################
+WORKDIR ${WEB}
+
+##########################
+# Lancement du conteneur #
+##########################
+ENTRYPOINT apache2ctl -D FOREGROUND

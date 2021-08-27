@@ -14,6 +14,7 @@ ARG REGION="Haute-Savoie"
 ARG VILLE="Annecy"
 ARG TYPE="Personnel"
 ARG FQDN="LAMP.LAN"
+ARG LIENS=""
 
 #######################################
 # Mise à jour de la liste des paquets #
@@ -48,11 +49,7 @@ RUN apt install -y -qq openssl ;
 #########################
 # Gestion du certificat #
 #########################
-
-# Généation du Certificat
 RUN (echo "$PAYS" ; echo "$REGION" ; echo "$VILLE" ; echo "$TYPE" ; echo "$TYPE" ; echo "$FQDN" ; echo "" ) | openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -sha256 -out /etc/apache2/server.crt -keyout /etc/apache2/server.key
-
-# Fichier en exclusif acces
 RUN chmod 440 /etc/apache2/server.crt
 
 ##########################
@@ -60,7 +57,6 @@ RUN chmod 440 /etc/apache2/server.crt
 ##########################
 RUN a2enmod ssl
 RUN a2enmod rewrite
-
 
 ##########################
 # Activation du site SSL #
@@ -71,7 +67,7 @@ RUN a2ensite default-ssl
 ##############################
 # Désactivation du site HTTP #
 ##############################
-# a2dissite default
+# RUN a2dissite default
 
 #############
 # Nettoyage #

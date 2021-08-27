@@ -1,0 +1,93 @@
+################
+version: '3.9' #
+################
+###########
+services: #
+###########
+#
+#################################################################
+# SQL - Base de donnée pour Nginx
+ HumanProject_DB:
+  # ----------------------------------------------------------- #
+  deploy:
+   resources:
+    limits:
+     cpus: '0.05'   # Quantité de CPU dédiée
+     memory: '128m'  # Quantité de RAM dédiée
+  #  reservations:
+  #   cpus: '0.XX'  # Quantité de CPU Supplémentaire
+  #   memory: 'XXm' # Quantité de RAM Supplémentaire
+  # ----------------------------------------------------------- #
+  image: 'linuxserver/mariadb'
+  container_name: 'HumanProject_DB'
+  network_mode: 'bridge'
+  restart: 'unless-stopped'
+  hostname: 'HumanProject_DB'
+  domainname: 'labs'
+  # ----------------------------------------------------------- #
+  environment:
+   PUID: '1002'
+   PGID: '1002'
+   TZ: 'Europe/Paris'
+   # ---------------------------- #
+   MYSQL_ROOT_PASSWORD: 'root'    # Password du compte root
+   # ---------------------------- #
+   MYSQL_DATABASE: 'database'     # Nom de la nouvelle BDD
+   MYSQL_USER: 'admin'            # Nom de compte
+   MYSQL_PASSWORD: 'admin'        # Mot de passe du compte
+   # ---------------------------- #
+  # ----------------------------------------------------------- #
+  volumes:
+   - 'MariaDB:/config'
+  # ----------------------------------------------------------- #
+
+  ports:
+   - '3306:3306'
+  # ----------------------------------------------------------- #
+  labels:
+   cacher: 'non'
+#################################################################
+#
+#################################################################
+# Panel d'administration SQL
+ HumanProject_PHPMyAdmin:
+  # ---------------------------------------------- #
+  mem_limit: '128m'
+  mem_reservation: '64m'
+  cpus: '0.5'
+  # ---------------------------------------------- #
+  container_name: 'HumanProject_PHPMyAdmin'
+  image: 'phpmyadmin/phpmyadmin'
+  network_mode: 'bridge'
+  restart: 'always'
+  # ---------------------------------------------- #
+  depends_on:
+   - 'HumanProject_DB'
+  # ---------------------------------------------- #
+  environment:
+   PUID: '1002'
+   PGID: '1002'
+   PMA_HOST: 'mysql'
+   PMA_PORT: '3306'
+   PMA_USER: 'root'
+   PMA_PASSWORD: 'root'
+   PMA_PMADB: 'phpmyadmin'
+  # ---------------------------------------------- #
+  links:
+   - 'HumanProject_DB:mysql'
+  # ---------------------------------------------- #
+  ports:
+   - '85:80'
+  # ---------------------------------------------- #
+  labels:
+   cacher: 'non'
+#################################################################
+#
+
+#################################################################
+#################################################################
+# Déclaration des volumes #
+###########################
+volumes:
+ MariaDB:
+  external: 'false'

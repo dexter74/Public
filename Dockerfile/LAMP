@@ -1,7 +1,7 @@
 ##############
 # Image LAMP #
 ##############
-FROM BASE
+FROM base
 
 ############################
 # Variable d'environnement #

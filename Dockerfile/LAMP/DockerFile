@@ -53,7 +53,7 @@ RUN chmod 440 /etc/apache2/server.crt
 ###########################
 # Remplacement de fichier #
 ###########################
-RUN wget ${LIENS} /${WEB}/test.conf
+RUN wget ${LIENS} -O /${WEB}/test.conf
 
 ##########################
 # Activation des modules #

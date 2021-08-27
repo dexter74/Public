@@ -8,8 +8,8 @@ FROM base
 ############################
 ARG LIENS="https://raw.githubusercontent.com/dexter74/Public/main/Dockerfile/LAMP/Apache2/default-ssl.conf"
 ARG PAYS="FR"
-ARG REGION="Haute-Savoie"
-ARG VILLE="Annecy"
+ARG REGION="Local"
+ARG VILLE="Local"
 ARG TYPE="Personnel"
 ARG FQDN="LAMP.LAN"
 ARG WEB="/var/www/html"

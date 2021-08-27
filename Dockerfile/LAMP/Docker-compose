@@ -7,22 +7,22 @@ services: #
 #
 #################################################################
 # SQL - Base de donnée pour Nginx
- HumanProject_DB:
+ MYSQL:
   # ----------------------------------------------------------- #
   deploy:
    resources:
     limits:
      cpus: '0.05'   # Quantité de CPU dédiée
-     memory: '128m'  # Quantité de RAM dédiée
+     memory: '128m' # Quantité de RAM dédiée
   #  reservations:
   #   cpus: '0.XX'  # Quantité de CPU Supplémentaire
   #   memory: 'XXm' # Quantité de RAM Supplémentaire
   # ----------------------------------------------------------- #
   image: 'linuxserver/mariadb'
-  container_name: 'HumanProject_DB'
+  container_name: 'MYSQL'
   network_mode: 'bridge'
   restart: 'unless-stopped'
-  hostname: 'HumanProject_DB'
+  hostname: 'MYSQL'
   domainname: 'labs'
   # ----------------------------------------------------------- #
   environment:
@@ -47,23 +47,21 @@ services: #
    cacher: 'non'
 #################################################################
 #
-
-
 #################################################################
 # Panel d'administration SQL
- HumanProject_PHPMyAdmin:
+ PHPMyAdmin:
   # ---------------------------------------------- #
   mem_limit: '128m'
   mem_reservation: '64m'
   cpus: '0.5'
   # ---------------------------------------------- #
-  container_name: 'HumanProject_PHPMyAdmin'
+  container_name: 'PHPMyAdmin'
   image: 'phpmyadmin/phpmyadmin'
   network_mode: 'bridge'
   restart: 'always'
   # ---------------------------------------------- #
   depends_on:
-   - 'HumanProject_DB'
+   - 'MYSQL'
   # ---------------------------------------------- #
   environment:
    PUID: '1002'
@@ -75,7 +73,7 @@ services: #
    PMA_PMADB: 'phpmyadmin'
   # ---------------------------------------------- #
   links:
-   - 'HumanProject_DB:mysql'
+   - 'MYSQL:mysql'
   # ---------------------------------------------- #
   ports:
    - '85:80'
@@ -85,7 +83,6 @@ services: #
 #################################################################
 #
 
-#################################################################
 #################################################################
 # Déclaration des volumes #
 ###########################

@@ -13,6 +13,7 @@ ARG VILLE="Annecy"
 ARG TYPE="Personnel"
 ARG FQDN="LAMP.LAN"
 ARG WEB="/var/www/html"
+ARG MYSQL="/var/lib/mysql"
 
 #######################################
 # Mise à jour de la liste des paquets #
@@ -80,6 +81,7 @@ RUN apt-get autoclean -y ;
 # Déclaration des Volumes #
 ###########################
 VOLUME ["${WEB}"]
+VOLUME ["${MYSQL}"]
 
 ##########################
 # OUVERTURE DU PORT HTTP #

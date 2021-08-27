@@ -81,8 +81,7 @@ RUN apt-get autoclean -y ;
 ###########################
 # Déclaration des Volumes #
 ###########################
-VOLUME ["${WEB}"]
-VOLUME ["${MYSQL}"]
+VOLUME ["${WEB}"], ["${MYSQL}"]
 
 ##########################
 # OUVERTURE DU PORT HTTP #

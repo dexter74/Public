@@ -1,8 +1,15 @@
 ###############################
-# Image de Base de mon projet #
+# Image de Base de mon Projet #
 ###############################
-FROM debian
-RUN apt update \
-apt install -y -qq curl iputils-ping nano wget \
-apt-get autoclean -y ;
 
+# Système d'exploitation
+FROM debian
+
+# Mise à jour des paquets
+RUN apt update ; 
+
+# Installation de Paquets:
+RUN apt install -y -qq curl iputils-ping nano wget ;
+
+# Nettoyage de l'image
+apt-get autoclean -y ;

@@ -1,4 +1,3 @@
-
 ##############
 # Image LAMP #
 ##############
@@ -95,4 +94,4 @@ WORKDIR ${WEB}
 ##########################
 # Lancement du conteneur #
 ##########################
-ENTRYPOINT apache2ctl -D FOREGROUND
+ENTRYPOINT service mysql start && apache2ctl -D FOREGROUND

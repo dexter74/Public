@@ -13,8 +13,13 @@ touch /home/marc/Bureau/Asus/CONTROL/post-install.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-uninstall.sh
 touch /home/marc/Bureau/Asus/CONTROL/pre-snapshot-restore.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-snapshot-restore.sh
-
 ````
+
+#### Edition des scripts
+````console
+nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh; nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
+````
+
 
 #### config.json
 ````json
@@ -75,12 +80,7 @@ echo '
       "start-order":95,
       "stop-order":5
    }
-}' > /home/marc/Bureau/Asus/CONTROL/config.json
-````
-
-#### Edition des scripts
-````console
-nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh; nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
+}' > 
 ````
 
 ### pre-install.sh

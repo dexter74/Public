@@ -25,8 +25,8 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json;nano /home/marc/Bureau/Asus/CONT
 ````json
 {
  "general": {
-   "package": "MonPackage",
-   "name": "AppCentral",
+   "package": "Plex-Drthrax",
+   "name": "Plex",
    "version": "1.0",
    "depends": [ "docker-ce(>=20.10.2.r2)"],
    "developer": "Marc Jaffre",

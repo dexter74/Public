@@ -5,7 +5,7 @@ CONTAINER_TEST=$(docker container ls -a | grep Plex | awk '{print $1}')
 CONTAINER_NAME=Plex
 PORTS=32400:32400
 USER_ID=1000
-GROUP_ID=100
+GROUP_ID=999
 ##########################################################################################################################################################
 # Mise à jour de l'image #
 ##########################

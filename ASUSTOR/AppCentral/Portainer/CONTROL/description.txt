@@ -1,1 +1,2 @@
-Portainer est une interface Web (WebUI) open source qui permet de créer, modifier, redémarrer, surveiller… des conteneurs Docker. Le petit plus de l’outil, c’est également de pouvoir interconnecter plusieurs serveurs utilisant Docker (via Portainer Agent), afin de contrôler/surveiller les conteneurs répartis sur plusieurs serveurs depuis la même interface et cela très simplement.
+Portainer est une interface Web (WebUI) open source qui permet de créer, modifier, redémarrer, surveiller… des conteneurs Docker. 
+Le petit plus de l’outil, c’est également de pouvoir interconnecter plusieurs serveurs utilisant Docker (via Portainer Agent), afin de contrôler/surveiller les conteneurs répartis sur plusieurs serveurs depuis la même interface et cela très simplement.

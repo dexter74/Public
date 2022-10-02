@@ -15,7 +15,6 @@ touch /home/marc/Bureau/Asus/CONTROL/pre-snapshot-restore.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-snapshot-restore.sh
 chmod -R o+w  /home/marc/Bureau/Asus/
 ````
-apkg-tools.py create ./zurmo
 
 #### config.json
 ````json
@@ -79,3 +78,6 @@ apkg-tools.py create ./zurmo
 ````
 
 
+#### Création du Package
+```
+apkg-tools.py create /home/marc/Bureau/Asus/

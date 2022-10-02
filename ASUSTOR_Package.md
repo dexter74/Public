@@ -100,5 +100,5 @@ chmod -R o+w  /home/marc/Bureau/Asus/
 
 #### Copie
 ```
-mv /home/marc/Bureau/Asus/*.apk /mnt/sf_LAMP
+mv /home/marc/Bureau/Asus/*.apk /media/sf_LAMP
 ```

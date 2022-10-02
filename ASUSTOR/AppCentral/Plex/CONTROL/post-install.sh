@@ -21,7 +21,7 @@ docker run -d \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
 --label cacher="non" \
-$IMAGE
+$IMAGE:latest
 
 ##########################################################################################################################################################
 docker start $CONTAINER_NAME

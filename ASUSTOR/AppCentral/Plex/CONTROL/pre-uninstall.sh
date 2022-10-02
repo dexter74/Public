@@ -2,7 +2,7 @@
 ######################################################################################
 CONTENEUR=Plex
 container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
-im=$(docker images | grep portainer/portainer-ce | grep latest | awk '{print $3}')
+im=$(docker images | grep $container | grep latest | awk '{print $3}')
 ######################################################################################
 echo "pre-uninstall"
 echo $container

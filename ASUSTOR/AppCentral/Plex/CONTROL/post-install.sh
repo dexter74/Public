@@ -44,8 +44,8 @@ docker create -i -t --name=$CONTAINER_NAME \
   -e PUID=$USER_ID \
   -e PGID=$GROUP_ID \
   -e VERSION=docker \
-  -v '/share/Docker/Plex:/config'
-  -v '/share/Video/:/Video'
+  -v '/share/Docker/Plex:/config' \
+  -v '/share/Video/:/Video' \
   --restart unless-stopped \
   linuxserver/plex
 

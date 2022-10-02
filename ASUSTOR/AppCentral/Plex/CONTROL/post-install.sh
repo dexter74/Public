@@ -38,16 +38,20 @@ fi
 ##########################################################################################################################################################
 # Création du Conteneur #
 #########################
-docker create -i -t --name=$CONTAINER_NAME \
-  --net=host \
-  -p $PORTS  \
-  -e PUID=$USER_ID \
-  -e PGID=$GROUP_ID \
-  -e VERSION=docker \
-  -v '/share/Docker/Plex:/config' \
-  -v '/share/Video/:/Video' \
-  --restart unless-stopped \
-  linuxserver/plex
+docker container rm Plex 
+
+# Bug : Host + -p $PORTS \
+docker run -d \
+	--name=$CONTAINER_NAME \
+	--net=host \
+	-e PUID=$USER_ID \
+	-e PGID=$GROUP_ID \
+	-v '/share/Video/:/Video' \
+	-v '/share/Docker/Plex:/config' \
+	--device=/dev/dri:/dev/dri \
+	linuxserver/plex
+
+
 
 ##########################################################################################################################################################
 docker start Plex

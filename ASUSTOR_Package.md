@@ -48,7 +48,7 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
    "register":{
    	"share-folder":[ {"name":"Docker", "description":"Data and files directory for Docker Apps"} ],
    	"boot-priority":{ "start-order":65, "stop-order":35},
-	"port":[19943]
+	"port":[19240]
    }
 }
 

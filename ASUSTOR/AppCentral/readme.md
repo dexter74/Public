@@ -1,1 +1,5 @@
+cd /usr/local/AppCentral/
+
+
+
 ![image](https://user-images.githubusercontent.com/35907/193457835-68095cc1-2a77-458c-8b93-b9105c103d2f.png)

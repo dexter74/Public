@@ -28,7 +28,7 @@
 	     "customizable": "true"
    	    },
    "register":{
-   	"share-folder":[ {"name":"Emby", "description":"Default location for EmbyServer."} ],
+   	"share-folder":[ {"name":"Docker", "description":"Default location for EmbyServer."} ],
    	"boot-priority":{ "start-order":65, "stop-order":35},
 	"port":[8096]
    }

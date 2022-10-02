@@ -37,7 +37,7 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json;nano /home/marc/Bureau/Asus/CONT
    "firmware": "4.1.0",
    "default-lang": "fr-FR",
    "memory-limit": "2048",
-   "memory-advice": "2000",
+   "memory-advice": "2048",
    "privacy-statement": "https://www.plex.tv/fr/about/privacy-legal/"},
    "adm-desktop":{ "app":{ "type":"custom", "protocol":"http", "port":"32400", "url": "/web"}},
    "privilege":{ "accessible": "users", "customizable": "true"},

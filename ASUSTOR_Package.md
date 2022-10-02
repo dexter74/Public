@@ -5,8 +5,8 @@ rm -r  /home/marc/Bureau/Asus
 mkdir -p /home/marc/Bureau/Asus/CONTROL/
 touch /home/marc/Bureau/Asus/CONTROL/changelog.txt
 touch /home/marc/Bureau/Asus/CONTROL/config.json
-touch /home/marc/Bureau/Asus/CONTROL/description.txt
-touch /home/marc/Bureau/Asus/CONTROL/license.txt
+echo "Plex TV" > /home/marc/Bureau/Asus/CONTROL/description.txt
+echo "Drthrax" > /home/marc/Bureau/Asus/CONTROL/license.txt
 touch /home/marc/Bureau/Asus/CONTROL/pre-install.sh
 touch /home/marc/Bureau/Asus/CONTROL/pre-uninstall.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-install.sh

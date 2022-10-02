@@ -28,7 +28,7 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 
 
 {
- "general": { 
+ "general": {
    "package": "MonPackage",
    "name": "AppCentral",
    "version": "1.0",

@@ -44,9 +44,9 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 		"memory-advice": "2000",
 		"privacy-statement": "http://localhost/privacy.html"},		
 		"adm-desktop":{ "app":{ "type":"custom", "protocol":"http", "port":"19240", "url": "/web"}},
-		"privilege":{ "accessible": "users", "customizable": "true" }
+		"privilege":{ "accessible": "users", "customizable": "true"},
+		"register":{ "share-folder":[ {"name":"Docker", "description":"Data and files directory for Docker Apps"} ] }
 }
-
 
 
 

@@ -28,15 +28,16 @@ nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
 {
    "general":{
       "package":"MonPackage",
-      "name":"AppCentral",
+      "name":"Plex",
       "version":"1.0",
       "depends":[
          "docker-ce(>=20.10.2.r2)"
       ],
-      "developper":"Marc Jaffré",
+      "developper":"Marc-Jaffre",
       "maintainer":"Drthrax74",
       "email":"teste74@hotmail.fr",
-      "architecture":"any",
+      "architecture":"x86-64",
+      "website":"https://www.plex.tv/",
       "firmware":"4.0.0"
    },
    "adm-desktop":{

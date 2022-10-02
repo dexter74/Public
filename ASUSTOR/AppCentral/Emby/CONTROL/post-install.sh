@@ -15,10 +15,11 @@ docker container rm -f  $CONTAINER_NAME
 docker run -d \
 --name=$CONTAINER_NAME \
 --volume /volume1/Docker/Emby:/config \
+--volume /volume1/Video:/Video \
 --net=host \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
---label cacher="oui" \
+--label cacher="non" \
 emby/embyserver:latest
 
 ##########################################################################################################################################################

@@ -1,1 +1,11 @@
-Application multimédias Plex sous Docker sur le port 32400.
+Descriptiuon: Application multimédias Plex.
+
+Information sur l'installation:
+- Installation en Mode Host
+- Port 32400/TCP
+- Icône Plex sur l'espace de travail
+
+Points de montage:
+ - /volume1/video:/video/video
+ - /volume1/Docker/Plex:/config
+

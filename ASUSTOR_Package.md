@@ -25,19 +25,30 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 #### config.json
 ````json
 {
- "general":{
-  "package":"MonPackage",
-  "name":"AppCentral",
-  "version":"1.0",
-  depends":[
-         "docker-ce(>=20.10.2.r2)"
-      ],
-  "developer":"Marc Jaffré",
-  "maintainer":"Drthrax74",
-  "email":"teste74@hotmail.fr",
-  "website":"https://plex.tv",
-  "architecture":"x86-64",
-  "firmware":"4.0.0",
+	"general": { 
+		"package": "MonPackage",
+		"name": "AppCentral",
+		"version": "1.0",
+		"depends": [ "docker-ce(>=20.10.2.r2)"],
+		"developer": "Marc Jaffré",
+		"maintainer": "Drthrax74",
+		"email": "teste74@hotmail.fr",
+		"website": "http://localhost",
+		"architecture": "x86-64",
+		"firmware": "4.1.0",
+		"model": "53xx",
+		"default-lang": "fr-FR",
+		"memory-limit": "2048",
+		"memory-advice": "2000",
+		"privacy-statement": "http://localhost/privacy.html"
+	}
+	
+	
+	
+	
+	
+	
+	
 }
 ````
 

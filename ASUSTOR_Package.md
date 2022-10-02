@@ -1,4 +1,13 @@
+
+#### Arborescence:
+````console
+mkdir -r ~/Bureau/Asus/CONTROL
 ````
+
+
+
+#### config.json
+````json
 {
 // ---------------------------------------------------------------------
    "general":{

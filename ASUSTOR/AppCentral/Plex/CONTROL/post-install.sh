@@ -50,6 +50,7 @@ docker run -d \
 	-v '/share/Video/:/Video' \
 	-v '/share/Docker/Plex:/config' \
 	--device=/dev/dri:/dev/dri \
+	--restart unless-stopped \
 	linuxserver/plex
 
 

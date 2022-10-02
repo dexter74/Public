@@ -93,12 +93,8 @@ fi
 
 #### Création du Package
 ```
-cd /home/marc/Bureau/Asus/
-apkg-tools_py2.py create .
-chmod -R o+w  /home/marc/Bureau/Asus/
-```
-
-#### Copie
-```
+cd /home/marc/Bureau/Asus/;
+apkg-tools_py2.py create . ;
+chmod -R o+w  /home/marc/Bureau/Asus/;
 mv /home/marc/Bureau/Asus/*.apk /media/sf_LAMP
 ```

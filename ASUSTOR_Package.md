@@ -13,7 +13,7 @@ touch /home/marc/Bureau/Asus/CONTROL/post-install.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-uninstall.sh
 touch /home/marc/Bureau/Asus/CONTROL/pre-snapshot-restore.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-snapshot-restore.sh
-chmod -R o+w  /home/marc/Bureau/Asus/
+
 ````
 
 #### config.json
@@ -78,7 +78,41 @@ echo '
 }' > /home/marc/Bureau/Asus/CONTROL/config.json
 ````
 
+#### Edition des scripts
+````console
+nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh
+nano #### /home/marc/Bureau/Asus/CONTROL/post-install.sh
+````
+
+### pre-install.sh
+````console
+docker pull linuxserver/plex
+````
+### post-install.sh
+````console
+docker pull linuxserver/plex
+CONTAINER_TEST=$(docker container ls -a | grep Plex | awk '{print $1}')
+
+if [ ! -z $CONTAINER_TEST ]; then
+	docker rm -f $CONTAINER_TEST
+fi
+
+
+#######################################################################################################################################################
+# Création du Conteneur #
+#########################
+docker create -i -t --name=Plex --net=host -e PUID=1000 -e PGID=100 -e VERSION=docker --restart unless-stopped linuxserver/plex
+docker start Plex;
+exit 0
+````
+
+
+
+
 
 #### Création du Package
 ```
+chmod -R o+w  /home/marc/Bureau/Asus/
 apkg-tools.py create /home/marc/Bureau/Asus/
+```
+

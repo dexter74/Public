@@ -5,4 +5,21 @@ CONTAINER_NAME=Emby
 HTTP=8096:8096
 HTTPS=8920:8920
 
-docker run -d --name=$CONTAINER_NAME --net=host emby/embyserver:latest
+
+##########################################################################################################################################################
+# Fermeture du Conteneur 
+docker container rm -f  $CONTAINER_NAME
+
+##########################################################################################################################################################
+# Lancement du Conteneur
+docker run -d \
+--name=$CONTAINER_NAME \
+--volume /volume1/Docker/Emby:/config \
+--net=host \
+--device /dev/dri:/dev/dri \
+--restart unless-stopped \
+--label cacher="oui" \
+emby/embyserver:latest
+
+##########################################################################################################################################################
+docker start $CONTAINER_NAME

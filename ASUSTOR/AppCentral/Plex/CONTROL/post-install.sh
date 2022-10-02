@@ -5,8 +5,6 @@ CONTAINER_NAME=Plex
 IMAGE=linuxserver/plex
 HTTP=32400:32400
 
-
-
 ##########################################################################################################################################################
 # Fermeture du Conteneur 
 docker container rm -f  $CONTAINER_NAME

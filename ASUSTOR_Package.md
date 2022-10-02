@@ -23,7 +23,6 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 
 #### config.json
 ````json
-echo '
 {
    "general":{
       "package":"MonPackage",
@@ -80,7 +79,7 @@ echo '
       "start-order":95,
       "stop-order":5
    }
-}' > 
+}
 ````
 
 ### pre-install.sh

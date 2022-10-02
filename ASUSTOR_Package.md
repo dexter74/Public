@@ -17,7 +17,7 @@ cp /home/marc/Bureau/icon.png /home/marc/Bureau/Asus/CONTROL/
 
 #### Edition des scripts
 ````console
-nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh; nano /home/marc/Bureau/Asus/CONTROL/post-install.sh; nano /home/marc/Bureau/Asus/CONTROL/start-stop.sh;
+nano /home/marc/Bureau/Asus/CONTROL/config.json;nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh; nano /home/marc/Bureau/Asus/CONTROL/post-install.sh; nano /home/marc/Bureau/Asus/CONTROL/pre-uninstall.sh; nano /home/marc/Bureau/Asus/CONTROL/post-uninstall.sh; nano /home/marc/Bureau/Asus/CONTROL/start-stop.sh;
 ````
 
 
@@ -50,11 +50,26 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 ````
 
 
+
+
+
+
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ### pre-install.sh
 ````console
 docker pull linuxserver/plex
 ````
+
+
+
+
+
+
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 ### post-install.sh
@@ -103,6 +118,37 @@ exit 0
 ##########################################################################################################################################################
 ````
 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+#### pre-uninstall.sh
+````consoel
+#!/bin/sh
+
+echo "pre-uninstall"
+
+container=$(docker container ls -a | grep Plex |awk '{print $1}')
+im=$(docker images | grep portainer/portainer-ce | grep latest | awk '{print $3}')
+
+echo $container
+echo $im
+
+if [ ! -z $container ]; then 
+	docker kill $container
+	sleep 2
+	docker rm -f $container
+fi
+
+if [ ! -z $im ]; then 
+	if [ "$APKG_PKG_STATUS" == "uninstall" ]; then
+		docker rmi -f $im
+	fi
+fi
+````
+
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Start-stop.sh
 ````console
@@ -150,6 +196,8 @@ esac
 exit 0
 #############################################################################################
 ````
+
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------

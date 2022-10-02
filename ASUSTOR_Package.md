@@ -1,7 +1,8 @@
 
 #### Arborescence:
 ````console
-mkdir -p  /home/marc/Bureau/Asus/CONTROL/
+rm -r  /home/marc/Bureau/Asus
+mkdir -p /home/marc/Bureau/Asus/CONTROL/
 touch /home/marc/Bureau/Asus/CONTROL/changelog.txt
 touch /home/marc/Bureau/Asus/CONTROL/config.json
 touch /home/marc/Bureau/Asus/CONTROL/description.txt

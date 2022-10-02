@@ -1,10 +1,14 @@
 
 #### Arborescence:
 ````console
-mkdir -r ~/Bureau/Asus/CONTROL
+mkdir -p  ~/Bureau/Asus/CONTROL/
+touch ~/Bureau/Asus/CONTROL/changelog.txt
+touch ~/Bureau/Asus/CONTROL/config.json
+touch ~/Bureau/Asus/CONTROL/description.txt
+touch ~/Bureau/Asus/CONTROL/license.txt
+
 ````
-
-
+apkg-tools.py create ./zurmo
 
 #### config.json
 ````json

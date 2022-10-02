@@ -13,3 +13,4 @@ cd ~/Public/ASUSTOR/AppCentral/Emby       && apkg-tools_py2.py create . && mv ./
 |-------------|-----------------------|
 | Portainer   | Opérationnel          |
 | Plex        | Opérationnel          |
+| Emby        | En Dév  | KC          |

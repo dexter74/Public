@@ -25,32 +25,6 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 #### config.json
 ````json
 {
-   "general":{
-      "package":"MonPackage",
-      "name":"Plex",
-      "version":"1.0",
-      "depends":[
-         "docker-ce(>=20.10.2.r2)"
-      ],
-      "developper":"Marc Jaffré",
-      "maintainer":"Drthrax74",
-      "email":"teste74@hotmail.fr",
-      "website":"http://localhost",
-      "architecture":"x86_64",
-      "firmware":"4.1.0",
-      "model":"53xx",
-      "default-lang":"fr-FR",
-      "memory-limit":"4096",
-      "memory-advice":"2000",
-      "privacy-statement":"http://localhost/privacy.html"
-   },
-   "adm-desktop":{
-      "app":{ "type":"custom", "protocol":"http", "port":"32400", "url":"/" },
-      "privilege":{  "accessible":"users", "customizable": "true"},
-      "register":{ "share-folder":[ { "name":"Docker", "description":"Dossier Docker"}]},
-      "boot-priority":{ "start-order":65, "stop-order":35},
-      "port":[19943]
-   }
 
 }
 ````
@@ -81,14 +55,11 @@ exit 0
 
 #### Start-stop.sh
 ````
-TEST=$(docker ps | grep Plex | cut -c 181-185)
-if [ $TEST = Plex ];then
-	docker stop Plex;
-fi
+#TEST=$(docker ps | grep Plex | cut -c 181-185)
+#if [ $TEST = Plex ];then
+#	docker stop Plex;
+#fi
 ````
-
-
-
 
 
 #### Création du Package

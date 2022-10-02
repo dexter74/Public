@@ -40,7 +40,7 @@ fi
 #########################
 docker create -i -t --name=$CONTAINER_NAME \
   --net=host \
-  -p $PORTs \
+  -p $PORTS \
   -e PUID=$USER_ID \
   -e PGID=$GROUP_ID \
   -e VERSION=docker \

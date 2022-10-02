@@ -99,7 +99,7 @@ fi
 #######################################################################################################################################################
 # Création du Conteneur #
 #########################
-docker create -i -t --name=Plex --net=host -e PUID=1000 -e PGID=100 -e VERSION=docker --restart unless-stopped linuxserver/plex
+docker create -i -t --name=Plex --net=host  -p 32400:32400  -e PUID=1000 -e PGID=100 -e VERSION=docker --restart unless-stopped linuxserver/plex
 docker start Plex;
 exit 0
 ````

@@ -9,7 +9,8 @@ cd ~/Public/ASUSTOR/AppCentral/Portainer  && apkg-tools_py2.py create . && mv ./
 cd ~/Public/ASUSTOR/AppCentral/Emby       && apkg-tools_py2.py create . && mv ./*.apk /mnt/LAMP;
 ```
 
-| Application | Etat de l'APPZ |
-|-------------|--------------- |
-| Plex        | Parfait        |
+| Application | Statut  |
+|-------------|-------- |
+| Plex        | Parfait |
+| Portainer   | Parfait |
 

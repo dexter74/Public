@@ -7,7 +7,7 @@
 			"docker-ce(>=20.10.2.r2)"
 		],
 		"developer":"Portainer.io",
-		"maintainer":"Marc JAFFRE",
+		"maintainer":"Portainer",
 		"email":"teste74@hotmail.fr",
 		"website":"https://www.portainer.io",
 		"architecture":"x86-64",

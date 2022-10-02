@@ -12,7 +12,7 @@
     "webite":"https://emby.media", 
     "architecture":"x86-64", 
     "firmware":"4.1.0", 
-    "model":"5304T",
+    "model":"AS5304T",
     "default-lang":"fr-FR",
     "memory-limit":"2048",
     "memory-advice":"2048",

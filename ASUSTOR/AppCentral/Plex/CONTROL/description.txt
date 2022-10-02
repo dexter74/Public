@@ -6,6 +6,6 @@ Information sur l'installation:
 - Icône Plex sur l'espace de travail
 
 Points de montage:
- - /volume1/video:/video/video
+ - /volume1/video:/video/Video
  - /volume1/Docker/Plex:/config
 

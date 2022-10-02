@@ -20,27 +20,12 @@ docker pull linuxserver/plex
 if [ ! -z $CONTAINER_TEST ]; then
 	docker rm -f $CONTAINER_TEST
 fi
-##########################################################################################################################################################
-# Mise à jour Certificat SSL #
-##############################
-ADM_SSL_FILE=/usr/builtin/etc/certificate/ssl.pem 
-PORTAINER_SSL_FILE=/share/Docker/PortainerCE/data/certs/cert.pem
-PORTAINER_KEY_FILE=/share/Docker/PortainerCE/data/certs/key.pem
-if [ -e $PORTAINER_SSL_FILE ]; then
-	# Compare the ADM certificate and the Portainer copied one
-	CERT_DIFF=$(diff -bBq $ADM_SSL_FILE $PORTAINER_SSL_FILE | grep differ | awk '{print $5}')
-	# Before create and start Portainer Container, remove the old certificate if it's existed and different with ADM certificate.
-	if [ "$CERT_DIFF" == "differ" ]; then
-		rm -f $PORTAINER_SSL_FILE
-		rm -f $PORTAINER_KEY_FILE
-	fi
-fi
+
 
 ##########################################################################################################################################################
 # Création du Conteneur #
 #########################
 docker container rm -f $CONTAINER_NAME 
-
 
 docker run -d --net=bridge \
   --name $CONTAINER_NAME \

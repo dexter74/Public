@@ -15,7 +15,7 @@ docker container rm -f  $CONTAINER_NAME
 # Lancement du Conteneur
 docker run -d \
 --name=$CONTAINER_NAME \
---volume /volume1/Docker/Emby:/config \
+--volume /volume1/Docker/$CONTAINER_NAME:/config \
 --volume /volume1/Video:/Video \
 --net=host \
 --device /dev/dri:/dev/dri \

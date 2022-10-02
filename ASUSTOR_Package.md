@@ -80,8 +80,7 @@ echo '
 
 #### Edition des scripts
 ````console
-nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh
-nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
+nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh; nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
 ````
 
 ### pre-install.sh

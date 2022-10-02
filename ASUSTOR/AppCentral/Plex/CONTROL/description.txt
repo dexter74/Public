@@ -1,4 +1,4 @@
-Descriptiuon: Application multimédias Plex.
+Description: Application multimédias Plex.
 
 Information sur l'installation:
 - Installation en Mode Host

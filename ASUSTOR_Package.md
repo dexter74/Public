@@ -1,18 +1,18 @@
 
 #### Arborescence:
 ````console
-mkdir -p  ~/Bureau/Asus/CONTROL/
-touch ~/Bureau/Asus/CONTROL/changelog.txt
-touch ~/Bureau/Asus/CONTROL/config.json
-touch ~/Bureau/Asus/CONTROL/description.txt
-touch ~/Bureau/Asus/CONTROL/license.txt
-touch ~/Bureau/Asus/CONTROL/pre-install.sh
-touch ~/Bureau/Asus/CONTROL/pre-uninstall.sh
-touch ~/Bureau/Asus/CONTROL/post-install.sh
-touch ~/Bureau/Asus/CONTROL/post-uninstall.sh
-touch ~/Bureau/Asus/CONTROL/pre-snapshot-restore.sh
-touch ~/Bureau/Asus/CONTROL/post-snapshot-restore.sh
-chmod -R o+w  ~/Bureau/Asus/
+mkdir -p  /home/marc/Bureau/Asus/CONTROL/
+touch /home/marc/Bureau/Asus/CONTROL/changelog.txt
+touch /home/marc/Bureau/Asus/CONTROL/config.json
+touch /home/marc/Bureau/Asus/CONTROL/description.txt
+touch /home/marc/Bureau/Asus/CONTROL/license.txt
+touch /home/marc/Bureau/Asus/CONTROL/pre-install.sh
+touch /home/marc/Bureau/Asus/CONTROL/pre-uninstall.sh
+touch /home/marc/Bureau/Asus/CONTROL/post-install.sh
+touch /home/marc/Bureau/Asus/CONTROL/post-uninstall.sh
+touch /home/marc/Bureau/Asus/CONTROL/pre-snapshot-restore.sh
+touch /home/marc/Bureau/Asus/CONTROL/post-snapshot-restore.sh
+chmod -R o+w  /home/marc/Bureau/Asus/
 ````
 apkg-tools.py create ./zurmo
 

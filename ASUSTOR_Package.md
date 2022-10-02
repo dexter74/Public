@@ -14,6 +14,7 @@ touch /home/marc/Bureau/Asus/CONTROL/post-uninstall.sh
 touch /home/marc/Bureau/Asus/CONTROL/pre-snapshot-restore.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-snapshot-restore.sh
 touch /home/marc/Bureau/Asus/CONTROL/start-stop.sh
+cp /home/marc/Bureau/icon.png /home/marc/Bureau/Asus/CONTROL/
 ````
 
 #### Edition des scripts
@@ -85,10 +86,10 @@ exit 0
 
 #### Start-stop.sh
 ````
-#TEST=$(docker ps | grep Plex | cut -c 181-185)
-#if [ $TEST = Plex ];then
-#	docker stop Plex;
-#fi
+TEST=$(docker ps | grep Plex | cut -c 181-185)
+if [ $TEST = Plex ];then
+	docker stop Plex;
+fi
 ````
 
 

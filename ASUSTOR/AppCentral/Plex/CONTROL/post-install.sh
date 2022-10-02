@@ -46,6 +46,7 @@ docker run -d \
 	--net=host \
 	-e PUID=$USER_ID \
 	-e PGID=$GROUP_ID \
+	-e TZ=Europe/Paris \
 	-v '/share/Video/:/Video' \
 	-v '/share/Docker/Plex:/config' \
 	--device=/dev/dri:/dev/dri \

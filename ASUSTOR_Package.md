@@ -18,6 +18,7 @@ chmod -R o+w  /home/marc/Bureau/Asus/
 
 #### config.json
 ````json
+echo '
 {
    "general":{
       "package":"MonPackage",
@@ -74,7 +75,7 @@ chmod -R o+w  /home/marc/Bureau/Asus/
       "start-order":95,
       "stop-order":5
    }
-}
+}' > /home/marc/Bureau/Asus/CONTROL/config.json
 ````
 
 

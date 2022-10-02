@@ -2,6 +2,7 @@
 # Déclaration de la variable de test #
 ######################################
 CONTAINER_NAME=Emby
+IMAGE=linuxserver/emby
 HTTP=8096:8096
 HTTPS=8920:8920
 
@@ -20,7 +21,7 @@ docker run -d \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
 --label cacher="non" \
-emby/embyserver:latest
+$IMAGE:latest
 
 ##########################################################################################################################################################
 docker start $CONTAINER_NAME

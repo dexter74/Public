@@ -15,4 +15,9 @@ cd ~/Public/ASUSTOR/AppCentral/Emby       && apkg-tools_py2.py create . && mv ./
 | Emby 	      | Parfait et Code source Propre |
 | Plex        | Parfait et Code source Propre | 
 | Portainer   | Parfait et Code source Propre |
-
+| Cloud 9     | A faire                       |
+| QBitorrent  | A Faire                       |
+| jackett     | A Faire                       |
+| Radarr      | A Faire                       |
+| Sonarr      | A Faire                       |
+| Jdownloader | A Faire                       |

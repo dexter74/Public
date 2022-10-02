@@ -28,27 +28,29 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 
 
 {
-	"general": { 
-		"package": "MonPackage",
-		"name": "AppCentral",
-		"version": "1.0",
-		"depends": [ "docker-ce(>=20.10.2.r2)"],
-		"developer": "Marc Jaffre",
-		"maintainer": "Drthrax74",
-		"email": "teste74@hotmail.fr",
-		"website": "http://localhost",
-		"architecture": "x86-64",
-		"firmware": "4.1.0",
-		"default-lang": "fr-FR",
-		"memory-limit": "2048",
-		"memory-advice": "2000",
-		"privacy-statement": "http://localhost/privacy.html"},		
-		"adm-desktop":{ "app":{ "type":"custom", "protocol":"http", "port":"19240", "url": "/web"}},
-		"privilege":{ "accessible": "users", "customizable": "true"},
-		"register":{ "share-folder":[ {"name":"Docker", "description":"Data and files directory for Docker Apps"} ] }
+ "general": { 
+   "package": "MonPackage",
+   "name": "AppCentral",
+   "version": "1.0",
+   "depends": [ "docker-ce(>=20.10.2.r2)"],
+   "developer": "Marc Jaffre",
+   "maintainer": "Drthrax74",
+   "email": "teste74@hotmail.fr",
+   "website": "http://localhost",
+   "architecture": "x86-64",
+   "firmware": "4.1.0",
+   "default-lang": "fr-FR",
+   "memory-limit": "2048",
+   "memory-advice": "2000",
+   "privacy-statement": "http://localhost/privacy.html"},		
+   "adm-desktop":{ "app":{ "type":"custom", "protocol":"http", "port":"19240", "url": "/web"}},
+   "privilege":{ "accessible": "users", "customizable": "true"},
+   "register":{ 
+   	"share-folder":[ {"name":"Docker", "description":"Data and files directory for Docker Apps"} ],
+   	"boot-priority":{ "start-order":65, "stop-order":35},
+	"port":[19943]
+   }
 }
-
-
 
 ````
 

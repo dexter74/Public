@@ -24,6 +24,9 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 
 #### config.json
 ````json
+
+
+
 {
 	"general": { 
 		"package": "MonPackage",
@@ -40,8 +43,12 @@ nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CON
 		"memory-limit": "2048",
 		"memory-advice": "2000",
 		"privacy-statement": "http://localhost/privacy.html"},		
-		"adm-desktop":{ "app":{ "type":"custom", "protocol":"http", "port":"19240", "url": "/web"}}
+		"adm-desktop":{ "app":{ "type":"custom", "protocol":"http", "port":"19240", "url": "/web"}},
+		"privilege":{ "accessible": "users", "customizable": "true" }
 }
+
+
+
 
 ````
 

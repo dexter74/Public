@@ -1,2 +1,2 @@
 #!/bin/sh
-docker pull linuxserver/plex;
+docker pull

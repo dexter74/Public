@@ -33,12 +33,17 @@ nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
       "depends":[
          "docker-ce(>=20.10.2.r2)"
       ],
-      "developper":"Marc-Jaffre",
+      "developper":"Marc Jaffré",
       "maintainer":"Drthrax74",
       "email":"teste74@hotmail.fr",
-      "architecture":"x86-64",
-      "website":"https://www.plex.tv/",
-      "firmware":"4.0.0"
+      "website":"http://localhost",
+      "architecture":"x86_64",
+      "firmware":"4.1.0",
+      "model":"53xx",
+      "default-lang":"fr-FR",
+      "memory-limit":"4096",
+      "memory-advice":"2000",
+      "privacy-statement":"http://localhost/privacy.html"
    },
    "adm-desktop":{
       "app":{ "type":"custom", "protocol":"http", "port":"32400", "url":"/" },

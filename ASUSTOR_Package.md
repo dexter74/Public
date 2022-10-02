@@ -39,7 +39,7 @@ nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
       "architecture":"any",
       "firmware":"4.0.0"
    },
-   "adm-desktop":{   
+   "adm-desktop":{
       "app":{ "type":"custom", "protocol":"http", "port":"32400", "url":"/" },
       "privilege":{  "accessible":"users", "customizable": "true"},
       "register":{ "share-folder":[ { "name":"Docker", "description":"Dossier Docker"}]},

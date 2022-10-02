@@ -13,7 +13,6 @@ apkg-tools.py create ./zurmo
 #### config.json
 ````json
 {
-// ---------------------------------------------------------------------
    "general":{
       "package":"MonPackage",
       "name":"AppCentral",
@@ -33,11 +32,6 @@ apkg-tools.py create ./zurmo
       "memory-advice":"2000",
       "privacy-statement":"http://localhost/privacy.html"
    },
-
-
-
-
-// ---------------------------------------------------------------------
    "adm-desktop":{
       "app":{
          "type":"custom",
@@ -76,3 +70,5 @@ apkg-tools.py create ./zurmo
    }
 }
 ````
+
+

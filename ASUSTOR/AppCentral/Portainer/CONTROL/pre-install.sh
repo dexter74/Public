@@ -1,2 +1,2 @@
 #!/bin/sh
-docker pull
+docker pull portainer/portainer-ce

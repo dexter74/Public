@@ -112,6 +112,6 @@ exit 0
 #### Création du Package
 ```
 chmod -R o+w  /home/marc/Bureau/Asus/
-apkg-tools.py create /home/marc/Bureau/Asus/
+apkg-tools_py3.py create /home/marc/Bureau/Asus/
 ```
 

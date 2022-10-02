@@ -8,14 +8,11 @@ case "$1" in
     sleep 3                  
     ;;
     
-    
 	stop)
 		echo "Stop $CONTAINER_NAME container..."
 		docker stop $CONTAINER_NAME
 		sleep 3
-		;;
-    
-    
+		;;    
 	reload)
   	echo "Reload $CONTAINER_NAME container..."		
 		docker stop  $CONTAINER_NAME

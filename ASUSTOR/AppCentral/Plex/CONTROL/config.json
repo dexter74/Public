@@ -21,8 +21,8 @@
 		   "type":"custom",
 		   "protocol":"http",
 		   "port":"32400",
-		   "url": "/web"
-	          }},
+		   "url": "/web" }
+   		   },
 	
    "privilege":{ 
 	     "accessible": "administrators", 

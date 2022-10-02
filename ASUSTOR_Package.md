@@ -18,10 +18,7 @@ touch /home/marc/Bureau/Asus/CONTROL/start-stop.sh
 
 #### Edition des scripts
 ````console
-nano /home/marc/Bureau/Asus/CONTROL/config.json;
-nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh;
-nano /home/marc/Bureau/Asus/CONTROL/post-install.sh;
-nano /home/marc/Bureau/Asus/CONTROL/start-stop.sh;
+nano /home/marc/Bureau/Asus/CONTROL/config.json; nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh; nano /home/marc/Bureau/Asus/CONTROL/post-install.sh; nano /home/marc/Bureau/Asus/CONTROL/start-stop.sh;
 ````
 
 

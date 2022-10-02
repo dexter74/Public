@@ -13,6 +13,7 @@ touch /home/marc/Bureau/Asus/CONTROL/post-install.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-uninstall.sh
 touch /home/marc/Bureau/Asus/CONTROL/pre-snapshot-restore.sh
 touch /home/marc/Bureau/Asus/CONTROL/post-snapshot-restore.sh
+touch /home/marc/Bureau/Asus/CONTROL/start-stop.sh
 ````
 
 #### Edition des scripts

@@ -6,7 +6,13 @@ touch ~/Bureau/Asus/CONTROL/changelog.txt
 touch ~/Bureau/Asus/CONTROL/config.json
 touch ~/Bureau/Asus/CONTROL/description.txt
 touch ~/Bureau/Asus/CONTROL/license.txt
-
+touch ~/Bureau/Asus/CONTROL/pre-install.sh
+touch ~/Bureau/Asus/CONTROL/pre-uninstall.sh
+touch ~/Bureau/Asus/CONTROL/post-install.sh
+touch ~/Bureau/Asus/CONTROL/post-uninstall.sh
+touch ~/Bureau/Asus/CONTROL/pre-snapshot-restore.sh
+touch ~/Bureau/Asus/CONTROL/post-snapshot-restore.sh
+chmod -R o+w  ~/Bureau/Asus/
 ````
 apkg-tools.py create ./zurmo
 

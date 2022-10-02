@@ -21,3 +21,25 @@ docker run -d --net=bridge \
   emby/embyserver
 
 # --label cacher="oui" \
+
+
+
+
+##########################################################################################################################################################
+docker start Emby
+##########################################################################################################################################################
+case "$APKG_PKG_STATUS" in
+	install)
+		;;
+	upgrade)
+		oldim=$(docker images | grep emby/embyserver | grep none | awk '{print $3}')
+		echo $oldim
+		
+		if [ ! -z $oldim ]; then 
+			docker rmi -f $oldim
+		fi
+		;;
+	*)
+		;;
+esac
+exit 0

@@ -20,7 +20,8 @@ touch /home/marc/Bureau/Asus/CONTROL/start-stop.sh
 ````console
 nano /home/marc/Bureau/Asus/CONTROL/config.json;
 nano /home/marc/Bureau/Asus/CONTROL/pre-install.sh;
-nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
+nano /home/marc/Bureau/Asus/CONTROL/post-install.sh;
+nano /home/marc/Bureau/Asus/CONTROL/start-stop.sh;
 ````
 
 
@@ -61,6 +62,7 @@ nano /home/marc/Bureau/Asus/CONTROL/post-install.sh
 ````console
 docker pull linuxserver/plex
 ````
+
 ### post-install.sh
 ````console
 docker pull linuxserver/plex
@@ -70,13 +72,22 @@ if [ ! -z $CONTAINER_TEST ]; then
 	docker rm -f $CONTAINER_TEST
 fi
 
-
 #######################################################################################################################################################
 # Création du Conteneur #
 #########################
 docker create -i -t --name=Plex --net=host  -p 32400:32400  -e PUID=1000 -e PGID=100 -e VERSION=docker --restart unless-stopped linuxserver/plex
 docker start Plex;
 exit 0
+````
+
+
+
+#### Start-stop.sh
+````
+TEST=$(docker ps | grep Plex | cut -c 181-185)
+if [ $TEST = Plex ];then
+	docker stop Plex;
+fi
 ````
 
 

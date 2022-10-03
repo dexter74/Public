@@ -6,13 +6,14 @@ IMAGE=linuxserver/emby
 HTTP=8096:8096
 HTTPS=8920:8920
 
-
 ##########################################################################################################################################################
-# Fermeture du Conteneur 
+# Fermeture du Conteneur #
+##########################
 docker container rm -f  $CONTAINER_NAME
 
 ##########################################################################################################################################################
-# Lancement du Conteneur
+# Lancement du Conteneur #
+##########################
 docker run -d \
 --name=$CONTAINER_NAME \
 --volume /volume1/Docker/$CONTAINER_NAME:/config \
@@ -22,8 +23,11 @@ docker run -d \
 --publish $HTTPS \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
---label cacher="non" \
 $IMAGE:latest
+
+
+#--label cacher="non" \
+
 
 ##########################################################################################################################################################
 docker start $CONTAINER_NAME

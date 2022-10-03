@@ -1,9 +1,6 @@
-Description: Application multimédias Plex.
+Description:
+Plex, Inc. Plex est un logiciel client-serveur de gestion multimédia qui permet d'accéder à des films, séries, musiques et photos sur le serveur peu importe où le client se situe, s'il a une connexion Internet.
 
-Information sur l'installation:
-- Installation en Mode Host
-- Port 32400/TCP
-- Icône Plex sur l'espace de travail
 
 Points de montage:
  - /volume1/video:/video/Video

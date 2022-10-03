@@ -23,7 +23,7 @@
     "port":"32400", 
     "url":"/web"},  
   "privilege":{
-    "accessible":"administrators", 
+    "accessible":"users", 
     "customizable": "true" }
 },
 "register":{

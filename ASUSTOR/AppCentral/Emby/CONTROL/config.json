@@ -1,21 +1,21 @@
 {
 "general":{ 
-  "package":"XXXXXXX", 
-  "name":"XXXXXXX", 
+  "package":"Emby", 
+  "name":"Emby", 
   "version":"1.0", 
   "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
-    "developer":"XXXXXXX", 
-    "maintainer":"XXXXXXX.", 
-    "email":"XXXXXXX@XXXXXXX.xx", 
+    "developer":"Emby", 
+    "maintainer":"", 
+    "email":"support@emby.media", 
     "website":"https://XXXXXXX", 
     "architecture":"x86-64", 
     "firmware":"4.1.0", 
     "default-lang":"fr-FR",
     "memory-limit":"2048",
     "memory-advice":"2048",
-    "privace-statement":"https://XXXXXXX" },
+    "privace-statement":"https://emby.media" },
 "adm-desktop":{
   "app":{
     "type":"custom",

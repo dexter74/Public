@@ -19,7 +19,7 @@ docker run -d \
 --publish $HTTP \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
---label cacher="non" \
+--label cacher="oui" \
 $IMAGE:latest
 
 ##########################################################################################################################################################

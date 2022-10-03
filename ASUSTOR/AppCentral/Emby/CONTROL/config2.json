@@ -16,6 +16,7 @@
     "memory-limit":"2048",
     "memory-advice":"2048",
     "privace-statement":"https://emby.media/privacy.html" },
+
 "adm-desktop":{
   "app":{
     "type":"custom",

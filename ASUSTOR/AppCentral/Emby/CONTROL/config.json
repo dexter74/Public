@@ -13,8 +13,8 @@
     "architecture":"x86-64", 
     "firmware":"4.1.0", 
     "default-lang":"fr-FR",
-    "memory-limit":"2048",
-    "memory-advice":"2048",
+    "memory-limit":"4096",
+    "memory-advice":"1024",
     "privace-statement":"https://emby.media/privacy.html" },
 
 "adm-desktop":{
@@ -25,7 +25,7 @@
     "url":"/"},  
   "privilege":{
     "accessible":"users", 
-    "customizable": "true" },
+    "customizable": "true" }
 
 },
 "register":{

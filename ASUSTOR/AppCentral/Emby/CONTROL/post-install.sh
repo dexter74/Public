@@ -9,6 +9,7 @@ docker run -d --name Emby \
 --net=host \
 --publish 8096:8096 \
 --publish 8920:8920 \
+--label cacher="non" \
 emby/embyserver
 
 

@@ -1,17 +1,17 @@
 {
 "general":{ 
   "package":"Emby", 
-  "name":"Emby", 
-  "version":"Alpha", 
+  "name":"EmbyServer", 
+  "version":"ver. 1.0", 
   "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
     "developer":"Emby", 
-    "maintainer":"Emby", 
+    "maintainer":"Emby Corp.", 
     "email":"support@emby.media", 
     "website":"https://emby.media", 
     "architecture":"x86-64", 
-    "firmware":"2.0.0", 
+    "firmware":"4.1.0", 
     "default-lang":"fr-FR",
     "memory-limit":"2048",
     "memory-advice":"2048",
@@ -25,7 +25,19 @@
     "url":"/"},  
   "privilege":{
     "accessible":"users", 
+    "customizable": "true" },
+	
+"adm-desktop":{
+  "app":{
+    "type":"custom",
+    "protocol":"https", 
+    "port":"8920", 
+    "url":"/"},  
+  "privilege":{
+    "accessible":"users", 
     "customizable": "true" }
+	
+	
 },
 "register":{
 	"symbolic-link":{},

@@ -10,15 +10,15 @@ cd ~/Public/ASUSTOR/AppCentral/Portainer  && apkg-tools_py2.py create . && mv ./
 cd ~/Public/ASUSTOR/AppCentral/Emby       && apkg-tools_py2.py create . && mv ./*.apk /mnt/LAMP;
 ```
 
-| Application  | Statut de l'application        |
-|------------- | ------------------------------ |
-| Emby 	       | KO  |
-| Plex         | KO  | 
-| Portainer    | KO  |
-| Cloud 9      | A faire                        |
-| ReverseProxy | A Faire                        |
-| QBitorrent   | A Faire                        |
-| jackett      | A Faire                        |
-| Radarr       | A Faire                        |
-| Sonarr       | A Faire                        |
-| Jdownloader  | A Faire                        |
+| Application  | Statut de l'application     |
+|------------- | --------------------------- |
+| Emby 	       | Opérationnel et Code Propre |
+| Plex         | Opérationnel et Code Propre |
+| Portainer    | Opérationnel et Code Propre |
+| Cloud 9      | A faire                     |
+| ReverseProxy | A Faire                     |
+| QBitorrent   | A Faire                     |
+| jackett      | A Faire                     |
+| Radarr       | A Faire                     |
+| Sonarr       | A Faire                     |
+| Jdownloader  | A Faire                     |

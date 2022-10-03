@@ -18,6 +18,8 @@ docker run -d \
 --volume /volume1/Docker/$CONTAINER_NAME:/config \
 --volume /volume1/Video:/Video \
 --net=host \
+--publish $HTTP \
+--publish $HTTPS \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
 --label cacher="non" \

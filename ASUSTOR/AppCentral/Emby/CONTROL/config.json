@@ -26,18 +26,7 @@
   "privilege":{
     "accessible":"users", 
     "customizable": "true" },
-	
-"adm-desktop":{
-  "app":{
-    "type":"custom",
-    "protocol":"https", 
-    "port":"8920", 
-    "url":"/"},  
-  "privilege":{
-    "accessible":"users", 
-    "customizable": "true" }
-	
-	
+
 },
 "register":{
 	"symbolic-link":{},

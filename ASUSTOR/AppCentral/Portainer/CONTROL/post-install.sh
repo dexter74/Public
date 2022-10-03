@@ -23,18 +23,17 @@ PORTAINER_KEY_FILE=/share/Docker/PortainerCE/data/certs/key.pem
 #######################################################################################################################################################
 # Mise à jour du Certificat #
 #############################
+
+# Code Source: ASUSTOR
 if [ -e $PORTAINER_SSL_FILE ]; then
 	# Compare the ADM certificate and the Portainer copied one
 	CERT_DIFF=$(diff -bBq $ADM_SSL_FILE $PORTAINER_SSL_FILE | grep differ | awk '{print $5}')
-	
 	# Before create and start Portainer Container, remove the old certificate if it's existed and different with ADM certificate.
-	
 	if [ "$CERT_DIFF" == "differ" ]; then
 		rm -f $PORTAINER_SSL_FILE
 		rm -f $PORTAINER_KEY_FILE
 	fi
 fi
-
 #######################################################################################################################################################
 # Création du Conteneur #
 #########################

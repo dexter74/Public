@@ -9,12 +9,10 @@
     "developer":"Emby", 
     "maintainer":"", 
     "email":"support@emby.media", 
-    "website":"https://XXXXXXX", 
+    "website":"https://emby.media", 
     "architecture":"x86-64", 
-    "firmware":"4.1.0", 
+    "firmware":"4.0.0", 
     "default-lang":"fr-FR",
-    "memory-limit":"2048",
-    "memory-advice":"2048",
     "privace-statement":"https://emby.media/privacy.html" },
 "adm-desktop":{
   "app":{
@@ -29,7 +27,7 @@
 "register":{
 	"symbolic-link":{},
 	"share-folder":[{ "name":"Docker","description":"Ma super Description"}],
-	"port":[ "123456", "678910" ],
+	"port":[ "8096", "8096" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}

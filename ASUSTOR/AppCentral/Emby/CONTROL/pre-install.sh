@@ -1,2 +1,2 @@
 #!/bin/sh
-docker pull emby/embyserver:latest
+docker pull emby/embyserver

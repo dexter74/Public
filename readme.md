@@ -12,9 +12,9 @@ cd ~/Public/ASUSTOR/AppCentral/Emby       && apkg-tools_py2.py create . && mv ./
 
 | Application  | Statut de l'application     |
 |------------- | --------------------------- |
-| Emby 	       | Opérationnel et Code Propre |
-| Plex         | Opérationnel et Code Propre |
-| Portainer    | Opérationnel et Code Propre |
+| Emby 	       | Opérationnel et logo KO     |
+| Plex         | Opérationnel et logo KO     |
+| Portainer    | Opérationnel et logo KO     |
 | Cloud 9      | A faire                     |
 | ReverseProxy | A Faire                     |
 | QBitorrent   | A Faire                     |

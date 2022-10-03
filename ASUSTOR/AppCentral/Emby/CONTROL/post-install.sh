@@ -1,7 +1,9 @@
 #!/bin/sh
 
+docker stop Emby
+
 docker run -d \
- --name embyserver
+ --name Emby
  --volume /share/Docker/Emby:/config \
  --net=host \
  --publish 8096:8096 \

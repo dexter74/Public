@@ -9,25 +9,25 @@ HTTPS=8920:8920
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
-docker container rm -f  $CONTAINER_NAME
+docker container rm -f Emby
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
 docker run -d \
---name=$CONTAINER_NAME \
---volume /volume1/Docker/$CONTAINER_NAME:/config \
+--name=Emby \
+--volume /volume1/Docker/Emby:/config \
 --volume /volume1/Video:/Video \
 --net=host \
---publish $HTTP \
---publish $HTTPS \
+--publish 8086:8086 \
+--publish 8920:8920 \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
-$IMAGE:latest
+linuxserver/emby:latest
 
 
 #--label cacher="non" \
 
 
 ##########################################################################################################################################################
-docker start $CONTAINER_NAME
+docker start Emby

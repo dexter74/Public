@@ -1,12 +1,12 @@
 {
 "general":{ 
   "package":"MariaDB", 
-  "name":"Base de donnée MariaDB", 
+  "name":"MariaDB", 
   "version":"1.0", 
   "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
-    "developer":"MariaDB", 
+    "developer":"MariaDB Corporation", 
     "maintainer":"MariaDB.", 
     "email":"support@mariadb.com", 
     "website":"https://mariadb.com/", 

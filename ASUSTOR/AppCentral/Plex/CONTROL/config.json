@@ -1,4 +1,5 @@
 {
+"general":{ 
   "package":"Plex", 
   "name":"Plex", 
   "version":"1.0", 
@@ -7,5 +8,9 @@
   "maintainer":"Marc Jaffre",
   "email":"support@plex.tv",
   "website":"https://www.plex.tv", 
-  "architecture":"x86-64"
+  "architecture":"x86-64"}
+
+
+
 }
+

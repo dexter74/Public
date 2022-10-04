@@ -27,9 +27,10 @@
 },
 "register":{
 	"symbolic-link":{},
-	"share-folder":[{ "name":"Docker","description":"Dossier Docker requis"	}], 
-	[{ "name":"Download","description":"Dossier Download requis"}], 
-	[{ "name3":"Video","description":"Dossier Video requis"}],
+	"share-folder":[{
+		"name":"Docker","description":"Dossier Docker requis", 
+		"name":"Download","description":"Dossier Download requis",
+		"name":"Video","description":"Dossier Video requis"}], 
 	"port":[ "8096", "8920" ],
 	"boot-priority":[{ "start-order":"60", "stop-order":"8" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }

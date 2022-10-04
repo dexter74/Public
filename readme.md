@@ -22,3 +22,8 @@ cd ~/Public/ASUSTOR/AppCentral/Emby       && apkg-tools_py2.py create . && mv ./
 | Radarr       | A Faire                     |
 | Sonarr       | A Faire                     |
 | Jdownloader  | A Faire                     |
+
+#### Problème Icône:
+```
+La valeur Version est incorrecte dans le JSON .
+```

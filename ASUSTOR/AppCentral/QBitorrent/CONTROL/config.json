@@ -6,27 +6,27 @@
   "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
-    "developer":"The qBittorrent project", 
-    "maintainer":"Patrick", 
-		"email":"patrickhsu.ast@gmail.com",
-		"website":"https://hub.docker.com/r/linuxserver/qbittorrent",
+    "developer":"qBittorrent", 
+    "maintainer":"qBittorrent.", 
+    "email":"support@qBittorrent.org", 
+    "website":"https://qBittorrent.org", 
     "architecture":"x86-64", 
-    "firmware":"4.1.0"
-
+    "firmware":"4.1.0", 
 "adm-desktop":{
   "app":{
     "type":"custom",
     "protocol":"https", 
-    "port":"18181", 
-    "url":"/"},
+    "port":"18180", 
+    "url":"/"},  
   "privilege":{
     "accessible":"administrators", 
     "customizable": "true" }
 },
 "register":{
 	"symbolic-link":{},
-	"share-folder":[{"name":"Docker", "description":"Data and files directory for Docker Apps"}, { "name":"Download", "description":"Download default shared folder" } ],
-	"port":[ "18181" ],
-	"boot-priority":[{ "start-order":"80", "stop-order":"3" }]
+	"share-folder":[{ "name":"Docker","description":"Ma super Description"}],
+	"port":[ "18180" ],
+	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
+	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}
 }

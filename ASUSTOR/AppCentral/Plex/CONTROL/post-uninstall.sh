@@ -1,3 +1,2 @@
 #!/bin/sh
-
-echo "Application désinstallé"
+# echo "Application désinstallé"

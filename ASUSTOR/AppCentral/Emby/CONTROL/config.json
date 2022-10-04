@@ -13,10 +13,7 @@
     "architecture":"x86-64", 
     "firmware":"4.1.0", 
     "default-lang":"fr-FR",
-    "memory-limit":"4096",
-    "memory-advice":"1024",
     "privace-statement":"https://emby.media/privacy.html" },
-
 "adm-desktop":{
   "app":{
     "type":"custom",

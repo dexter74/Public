@@ -1,21 +1,26 @@
 #!/bin/sh
 
 ##########################################################################################################################################################
+# Déclaration de Variable #
+###########################
+CONTENEUR=Plex
+
+##########################################################################################################################################################
 # Start-Stop #
 ##############
 case "$1" in
   start)
-    docker start Plex
+    docker start $CONTENEUR
     sleep 3
     ;;
   stop)
-    docker stop Plex
+    docker stop $CONTENEUR
     sleep 3
     ;;
   reload)
-    docker stop Plex
+    docker stop $CONTENEUR
     sleep 3
-    docker start Plex
+    docker start $CONTENEUR
     ;;
   *)
    echo "Usage: $0 {start|stop|reload}"

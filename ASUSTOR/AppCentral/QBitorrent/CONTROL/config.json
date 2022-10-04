@@ -5,8 +5,11 @@
   "version":"1.0", 
   "depends": [ 
   "docker-ce(>=20.10.2.r2)"], 
-  "conflicts":"qBittorrent", 
-  "developer":"qBittorrent", 
+  "conflicts":"t", 
+  "developer":"", 
+  "maintainer":"qBittorrent.", 
+  "email":"support@qBittorrent.org", 
+  "website":"https://qBittorrent.org",
   "architecture":"x86-64", 
   "firmware":"4.1.0"
 },

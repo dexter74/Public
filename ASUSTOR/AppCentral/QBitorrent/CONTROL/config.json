@@ -26,6 +26,6 @@
 	"symbolic-link":{},
 	"share-folder":[{"name":"Docker", "description":"Data and files directory for Docker Apps"}, { "name":"Download", "description":"Download default shared folder" } ],
 	"port":[ "18181" ],
-	"boot-priority":[{ "start-order":"80", "stop-order":"3" }],
+	"boot-priority":[{ "start-order":"80", "stop-order":"3" }]
 	}
 }

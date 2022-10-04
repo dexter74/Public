@@ -10,7 +10,7 @@
     "email":"support@Plex.tv",
     "website":"https://www.Plex.tv",
     "architecture":"x86-64",
-    "firmware":"2.0.0",
+    "firmware":"4.1.0",
     "default-lang":"fr-FR",
     "privace-statement":"https://www.plex.tv/fr/about/privacy-legal/"
   },

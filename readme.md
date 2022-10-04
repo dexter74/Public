@@ -8,6 +8,7 @@ git clone https://github.com/dexter74/Public.git /root/Public;
 cd ~/Public/ASUSTOR/AppCentral/Plex       && apkg-tools_py2.py create . && mv ./*.apk /mnt/LAMP;
 cd ~/Public/ASUSTOR/AppCentral/Portainer  && apkg-tools_py2.py create . && mv ./*.apk /mnt/LAMP;
 cd ~/Public/ASUSTOR/AppCentral/Emby       && apkg-tools_py2.py create . && mv ./*.apk /mnt/LAMP;
+cd ~/Public/ASUSTOR/AppCentral/QBitorrent && apkg-tools_py2.py create . && mv ./*.apk /mnt/LAMP;
 ```
 
 | Application  | Statut de l'application     |
@@ -17,7 +18,7 @@ cd ~/Public/ASUSTOR/AppCentral/Emby       && apkg-tools_py2.py create . && mv ./
 | Portainer    | Opérationnel et logo KO     |
 | Cloud 9      | A faire                     |
 | ReverseProxy | A Faire                     |
-| QBitorrent   | A Faire                     |
+| QBitorrent   | En Cours de création        |
 | jackett      | A Faire                     |
 | Radarr       | A Faire                     |
 | Sonarr       | A Faire                     |

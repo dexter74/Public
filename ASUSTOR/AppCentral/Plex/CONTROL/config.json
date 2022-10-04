@@ -10,7 +10,9 @@
     "type":"custom",
     "protocol":"http", 
     "port":"32400", 
-    "url":"/"},  
+    "url":"/"}
+}
+
   "privilege":{
     "accessible":"administrators", 
     "customizable": "true" }

@@ -16,7 +16,7 @@ docker container rm -f  $CONTENEUR
 # Lancement du Conteneur #
 ##########################
 
-# --memory="512m" \
+# --memory="$MEMORY" \
 
 
 docker run -d \

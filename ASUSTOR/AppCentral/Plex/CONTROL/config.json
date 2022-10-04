@@ -13,7 +13,7 @@
     "firmware":"2.0.0",
     "default-lang":"fr-FR",
     "memory-limit":"1024",
-    "memory-advice":"512",
+    "memory-advice":"2048",
     "privace-statement":"https://www.plex.tv/fr/about/privacy-legal/"
   },
 

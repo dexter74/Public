@@ -1,6 +1,6 @@
 ````json
 {
-"general":{ 
+  "general":{ 
     "package":"XXXXXXX", 
     "name":"XXXXXXX", 
     "version":"1.0", 
@@ -17,23 +17,24 @@
     "memory-limit":"2048",
     "memory-advice":"2048",
     "privace-statement":"https://XXXXXXX" },
-"adm-desktop":{
-  "app":{
-    "type":"custom",
-    "protocol":"http", 
-    "port":"XXXXXXX", 
-    "url":"/"},  
-  "privilege":{
-    "accessible":"administrators", 
-    "customizable": "true" }
-},
-"register":{
-	"symbolic-link":{},
-	"share-folder":[
-		 	{ "name":"Docker", "description":"Dossier Docker Requis" },
-	                { "name":"Download", "description":"Dossier Download Requis" },
-	                { "name":"Video", "description":"Dossier Video Requis" }
-		       ],
+
+  "adm-desktop":{
+    "app":{
+      "type":"custom",
+      "protocol":"http", 
+      "port":"XXXXXXX", 
+      "url":"/"},  
+    "privilege":{
+      "accessible":"administrators", 
+      "customizable": "true" }
+  },
+
+  "register":{
+    "symbolic-link":{},
+      "share-folder":[
+        { "name":"Docker", "description":"Dossier Docker Requis" },
+	{ "name":"Download", "description":"Dossier Download Requis" },
+	{ "name":"Video", "description":"Dossier Video Requis" } ],
 	"port":[ "123456", "678910" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }

@@ -24,6 +24,7 @@ docker run -d \
 --publish $HTTP \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
+--memory="512m" \
 --label cacher="oui" \
 $IMAGE:latest
 

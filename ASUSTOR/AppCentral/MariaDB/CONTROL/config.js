@@ -7,23 +7,28 @@
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
     "developer":"MariaDB Corporation", 
-    "maintainer":"MariaDB.", 
-    "email":"support@mariadb.com", 
-    "website":"https://mariadb.com/", 
+    "maintainer":"MariaDB", 
+    "email":"support@mariadb.net", 
+    "website":"https://mariadb.com", 
     "architecture":"x86-64", 
     "firmware":"4.1.0", 
-    "default-lang":"fr-FR",
-    "privace-statement":"https://mariadb.com/fr/privacy-policy/" },
+    "privace-statement":"https://mariadb.com › privacy-policy" },
 "adm-desktop":{
-  "app":{ 
-    "port":"3306"
-  },
-	  
+  "app":{
+    "type":"custom",
+    "protocol":"http", 
+    "port":"XXXXXXX", 
+    "url":"/"},  
+  "privilege":{
+    "accessible":"administrators", 
+    "customizable": "true" }
+
+},
 "register":{
 	"symbolic-link":{},
-	"share-folder":[{ "name":"Docker","description":"Partage Docker requis"}],
-	"port":[ "3306" ],
-	"boot-priority":[{ "start-order":"65", "stop-order":"9" }],
+	"share-folder":[{ "name":"Docker","description":"Ma super Description"}],
+	"port":[ "123456", "678910" ],
+	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}
 }

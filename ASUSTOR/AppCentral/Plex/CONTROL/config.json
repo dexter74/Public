@@ -16,7 +16,7 @@
    "app":{
      "type":"custom",
      "protocol":"http", 
-     "port":"XXXXXXX", 
+     "port":"32400", 
      "url":"/"},  
    "privilege":{
      "accessible":"administrators", 

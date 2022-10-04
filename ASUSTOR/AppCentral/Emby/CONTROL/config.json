@@ -30,7 +30,8 @@
 },
 "register":{
 	"symbolic-link":{},
-	"share-folder":[{ "name":"Docker","description":"Dossier Docker"}],
+	"share-folder":[{ "name":"Docker","description":"Dossier Docker requis"}],
+	"share-folder":[{ "name":"Download","description":"Dossier Download requis"}],
 	"port":[ "8096", "8920" ],
 	"boot-priority":[{ "start-order":"60", "stop-order":"8" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }

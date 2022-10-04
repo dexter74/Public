@@ -28,7 +28,7 @@
   },
   "register":{
     "symbolic-link":{},
-    "share-folder":[{ "name":"Download","description":"Portainer"}],
+    "share-folder":[{ "name":"Docker","description":"Dossier Docker Requis"}],
     "port":[ "19943", "19903" ],
     "boot-priority":[{ "start-order":"32", "stop-order":"3" }],
     "prerequisites":{  "enable-service":[], "restart-service":[] }

@@ -1,10 +1,10 @@
 ````json
 {
 "general":{ 
-  "package":"XXXXXXX", 
-  "name":"XXXXXXX", 
-  "version":"1.0", 
-  "depends": [ 
+    "package":"XXXXXXX", 
+    "name":"XXXXXXX", 
+    "version":"1.0", 
+    "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
     "developer":"XXXXXXX", 

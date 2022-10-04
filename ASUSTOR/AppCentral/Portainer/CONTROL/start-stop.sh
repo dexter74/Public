@@ -1,17 +1,23 @@
-######################################################
+#!/bin/sh
+
+##########################################################################################################################################################
+# Déclaration de Variable #
+###########################
+CONTENEUR=Portainer
+
 case "$1" in
   start)
-    docker start Portainer
+    docker start $CONTENEUR
     sleep 3
     ;;
   stop)
-    docker stop Portainer
+    docker stop $CONTENEUR
     sleep 3
     ;;
   reload)
-    docker stop Portainer
+    docker stop $CONTENEUR
     sleep 3
-    docker start Portainer
+    docker start $CONTENEUR
     ;;
   *)
    echo "Usage: $0 {start|stop|reload}"
@@ -20,4 +26,4 @@ case "$1" in
    
 esac
 exit 0
-######################################################
+##########################################################################################################################################################

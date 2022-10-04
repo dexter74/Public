@@ -40,7 +40,6 @@
 	    
     		   ],
     "port":[ "18180" ],
-    "boot-priority":[{ "start-order":"55", "stop-order":"3" }],
-    "prerequisites":{  "enable-service":[], "restart-service":[] }
-	}
+    "boot-priority":[{ "start-order":"55", "stop-order":"3" }]
+}
 }

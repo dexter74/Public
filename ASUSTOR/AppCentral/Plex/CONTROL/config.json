@@ -2,7 +2,7 @@
   "general":{
     "package":"Plex",
     "name":"Plex",
-    "version":"Ver 1.0",
+    "version":"1.0",
     "depends": [ "docker-ce(>=20.10.2.r2)"],
     "conflicts":"",
     "developer":"Plex-TV",

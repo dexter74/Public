@@ -19,7 +19,7 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---net=host \
+--net=bidge \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /volume1/Video:/Video \
 --volume /volume1/Download:/Download \

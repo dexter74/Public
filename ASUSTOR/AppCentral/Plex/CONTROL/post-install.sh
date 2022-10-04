@@ -19,6 +19,7 @@ docker run -d \
 --name=$CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /volume1/Video:/Video \
+--hostname Plex \
 --net=host \
 --publish $HTTP \
 --device /dev/dri:/dev/dri \

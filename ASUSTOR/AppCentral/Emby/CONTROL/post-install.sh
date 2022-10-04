@@ -27,8 +27,6 @@ $IMAGE
 # --env GID=100 \ # The GID to run emby as (default 2)
 # --env GIDLIST=100 \ # A comma-separated list of additional GIDs to run emby as (default: 2)
  
-
-
 ##########################################################################################################################################################
 # Code retour de fermeture #
 ############################

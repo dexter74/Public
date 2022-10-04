@@ -6,7 +6,7 @@
     "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"t", 
-    "developer":"", 
+    "developer":"qBittorrent", 
     "maintainer":"qBittorrent.", 
     "email":"support@qBittorrent.org", 
     "website":"https://qBittorrent.org",

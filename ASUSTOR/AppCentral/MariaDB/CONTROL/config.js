@@ -15,15 +15,10 @@
     "default-lang":"fr-FR",
     "privace-statement":"https://mariadb.com/fr/privacy-policy/" },
 "adm-desktop":{
-  "app":{
-    "type":"custom",
-    "protocol":"TCP", 
-    "port":"3306", 
-    "url":"/"},  
-  "privilege":{
-    "accessible":"administrators", 
-    "customizable": "true" }
-},
+  "app":{ 
+    "port":"3306"
+  },
+	  
 "register":{
 	"symbolic-link":{},
 	"share-folder":[{ "name":"Docker","description":"Partage Docker requis"}],

@@ -5,9 +5,9 @@
     "version":"1.0", 
     "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
-    "conflicts":"t", 
+    "conflicts":"", 
     "developer":"qBittorrent", 
-    "maintainer":"qBittorrent.", 
+    "maintainer":"qBittorrent", 
     "email":"support@qBittorrent.org", 
     "website":"https://qBittorrent.org",
     "architecture":"x86-64", 

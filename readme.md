@@ -13,9 +13,10 @@ cd ~/Public/ASUSTOR/AppCentral/QBitorrent && apkg-tools_py2.py create . && mv ./
 
 | Application  | Statut de l'application        |
 |------------- | ------------------------------ |
-| Emby 	       | Opérationnel et logo KO        |
-| Plex         | Opérationnel et logo KO        |
-| Portainer    | Opérationnel et logo KO        |
+| AdGuardHome  | A Faire                        |
+| Emby 	       | Opérationnel                   |
+| Plex         | Opérationnel                   |
+| Portainer    | Opérationnel                   |
 | Cloud 9      | A faire                        |
 | ReverseProxy | A Faire                        |
 | QBitorrent   | OK (A changer Host en Bridge)  |

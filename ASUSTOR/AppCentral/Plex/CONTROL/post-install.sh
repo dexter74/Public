@@ -4,9 +4,9 @@
 # Déclaration de la variable de test #
 ######################################
 CONTENEUR=Plex
-IMAGE=linuxserver/plex
 HTTP=32400:32400
-
+MEMORY=512m
+IMAGE=linuxserver/plex
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
@@ -15,6 +15,10 @@ docker container rm -f  $CONTENEUR
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
+
+# --memory="512m" \
+
+
 docker run -d \
 --name=$CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
@@ -24,9 +28,10 @@ docker run -d \
 --publish $HTTP \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
---memory="512m" \
 --label cacher="oui" \
 $IMAGE:latest
+
+
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

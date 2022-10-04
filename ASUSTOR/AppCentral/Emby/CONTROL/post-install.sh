@@ -17,6 +17,8 @@ docker stop $CONTENEUR
 ##########################
 docker run -d --name $CONTENEUR \
 --volume /share/Docker/Emby:/config \
+--volume /share/Download:/Download \
+--volume /share/Video:/Video \
 --net=host \
 --publish $HTTP \
 --publish $HTTPS \

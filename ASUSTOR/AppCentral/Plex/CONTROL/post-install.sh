@@ -1,31 +1,35 @@
 ##########################################################################################################################################################
 # Déclaration de la variable de test #
 ######################################
-#CONTAINER_NAME=Plex
-#IMAGE=linuxserver/plex
-#HTTP=32400:32400
+CONTAINER_NAME=Plex
+IMAGE=linuxserver/plex
+HTTP=32400:32400
 
 ##########################################################################################################################################################
-# Fermeture du Conteneur 
-#docker container rm -f  $CONTAINER_NAME
+# Fermeture du Conteneur #
+##########################
+docker container rm -f  $CONTAINER_NAME
 
 ##########################################################################################################################################################
-# Lancement du Conteneur
-#docker run -d \
-#--name=$CONTAINER_NAME \
-#--volume /volume1/Docker/$CONTAINER_NAME:/config \
-#--volume /volume1/Video:/Video \
-#--net=host \
-#--publish $HTTP \
-#--device /dev/dri:/dev/dri \
-#--restart unless-stopped \
-#--label cacher="oui" \
-#$IMAGE:latest
+# Lancement du Conteneur #
+##########################
+docker run -d \
+--name=$CONTAINER_NAME \
+--volume /volume1/Docker/$CONTAINER_NAME:/config \
+--volume /volume1/Video:/Video \
+--net=host \
+--publish $HTTP \
+--device /dev/dri:/dev/dri \
+--restart unless-stopped \
+--label cacher="oui" \
+$IMAGE:latest
 
 ##########################################################################################################################################################
-#docker start $CONTAINER_NAME
-
+# Démarrage du Conteneur #
+##########################
+docker start $CONTAINER_NAME
 
 ##########################################################################################################################################################
-# Code Retour en Fermeture
-#exit 0
+# Code Retour en Fermeture #
+############################
+exit 0

@@ -1,11 +1,14 @@
 ### Pull Dépôt ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 ```
-clear;
-cd;
-rm -r /root/Public;
 git clone https://github.com/dexter74/Public.git /root/Public;
-cd /root/Public/ASUSTOR/AppCentral && apkg-tools_py2.py create ./*
 ```
+
+### Création d'une Appz
+```
+cd /root/Public/ASUSTOR/AppCentral/Plex
+apkg-tools_py2.py create .
+```
+
 
 | Application  | Statut de l'application        |
 |------------- | ------------------------------ |
@@ -20,6 +23,8 @@ cd /root/Public/ASUSTOR/AppCentral && apkg-tools_py2.py create ./*
 | Radarr       | A Faire                        |
 | Sonarr       | A Faire                        |
 | Jdownloader  | A Faire                        |
+
+
 
 #### Problème Icône:
 ```

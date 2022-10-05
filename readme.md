@@ -5,24 +5,33 @@ git clone https://github.com/dexter74/Public.git /root/Public;
 
 ### Création d'une Appz
 ```
-cd /root/Public/ASUSTOR/AppCentral/Plex
-apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/AdGuardHome && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/Cloud9 && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/Emby && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/Jackett && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/Jdownloader && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/Plex && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/Portainer && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/QBitorrent && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/Radarr && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/ReverseProxy && apkg-tools_py2.py create .
+cd /root/Public/ASUSTOR/AppCentral/Sonarr && apkg-tools_py2.py create .
 ```
 
 
 | Application  | Statut de l'application        |
 |------------- | ------------------------------ |
 | AdGuardHome  | A Faire                        |
+| Cloud9       | A faire                        |
 | Emby 	       | Opérationnel                   |
+| Jackett      | A Faire                        |
+| Jdownloader  | A Faire                        |
 | Plex         | Opérationnel                   |
 | Portainer    | Opérationnel                   |
-| Cloud 9      | A faire                        |
-| ReverseProxy | A Faire                        |
 | QBitorrent   | OK (A changer Host en Bridge)  |
-| jackett      | A Faire                        |
 | Radarr       | A Faire                        |
+| ReverseProxy | A Faire                        |
 | Sonarr       | A Faire                        |
-| Jdownloader  | A Faire                        |
 
 
 

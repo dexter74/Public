@@ -16,6 +16,9 @@ cd /root/Public/ASUSTOR/AppCentral/QBitorrent && apkg-tools_py2.py create .
 cd /root/Public/ASUSTOR/AppCentral/Radarr && apkg-tools_py2.py create .
 cd /root/Public/ASUSTOR/AppCentral/ReverseProxy && apkg-tools_py2.py create .
 cd /root/Public/ASUSTOR/AppCentral/Sonarr && apkg-tools_py2.py create .
+
+#Dossier Partage (Host / Guest) 
+mv ~/Public/ASUSTOR/AppCentral/*/*.apk /mnt/LAMP;
 ```
 
 

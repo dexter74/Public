@@ -1,11 +1,13 @@
 ### Pull Dépôt ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 ```
+clear;
+rm -r /root/Public;
 git clone https://github.com/dexter74/Public.git /root/Public;
 ```
 
 ### Modifier les permissions
 ```
-chown -R 777 /root/Public
+chown -R 777 /root/Public;
 ```
 
 

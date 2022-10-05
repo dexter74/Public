@@ -3,6 +3,13 @@
 git clone https://github.com/dexter74/Public.git /root/Public;
 ```
 
+### Modifier les permissions
+```
+chown -R 777 /root/Public
+```
+
+
+
 ### Création d'une Appz
 ```
 cd /root/Public/ASUSTOR/AppCentral/AdGuardHome && apkg-tools_py2.py create .

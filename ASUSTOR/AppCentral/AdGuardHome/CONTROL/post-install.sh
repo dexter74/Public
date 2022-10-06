@@ -23,7 +23,7 @@ docker run -d \
 --restart unless-stopped \
 --env TZ="Europe/Paris" \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
---volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work
+--volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
 --publish $INSTALL \
 --publish $WEBUI \
 --publish $HTTPS \

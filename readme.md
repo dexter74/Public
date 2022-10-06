@@ -41,7 +41,7 @@ mv ~/Public/ASUSTOR/AppCentral/*/*.apk /mnt/LAMP;
 
 | Application  | Statut de l'application        |
 |------------- | ------------------------------ |
-| AdGuardHome  | Scripts à faire                |
+| AdGuardHome  | Opérationnel                   |
 | Cloud9       | A faire                        |
 | Emby 	       | Opérationnel                   |
 | Jackett      | A Faire                        |

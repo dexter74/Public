@@ -8,7 +8,7 @@
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
     "developer":"XXXXXXX", 
-    "maintainer":"XXXXXXX.", 
+    "maintainer":"XXXXXXX", 
     "email":"XXXXXXX@XXXXXXX.xx", 
     "website":"https://XXXXXXX", 
     "architecture":"x86-64", 

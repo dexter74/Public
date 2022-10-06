@@ -2,6 +2,7 @@
 ```
 wget https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip
 unzip /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin 
+```
 
 ### Pull Dépôt ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 ```

@@ -14,7 +14,6 @@
     "firmware":"4.1.0", 
     "default-lang":"fr-FR",
     "privace-statement":"https://adguard.com/en/privacy/home.html" },
-
   "adm-desktop":{
     "app":{
       "type":"custom",

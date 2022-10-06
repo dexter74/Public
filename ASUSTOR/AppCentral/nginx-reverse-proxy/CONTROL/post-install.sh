@@ -26,7 +26,7 @@ docker run -d \
 --volume /volume1/Docker/LetsEncrypt:/etc/letsencrypt \
 --env DB_MYSQL_HOST="127.0.0.1" \
 --env DB_MYSQL_PORT="3306" \
---env DB_MYSQL_NAME="mysql" \
+--env DB_MYSQL_NAME="database" \
 --env DB_MYSQL_USER="username" \
 --env DB_MYSQL_PASSWORD="password" \
 --publish $HTTP \

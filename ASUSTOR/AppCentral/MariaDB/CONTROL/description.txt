@@ -1,1 +1,1 @@
-
+La version MariaDB est expérimental, elle mérite d'être testé avant .

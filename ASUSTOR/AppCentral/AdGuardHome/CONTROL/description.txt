@@ -1,0 +1,2 @@
+AdGuard Home est un logiciel anti-pub et anti-traçage qui fonctionne au niveau du système. 
+Une fois installé, il fonctionnera sur TOUS vos appareils, et vous n'aurez pas besoin d'installer de logiciel-client.

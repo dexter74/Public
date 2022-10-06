@@ -1,6 +1,6 @@
 {
   "general":{ 
-    "package":"AdGuardHome", 
+    "package":"AdGuard Home", 
     "name":"AdGuard Home", 
     "version":"1.0", 
     "depends": [ 

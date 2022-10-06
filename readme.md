@@ -1,8 +1,10 @@
 ### Script Python 
 ```
 wget https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip
-unzip /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin 
+unzip -o /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin 
+chmod u+x  /usr/bin/apkg-*
 ```
+
 
 ### Pull Dépôt ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 ```

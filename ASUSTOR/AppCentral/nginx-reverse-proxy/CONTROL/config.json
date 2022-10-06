@@ -1,3 +1,11 @@
+{
+  "general":{ 
+    "package":"Exemple", 
+    "name":"Exemple", 
+    "version":"1.0", 
+    "depends": [ 
+    "docker-ce(>=20.10.2.r2)"], 
+    "conflicts":"", 
     "developer":"", 
     "maintainer":"", 
     "email":"support@XXXXXXX.xx", 

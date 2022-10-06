@@ -1,1 +1,12 @@
 La version MariaDB est expérimental, elle mérite d'être testé avant .
+
+
+Port de connexion: 3306
+
+Administrateur:
+ - Identifiant   : root
+ - Mot de passe  : root
+
+Base de donnée crée : mysql
+ - Identifiant   : username
+ - Mot de passe  : password 

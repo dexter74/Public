@@ -46,6 +46,7 @@ mv ~/Public/ASUSTOR/AppCentral/*/*.apk /mnt/LAMP;
 | Emby 	       | Opérationnel                   |
 | Jackett      | A Faire                        |
 | Jdownloader  | A Faire                        |
+| MariaDB      | A Faire                        |
 | Plex         | Opérationnel                   |
 | Portainer    | Opérationnel                   |
 | QBitorrent   | OK (A changer Host en Bridge)  |

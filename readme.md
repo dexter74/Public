@@ -42,11 +42,12 @@ mv ~/Public/ASUSTOR/AppCentral/*/*.apk /mnt/LAMP;
 | Application  | Statut de l'application        |
 |------------- | ------------------------------ |
 | AdGuardHome  | Opérationnel                   |
+| BitWarden    | A faire                        |
 | Cloud9       | A faire                        |
 | Emby 	       | Opérationnel                   |
 | Jackett      | A Faire                        |
 | Jdownloader  | A Faire                        |
-| MariaDB      | A Faire                        |
+| MariaDB      | Opérationnel (A peaufiner)     |
 | Plex         | Opérationnel                   |
 | Portainer    | Opérationnel                   |
 | QBitorrent   | OK (A changer Host en Bridge)  |

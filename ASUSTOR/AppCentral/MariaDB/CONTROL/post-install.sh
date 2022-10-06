@@ -22,7 +22,7 @@ docker run -d \
 --hostname $CONTENEUR \
 --env TZ="Europe/Paris" \
 --env MYSQL_ROOT_PASSWORD="root" \
---env MYSQL_DATABASE="mysql" \
+--env MYSQL_DATABASE="database" \
 --env MYSQL_PASSWORD="username" \
 --env MYSQL_USER="password" \
 --volume /volume1/Docker/$CONTENEUR:/config \

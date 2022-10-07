@@ -1,21 +1,26 @@
 #!/bin/sh
 
 ##########################################################################################################################################################
+# Déclaration de Variable #
+###########################
+CONTENEUR=ReverseProxy
+
+##########################################################################################################################################################
 # Arrêt / Relance / Mise à jour #
 #################################
 case "$1" in
   start)
-    docker start Emby
+    docker start $CONTENEUR
     sleep 3
     ;;
   stop)
-    docker stop Emby
+    docker stop $CONTENEUR
     sleep 3
     ;;
   reload)
-    docker stop Emby
+    docker stop $CONTENEUR
     sleep 3
-    docker start Emby
+    docker start $CONTENEUR
     ;;
   *)
    echo "Usage: $0 {start|stop|reload}"

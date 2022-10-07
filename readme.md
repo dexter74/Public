@@ -1,43 +1,15 @@
-### Script Python 
-```
-wget https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip
-unzip -o /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin 
-chmod u+x  /usr/bin/apkg-*
-```
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## <p align='center'>Application ASUSTOR par Drthrax74</p>
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### Pull Dépôt ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
-```
-clear;
-rm -r /root/Public;
-git clone https://github.com/dexter74/Public.git /root/Public;
-```
+## I. Présentation
+Le projet suivant à pour objectif, de faire des applications sous Docker avec l'image sur le portail ASUSTOR.
+J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés facilement.
 
-### Modifier les permissions
-```
-chown -R 777 /root/Public;
-```
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-### Création d'une Appz
-```
-cd /root/Public/ASUSTOR/AppCentral/AdGuardHome && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/Cloud9 && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/Emby && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/Jackett && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/Jdownloader && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/Plex && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/Portainer && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/QBitorrent && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/Radarr && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/ReverseProxy && apkg-tools_py2.py create .
-cd /root/Public/ASUSTOR/AppCentral/Sonarr && apkg-tools_py2.py create .
-
-#Dossier Partage (Host / Guest) 
-mv ~/Public/ASUSTOR/AppCentral/*/*.apk /mnt/LAMP;
-```
-
+## II. Etat d'avancement des conteneurs 
 
 | Application  | Statut de l'application        |
 |------------- | ------------------------------ |
@@ -54,6 +26,62 @@ mv ~/Public/ASUSTOR/AppCentral/*/*.apk /mnt/LAMP;
 | Radarr       | A Faire                        |
 | ReverseProxy | A Faire                        |
 | Sonarr       | A Faire                        |
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### III. Création des Appz sur une machine Debian
+##### A. Présentation
+```
+Une machine linux qui servira à concevoir les applications du NAS. (Recommande: Debian)
+Le binaire wget sert à télécharger un contenu
+Le binaire unzip sert à décompresser le fichier compressé.
+Le binaire chmod permet de modifier les permissions sur les scripts python pour rendre celui-ci exécutables
+Le binaire git permet de télécharger les sources qui est contenus dans ce dépôt.
+Le binaire cd permet de se déplacer dans l'arborescence des dossiers.
+```
+
+##### B. Installer les Packages Requis
+```
+su;
+apt install -y git
+```
+
+##### B. Télécharger les Scripts Python (ASUSTOR)
+```
+su
+wget https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip
+unzip -o /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin 
+ls -l /usr/bin/apkg-*; # (-rw-r--r--)
+chmod u+x  /usr/bin/apkg-*
+```
+
+
+### C. Pull Dépôt ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
+```
+su 
+clear;
+rm -rf ~/APPZ
+git clone https://github.com/dexter74/Public.git ~/APPZ
+```
+
+
+
+### Création d'une Appz
+```
+cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Cloud9 && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Emby && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Jackett && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Jdownloader && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Plex && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Portainer && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/QBitorrent && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Radarr && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/ReverseProxy && apkg-tools_py2.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Sonarr && apkg-tools_py2.py create .
+
+#Dossier Partage (Host / Guest) 
+mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk 
+```
 
 
 

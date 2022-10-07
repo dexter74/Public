@@ -1,9 +1,11 @@
 {
-  "general":{ 
-    "package":"Nginx", 
-    "name":"Nginx Reverse Proxy", 
-    "version":"1.0", 
-    "depends": [ "docker-ce(>=20.10.2.r2)"], 
+"general":{ 
+  "package":"{
+"general":{ 
+  "package":"Nginx", 
+  "name":"Nginx", 
+  "version":"1.0", 
+  "depends": [ "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
     "developer":"Nginx", 
     "maintainer":"Nginx", 
@@ -11,26 +13,24 @@
     "website":"https://www.nginx.com", 
     "architecture":"x86-64", 
     "firmware":"4.1.0", 
-    "default-lang":"fr-FR" 
-  },
-  "adm-desktop":{
-    "app":{
-      "type":"custom",
-      "protocol":"http", 
-      "port":"5001", 
-      "url":"/"},  
-    "privilege":{
-      "accessible":"administrators", 
-      "customizable": "true" }
-  },
-  
-  "register":{
-    "symbolic-link":{},
-      "share-folder":[
-        { "name":"Docker", "description":"Dossier Docker Requis" }
-	],
-	"port":[ "5001" ],
-	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
+    "default-lang":"fr-FR" },
+"adm-desktop":{
+  "app":{
+    "type":"custom",
+    "protocol":"http", 
+    "port":"8080", 
+    "url":"/"},  
+  "privilege":{
+    "accessible":"users", 
+    "customizable": "true" }
+
+},
+"register":{
+	"symbolic-link":{},
+    "share-folder":[ 
+                   { "name":"Docker", "description":"Dossier Docker Requis" } ],
+	"port":[ "8080" ],
+	"boot-priority":[{ "start-order":"80", "stop-order":"8" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}
 }

@@ -1,18 +1,19 @@
 {
   "general":{ 
-    "package":"exemple", 
-    "name":"exemple", 
+    "package":"AdGuardHome", 
+    "name":"AdGuardHome", 
     "version":"1.0", 
     "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
-    "developer":"exemple", 
-    "maintainer":"exemple", 
+    "developer":"AdGuardHome", 
+    "maintainer":"AdGuardHome", 
     "email":"support@adguardhome.com",
     "website":"https://adguard.com/fr", 
     "architecture":"x86-64", 
     "firmware":"4.1.0", 
-    "default-lang":"fr-FR" },
+    "default-lang":"fr-FR",
+    "privace-statement":"https://adguard.com/en/privacy/home.html" },
   "adm-desktop":{
     "app":{
       "type":"custom",

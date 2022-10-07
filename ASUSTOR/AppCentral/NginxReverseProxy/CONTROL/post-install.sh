@@ -28,12 +28,11 @@ docker run -d \
 --env DB_MYSQL_NAME="database" \
 --env DB_MYSQL_USER="username" \
 --env DB_MYSQL_PASSWORD="password" \
---publish $PORT0 \
---publish $PORT1 \
 --label cacher="oui" \
 $IMAGE
 
-
+# --publish $PORT0 \
+# --publish $PORT1 \
 ##########################################################################################################################################################
 # Code retour de fermeture #
 ############################

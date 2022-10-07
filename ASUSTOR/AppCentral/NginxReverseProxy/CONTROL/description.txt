@@ -1,6 +1,0 @@
-Emby est un Lecteur Multimédia Open-Source en ligne .
-
-Montage:
-- /share/Docker/Emby : /config
-- /share/Download    : /Download
-- /share/Video       : /Video

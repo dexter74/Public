@@ -19,7 +19,7 @@ docker run -d --name $CONTENEUR \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
---net=host \
+--net=bridge \
 --publish $HTTP \
 --publish $HTTPS \
 --label cacher="oui" \

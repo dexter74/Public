@@ -6,7 +6,7 @@
 CONTENEUR='phpMyAdmin'
 IMAGE='phpmyadmin/phpmyadmin'
 PORT='8888:80'
-MYSQL_HOST='127.0.0.1'
+MYSQL_HOST=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 MYSQL_PORT='3306'
 MYSQL_USER='username'
 MYSQL_PASS='password'
@@ -25,7 +25,7 @@ docker run -d \
 --restart unless-stopped \
 --net=bridge \
 --hostname $CONTENEUR \
---env PMA_ARBITRARY="1" \
+--env PMA_ARBITRARY="0" \
 --env PMA_HOST="$MYSQL_HOST" \
 --env PMA_PORT="$MYSQL_PORT" \
 --env PMA_USER="$MYSQL_USER" \
@@ -34,9 +34,6 @@ docker run -d \
 --publish $PORT \
 --label cacher="oui" \
 $IMAGE
-
-
-
 
 
 

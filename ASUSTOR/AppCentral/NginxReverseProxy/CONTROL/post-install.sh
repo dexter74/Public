@@ -19,7 +19,7 @@ PORT2=81:81
 docker run -d \
 --name $CONTENEUR \
 --restart unless-stopped \
---net=host \
+--net=bridge \
 --hostname $CONTENEUR \
 --volume /share/Docker/$CONTENEUR:/config \
 --volume /share/Docker/$CONTENEUR/LetsEncrypt:/etc/letsencrypt \

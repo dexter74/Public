@@ -23,8 +23,8 @@ docker run -d \
 --env TZ="Europe/Paris" \
 --env MYSQL_ROOT_PASSWORD="root" \
 --env MYSQL_DATABASE="database" \
---env MYSQL_PASSWORD="username" \
---env MYSQL_USER="password" \
+--env MYSQL_USER="username" \
+--env MYSQL_PASSWORD="password" \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --publish $HTTP \
 --label cacher="oui" \

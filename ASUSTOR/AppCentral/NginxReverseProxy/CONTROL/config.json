@@ -1,33 +1,39 @@
 {
-"general":{
-  "package":"nginx",
-  "name":"nginx",
-  "version":"1.0",
-  "depends": [ "docker-ce(>=20.10.2.r2)"],
-    "conflicts":"",
-    "developer":"nginx",
-    "maintainer":"nginx",
-    "email":"support@nginx.com",
-    "website":"https://www.nginx.com",
-    "architecture":"x86-64",
-    "firmware":"4.1.0",
-    "default-lang":"fr-FR" },
+"general":{ 
+  "package":"Emby", 
+  "name":"EmbyServer", 
+  "version":"1.0", 
+  "depends": [ 
+    "docker-ce(>=20.10.2.r2)"], 
+    "conflicts":"", 
+    "developer":"Emby", 
+    "maintainer":"Emby Corp", 
+    "email":"support@emby.media", 
+    "website":"https://emby.media", 
+    "architecture":"x86-64", 
+    "firmware":"4.1.0", 
+    "default-lang":"fr-FR",
+    "privace-statement":"https://emby.media/privacy.html" },
 "adm-desktop":{
   "app":{
     "type":"custom",
-    "protocol":"http",
-    "port":"8080",
-    "url":"/"},
+    "protocol":"http", 
+    "port":"8096", 
+    "url":"/"},  
   "privilege":{
-    "accessible":"users",
+    "accessible":"users", 
     "customizable": "true" }
 
 },
 "register":{
 	"symbolic-link":{},
-    "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
-	"port":[ "8080" ],
-	"boot-priority":[{ "start-order":"80", "stop-order":"8" }],
+    "share-folder":[ 
+                   { "name":"Docker", "description":"Dossier Docker Requis" },
+                   { "name":"Download", "description":"Dossier Download Requis" },
+                   { "name":"Video", "description":"Dossier Video Requis" }
+                   ],
+	"port":[ "8096", "8920" ],
+	"boot-priority":[{ "start-order":"60", "stop-order":"8" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}
 }

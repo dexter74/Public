@@ -21,6 +21,7 @@ docker run -d \
 --net=host \
 --hostname $CONTENEUR \
 --volume /share/Docker/$CONTENEUR:/config \
+--volume /share/Docker/$CONTENEUR/LetsEncrypt:/etc/letsencrypt \
 --env TZ="Europe/Paris" \
 --env DB_MYSQL_HOST="127.0.0.1" \
 --env DB_MYSQL_PORT="3306" \

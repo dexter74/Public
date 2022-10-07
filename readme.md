@@ -66,13 +66,9 @@ git clone https://github.com/dexter74/Public.git ~/APPZ
 
 ### Création d'une Appz
 ```
-sh ./APPZ/start.sh
-mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk /mnt/DL
-```
-
-#### Problème Icône:
-```
-Le JSON a un espace qui pose problème. (Version)
+sh ./APPZ/ASUSTOR/AppCentral/start.sh
+mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk .
+ls *.apk
 ```
 
 Liens utiles:

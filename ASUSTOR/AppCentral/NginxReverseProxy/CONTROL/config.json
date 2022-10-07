@@ -5,8 +5,8 @@
   "version":"1.0", 
   "depends": [ "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
-    "developer":"nginx", 
-    "maintainer":"nginx", 
+    "developer":"Nginx", 
+    "maintainer":"Nginx", 
     "email":"support@nginx.com", 
     "website":"https://www.nginx.com", 
     "architecture":"x86-64", 
@@ -17,7 +17,7 @@
   "app":{
     "type":"custom",
     "protocol":"http", 
-    "port":"8080", 
+    "port":"81", 
     "url":"/"},  
   "privilege":{
     "accessible":"users", 
@@ -27,7 +27,7 @@
 "register":{
 	"symbolic-link":{},
     "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
-	"port":[ "8080", "81", "1443" ],
+	"port":[ "81", "8080", "1443" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"12" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}

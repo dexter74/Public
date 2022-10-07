@@ -24,7 +24,7 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 | Portainer    | Opérationnel                   |
 | QBitorrent   | OK (A changer Host en Bridge)  |
 | Radarr       | A Faire                        |
-| ReverseProxy | A Faire                        |
+| ReverseProxy | En cours (Ne pas utiliser)     |
 | Sonarr       | A Faire                        |
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

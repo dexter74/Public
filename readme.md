@@ -11,21 +11,26 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 
 ## II. Etat d'avancement des conteneurs ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 
-| Application  | Statut de l'application        |
-|------------- | ------------------------------ |
-| AdGuardHome  | Opérationnel                   |
-| BitWarden    | A faire                        |
-| Cloud9       | A faire                        |
-| Emby 	       | Opérationnel                   |
-| Jackett      | A Faire                        |
-| Jdownloader  | A Faire                        |
-| MariaDB      | Opérationnel (A peaufiner)     |
-| Plex         | Opérationnel                   |
-| Portainer    | Opérationnel                   |
-| QBitorrent   | OK (A changer Host en Bridge)  |
-| Radarr       | A Faire                        |
-| ReverseProxy | En cours (Ne pas utiliser)     |
-| Sonarr       | A Faire                        |
+### Information importante: Les conteneurs vont migrer sur le réseau Bridge à terme pour une gestion plus simple
+
+
+| Network      | Application  | Statut de l'application        |
+| ------------ | ------------ | ------------------------------ |
+|     Host     | AdGuardHome  | Opérationnel (A migrer)		   |
+|     Host     | Emby 	      | Opérationnel (A migrer)		   |
+|     Host     | MariaDB      | Opérationnel (A migrer)		   |
+|     Host     | Plex         | Opérationnel (A migrer)		   |
+|     Host     | Portainer    | Opérationnel (A migrer)		   |
+|     Host     | ReverseProxy | Opérationnel (A migrer)		   |
+|     Host     | QBitorrent   | Opérationnel (A migrer)		   |
+| ???????????  | BitWarden    | A faire                        |
+| ???????????  | Cloud9       | A faire                        |
+| ???????????  | Jackett      | A Faire                        |
+| ???????????  | Jdownloader  | A Faire                        |
+| ???????????  | Radarr       | A Faire                        |
+| ???????????  | Sonarr       | A Faire                        |
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### III. Création des Appz sur une machine Debian

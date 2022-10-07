@@ -18,7 +18,7 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --restart unless-stopped \
---net=host \
+--net=bridge \
 --hostname $CONTENEUR \
 --env TZ="Europe/Paris" \
 --env MYSQL_ROOT_PASSWORD="root" \

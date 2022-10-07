@@ -5,9 +5,7 @@
 ###########################
 CONTENEUR=ReverseProxy
 IMAGE=jc21/nginx-proxy-manager
-PORT0=8080:80
-PORT1=1443:443
-PORT2=81:81
+
 ##########################################################################################################################################################
 # Arrêt du Conteneur #
 ######################
@@ -19,7 +17,7 @@ docker stop $CONTENEUR
 docker run -d \
 --name $CONTENEUR \
 --restart unless-stopped \
---net=bridge \
+--net=host \
 --hostname $CONTENEUR \
 --volume /share/Docker/$CONTENEUR:/config \
 --volume /share/Docker/$CONTENEUR/LetsEncrypt:/etc/letsencrypt \
@@ -29,11 +27,19 @@ docker run -d \
 --env DB_MYSQL_NAME="database" \
 --env DB_MYSQL_USER="username" \
 --env DB_MYSQL_PASSWORD="password" \
---publish $PORT0 \
---publish $PORT1 \
---publish $PORT2 \
+--external_link "MariaDB" \
 --label cacher="oui" \
 $IMAGE
+
+
+# PORT0=8080:80
+# PORT1=1443:443
+# PORT2=81:81
+
+# --publish $PORT0 \
+# --publish $PORT1 \
+# --publish $PORT2 \
+
 
 ##########################################################################################################################################################
 # Code retour de fermeture #

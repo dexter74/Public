@@ -25,8 +25,7 @@
 },
 "register":{
 	"symbolic-link":{},
-    "share-folder":[
-                   { "name":"Docker", "description":"Dossier Docker Requis" } ],
+    "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
 	"port":[ "8080" ],
 	"boot-priority":[{ "start-order":"80", "stop-order":"8" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }

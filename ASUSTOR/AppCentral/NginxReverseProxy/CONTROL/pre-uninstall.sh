@@ -1,10 +1,9 @@
 #!/bin/sh
 
-
 ##########################################################################################################################################################
 # Déclaration de Variable #
 ###########################
-CONTENEUR=NginxReverseProxy
+CONTENEUR=AdGuardHome
 container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
 im=$(docker images | grep $container | grep latest | awk '{print $3}')
 
@@ -26,4 +25,5 @@ if [ ! -z $im ]; then
 		docker rmi -f $im
 	fi
 fi
+
 ##########################################################################################################################################################

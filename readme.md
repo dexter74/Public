@@ -14,22 +14,22 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 ### Information importante: Les conteneurs vont migrer sur le réseau Bridge à terme pour une gestion plus simple
 
 
-| Network      | Application  | Statut de l'application        |
-| ------------ | ------------ | ------------------------------ |
-|     Host     | AdGuardHome  | Opérationnel (A migrer)		   |
-|     Host     | Emby 	      | Opérationnel (A migrer)		   |
-|     Host     | MariaDB      | Opérationnel (A migrer)		   |
-|     Host     | Plex         | Opérationnel (A migrer)		   |
-|     Host     | Portainer    | Opérationnel (A migrer)		   |
-|     Host     | ReverseProxy | Opérationnel (A migrer)		   |
-|     Host     | QBitorrent   | Opérationnel (A migrer)		   |
-| ???????????  | phpMyAdmin   | A faire                        |
-| ???????????  | BitWarden    | A faire                        |
-| ???????????  | Cloud9       | A faire                        |
-| ???????????  | Jackett      | A Faire                        |
-| ???????????  | Jdownloader  | A Faire                        |
-| ???????????  | Radarr       | A Faire                        |
-| ???????????  | Sonarr       | A Faire                        |
+| Network  | Application  | Statut de l'application        |
+| -------- | ------------ | ------------------------------ |
+|  Host    | AdGuardHome  | Opérationnel 				   |
+|  Bridge  | MariaDB      | Opérationnel [Release 1.0]     |
+|  ??????? | Emby 	      | Opérationnel (A migrer)		   |
+| ???????  | Plex         | Opérationnel (A migrer)		   |
+| ???????  | Portainer    | Opérationnel (A migrer)		   |
+| ???????  | ReverseProxy | Opérationnel (A migrer)		   |
+| ???????  | QBitorrent   | Opérationnel (A migrer)		   |
+| ???????  | phpMyAdmin   | A faire                        |
+| ???????  | BitWarden    | A faire                        |
+| ???????  | Cloud9       | A faire                        |
+| ???????  | Jackett      | A Faire                        |
+| ???????  | Jdownloader  | A Faire                        |
+| ???????  | Radarr       | A Faire                        |
+| ???????  | Sonarr       | A Faire                        |
 
 
 

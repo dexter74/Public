@@ -7,7 +7,7 @@ CONTENEUR=ReverseProxy
 HTTP=8080:8080
 HTTPS=1443:443
 WEBUI=81:81
-IMAGE=
+IMAGE=jc21/nginx-proxy-manager:latest
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -33,7 +33,7 @@ docker run -d \
 --publish $HTTPS \
 --publish $WEBUI \
 --label cacher="oui" \
-jc21/nginx-proxy-manager:latest
+$IMAGE
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

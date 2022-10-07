@@ -1,4 +1,6 @@
 #!/bin/sh
 
-sleep 10
+ls
+
+sleep 3
 exit 0

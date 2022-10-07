@@ -1,7 +1,5 @@
 {
 "general":{ 
-  "package":"{
-"general":{ 
   "package":"Nginx", 
   "name":"Nginx", 
   "version":"1.0", 

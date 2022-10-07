@@ -21,12 +21,18 @@ docker run -d \
 --net=host \
 --hostname $CONTENEUR \
 --volume /share/Docker/$CONTENEUR:/config \
+--env TZ="Europe/Paris" \
+--env DB_MYSQL_HOST="127.0.0.1" \
+--env DB_MYSQL_PORT="3306" \
+--env DB_MYSQL_NAME="database" \
+--env DB_MYSQL_USER="username" \
+--env DB_MYSQL_PASSWORD="password" \
 --publish $PORT0 \
 --publish $PORT1 \
 --label cacher="oui" \
 $IMAGE
 
-# --env TZ="Europe/Paris" \
+
 ##########################################################################################################################################################
 # Code retour de fermeture #
 ############################

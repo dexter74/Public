@@ -62,6 +62,7 @@ clear;
 cd;
 rm -rf ~/APPZ
 git clone https://github.com/dexter74/Public.git ~/APPZ
+chmod -R 777 ~/APPZ
 ```
 
 ##### D. Création d'une Appz

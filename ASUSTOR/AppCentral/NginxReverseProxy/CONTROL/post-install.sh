@@ -10,7 +10,9 @@ IMAGE=jc21/nginx-proxy-manager
 # Arrêt du Conteneur #
 ######################
 docker stop $CONTENEUR
-
+PORT0=80:80
+PORT1=443:443
+PORT2=81:81
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
@@ -27,17 +29,16 @@ docker run -d \
 --env DB_MYSQL_NAME="database" \
 --env DB_MYSQL_USER="username" \
 --env DB_MYSQL_PASSWORD="password" \
+--publish $PORT0 \
+--publish $PORT1 \
+--publish $PORT2 \
 --label cacher="oui" \
 $IMAGE
 
 
-# PORT0=8080:80
-# PORT1=1443:443
-# PORT2=81:81
 
-# --publish $PORT0 \
-# --publish $PORT1 \
-# --publish $PORT2 \
+
+
 
 
 ##########################################################################################################################################################

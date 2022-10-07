@@ -1,18 +1,18 @@
 {
 "general":{ 
-  "package":"Nginx", 
-  "name":"Nginx Reverse Proxy", 
-  "version":"1.0", 
-  "depends": [ 
-    "docker-ce(>=20.10.2.r2)"], 
-    "conflicts":"", 
-    "developer":"Nginx", 
-    "maintainer":"Nginx", 
-    "email":"support@nginx.com", 
-    "website":"https://www.nginx.com", 
-    "architecture":"x86-64", 
-    "firmware":"4.1.0", 
-    "default-lang":"fr-FR" },
+ "package":"Nginx", 
+ "name":"Nginx Reverse Proxy", 
+ "version":"1.0", 
+ "depends": [ "" ], 
+ "conflicts":"", 
+ "developer":"Nginx", 
+ "maintainer":"Nginx", 
+ "email":"support@nginx.com", 
+ "website":"https://www.nginx.com", 
+ "architecture":"x86-64", 
+ "firmware":"4.1.0", 
+ "default-lang":"fr-FR" },
+
 "adm-desktop":{
   "app":{
     "type":"custom",

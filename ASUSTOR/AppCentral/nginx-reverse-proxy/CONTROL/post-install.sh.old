@@ -4,8 +4,8 @@
 # Déclaration de la variable de test #
 ######################################
 CONTENEUR=ReverseProxy
-HTTP=8080:8080
-HTTPS=1443:443
+HTTP=80:8080
+HTTPS=443:443
 WEBUI=81:81
 IMAGE=jc21/nginx-proxy-manager:latest
 

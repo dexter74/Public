@@ -27,7 +27,6 @@ docker run -d \
 --env DB_MYSQL_NAME="database" \
 --env DB_MYSQL_USER="username" \
 --env DB_MYSQL_PASSWORD="password" \
---external_link "MariaDB" \
 --label cacher="oui" \
 $IMAGE
 

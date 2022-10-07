@@ -7,6 +7,7 @@ CONTENEUR=ReverseProxy
 IMAGE=jc21/nginx-proxy-manager
 PORT0=8080:80
 PORT1=1443:443
+PORT2=81:81
 ##########################################################################################################################################################
 # Arrêt du Conteneur #
 ######################
@@ -30,6 +31,7 @@ docker run -d \
 --env DB_MYSQL_PASSWORD="password" \
 --publish $PORT0 \
 --publish $PORT1 \
+--publish $PORT2 \
 --label cacher="oui" \
 $IMAGE
 

@@ -1,1 +1,6 @@
-Serveur Web Nginx
+Serveur Web Nginx:
+
+Ports:
+- HTTP  : 8080
+- HTTPS : 1443
+- WebUI : 81

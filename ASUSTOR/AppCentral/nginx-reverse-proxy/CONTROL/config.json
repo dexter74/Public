@@ -1,30 +1,27 @@
 {
   "general":{ 
-    "package":"Exemple", 
-    "name":"Exemple", 
+    "package":"Nginx", 
+    "name":"Nginx", 
     "version":"1.0", 
-    "depends": [ 
-    "docker-ce(>=20.10.2.r2)"], 
+    "depends": [ "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
-    "developer":"", 
-    "maintainer":"", 
-    "email":"support@XXXXXXX.com", 
-    "website":"", 
+    "developer":"Nginx", 
+    "maintainer":"Nginx", 
+    "email":"support@nginx.com", 
+    "website":"https://www.nginx.com/", 
     "architecture":"x86-64", 
     "firmware":"4.1.0", 
-    "default-lang":"fr-FR",
-    "privace-statement":"http://xxxx.com" },
+    "default-lang":"fr-FR"},
 
   "adm-desktop":{
                 "app":{ "type":"custom", "protocol":"http", "port":"8080",  "url":"/"}, 
                 "privilege":{ "accessible":"administrators", "customizable": "true" } 
                 },
-
   "register":{
     "symbolic-link":{},
       "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
 	"port":[ "8080" ],
-	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
+	"boot-priority":[{ "start-order":"65", "stop-order":"25" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}
 }

@@ -3,8 +3,7 @@
     "package":"Nginx", 
     "name":"Nginx Reverse Prxy", 
     "version":"1.0", 
-    "depends": [ 
-    "docker-ce(>=20.10.2.r2)"], 
+    "depends": [ "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
     "developer":"Nginx", 
     "maintainer":"Nginx", 
@@ -29,8 +28,6 @@
     "symbolic-link":{},
       "share-folder":[
         { "name":"Docker", "description":"Dossier Docker Requis" },
-	{ "name":"Download", "description":"Dossier Download Requis" },
-	{ "name":"Video", "description":"Dossier Video Requis" } ],
 	"port":[ "123456", "678910" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }

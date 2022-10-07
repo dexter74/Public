@@ -55,7 +55,7 @@ chmod u+x  /usr/bin/apkg-*
 ```
 
 
-### C. Pull Dépôt - Root Requis 
+##### C. Pull Dépôt - Root Requis 
 
 ```console
 clear;
@@ -64,12 +64,14 @@ rm -rf ~/APPZ
 git clone https://github.com/dexter74/Public.git ~/APPZ
 ```
 
-### Création d'une Appz
+##### D. Création d'une Appz
 ```
 sh ./APPZ/ASUSTOR/AppCentral/start.sh
 mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk .
 ls *.apk
 ```
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Liens utiles:
  - [PDF AppCentral Dev ASUSTOR](https://downloadgb.asustor.com/developer/App_Central_Developer_Guide_4.1.0_20220622.pdf)

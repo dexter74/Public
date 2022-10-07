@@ -34,7 +34,8 @@
       "share-folder":[
         { "name":"Docker", "description":"Dossier Docker Requis" },
 	{ "name":"Download", "description":"Dossier Download Requis" },
-	{ "name":"Video", "description":"Dossier Video Requis" } ],
+	{ "name":"Video", "description":"Dossier Video Requis" }
+	],
 	"port":[ "123456", "678910" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }

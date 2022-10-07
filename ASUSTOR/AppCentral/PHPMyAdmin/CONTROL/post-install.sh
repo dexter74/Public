@@ -3,16 +3,14 @@
 ##########################################################################################################################################################
 # Déclaration de Variable #
 ###########################
-CONTENEUR=PHPMyAdmin
+CONTENEUR=phpMyAdmin
 IMAGE=phpmyadmin/phpmyadmin
+PORT=8888:80
 
 ##########################################################################################################################################################
 # Arrêt du Conteneur #
 ######################
 docker stop $CONTENEUR
-PORT0=80:80
-PORT1=443:443
-PORT2=81:81
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
@@ -21,8 +19,11 @@ docker run -d \
 --restart unless-stopped \
 --net=host \
 --hostname $CONTENEUR \
---env TZ="Europe/Paris" \
---publish $PORT0 \
+--env PMA_HOST="127.0.0.1" \
+--env PMA_PORT="3306" \
+--env PMA_USER="username" \
+--env PMA_PASSWORD="password" \
+--publish $PORT \
 
 --label cacher="oui" \
 $IMAGE

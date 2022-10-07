@@ -23,6 +23,7 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 |     Host     | Portainer    | Opérationnel (A migrer)		   |
 |     Host     | ReverseProxy | Opérationnel (A migrer)		   |
 |     Host     | QBitorrent   | Opérationnel (A migrer)		   |
+| ???????????  | phpMyAdmin   | A faire                        |
 | ???????????  | BitWarden    | A faire                        |
 | ???????????  | Cloud9       | A faire                        |
 | ???????????  | Jackett      | A Faire                        |

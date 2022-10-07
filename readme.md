@@ -9,7 +9,7 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## II. Etat d'avancement des conteneurs 
+## II. Etat d'avancement des conteneurs ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 
 | Application  | Statut de l'application        |
 |------------- | ------------------------------ |
@@ -45,25 +45,24 @@ su;
 apt install -y git
 ```
 
-##### B. Télécharger les Scripts Python (ASUSTOR)
-```
+##### B. Télécharger les Scripts Python ASUSTOR (Root Requis)
+```console
 su
+rm -rf /usr/bin/apkg-*
 wget https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip
 unzip -o /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin 
-ls -l /usr/bin/apkg-*; # (-rw-r--r--)
 chmod u+x  /usr/bin/apkg-*
 ```
 
 
-### C. Pull Dépôt ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
-```
-su 
+### C. Pull Dépôt - Root Requis 
+
+```console
 clear;
+cd;
 rm -rf ~/APPZ
 git clone https://github.com/dexter74/Public.git ~/APPZ
 ```
-
-
 
 ### Création d'une Appz
 ```
@@ -79,11 +78,8 @@ cd ~/APPZ/ASUSTOR/AppCentral/Radarr && apkg-tools_py2.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/ReverseProxy && apkg-tools_py2.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr && apkg-tools_py2.py create .
 
-#Dossier Partage (Host / Guest) 
-mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk 
+mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk /mnt/DL
 ```
-
-
 
 #### Problème Icône:
 ```

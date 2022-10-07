@@ -21,7 +21,8 @@ docker run -d \
 --net=host \
 --hostname $CONTENEUR \
 --volume /share/Docker/$CONTENEUR:/config \
---publish
+--publish $PORT0 \
+--publish $PORT1 \
 --label cacher="oui" \
 $IMAGE
 

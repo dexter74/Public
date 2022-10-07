@@ -44,3 +44,14 @@ docker start $CONTENEUR
 # Code Retour en Fermeture #
 ############################
 exit 0
+
+
+
+
+##########################################################################################################################################################
+
+# docker logs $CONTENEUR
+# docker exec -it $CONTENEUR /bin/bash
+
+# http://192.168.1.2:81
+# admin@example.com | changeme

@@ -20,7 +20,7 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
---net=host \
+--net=bridge \
 --restart unless-stopped \
 --env TZ="Europe/Paris" \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \

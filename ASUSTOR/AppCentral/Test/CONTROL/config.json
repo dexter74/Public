@@ -1,0 +1,34 @@
+{
+  "general":{
+    "package":"TEST",
+    "name":"Application de Test",
+    "version":"1.0",
+    "depends": [ "docker-ce(>=20.10.2.r2)"],
+    "conflicts":"",
+    "developer":"",
+    "maintainer":"",
+    "email":"",
+    "website":"",
+    "architecture":"x86-64",
+    "firmware":"4.1.0",
+    "default-lang":"fr-FR",
+    "privace-statement":"" },
+
+  "adm-desktop":{
+                "app":{ "type":"custom", "protocol":"http", "port":"1111",  "url":"/"},
+                "privilege":{ "accessible":"administrators", "customizable": "true" }
+                },
+
+  "register":{
+    "symbolic-link":{},
+      "share-folder":[
+		{ "name":"Docker", "description":"Dossier Docker Requis" },
+		{ "name":"Download", "description":"Dossier Download Requis" },
+		{ "name":"Video", "description":"Dossier Video Requis" }
+		],
+
+	"port":[ "1111" ],
+	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
+	"prerequisites":{  "enable-service":[], "restart-service":[] }
+	}
+}

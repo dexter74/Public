@@ -1,0 +1,22 @@
+Dashy 
+OPNSense
+NetData
+Maltrail
+ntopng
+Sensei
+Monit
+Glances
+Pi-hole
+piAlerte
+SmokePing
+Statping
+Librespeed
+cAdvisor
+Prometheus
+Grafana
+Borgbase
+Mullvad
+Zerotier
+healthchekcs
+ISP - vodafone
+Memcached

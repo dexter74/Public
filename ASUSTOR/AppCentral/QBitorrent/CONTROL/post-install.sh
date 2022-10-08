@@ -18,19 +18,20 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --net=host \
---volume /volume1/Docker/$CONTENEUR:/config \
---volume /volume1/Video:/Video \
---volume /volume1/Download:/Download \
+--dns="8.8.8.8" \
 --env PUID=0 \
 --env PGID=0 \
 --env TZ=Europe\Paris \
 --env WEBUI_PORT=1007 \
+--volume /volume1/Docker/$CONTENEUR:/config \
+--volume /volume1/Video:/Video \
+--volume /volume1/Download:/Download \
 --publish $WEBUI:1007 \
 --publish 6881:6881 \
 --publish 6881:6881/udp \
 --restart unless-stopped \
 --label cacher="oui" \
-$IMAGE:latest
+$IMAGE
 
 # --memory="$MEMORY" \
 

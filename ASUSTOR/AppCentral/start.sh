@@ -20,6 +20,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/Portainer     		&& apkg-tools_py2.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/QBitorrent    		&& apkg-tools_py2.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio 		&& apkg-tools_py2.py create .
 ########################################################################################
+cd ~/APPZ/ASUSTOR/AppCentral/Test		 		&& apkg-tools_py2.py create .
 #
 #
 ########################################################################################

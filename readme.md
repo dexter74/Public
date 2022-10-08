@@ -19,14 +19,14 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 |  Bridge  | Cloud9        | Opérationnel [Release 1.0]     |
 |  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |
 |  Bridge  | Dozzle        | Opérationnel [Release 1.0]     |
-|  Bridge  | Emby 	        | Opérationnel [Release 1.0]     |
+|  Bridge  | Emby 	       | Opérationnel [Release 1.0]     |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |
 |  Bridge  | MariaDB       | Opérationnel [Release 1.0]     |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |
 |  Bridge  | Nginx         | Opérationnel [Release 1.0]     |
 |  Bridge  | NordVPN       | En cours de test               |
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |
-|  Bridge  | Plex          | Opérationnel [Release 1.0]     |
+|  Bridge  | Plex          | KC								|
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |
 |  Bridge  | QBitorrent    | Opérationnel [Alpha 1.0]       |
 |  ??????  | Jackett       | A Faire                        |

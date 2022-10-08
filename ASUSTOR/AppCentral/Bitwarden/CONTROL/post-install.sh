@@ -40,6 +40,7 @@ docker run -d \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/data \
+--env DOMAIN="https://${MYSQL_HOST}" \
 --env DATA_FOLDER="$DATA_FOLDER" \
 --env ADMIN_TOKEN="$ADMIN_TOKEN" \
 --env DATABASE_URL="mysql://$MYSQL_USER:$MYSQL_PASS@$MYSQL_HOST:$MYSQL_PORT/$MYSQL_DATABASE" \
@@ -60,6 +61,3 @@ docker start $CONTENEUR
 # Code Retour en Fermeture #
 ############################
 exit 0
-
-
-# 

@@ -1,35 +1,31 @@
 #!/bin/sh
 
 ##########################################################################################################################################################
-# Déclaration de la variable de test #
-######################################
-CONTENEUR=TEST
-IMAGE=linuxserver/librespeed
-HTTP=80:80
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+# Déclaration de Variable #
+###########################
+CONTENEUR=LibreSpeed
+container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
+im=$(docker images | grep $container | grep latest | awk '{print $3}')
 
 ##########################################################################################################################################################
-# Fermeture du Conteneur #
-##########################
-docker container rm -f  $CONTENEUR
-rm -rf /volume1/Docker/$CONTENEUR
+echo "pre-uninstall"
+echo $container
+echo $im
 
 ##########################################################################################################################################################
-# Lancement du Conteneur #
-##########################
-docker run -d --name=$CONTENEUR --restart unless-stopped --hostname $CONTENEUR \
---net=host \
---volume /volume1/Docker/$CONTENEUR:/config \
---env TZ="Europe/Paris" \
---env PASSWORD="password" \
---publish $HTTP \
-$IMAGE
-
+if [ ! -z $container ]; then 
+	docker kill $container
+	sleep 2
+	docker rm -f $container
+fi
 
 ##########################################################################################################################################################
-# Démarrage du Conteneur #
-##########################
-docker start $CONTENEUR
+if [ ! -z $im ]; then 
+	if [ "$APKG_PKG_STATUS" == "uninstall" ]; then
+		docker rmi -f $im
+	fi
+fi
+
 
 ##########################################################################################################################################################
 # Code Retour en Fermeture #

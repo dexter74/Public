@@ -1,7 +1,7 @@
 {
   "general":{
-    "package":"TEST",
-    "name":"TEST",
+    "package":"LibreSpeed",
+    "name":"Test ADSL en Local",
     "version":"1.0",
     "depends": [ "docker-ce(>=20.10.2.r2)"],
     "conflicts":"",
@@ -15,7 +15,7 @@
     "privace-statement":"http://localhost" },
 
   "adm-desktop":{
-                "app":{ "type":"custom", "protocol":"http", "port":"80",  "url":"/"},
+                "app":{ "type":"custom", "protocol":"http", "port":"27016",  "url":"/"},
                 "privilege":{ "accessible":"administrators", "customizable": "true" }
                 },
 
@@ -26,7 +26,6 @@
 		{ "name":"Download", "description":"Dossier Download Requis" },
 		{ "name":"Video", "description":"Dossier Video Requis" }
 		],
-
 	"port":[ "27016" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }

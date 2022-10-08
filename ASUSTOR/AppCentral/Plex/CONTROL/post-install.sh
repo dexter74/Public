@@ -21,7 +21,7 @@ docker run -d \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /volume1/Video:/Video \
 --hostname Plex \
---net=host \
+--net=bridge \
 --publish $HTTP \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \

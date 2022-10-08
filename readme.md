@@ -21,7 +21,7 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 |  Bridge  | Portainer    | Opérationnel [Release 1.0]     |
 |  Bridge  | ReverseProxy | Opérationnel [Release 1.0]     |
 |  Bridge  | QBitorrent   | Opérationnel (Ne pas Migré)    |
-|  ??????  | phpMyAdmin   | KO                             |
+|  ??????  | phpMyAdmin   | Opérationnel [Release 1.0]     |
 |  ??????  | BitWarden    | A faire                        |
 |  ??????  | Cloud9       | A faire                        |
 |  ??????  | Jackett      | A Faire                        |

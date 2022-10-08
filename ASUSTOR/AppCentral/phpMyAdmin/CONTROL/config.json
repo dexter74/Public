@@ -17,7 +17,7 @@
   "app":{
     "type":"custom",
     "protocol":"http", 
-    "port":"8888", 
+    "port":"8081", 
     "url":"/"},  
   "privilege":{
     "accessible":"users", 
@@ -27,7 +27,7 @@
 "register":{
 	"symbolic-link":{},
     "share-folder":[ ],
-	"port":[ "8888" ],
+	"port":[ "8081" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"12" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}

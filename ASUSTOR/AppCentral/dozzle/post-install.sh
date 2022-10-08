@@ -1,11 +1,11 @@
 #!/bin/sh
+
 ##########################################################################################################################################################
 # Déclaration de la variable de test #
 ######################################
-CONTENEUR=qBittorrent
-WEBUI=8181
-MEMORY=512m
-IMAGE=linuxserver/qbittorrent
+CONTENEUR=Dozzle
+IMAGE=amir20/dozzle
+HTTP=1005:8080
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -17,22 +17,16 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---net=host \
---volume /volume1/Docker/$CONTENEUR:/config \
---volume /volume1/Video:/Video \
---volume /volume1/Download:/Download \
---env PUID=0 \
---env PGID=0 \
---env TZ=Europe\Paris \
---env WEBUI_PORT=$WEBUI \
---publish $WEBUI:$WEBUI \
---publish 6881:6881 \
---publish 6881:6881/udp \
 --restart unless-stopped \
+--net=bridge \
+--hostname $CONTENEUR \
+--volume /var/run/docker.sock:/var/run/docker.sock \
+--publish $HTTP \
 --label cacher="oui" \
-$IMAGE:latest
+$IMAGE
 
-# --memory="$MEMORY" \
+
+#--env \
 
 
 ##########################################################################################################################################################

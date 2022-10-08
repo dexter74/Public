@@ -24,8 +24,8 @@ docker run -d \
 --volume /volume1/Docker/$CONTENEUR/database:/database \
 --volume /volume1/Docker/$CONTENEUR/config:/config \
 --volume /share/Download:/srv/Download \
---volume /share/Video:/srv/Video \
 --volume /share/Music:/srv/Music \
+--volume /share/Video:/srv/Video \
 --publish $HTTP \
 --label cacher="oui" \
 $IMAGE

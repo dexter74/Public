@@ -21,8 +21,9 @@ docker run -d \
 --net=host \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
---volume /volume1/Docker/Download:/Download \
---volume /volume1/Docker/Video:/Video \
+--volume /share/Download:/Download \
+--volume /share/Music:/Music \
+--volume /share/Video:/Video \
 --label cacher="oui" \
 $IMAGE:latest
 

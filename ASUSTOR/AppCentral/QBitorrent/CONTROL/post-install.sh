@@ -24,8 +24,8 @@ docker run -d \
 --env PUID=0 \
 --env PGID=0 \
 --env TZ=Europe\Paris \
---env WEBUI_PORT=8181 \
---publish $WEBUI:8181 \
+--env WEBUI_PORT=8080 \
+--publish $WEBUI:8080 \
 --publish 6881:6881 \
 --publish 6881:6881/udp \
 --restart unless-stopped \

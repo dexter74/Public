@@ -23,7 +23,7 @@
     "symbolic-link":{},
       "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
 	"port":[ "7777" ],
-	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
+	"boot-priority":[{ "start-order":"4", "stop-order":"85" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}
 }

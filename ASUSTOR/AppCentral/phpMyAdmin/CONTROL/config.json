@@ -28,7 +28,7 @@
 	"symbolic-link":{},
     "share-folder":[ ],
 	"port":[ "8081" ],
-	"boot-priority":[{ "start-order":"55", "stop-order":"12" }],
+	"boot-priority":[{ "start-order":"2", "stop-order":"95" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}
 }

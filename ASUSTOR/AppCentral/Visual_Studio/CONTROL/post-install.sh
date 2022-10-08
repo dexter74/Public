@@ -5,7 +5,7 @@
 ######################################
 CONTENEUR=CodeServer
 HTTP=8443:8443
-IMAGE=code-server
+IMAGE=linuxserver/code-server
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -30,7 +30,7 @@ docker run -d \
 --env  DEFAULT_WORKSPACE="/config/workspace" \
 --publish $HTTP \
 --label cacher="oui" \
-$IMAGE:latest
+$IMAGE
 
 
 

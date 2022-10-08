@@ -3,7 +3,7 @@
     "package":"Plex",
     "name":"Plex",
     "version":"1.0",
-    "depends": [ "docker-ce(>=20.10.2.r2)"],
+    "depends": [ "docker-ce"],
     "conflicts":"",
     "developer":"Plex-TV",
     "maintainer":"Plex",
@@ -31,12 +31,12 @@
   "register":{ 
     "symbolic-link":{},
     "share-folder":[ 
-                   { "name":"Docker", "description":"Dossier Docker Requis" },
+                   { "name":"Docker",   "description":"Dossier Docker Requis"   },
                    { "name":"Download", "description":"Dossier Download Requis" },
-                   { "name":"Video", "description":"Dossier Video Requis" }
+                   { "name":"Video",    "description":"Dossier Video Requis"    }
                    ],
     "port":[ "32400" ],   
-    "boot-priority":[{ "start-order":"55", "stop-order":"3" }],
+    "boot-priority":[{ "start-order":"32", "stop-order":"5" }],
     "prerequisites":{ "enable-service":[], "restart-service":[] } 
   }
 

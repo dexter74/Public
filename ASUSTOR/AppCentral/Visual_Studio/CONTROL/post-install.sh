@@ -3,9 +3,9 @@
 ##########################################################################################################################################################
 # Déclaration de la variable de test #
 ######################################
-CONTENEUR=
-IMAGE=
-HTTP=
+CONTENEUR=CodeServer
+HTTP=8443:8443
+IMAGE=code-server
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -21,11 +21,18 @@ docker run -d \
 --net=host \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
+--env TZ="Europe/Paris" \
+--env PASSWORD="password" \
+--env HASHED_PASSWORD="" \
+--env \
+--env \
+--publish $HTTP \
+
+
+
 --label cacher="oui" \
 $IMAGE:latest
 
-#--publish $HTTP \
-#--env \
 
 
 

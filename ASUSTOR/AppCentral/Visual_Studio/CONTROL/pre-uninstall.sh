@@ -1,38 +1,31 @@
 #!/bin/sh
 
 ##########################################################################################################################################################
-# Déclaration de la variable de test #
-######################################
-CONTENEUR=
-IMAGE=
-HTTP=
+# Déclaration de Variable #
+###########################
+CONTENEUR=CodeServer
+container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
+im=$(docker images | grep $container | grep latest | awk '{print $3}')
 
 ##########################################################################################################################################################
-# Fermeture du Conteneur #
-##########################
-docker container rm -f  $CONTENEUR
+echo "pre-uninstall"
+echo $container
+echo $im
 
 ##########################################################################################################################################################
-# Lancement du Conteneur #
-##########################
-docker run -d \
---name=$CONTENEUR \
---restart unless-stopped \
---net=host \
---hostname $CONTENEUR \
---volume /volume1/Docker/$CONTENEUR:/config \
---label cacher="oui" \
-$IMAGE:latest
-
-#--publish $HTTP \
-#--env \
-
-
+if [ ! -z $container ]; then 
+	docker kill $container
+	sleep 2
+	docker rm -f $container
+fi
 
 ##########################################################################################################################################################
-# Démarrage du Conteneur #
-##########################
-docker start $CONTENEUR
+if [ ! -z $im ]; then 
+	if [ "$APKG_PKG_STATUS" == "uninstall" ]; then
+		docker rmi -f $im
+	fi
+fi
+
 
 ##########################################################################################################################################################
 # Code Retour en Fermeture #

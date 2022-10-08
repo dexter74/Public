@@ -77,10 +77,24 @@ mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk .
 ls *.apk
 ```
 
+##### E. Volumes
+```
+ls -l "/volume1/.@plugins/AppCentral/docker-ce/docker_lib/volumes/" | cut -d ":" -f 2 | cut -c 4-80
+```
+
+##### F. Nettoyage du Système
+```
+docker images prune -a
+docker volume prune -f
+docker image  prune -a -f
+docker system prune -a -f
+```
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Utiles:
- -  /usr/local/AppCentral/ 
+ - 
  - [PDF AppCentral Dev ASUSTOR](https://downloadgb.asustor.com/developer/App_Central_Developer_Guide_4.1.0_20220622.pdf)
  - [Guide Création](https://amigotechnotes.wordpress.com/2014/05/06/how-to-create-an-apk-for-asustor-adm-to-distribute-your-lamp/) 
  - [Privée] [Dexter74/Docker](https://github.com/dexter74/Archives/tree/main/Docker/V1/2.Conteneurs)

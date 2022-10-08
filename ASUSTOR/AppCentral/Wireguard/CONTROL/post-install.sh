@@ -3,9 +3,9 @@
 ##########################################################################################################################################################
 # Déclaration de la variable de test #
 ######################################
-CONTENEUR=
-IMAGE=
-HTTP=
+CONTENEUR=wireguard
+IMAGE=linuxserver/wireguard
+HTTP=51820:51820
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -19,12 +19,14 @@ docker run -d \
 --name=$CONTENEUR \
 --restart unless-stopped \
 --net=host \
+--cap-add="NET_ADMIN" \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
+--publish $HTTP \
 --label cacher="oui" \
 $IMAGE:latest
 
-#--publish $HTTP \
+# --cap-add="SYS_MODULE" \
 #--env \
 
 

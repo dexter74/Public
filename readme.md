@@ -18,18 +18,18 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 | -------- | ------------ | ------------------------------ |
 |  Host    | AdGuardHome  | Opérationnel 				   |
 |  Bridge  | MariaDB      | Opérationnel [Release 1.0]     |
-|  ??????? | Emby 	      | Opérationnel (A migrer)		   |
-| ???????  | Plex         | Opérationnel (A migrer)		   |
-| ???????  | Portainer    | Opérationnel (A migrer)		   |
-| ???????  | ReverseProxy | Opérationnel (A migrer)		   |
-| ???????  | QBitorrent   | Opérationnel (A migrer)		   |
-| ???????  | phpMyAdmin   | A faire                        |
-| ???????  | BitWarden    | A faire                        |
-| ???????  | Cloud9       | A faire                        |
-| ???????  | Jackett      | A Faire                        |
-| ???????  | Jdownloader  | A Faire                        |
-| ???????  | Radarr       | A Faire                        |
-| ???????  | Sonarr       | A Faire                        |
+|  Bridge  | Emby 	      | Opérationnel [Release 1.0]     |
+|  Bridge  | Plex         | Opérationnel [Release 1.0]     |
+|  Bridge  | Portainer    | Opérationnel [Release 1.0]     |
+|  Bridge  | ReverseProxy | Opérationnel [Release 1.0]     |
+|  Bridge  | QBitorrent   | Opérationnel (A migrer)		   |
+|  ??????  | phpMyAdmin   | KO                             |
+|  ??????  | BitWarden    | A faire                        |
+|  ??????  | Cloud9       | A faire                        |
+|  ??????  | Jackett      | A Faire                        |
+|  ??????  | Jdownloader  | A Faire                        |
+|  ??????  | Radarr       | A Faire                        |
+|  ??????  | Sonarr       | A Faire                        |
 
 
 

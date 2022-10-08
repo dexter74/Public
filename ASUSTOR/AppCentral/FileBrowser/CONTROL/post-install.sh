@@ -6,7 +6,6 @@
 CONTENEUR=FileBrowser
 IMAGE=filebrowser/filebrowser
 HTTP=8500:80
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

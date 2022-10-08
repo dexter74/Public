@@ -4,28 +4,26 @@
 # Déclaration de la variable de test #
 ######################################
 CONTENEUR=TEST
-IMAGE=ntop/ntopng
-HTTP=1111:3000
+IMAGE=linuxserver/librespeed
+HTTP=1111:80
 IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
 docker container rm -f  $CONTENEUR
+rm -rf /volume1/Docker/$CONTENEUR
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
 docker run -d --name=$CONTENEUR --restart unless-stopped --hostname $CONTENEUR \
---net=host \
+--net=bridge \
 --volume /volume1/Docker/$CONTENEUR:/config \
---volume $(pwd)/ntopng.license:/etc/ntopng.license:ro \
+--env TZ="Europe/Paris" \
+--env PASSWORD="password" \
 --publish $HTTP \
-$IMAGE -i eth1
-
-
-
-#--env \
-
+$IMAGE
 
 
 ##########################################################################################################################################################

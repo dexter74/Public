@@ -4,8 +4,7 @@
 # Déclaration de la variable de test #
 ######################################
 CONTENEUR=qBittorrent
-WEBUI=8080
-HTTP=8181
+WEBUI=8181
 MEMORY=512m
 IMAGE=linuxserver/qbittorrent
 

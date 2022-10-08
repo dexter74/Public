@@ -26,7 +26,7 @@ docker run -d \
 --env PASSWORD="$WEBUI_PASS" \
 --publish $HTTP \
 --hostname $CONTENEUR \
---volume /volume1/Docker/$CONTENEUR:/config \
+--volume /volume1/Docker/$CONTENEUR:/code \
 --volume /var/run/docker.sock:/var/run/docker.sock \
 --label cacher="oui" \
 $IMAGE:latest

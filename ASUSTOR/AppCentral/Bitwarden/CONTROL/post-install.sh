@@ -42,11 +42,14 @@ docker run -d \
 --volume /volume1/Docker/$CONTENEUR:/data \
 --env DATA_FOLDER="$DATA_FOLDER" \
 --env ADMIN_TOKEN="$ADMIN_TOKEN" \
---env DATABASE_URL="data/db.sqlite3" \
+--env DATABASE_URL="mysql://$MYSQL_USER:$MYSQL_PASS@$MYSQL_HOST:$MYSQL_PORT/$MYSQL_DATABASE" \
 --publish $PORT0 \
 --publish $PORT1 \
 --label cacher="oui" \
 $IMAGE
+
+# --env DATABASE_URL="data/db.sqlite3" \
+
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #
@@ -59,4 +62,4 @@ docker start $CONTENEUR
 exit 0
 
 
-# --env DATABASE_URL="mysql://$MYSQL_USER:$MYSQL_PASS@$MYSQL_HOST:$MYSQL_PORT/$MYSQL_DATABASE" \
+# 

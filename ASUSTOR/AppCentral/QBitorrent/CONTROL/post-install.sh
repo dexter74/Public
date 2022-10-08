@@ -25,7 +25,7 @@ docker run -d \
 --env WEBUI_PORT=1007 \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /volume1/Video:/Video \
---volume /volume1/Download:/Download \
+--volume /volume1/Download:/downloads \
 --publish $WEBUI:1007 \
 --publish 6881:6881 \
 --publish 6881:6881/udp \

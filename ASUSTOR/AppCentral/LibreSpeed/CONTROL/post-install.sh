@@ -12,7 +12,6 @@ IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 # Fermeture du Conteneur #
 ##########################
 docker container rm -f  $CONTENEUR
-rm -rf /volume1/Docker/$CONTENEUR
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #
@@ -25,7 +24,14 @@ docker run -d --name=$CONTENEUR --restart unless-stopped --hostname $CONTENEUR \
 --publish $HTTP \
 $IMAGE
 
-
+# https://hub.docker.com/r/linuxserver/librespeed
+#--env DB_TYPE="sqlite,mysql,postgresql" \
+#--env CUSTOM_RESULTS="false" \
+#--env DB_HOSTNAME="" \
+#--env DB_PORT="" \
+#--env DB_NAME="" \
+#--env DB_USERNAME="" \
+#--env DB_PASSWORD="" \
 ##########################################################################################################################################################
 # Démarrage du Conteneur #
 ##########################

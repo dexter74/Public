@@ -12,24 +12,28 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 ## II. Etat d'avancement des conteneurs ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 
 
-| Network  | Application  | Statut de l'application        |
-| -------- | ------------ | ------------------------------ |
-|  Host    | AdGuardHome  | Opérationnel 				   |
-|  Bridge  | MariaDB      | Opérationnel [Release 1.0]     |
-|  Bridge  | Emby 	      | Opérationnel [Release 1.0]     |
-|  Bridge  | Plex         | Opérationnel [Release 1.0]     |
-|  Bridge  | Portainer    | Opérationnel [Release 1.0]     |
-|  Bridge  | ReverseProxy | Opérationnel [Release 1.0]     |
-|  Bridge  | QBitorrent   | Opérationnel (Ne pas Migré)    |
-|  ??????  | phpMyAdmin   | Opérationnel [Release 1.0]     |
-|  ??????  | docker-ce    | A faire                        |
-|  ??????  | BitWarden    | A faire                        |
-|  ??????  | Cloud9       | A faire                        |
-|  ??????  | Jackett      | A Faire                        |
-|  ??????  | Jdownloader  | A Faire                        |
-|  ??????  | Radarr       | A Faire                        |
-|  ??????  | Sonarr       | A Faire                        |
-
+| Network  |  Application  | Statut de l'application        |
+| -------- | ------------- | ------------------------------ |
+|  ??????  | docker-ce     | A faire                        |
+|  Host    | AdGuardHome   | Opérationnel [Release 1.0]     |
+|  Bridge  | MariaDB       | Opérationnel [Release 1.0]     |
+|  Bridge  | BitWarden     | Opérationnel [Release 1.0]     |
+|  Bridge  | Cloud9        | En Cours                       |
+|  Bridge  | Dozzle        | Opérationnel [Release 1.0]     |
+|  Bridge  | Emby 	        | Opérationnel [Release 1.0]     |
+|  Bridge  | MariaDB       | Opérationnel [Release 1.0]     |
+|  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |
+|  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |
+|  Bridge  | Plex          | Opérationnel [Release 1.0]     |
+|  Bridge  | Portainer     | Opérationnel [Release 1.0]     |
+|  Bridge  | QBitorrent    | Opérationnel (Ne pas Migré)    |
+|  Bridge  | Visual Studio | Opérationnel [Release 1.0]     |
+|  Bridge  | ReverseProxy  | Opérationnel [Release 1.0]     |
+|  ??????  | Jackett       | A Faire                        |
+|  ??????  | Jdownloader   | A Faire                        |
+|  ??????  | Radarr        | A Faire                        |
+|  ??????  | Sonarr        | A Faire                        |
+|  ??????  | Wireguard     | Module Wireguard.ko absent     |
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

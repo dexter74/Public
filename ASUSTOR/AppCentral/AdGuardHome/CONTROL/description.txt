@@ -1,5 +1,3 @@
 AdGuard Home est un logiciel anti-pub et anti-traçage qui fonctionne au niveau du système. 
 
-Installation:
-- http://X.X.X.X:3000/install.html
-- Interface web administrateur: 3272
+Port: 3272

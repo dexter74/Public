@@ -7,7 +7,7 @@
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
     "developer":"BitWarden", 
-    "maintainer":"", 
+    "maintainer":"BitWarden", 
     "email":"support@bitwarden.com", 
     "website":"https://bitwarden.com/", 
     "architecture":"x86-64", 

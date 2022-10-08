@@ -1,24 +1,24 @@
 {
-  "general":{ 
-    "package":"Exemple", 
-    "name":"Exemple", 
-    "version":"1.0", 
-    "depends": [ "docker-ce(>=20.10.2.r2)"], 
-    "conflicts":"Exemple", 
-    "developer":"Exemple", 
-    "maintainer":"Exemple", 
-    "email":"support@XXXXXXX.xx", 
-    "website":"https://wwww.", 
-    "architecture":"x86-64", 
-    "firmware":"4.1.0", 
+  "general":{
+    "package":"Exemple",
+    "name":"Exemple",
+    "version":"1.0",
+    "depends": [ "docker-ce(>=20.10.2.r2)"],
+    "conflicts":"Exemple",
+    "developer":"Exemple",
+    "maintainer":"Exemple",
+    "email":"support@XXXXXXX.xx",
+    "website":"https://wwww.",
+    "architecture":"x86-64",
+    "firmware":"4.1.0",
     "default-lang":"fr-FR",
     "memory-limit":"2048",
     "memory-advice":"2048",
     "privace-statement":"" },
 
   "adm-desktop":{
-                "app":{ "type":"custom", "protocol":"http", "port":"XXXXXXX",  "url":"/"}, 
-                "privilege":{ "accessible":"administrators", "customizable": "true" } 
+                "app":{ "type":"custom", "protocol":"http", "port":"XXXXXXX",  "url":"/"},
+                "privilege":{ "accessible":"administrators", "customizable": "true" }
                 },
 
   "register":{
@@ -26,7 +26,8 @@
       "share-folder":[
 		{ "name":"Docker", "description":"Dossier Docker Requis" },
 		{ "name":"Download", "description":"Dossier Download Requis" },
-		{ "name":"Video", "description":"Dossier Video Requis" } ],
+		{ "name":"Video", "description":"Dossier Video Requis" }
+		],
 
 	"port":[ "123456", "678910" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],

@@ -3,7 +3,7 @@
 # Déclaration de la variable de test #
 ######################################
 CONTENEUR=qBittorrent
-WEBUI=8181
+WEBUI=1007
 MEMORY=512m
 IMAGE=linuxserver/qbittorrent
 
@@ -24,8 +24,8 @@ docker run -d \
 --env PUID=0 \
 --env PGID=0 \
 --env TZ=Europe\Paris \
---env WEBUI_PORT=$WEBUI \
---publish $WEBUI:$WEBUI \
+--env WEBUI_PORT=8181 \
+--publish $WEBUI:8181 \
 --publish 6881:6881 \
 --publish 6881:6881/udp \
 --restart unless-stopped \

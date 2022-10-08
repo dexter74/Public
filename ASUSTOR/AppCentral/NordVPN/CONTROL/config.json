@@ -17,7 +17,7 @@
     "privace-statement":"https://nordvpn.com/fr/features/vpn-security/" },
 
   "adm-desktop":{
-                "app":{ "type":"custom", "protocol":"external" },
+                "app":{ "type":"external" },
                 "privilege":{ "accessible":"administrators", "customizable": "true" }
                 },
 

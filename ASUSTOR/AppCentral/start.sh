@@ -2,8 +2,7 @@
 # https://github.com/dexter74/Archives/tree/main/Docker/V1/2.Conteneurs
 
 ########################################################################################
-nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
-
+# nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
 ########################################################################################
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome   		&& apkg-tools_py2.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden     		&& apkg-tools_py2.py create .

@@ -1,23 +1,21 @@
 {
   "general":{
-    "package":"Exemple",
-    "name":"Exemple",
+    "package":"Plex",
+    "name":"Plex",
     "version":"1.0",
     "depends": [ "docker-ce(>=20.10.2.r2)"],
-    "conflicts":"Exemple",
-    "developer":"Exemple",
-    "maintainer":"Exemple",
-    "email":"support@XXXXXXX.xx",
-    "website":"https://wwww.",
+    "conflicts":"Plex",
+    "developer":"Plex",
+    "maintainer":"Plex",
+    "email":"",
+    "website":"https://wwww.plex.tv",
     "architecture":"x86-64",
     "firmware":"4.1.0",
     "default-lang":"fr-FR",
-    "memory-limit":"2048",
-    "memory-advice":"2048",
     "privace-statement":"" },
 
   "adm-desktop":{
-                "app":{ "type":"custom", "protocol":"http", "port":"XXXXXXX",  "url":"/"},
+                "app":{ "type":"custom", "protocol":"http", "port":"32400",  "url":"/web"},
                 "privilege":{ "accessible":"administrators", "customizable": "true" }
                 },
 
@@ -29,7 +27,7 @@
 		{ "name":"Video", "description":"Dossier Video Requis" }
 		],
 
-	"port":[ "123456", "678910" ],
+	"port":[ "32400" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}

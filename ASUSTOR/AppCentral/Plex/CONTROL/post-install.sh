@@ -4,10 +4,9 @@
 # Déclaration de la variable de test #
 ######################################
 CONTENEUR=Plex
-HTTP=32400:32400
-MEMORY=512m
 IMAGE=linuxserver/plex
-
+HTTP=32400:32400
+IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
@@ -18,28 +17,24 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---volume /volume1/Docker/$CONTENEUR:/config \
---volume /volume1/Video:/Video \
---hostname Plex \
---net=host \
---publish $HTTP \
---device /dev/dri:/dev/dri \
 --restart unless-stopped \
+--net=host \
+--hostname $CONTENEUR \
+--volume /volume1/Docker/$CONTENEUR:/config \
+--volume /volume1/Docker/Download:/Download \
+--volume /volume1/Docker/Video:/Video \
 --label cacher="oui" \
-$IMAGE
+$IMAGE:latest
 
-# --memory="$MEMORY" \
+#--publish $HTTP \
+#--env \
+
 
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #
 ##########################
 docker start $CONTENEUR
-
-##########################################################################################################################################################
-# Patienter #
-#############
-sleep 2
 
 ##########################################################################################################################################################
 # Code Retour en Fermeture #

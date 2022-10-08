@@ -5,7 +5,7 @@
 ######################################
 CONTENEUR=TEST
 IMAGE=linuxserver/librespeed
-HTTP=27016:80
+HTTP=80:80
 IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
@@ -18,7 +18,7 @@ rm -rf /volume1/Docker/$CONTENEUR
 # Lancement du Conteneur #
 ##########################
 docker run -d --name=$CONTENEUR --restart unless-stopped --hostname $CONTENEUR \
---net=bridge \
+--net=host \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --env TZ="Europe/Paris" \
 --env PASSWORD="password" \

@@ -5,7 +5,7 @@
 ######################################
 CONTENEUR=AdGuardHome
 IMAGE=adguard/adguardhome
-WebUI=80
+# WebUI=80
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -23,11 +23,11 @@ docker run -d \
 --env TZ="Europe/Paris" \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
---publish 3000:3000 \
---publish 80:80 \
 --label cacher="oui" \
 $IMAGE:latest
 
+# --publish 3000:3000 \
+# --publish 80:80 \
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################

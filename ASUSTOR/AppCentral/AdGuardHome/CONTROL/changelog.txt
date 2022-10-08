@@ -1,1 +1,3 @@
-
+Installation: 
+- http://X.X.X.X:3000/install.html
+- Interface web administrateur: 3272

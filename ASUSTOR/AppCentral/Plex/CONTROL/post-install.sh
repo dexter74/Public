@@ -26,7 +26,7 @@ docker run -d \
 --device /dev/dri:/dev/dri \
 --restart unless-stopped \
 --label cacher="oui" \
-$IMAGE:latest
+$IMAGE
 
 # --memory="$MEMORY" \
 

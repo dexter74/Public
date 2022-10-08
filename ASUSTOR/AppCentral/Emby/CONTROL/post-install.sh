@@ -19,6 +19,7 @@ docker run -d --name $CONTENEUR \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
+--volume /share/Music:/Music \
 --net=bridge \
 --publish $HTTP \
 --publish $HTTPS \

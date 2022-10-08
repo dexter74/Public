@@ -21,6 +21,9 @@ docker run -d \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/srv \
+--volume /share/Download:/Download \
+--volume /share/Video:/Video \
+--volume /share/Music:/Music \
 --publish $HTTP \
 --label cacher="oui" \
 $IMAGE

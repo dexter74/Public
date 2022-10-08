@@ -8,6 +8,8 @@ IMAGE=adguard/adguardhome
 INSTALL=3000:3000
 WEBUI=3272:80
 HTTPS=3443:443
+DNS0=53:53
+DNS1=5353:5353
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -28,6 +30,8 @@ docker run -d \
 --publish $INSTALL \
 --publish $WEBUI \
 --publish $HTTPS \
+--publish $DNS0 \
+--publish $DNS1 \
 --label cacher="oui" \
 $IMAGE:latest
 

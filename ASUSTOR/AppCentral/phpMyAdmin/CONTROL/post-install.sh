@@ -3,14 +3,14 @@
 ##########################################################################################################################################################
 # Déclaration de Variable #
 ###########################
-CONTENEUR='phpMyAdmin'
-IMAGE='phpmyadmin/phpmyadmin'
-PORT='8081:80'
+CONTENEUR=phpMyAdmin
+IMAGE=phpmyadmin/phpmyadmin
+PORT=8081:80
 MYSQL_HOST=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
-MYSQL_PORT='3306'
-MYSQL_USER='username'
-MYSQL_PASS='password'
-PHPMYADMIN_DATABASE='phpmyadmin'
+MYSQL_PORT=3306
+MYSQL_USER=username
+MYSQL_PASS=password
+PHPMYADMIN_DATABASE=phpmyadmin
 
 ##########################################################################################################################################################
 # Arrêt du Conteneur #

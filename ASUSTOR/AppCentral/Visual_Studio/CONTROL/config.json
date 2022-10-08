@@ -1,7 +1,7 @@
 {
   "general":{ 
     "package":"CodeServer", 
-    "name":"Visual Studio", 
+    "name":"CodeServer", 
     "version":"1.0", 
     "depends": [ "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 

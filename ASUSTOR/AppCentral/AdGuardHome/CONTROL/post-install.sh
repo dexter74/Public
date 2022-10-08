@@ -5,11 +5,7 @@
 ######################################
 CONTENEUR=AdGuardHome
 IMAGE=adguard/adguardhome
-INSTALL=3000:3000
-WEBUI=3272:80
-HTTPS=3443:443
-DNS0=53:53
-DNS1=5353:5353
+
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -22,16 +18,11 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
---net=bridge \
+--net=host \
 --restart unless-stopped \
 --env TZ="Europe/Paris" \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
---publish $INSTALL \
---publish $WEBUI \
---publish $HTTPS \
---publish $DNS0 \
---publish $DNS1 \
 --label cacher="oui" \
 $IMAGE:latest
 
@@ -39,6 +30,20 @@ $IMAGE:latest
 # Lancement du Conteneur #
 ##########################
 docker start $CONTENEUR
+
+sed -i -e 's/80/3272/g' /volume1/Docker/$CONTENEUR/conf/AdGuardHome.yaml
+
+##########################################################################################################################################################
+# Partienter  #
+###############
+sleep 5
+
+##########################################################################################################################################################
+# Arrêt du Conteneur #
+######################
+docker stop $CONTENEUR
+
+
 
 ##########################################################################################################################################################
 # Patienter le démarrage du Conteneur #

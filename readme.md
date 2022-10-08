@@ -11,8 +11,6 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 
 ## II. Etat d'avancement des conteneurs ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 
-### Information importante: Les conteneurs vont migrer sur le réseau Bridge à terme pour une gestion plus simple
-
 
 | Network  | Application  | Statut de l'application        |
 | -------- | ------------ | ------------------------------ |
@@ -22,7 +20,7 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 |  Bridge  | Plex         | Opérationnel [Release 1.0]     |
 |  Bridge  | Portainer    | Opérationnel [Release 1.0]     |
 |  Bridge  | ReverseProxy | Opérationnel [Release 1.0]     |
-|  Bridge  | QBitorrent   | Opérationnel (A migrer)		   |
+|  Bridge  | QBitorrent   | Opérationnel (Ne pas Migré)    |
 |  ??????  | phpMyAdmin   | KO                             |
 |  ??????  | BitWarden    | A faire                        |
 |  ??????  | Cloud9       | A faire                        |
@@ -80,7 +78,8 @@ ls *.apk
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Liens utiles:
+Utiles:
+ -  /usr/local/AppCentral/ 
  - [PDF AppCentral Dev ASUSTOR](https://downloadgb.asustor.com/developer/App_Central_Developer_Guide_4.1.0_20220622.pdf)
  - [Guide Création](https://amigotechnotes.wordpress.com/2014/05/06/how-to-create-an-apk-for-asustor-adm-to-distribute-your-lamp/) 
  - [Privée] [Dexter74/Docker](https://github.com/dexter74/Archives/tree/main/Docker/V1/2.Conteneurs)

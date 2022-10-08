@@ -16,7 +16,7 @@ docker container rm -f  $CONTENEUR
 # Lancement du Conteneur #
 ##########################
 docker run -d --name=$CONTENEUR --restart unless-stopped --hostname $CONTENEUR \
---net=bridge \
+--net=host \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume $(pwd)/ntopng.license:/etc/ntopng.license:ro \
 --publish $HTTP \

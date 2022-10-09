@@ -3,6 +3,7 @@
 # Déclaration de la variable de test #
 ######################################
 CONTENEUR=qBittorrent
+PORT=6881:6881
 WEBUI=1007
 MEMORY=512m
 IMAGE=linuxserver/qbittorrent
@@ -27,14 +28,10 @@ docker run -d \
 --volume /volume1/Video:/Video \
 --volume /volume1/Download:/downloads \
 --publish $WEBUI:1007 \
---publish 6881:6881 \
---publish 6881:6881/udp \
+--publish $PORT \
 --restart unless-stopped \
 --label cacher="oui" \
 $IMAGE
-
-# --memory="$MEMORY" \
-
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

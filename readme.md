@@ -79,7 +79,9 @@ chmod -R 777 ~/APPZ
 ```
 sh ./APPZ/ASUSTOR/AppCentral/start.sh
 mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk .
-ls *.apk
+ls *.apk;
+
+mv *.apk /mnt/DL
 ```
 
 ##### E. Volumes

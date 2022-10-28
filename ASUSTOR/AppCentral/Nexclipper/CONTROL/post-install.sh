@@ -17,7 +17,7 @@ docker container rm -f $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart unless-stopped \
+--restart always \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /var/run/docker.sock:/var/run/docker.sock \

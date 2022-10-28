@@ -29,7 +29,7 @@ docker run -d \
 --volume /volume1/Download:/downloads \
 --publish $WEBUI:1007 \
 --publish $PORT \
---restart unless-stopped \
+--restart always \
 --label cacher="oui" \
 $IMAGE
 

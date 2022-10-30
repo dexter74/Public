@@ -3,7 +3,9 @@
 ! Description: Blocage des domaines SPAM, Virus et cie
 
 ||comfreeads.com^
+||edgecleaner.info^
 ||lulyhadchos.xyz^
 ||positiveweb.org^
+||prmtracking3.com^
 ||topmusicalcomedy.com^
 ||usethemarketings.com^

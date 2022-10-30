@@ -2,11 +2,11 @@
 ! Title: AdGuardHome by Drthrax74
 ! Description: Blocage des domaines SPAM, Virus et cie
 
-
 ||bestmatchproduce.com^
 ||comfreeads.com^
 ||eabithecon.xyz^
 ||edgecleaner.info^
+||gipsiesthyrsi.com^
 ||gleamsdargue.digital^
 ||lulyhadchos.xyz^
 ||positiveweb.org^

@@ -2,6 +2,5 @@
 ! Title: AdGuardHome by Drthrax74
 ! Description: Blocage des domaines SPAM, Virus et cie
 
-
 ||https://comfreeads.com^
 ||https://lulyhadchos.xyz^

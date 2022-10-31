@@ -13,7 +13,7 @@ ECHO Menu 0 : Chocolatey
 ECHO Menu 1 : Google Chrome
 ECHO Menu 2 : Opera GX
 ECHO Menu 3 : MuseCore 3
-ECHO Menu 4 : Teams
+ECHO Menu 4 : Microsoft Teams
 ECHO Menu 5 : Anydesk
 ECHO Menu 6 : Steam
 ECHO Menu 7 : Teamspeak 3
@@ -23,7 +23,7 @@ ECHO Menu A : Hamachi Logmein
 ECHO Menu B : Epic Games
 ECHO Menu C : Discord
 ECHO Menu D : League Of Legends
-ECHO Menu E : ubisoft Connect
+ECHO Menu E : Ubisoft Connect
 :: ECHO Menu F : 
 :: ECHO Menu G : 
 :: ECHO.

@@ -9,10 +9,10 @@ cls
 :: ECHO.
 ECHO -------------- Utilitaires --------------
 ECHO.
-ECHO Menu 0 : Chocolatey + GUI + Cleaner
-ECHO Menu 1 : 
-ECHO Menu 2 : 
-ECHO Menu 3 : 
+ECHO Menu 0 : Chocolatey
+ECHO Menu 1 : Google Chrome
+ECHO Menu 2 : Opera GX
+ECHO Menu 3 : MuseCore 3
 ECHO Menu 4 : 
 ECHO Menu 5 : 
 ECHO Menu 6 : 
@@ -120,12 +120,15 @@ GOTO MENU
 
 
 :Fonction_1
+ choco install -y googlechrome
 GOTO MENU
 
 :Fonction_2
+ choco install -y opera-gx
 GOTO MENU
 
 :Fonction_3
+choco install -y musescore
 GOTO MENU
 
 :Fonction_4

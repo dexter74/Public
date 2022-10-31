@@ -224,5 +224,6 @@ GOTO MENU
 GOTO MENU
 
 :Fonction_Z
+exit
 GOTO MENU
 

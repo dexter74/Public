@@ -13,46 +13,46 @@ ECHO Menu 0 : Chocolatey
 ECHO Menu 1 : Google Chrome
 ECHO Menu 2 : Opera GX
 ECHO Menu 3 : MuseCore 3
-ECHO Menu 4 : 
-ECHO Menu 5 : 
-ECHO Menu 6 : 
-ECHO Menu 7 : 
-ECHO Menu 8 : 
-ECHO Menu 9 : 
-ECHO Menu A : 
-ECHO Menu B : 
-ECHO Menu C : 
-ECHO Menu D : 
-ECHO Menu E : 
-ECHO Menu F : 
-ECHO Menu G : 
-ECHO.
-ECHO -------------- Divertissements -------------
-ECHO.
-ECHO Menu H : 
-ECHO Menu I : 
-ECHO Menu J : 
-ECHO Menu K :  
-ECHO Menu L : 
-ECHO Menu M : 
-ECHO Menu N : 
-ECHO.
-ECHO -------------- Packages ------------------
-ECHO.
-ECHO Menu O : 
-ECHO Menu P : 
-ECHO Menu Q : 
-ECHO.
-ECHO -------------- Special ------------------
-ECHO.
-ECHO Menu R : 
-ECHO Menu S : 
-ECHO Menu T :
-ECHO Menu U : 
-ECHO Menu V : 
-ECHO Menu W : 
-ECHO Menu X : 
-ECHO Menu Y :
+ECHO Menu 4 : Teams
+ECHO Menu 5 : Anydesk
+ECHO Menu 6 : Steam
+ECHO Menu 7 : Teamspeak 3
+ECHO Menu 8 : Nvidia Geforce Now
+ECHO Menu 9 : Origin
+ECHO Menu A : Hamachi Logmein
+ECHO Menu B : Epic Games
+ECHO Menu C : Discord
+ECHO Menu D : League Of Legends
+ECHO Menu E : ubisoft Connect
+:: ECHO Menu F : 
+:: ECHO Menu G : 
+:: ECHO.
+:: ECHO -------------- Divertissements -------------
+:: ECHO.
+:: ECHO Menu H : 
+:: ECHO Menu I : 
+:: ECHO Menu J : 
+:: ECHO Menu K :  
+:: ECHO Menu L : 
+:: ECHO Menu M : 
+:: ECHO Menu N : 
+:: ECHO.
+:: ECHO -------------- Packages ------------------
+:: ECHO.
+:: ECHO Menu O : 
+:: ECHO Menu P : 
+:: ECHO Menu Q : 
+:: ECHO.
+:: ECHO -------------- Special ------------------
+:: ECHO.
+:: ECHO Menu R : 
+:: ECHO Menu S : 
+:: ECHO Menu T :
+:: ECHO Menu U : 
+:: ECHO Menu V : 
+:: ECHO Menu W : 
+:: ECHO Menu X : 
+:: ECHO Menu Y :
 ECHO Menu Z : Quitter
 ECHO.
 ECHO -------------------------------------------
@@ -132,38 +132,49 @@ choco install -y musescore
 GOTO MENU
 
 :Fonction_4
+choco install -y microsoft-teams
 GOTO MENU
 
 :Fonction_5
+choco install -y anydesk
 GOTO MENU
 
 :Fonction_6
+choco install -y steam
 GOTO MENU
 
 :Fonction_7
+choco install -y teamspeak
 GOTO MENU
 
 :Fonction_8
+choco install -y nvidia-geforce-now
 GOTO MENU
 
 :Fonction_9
+choco install -y origin
 GOTO MENU
 
 :: --------------------------------------------------------------------
 
 :Fonction_A
+choco install -y hamachi
 GOTO MENU
 
 :Fonction_B
+choco install -y epicgameslauncher
 GOTO MENU
 
 :Fonction_C
+choco install -y discord
 GOTO MENU
 
 :Fonction_D
+choco install -y leagueoflegends
 GOTO MENU
 
 :Fonction_E
+choco install -y ubisoft-connect
 GOTO MENU
 
 :Fonction_F

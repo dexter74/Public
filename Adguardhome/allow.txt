@@ -1,0 +1,5 @@
+!
+! Title: AdGuardHome by Drthrax74
+! Description: Domaine autorisé
+!
+@@||yggtorrent.fi^

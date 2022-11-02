@@ -42,7 +42,7 @@ docker run -d \
 --volume /volume1/Docker/$CONTENEUR:/data \
 --env domain="https://${MYSQL_HOST}" \
 --env data_folder="$DATA_FOLDER" \
---env admin_token="$ADMIN_TOKEN" \
+--env admin_token=admin \
 --env database_url="mysql://$MYSQL_USER:$MYSQL_PASS@$MYSQL_HOST:$MYSQL_PORT/$MYSQL_DATABASE" \
 --publish $PORT0 \
 --publish $PORT1 \

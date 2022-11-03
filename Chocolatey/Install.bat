@@ -12,7 +12,7 @@ ECHO.
 ECHO Menu 0 : Chocolatey
 ECHO Menu 1 : Google Chrome
 ECHO Menu 2 : Opera GX
-ECHO Menu 3 : MuseCore 3
+ECHO Menu 3 : MuseScore 3
 ECHO Menu 4 : Microsoft Teams
 ECHO Menu 5 : Anydesk
 ECHO Menu 6 : Steam

@@ -3,8 +3,6 @@
 :: Nettoyage de la Console
 cls
 
-
-
 :: Fonction Menu
 :MENU
 
@@ -121,19 +119,20 @@ GOTO MENU
 
 
 :Fonction_1
- choco install -y googlechrome
+	 cls
+	 choco install -y googlechrome
 GOTO MENU
 
 :Fonction_2
- choco install -y opera-gx
+	 choco install -y opera-gx
 GOTO MENU
 
 :Fonction_3
-choco install -y musescore
+	choco install -y musescore
 GOTO MENU
 
 :Fonction_4
-choco install -y microsoft-teams
+	choco install -y microsoft-teams
 GOTO MENU
 
 :Fonction_5
@@ -141,41 +140,41 @@ choco install -y anydesk
 GOTO MENU
 
 :Fonction_6
-choco install -y steam
+	choco install -y steam
 GOTO MENU
 
 :Fonction_7
-choco install -y teamspeak
+	choco install -y teamspeak
 GOTO MENU
 
 :Fonction_8
-choco install -y --ignore-checksums nvidia-geforce-now
+	choco install -y --ignore-checksums nvidia-geforce-now
 GOTO MENU
 
 :Fonction_9
-choco install -y origin
+	choco install -y origin
 GOTO MENU
 
 :: --------------------------------------------------------------------
 
 :Fonction_A
-choco install -y hamachi
+	choco install -y hamachi
 GOTO MENU
 
 :Fonction_B
-choco install -y epicgameslauncher
+	choco install -y epicgameslauncher
 GOTO MENU
 
 :Fonction_C
-choco install -y discord
+	choco install -y discord
 GOTO MENU
 
 :Fonction_D
-choco install -y leagueoflegends
+	choco install -y leagueoflegends
 GOTO MENU
 
 :Fonction_E
-choco install -y ubisoft-connect
+	choco install -y ubisoft-connect
 GOTO MENU
 
 :Fonction_F
@@ -211,7 +210,9 @@ GOTO MENU
 :Fonction_P
 GOTO MENU
 
+:: Ne pas attribuer la fonction Q
 :Fonction_Q
+cls
 GOTO MENU
 
 :Fonction_R

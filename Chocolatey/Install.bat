@@ -1,7 +1,12 @@
 @ECHO off
 
+:: Choix 3: BUG
+
+
 :: Nettoyage de la Console
 cls
+
+
 
 :: Fonction Menu
 :MENU

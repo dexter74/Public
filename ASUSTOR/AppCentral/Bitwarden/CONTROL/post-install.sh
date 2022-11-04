@@ -36,7 +36,7 @@ docker container rm -f $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart none \
+--restart no \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/data \

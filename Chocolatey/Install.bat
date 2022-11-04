@@ -148,7 +148,7 @@ choco install -y teamspeak
 GOTO MENU
 
 :Fonction_8
-choco install -y nvidia-geforce-now
+choco install -y --ignore-checksums nvidia-geforce-now
 GOTO MENU
 
 :Fonction_9

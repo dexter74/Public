@@ -332,6 +332,7 @@ GOTO MENU
 	move "%START_MENU2%\WinDirStat\WinDirStat.lnk"                "%START_MENU%\Logiciels"
 	move "%START_MENU2%\GitHub, Inc\GitHub Desktop.lnk"           "%START_MENU%\Logiciels"
 	move "%START_MENU2%\MuseScore 3\MuseScore 3.lnk"              "%START_MENU%\Logiciels"
+	move "%START_MENU2%\Ubisoft\Ubisoft Connect\Ubisoft Connect.lnk" "%START_MENU%\Jeux"
 	:: #########################################################################################################################################
 	rmdir /Q /S "%START_MENU%\7-Zip"
 	rmdir /Q /S "%START_MENU%\AMD Bug Report Tool"
@@ -358,6 +359,7 @@ GOTO MENU
 	rmdir /Q /S "%START_MENU2%\Riot Games"
 	rmdir /Q /S "%START_MENU%\LogMeIn Hamachi"
 	rmdir /Q /S "%START_MENU2%\MuseScore 3\"
+	rmdir /Q /S "%START_MENU2%\Ubisoft\"
 	
 GOTO MENU
 

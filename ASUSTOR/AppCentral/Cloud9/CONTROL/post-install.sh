@@ -19,7 +19,7 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart none \
+--restart no \
 --net=bridge \
 --env TZ="Europe/Paris" \
 --env USERNAME="$WEBUI_USER" \

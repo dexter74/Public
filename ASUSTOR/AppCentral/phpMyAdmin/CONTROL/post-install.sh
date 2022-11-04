@@ -22,7 +22,7 @@ docker stop $CONTENEUR
 ##########################
 docker run -d \
 --name $CONTENEUR \
---restart none \
+--restart no \
 --net=bridge \
 --hostname $CONTENEUR \
 --env PMA_ARBITRARY="0" \

@@ -78,25 +78,25 @@ IF %M%==b GOTO Fonction_B
 IF %M%==c GOTO Fonction_C
 IF %M%==d GOTO Fonction_D
 IF %M%==e GOTO Fonction_E
-IF %M%==f GOTO Fonction_F
-IF %M%==g GOTO Fonction_G
-IF %M%==h GOTO Fonction_H
-IF %M%==i GOTO Fonction_I
-IF %M%==j GOTO Fonction_J
-IF %M%==k GOTO Fonction_K
-IF %M%==l GOTO Fonction_L
-IF %M%==m GOTO Fonction_M
-IF %M%==n GOTO Fonction_N
-IF %M%==o GOTO Fonction_O
-IF %M%==p GOTO Fonction_P
-IF %M%==r GOTO Fonction_R
-IF %M%==s GOTO Fonction_S
-IF %M%==t GOTO Fonction_T
-IF %M%==u GOTO Fonction_U
-IF %M%==v GOTO Fonction_V
-IF %M%==w GOTO Fonction_W
-IF %M%==x GOTO Fonction_X
-IF %M%==y GOTO Fonction_Y
+:: IF %M%==f GOTO Fonction_F
+:: IF %M%==g GOTO Fonction_G
+:: IF %M%==h GOTO Fonction_H
+:: IF %M%==i GOTO Fonction_I
+:: IF %M%==j GOTO Fonction_J
+:: IF %M%==k GOTO Fonction_K
+:: IF %M%==l GOTO Fonction_L
+:: IF %M%==m GOTO Fonction_M
+:: IF %M%==n GOTO Fonction_N
+:: IF %M%==o GOTO Fonction_O
+:: IF %M%==p GOTO Fonction_P
+:: IF %M%==r GOTO Fonction_R
+:: IF %M%==s GOTO Fonction_S
+:: IF %M%==t GOTO Fonction_T
+:: IF %M%==u GOTO Fonction_U
+:: IF %M%==v GOTO Fonction_V
+:: IF %M%==w GOTO Fonction_W
+:: IF %M%==x GOTO Fonction_X
+:: IF %M%==y GOTO Fonction_Y
 IF %M%==z GOTO Fonction_Z
 IF %M%==q GOTO EOF
 

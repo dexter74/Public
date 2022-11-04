@@ -19,9 +19,6 @@ docker run -d --name $CONTENEUR \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
---volume /share/MyArchive1:/MyArchive1 \
---volume /share/MyArchive2:/MyArchive2 \
---volume /share/MyArchive3:/MyArchive3 \
 --volume /share/Music:/Music \
 --net=bridge \
 --publish $HTTP \

@@ -101,9 +101,8 @@ IF %M%==z GOTO Fonction_Z
 IF %M%==q GOTO EOF
 
 
-
 :Fonction_0
-cls
+	cls
 	:: Installation de chocolatey
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
@@ -119,95 +118,127 @@ GOTO MENU
 
 
 :Fonction_1
-	 cls
+	cls
 	 choco install -y googlechrome
 GOTO MENU
 
+
 :Fonction_2
+	cls
 	 choco install -y opera-gx
 GOTO MENU
 
+
 :Fonction_3
+	cls
 	choco install -y musescore
 GOTO MENU
 
+
 :Fonction_4
+	cls
 	choco install -y microsoft-teams
 GOTO MENU
 
+
 :Fonction_5
-choco install -y anydesk
+	cls
+	choco install -y anydesk
 GOTO MENU
 
+
 :Fonction_6
+	cls
 	choco install -y steam
 GOTO MENU
 
 :Fonction_7
+	cls
 	choco install -y teamspeak
 GOTO MENU
 
 :Fonction_8
+	cls
 	choco install -y --ignore-checksums nvidia-geforce-now
 GOTO MENU
 
 :Fonction_9
+	cls
 	choco install -y origin
 GOTO MENU
 
 :: --------------------------------------------------------------------
 
 :Fonction_A
+	cls
 	choco install -y hamachi
 GOTO MENU
 
+
 :Fonction_B
+	cls
 	choco install -y epicgameslauncher
 GOTO MENU
 
 :Fonction_C
+	cls
 	choco install -y discord
 GOTO MENU
 
+
 :Fonction_D
+	cls
 	choco install -y leagueoflegends
 GOTO MENU
 
+
 :Fonction_E
+	cls
 	choco install -y ubisoft-connect
 GOTO MENU
 
 :Fonction_F
+	cls
 GOTO MENU
 
 :Fonction_G
+	cls
 GOTO MENU
 
 :Fonction_H
+	cls
 GOTO MENU
 
 :Fonction_I
+	cls
 GOTO MENU
 
 :Fonction_J
+	cls
 GOTO MENU
 
 :Fonction_K
+	cls
 GOTO MENU
 
 :Fonction_L
+	cls
 GOTO MENU
 
 :Fonction_M
+	cls
 GOTO MENU
 
 :Fonction_N
+	cls
 GOTO MENU
 
 :Fonction_O
+	cls
 GOTO MENU
 
 :Fonction_P
+	cls
 GOTO MENU
 
 :: Ne pas attribuer la fonction Q
@@ -216,30 +247,38 @@ cls
 GOTO MENU
 
 :Fonction_R
+	cls
 GOTO MENU
 
 :Fonction_S
+	cls
 GOTO MENU
 
 :Fonction_T
+	cls
 GOTO MENU
 
 :Fonction_U
+	cls
 GOTO MENU
 
 :Fonction_V
+	cls
 GOTO MENU
 
 :Fonction_W
+	cls
 GOTO MENU
 
 :Fonction_X
+	cls
 GOTO MENU
 
 :Fonction_Y
+	cls
 GOTO MENU
 
 :Fonction_Z
-exit
+	exit
 GOTO MENU
 

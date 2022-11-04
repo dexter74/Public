@@ -1,8 +1,5 @@
 @ECHO off
 
-:: Choix 3: BUG
-
-
 :: Nettoyage de la Console
 cls
 
@@ -94,7 +91,6 @@ IF %M%==m GOTO Fonction_M
 IF %M%==n GOTO Fonction_N
 IF %M%==o GOTO Fonction_O
 IF %M%==p GOTO Fonction_P
-IF %M%==q GOTO Fonction_Q
 IF %M%==r GOTO Fonction_R
 IF %M%==s GOTO Fonction_S
 IF %M%==t GOTO Fonction_T

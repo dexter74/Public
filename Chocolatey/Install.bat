@@ -52,7 +52,7 @@ ECHO Menu G :
 :: ECHO Menu V : 
 :: ECHO Menu W : 
 :: ECHO Menu X : 
-:: ECHO Menu Y :
+ECHO Menu Y :
 ECHO Menu Z : Quitter
 ECHO.
 ECHO -------------------------------------------
@@ -96,7 +96,7 @@ IF %M%==g GOTO Fonction_G
 :: IF %M%==v GOTO Fonction_V
 :: IF %M%==w GOTO Fonction_W
 :: IF %M%==x GOTO Fonction_X
-:: IF %M%==y GOTO Fonction_Y
+IF %M%==y GOTO Fonction_Y
 IF %M%==z GOTO Fonction_Z
 IF %M%==q GOTO EOF
 
@@ -278,6 +278,79 @@ GOTO MENU
 
 :Fonction_Y
 	cls
+	:: ########################################################################################
+	set START_MENU=C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+	set START_MENU2=C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\
+	:: ########################################################################################
+	mkdir "%START_MENU%\Logiciels"
+	mkdir "%START_MENU%\Microsoft Office 2016"
+	mkdir "%START_MENU%\Jeux"
+	:: ########################################################################################
+	move "%START_MENU%\AMD Software꞉ Adrenalin Edition\AMD Software꞉ Adrenalin Edition.lnk" "%START_MENU%\Logiciels"
+	move "%START_MENU%\Access*.lnk"                               "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\Access.lnk"                                "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\Excel*.lnk"                                "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\OneNote*.lnk"                              "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\Outlook*.lnk"                              "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\Powerpoint*.lnk"                           "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\Publisher*.lnk"                            "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\Skype Entreprise*.lnk"                     "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\Word*.lnk"                                 "%START_MENU%\Microsoft Office 2016"
+	move "%START_MENU%\ASUS\AI Suite 3\AI Suite 3.lnk"            "%START_MENU%\Logiciels"
+	move "%START_MENU%\7-Zip\7-Zip File Manager.lnk"              "%START_MENU%\Logiciels"
+	move "%START_MENU%\Acronis"    				      "%START_MENU%\Logiciels"
+	move "%START_MENU%\Autoruns.lnk"                              "%START_MENU%\Logiciels"
+	move "%START_MENU%\Battle.net\Battle.net.lnk"                 "%START_MENU%\Jeux"
+	move "%START_MENU%\CPUID\ASUS CPU-Z\ASUS CPU-Z.lnk"           "%START_MENU%\Logiciels"
+	move "%START_MENU%\Chocolatey Cleaner.lnk"                    "%START_MENU%\Logiciels"
+	move "%START_MENU%\Chocolatey GUI.lnk"                        "%START_MENU%\Logiciels"
+	move "%START_MENU%\Epic Games Launcher.lnk"                   "%START_MENU%\Jeux"
+	move "%START_MENU%\Microsoft Edge.lnk" 			      "%START_MENU%\Logiciels"
+	move "%START_MENU%\MPC-HC x64\MPC-HC x64.lnk"                 "%START_MENU%\Logiciels"
+	move "%START_MENU%\mRemoteNG\mRemoteNG.lnk"                   "%START_MENU%\Logiciels"
+	move "%START_MENU%\Notepad++.lnk"                             "%START_MENU%\Logiciels"
+	move "%START_MENU%\Oracle VM VirtualBox\Oracle VM VirtualBox.lnk"  "%START_MENU%\Logiciels"
+	move "%START_MENU%\qBittorrent\qBittorrent.lnk"               "%START_MENU%\Logiciels"
+	move "%START_MENU%\Roberts Space Industries\RSI Launcher.lnk" "%START_MENU%\Jeux"
+	move "%START_MENU%\World of Warcraft\World of Warcraft.lnk"   "%START_MENU%\Jeux"
+	move "%START_MENU%\Riot Games\Client Riot.lnk"                "%START_MENU%\Jeux"
+	:: ########################################################################################
+	move "%START_MENU2%\Bitwarden.lnk"                            "%START_MENU%\Logiciels"
+	move "%START_MENU2%\CrystalDiskInfo.lnk"                      "%START_MENU%\Logiciels"
+	move "%START_MENU2%\Discord Inc\Discord.lnk"                  "%START_MENU%\Jeux"
+	move "%START_MENU2%\Molotov\Molotov.lnk"                      "%START_MENU%\Logiciels"
+	move "%START_MENU2%\Microsoft Teams.lnk"                      "%START_MENU%\Logiciels"
+	move "%START_MENU2%\Oracle VM VirtualBox Guest Additions"     "%START_MENU%\Logiciels"
+	move "%START_MENU2%\Overwolf\Overwolf.lnk"                    "%START_MENU%\Jeux"
+	move "%START_MENU2%\Overwolf\Porofessor.gg.lnk"               "%START_MENU%\Jeux"
+	move "%START_MENU2%\Steam\Steam.lnk"                          "%START_MENU%\Jeux"
+	move "%START_MENU2%\WinDirStat\WinDirStat.lnk"                "%START_MENU%\Logiciels"
+	move "%START_MENU2%\GitHub, Inc\GitHub Desktop.lnk"           "%START_MENU%\Logiciels"
+	:: ########################################################################################
+	rmdir /Q /S "%START_MENU%\7-Zip"
+	rmdir /Q /S "%START_MENU%\AMD Bug Report Tool"
+	rmdir /Q /S "%START_MENU%\AMD Software꞉ Adrenalin Edition"
+	rmdir /Q /S "%START_MENU%\ASUS\"
+	rmdir /Q /S "%START_MENU%\Burning Crusade Classic"
+	rmdir /Q /S "%START_MENU%\Battle.net"
+	rmdir /Q /S "%START_MENU%\CPUID"
+	rmdir /Q /S "%START_MENU%\MPC-HC x64"
+	rmdir /Q /S "%START_MENU2%\GitHub, Inc"
+	rmdir /Q /S "%START_MENU%\mRemoteNG"
+	rmdir /Q /S "%START_MENU%\qBittorrent"
+	rmdir /Q /S "%START_MENU%\StarCraft II"
+	rmdir /Q /S "%START_MENU%\Steam"
+	rmdir /Q /S "%START_MENU2%\Discord Inc"
+	rmdir /Q /S "%START_MENU2%\Molotov"
+	rmdir /Q /S "%START_MENU%\Riot Games\
+	rmdir /Q /S "%START_MENU2%\WinDirStat"
+	rmdir /Q /S "%START_MENU%\World of Warcraft"
+	rmdir /Q /S "%START_MENU%\Oracle VM VirtualBox\"
+	rmdir /Q /S "%START_MENU2%\Overwolf"
+	rmdir /Q /S "%START_MENU%\Roberts Space Industries"
+	rmdir /Q /S "%START_MENU2%\Steam"
+	rmdir /Q /S "%START_MENU2%\Riot Games"
+	
 GOTO MENU
 
 :Fonction_Z

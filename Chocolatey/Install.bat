@@ -357,7 +357,7 @@ GOTO MENU
 	rmdir /Q /S "%START_MENU%\Oracle VM VirtualBox\"
 	rmdir /Q /S "%START_MENU2%\Overwolf"
 	rmdir /Q /S "%START_MENU%\Roberts Space Industries"
-	rmdir /Q /S "%START_MENU2%\Steam"
+::	rmdir /Q /S "%START_MENU2%\Steam"
 	rmdir /Q /S "%START_MENU2%\Riot Games"
 	rmdir /Q /S "%START_MENU%\LogMeIn Hamachi"
 	rmdir /Q /S "%START_MENU2%\MuseScore 3\"

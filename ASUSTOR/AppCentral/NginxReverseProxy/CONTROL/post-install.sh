@@ -24,7 +24,7 @@ PORT2=81:81
 ##########################
 docker run -d \
 --name $CONTENEUR \
---restart always \
+--restart none \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /share/Docker/$CONTENEUR:/config \

@@ -19,7 +19,7 @@ docker run -d \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
 --net=host \
---restart none \
+--restart no \
 --env TZ="Europe/Paris" \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \

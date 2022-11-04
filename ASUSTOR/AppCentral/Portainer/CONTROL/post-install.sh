@@ -45,7 +45,7 @@ docker create -i -t --name=$CONTENEUR \
 	-v /etc/localtime:/etc/localtime:ro \
 	-v /usr/builtin/etc/certificate:/certs:ro \
 	-v /share/Docker/PortainerCE/data:/data:rw \
-	--restart always \
+	--restart none \
 	--label cacher="oui" \
 	portainer/portainer-ce:latest \
 	--sslcert /certs/ssl.pem --sslkey /certs/ssl.pem \

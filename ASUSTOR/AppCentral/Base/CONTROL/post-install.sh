@@ -17,7 +17,7 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart always \
+--restart none \
 --net=host \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \

@@ -10,7 +10,6 @@ MYSQL_PORT='3306'
 MYSQL_DB='database'
 MYSQL_USER='username'
 MYSQL_PASS='password'
-PHPMYADMIN_DATABASE='phpmyadmin'
 
 ##########################################################################################################################################################
 # Arrêt du Conteneur #

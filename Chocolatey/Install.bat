@@ -24,7 +24,7 @@ ECHO Menu B : Epic Games
 ECHO Menu C : Discord
 ECHO Menu D : League Of Legends
 ECHO Menu E : Ubisoft Connect
-:: ECHO Menu F : 
+ECHO Menu F : Autoruns
 :: ECHO Menu G : 
 :: ECHO.
 :: ECHO -------------- Divertissements -------------
@@ -78,7 +78,7 @@ IF %M%==b GOTO Fonction_B
 IF %M%==c GOTO Fonction_C
 IF %M%==d GOTO Fonction_D
 IF %M%==e GOTO Fonction_E
-:: IF %M%==f GOTO Fonction_F
+IF %M%==f GOTO Fonction_F
 :: IF %M%==g GOTO Fonction_G
 :: IF %M%==h GOTO Fonction_H
 :: IF %M%==i GOTO Fonction_I
@@ -199,6 +199,7 @@ GOTO MENU
 
 :Fonction_F
 	cls
+	choco install autoruns -y --ignore-checksum
 GOTO MENU
 
 :Fonction_G

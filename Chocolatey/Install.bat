@@ -25,7 +25,7 @@ ECHO Menu C : Discord
 ECHO Menu D : League Of Legends
 ECHO Menu E : Ubisoft Connect
 ECHO Menu F : Autoruns
-:: ECHO Menu G : 
+ECHO Menu G : 7zip
 :: ECHO.
 :: ECHO -------------- Divertissements -------------
 :: ECHO.
@@ -79,7 +79,7 @@ IF %M%==c GOTO Fonction_C
 IF %M%==d GOTO Fonction_D
 IF %M%==e GOTO Fonction_E
 IF %M%==f GOTO Fonction_F
-:: IF %M%==g GOTO Fonction_G
+IF %M%==g GOTO Fonction_G
 :: IF %M%==h GOTO Fonction_H
 :: IF %M%==i GOTO Fonction_I
 :: IF %M%==j GOTO Fonction_J
@@ -204,6 +204,7 @@ GOTO MENU
 
 :Fonction_G
 	cls
+	choco install 7zip.install -y
 GOTO MENU
 
 :Fonction_H

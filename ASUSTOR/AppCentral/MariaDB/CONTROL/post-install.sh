@@ -17,7 +17,7 @@ docker container rm -f $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart always \
+--restart none \
 --net=bridge \
 --hostname $CONTENEUR \
 --env TZ="Europe/Paris" \

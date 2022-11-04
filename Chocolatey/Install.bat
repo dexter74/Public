@@ -25,7 +25,7 @@ ECHO Menu C : Discord
 ECHO Menu D : 7zip
 ECHO Menu E : Ubisoft Connect
 ECHO Menu F : Autoruns
-ECHO Menu G : 
+ECHO Menu G : Custom Menu Démarré
 :: ECHO.
 :: ECHO -------------- Divertissements -------------
 :: ECHO.

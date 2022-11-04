@@ -18,7 +18,7 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart none \
+--restart no \
 --net=host \
 --dns="8.8.8.8" \
 --env PUID=0 \

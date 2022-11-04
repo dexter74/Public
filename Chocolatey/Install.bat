@@ -278,14 +278,14 @@ GOTO MENU
 
 :Fonction_Y
 	cls
-	:: ########################################################################################
+	:: #########################################################################################################################################
 	set START_MENU=C:\ProgramData\Microsoft\Windows\Start Menu\Programs
 	set START_MENU2=C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\
-	:: ########################################################################################
+	:: #########################################################################################################################################
 	mkdir "%START_MENU%\Logiciels"
 	mkdir "%START_MENU%\Microsoft Office 2016"
 	mkdir "%START_MENU%\Jeux"
-	:: ########################################################################################
+	:: #########################################################################################################################################
 	move "%START_MENU%\AMD Software꞉ Adrenalin Edition\AMD Software꞉ Adrenalin Edition.lnk" "%START_MENU%\Logiciels"
 	move "%START_MENU%\Access*.lnk"                               "%START_MENU%\Microsoft Office 2016"
 	move "%START_MENU%\Access.lnk"                                "%START_MENU%\Microsoft Office 2016"
@@ -314,7 +314,11 @@ GOTO MENU
 	move "%START_MENU%\Roberts Space Industries\RSI Launcher.lnk" "%START_MENU%\Jeux"
 	move "%START_MENU%\World of Warcraft\World of Warcraft.lnk"   "%START_MENU%\Jeux"
 	move "%START_MENU%\Riot Games\Client Riot.lnk"                "%START_MENU%\Jeux"
-	:: ########################################################################################
+	move "%START_MENU%\Google Chrome.lnk"			      "%START_MENU%\Logiciels"
+	move "%START_MENU%\Navigateur Opera GX.lnk"                   "%START_MENU%\Logiciels"
+	move "%START_MENU%\Origin.lnk"                                "%START_MENU%\Jeux"
+	move "%START_MENU%\TeamSpeak 3 Client.lnk"                    "%START_MENU%\Logiciels"
+	:: #########################################################################################################################################
 	move "%START_MENU2%\Bitwarden.lnk"                            "%START_MENU%\Logiciels"
 	move "%START_MENU2%\CrystalDiskInfo.lnk"                      "%START_MENU%\Logiciels"
 	move "%START_MENU2%\Discord Inc\Discord.lnk"                  "%START_MENU%\Jeux"
@@ -326,7 +330,7 @@ GOTO MENU
 	move "%START_MENU2%\Steam\Steam.lnk"                          "%START_MENU%\Jeux"
 	move "%START_MENU2%\WinDirStat\WinDirStat.lnk"                "%START_MENU%\Logiciels"
 	move "%START_MENU2%\GitHub, Inc\GitHub Desktop.lnk"           "%START_MENU%\Logiciels"
-	:: ########################################################################################
+	:: #########################################################################################################################################
 	rmdir /Q /S "%START_MENU%\7-Zip"
 	rmdir /Q /S "%START_MENU%\AMD Bug Report Tool"
 	rmdir /Q /S "%START_MENU%\AMD Software꞉ Adrenalin Edition"

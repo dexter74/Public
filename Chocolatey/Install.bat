@@ -22,10 +22,10 @@ ECHO Menu 9 : Origin
 ECHO Menu A : Hamachi Logmein
 ECHO Menu B : Epic Games
 ECHO Menu C : Discord
-ECHO Menu D : League Of Legends
+ECHO Menu D : 7zip
 ECHO Menu E : Ubisoft Connect
 ECHO Menu F : Autoruns
-ECHO Menu G : 7zip
+ECHO Menu G : 
 :: ECHO.
 :: ECHO -------------- Divertissements -------------
 :: ECHO.
@@ -188,7 +188,7 @@ GOTO MENU
 
 :Fonction_D
 	cls
-	choco install -y leagueoflegends
+	choco install -y 7zip.install
 GOTO MENU
 
 
@@ -204,7 +204,7 @@ GOTO MENU
 
 :Fonction_G
 	cls
-	choco install 7zip.install -y
+	
 GOTO MENU
 
 :Fonction_H

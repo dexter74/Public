@@ -18,6 +18,7 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
+--restart none \
 --net=host \
 --dns="8.8.8.8" \
 --env PUID=0 \
@@ -29,7 +30,6 @@ docker run -d \
 --volume /volume1/Download:/downloads \
 --publish $WEBUI:1007 \
 --publish $PORT \
---restart always \
 --label cacher="oui" \
 $IMAGE
 

@@ -7,7 +7,8 @@
 ||crystal-blocker.com^
 ||eabithecon.xyz^
 ||edgecleaner.info^
-||fr.stop-bot.com^.
+||fr.stop-bot.com^
+||gethurecon.xyz^
 ||gipsiesthyrsi.com^
 ||gleamsdargue.digital^
 ||lulyhadchos.xyz^

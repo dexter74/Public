@@ -7,6 +7,7 @@
 ||crystal-blocker.com^
 ||eabithecon.xyz^
 ||edgecleaner.info^
+||file-download.store^
 ||fr.stop-bot.com^
 ||gethurecon.xyz^
 ||gipsiesthyrsi.com^

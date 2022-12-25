@@ -7,6 +7,9 @@
 Le projet suivant à pour objectif, de faire des applications sous Docker avec l'image sur le portail ASUSTOR.
 J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés facilement.
 
+
+**Problématique:** Les conteneurs ne se lance pas au démarrage de la machine.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## II. Etat d'avancement des conteneurs ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))

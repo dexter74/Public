@@ -8,6 +8,7 @@
 ||edgecleaner.info^
 ||file-download.store^
 ||fr.stop-bot.com^
+||*stripchat.com^
 ||gethurecon.xyz^
 ||gipsiesthyrsi.com^
 ||gleamsdargue.digital^

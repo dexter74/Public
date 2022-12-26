@@ -1,7 +1,3 @@
-!
-! Title: AdGuardHome by Drthrax74
-! Description: Blocage des domaines SPAM, Virus et cie
-
 ||bargedoctarch.com^
 ||bestmatchproduce.com^
 ||comfreeads.com^
@@ -26,4 +22,6 @@
 ||topmusicalcomedy.com^
 ||useonlin.com^
 ||usethemarketings.com^
-
+!
+! Title: AdGuardHome by Drthrax74
+! Description: Blocage des domaines SPAM, Virus et cie

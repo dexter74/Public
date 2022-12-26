@@ -8,7 +8,7 @@
 ||edgecleaner.info^
 ||file-download.store^
 ||fr.stop-bot.com^
-||*stripchat.com^
+||stripchat.com^
 ||gethurecon.xyz^
 ||gipsiesthyrsi.com^
 ||gleamsdargue.digital^
@@ -20,7 +20,7 @@
 ||prmtracking3.com^
 ||positiveweb.org^
 ||pushyouworld.com^
-||*.prmtracking3.com^
+||prmtracking3.com^
 ||prmtracking3.com^
 ||s.viinxd.com^
 ||topmusicalcomedy.com^

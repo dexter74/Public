@@ -19,7 +19,10 @@
 ||prmtracking3.com^
 ||positiveweb.org^
 ||pushyouworld.com^
+||*.prmtracking3.com^
+||prmtracking3.com^
 ||s.viinxd.com^
 ||topmusicalcomedy.com^
 ||useonlin.com^
 ||usethemarketings.com^
+

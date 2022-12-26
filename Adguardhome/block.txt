@@ -2,6 +2,7 @@
 ! Title: AdGuardHome by Drthrax74
 ! Description: Blocage des domaines SPAM, Virus et cie
 
+||bargedoctarch.com^
 ||bestmatchproduce.com^
 ||comfreeads.com^
 ||crystal-blocker.com^

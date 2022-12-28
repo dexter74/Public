@@ -3,4 +3,5 @@
 ! Description: Domaine autorisé
 !
 @@||yggtorrent.fi^
+@@||yggtorrent.lo^
 @@||pool.ntp.org^

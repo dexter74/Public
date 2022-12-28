@@ -5,9 +5,10 @@
 ||betteradsystem^
 ||betzapdoson.com^
 ||cagothie.net^
+||chatango.com^^
+||c.adsco.re^
 ||comfreeads.com^
 ||crystal-blocker.com^
-||c.adsco.re^
 ||eabithecon.xyz^
 ||edgecleaner.info^
 ||file-download.store^
@@ -30,6 +31,7 @@
 ||pushyouworld.com^
 ||prmtracking3.com^
 ||prmtracking3.com^
+||st.chatango.com^
 ||tomcleaneraddon.com^
 ||topmusicalcomedy.com^
 ||untidyact.com^

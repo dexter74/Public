@@ -7,13 +7,14 @@
 ||eabithecon.xyz^
 ||edgecleaner.info^
 ||file-download.store^
-||stop-bot.com^
-||stripchat.com^
 ||gethurecon.xyz^
 ||gipsiesthyrsi.com^
 ||gleamsdargue.digital^
 ||imprintmake.com^
 ||lulyhadchos.xyz^
+||nanouwho.com^
+||stop-bot.com^
+||stripchat.com^
 ||nestleareae.tech^
 ||noulassimpolder.com^
 ||positiveweb.org^
@@ -22,10 +23,10 @@
 ||pushyouworld.com^
 ||prmtracking3.com^
 ||prmtracking3.com^
-||viinxd.com^
 ||topmusicalcomedy.com^
 ||useonlin.com^
 ||usethemarketings.com^
+||viinxd.com^
 !
 ! Title: AdGuardHome by Drthrax74
 ! Description: Blocage des domaines SPAM, Virus et cie

@@ -15,6 +15,7 @@
 ||imprintmake.com^
 ||intedure-virsoles.com^
 ||lulyhadchos.xyz^
+||maxcdn.bootstrapcdn.com^
 ||nanouwho.com^
 ||stop-bot.com^
 ||stripchat.com^

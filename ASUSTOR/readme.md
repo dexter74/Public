@@ -66,10 +66,10 @@ apt install -y git
 ##### B. Télécharger les Scripts Python ASUSTOR (Root Requis)
 ```console
 su
-rm -rf /usr/bin/apkg-*
-wget https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip
-unzip -o /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin 
-chmod u+x  /usr/bin/apkg-*
+rm -rf /usr/bin/apkg-*;
+wget https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip;
+unzip -o /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin;
+chmod u+x  /usr/bin/apkg-*;
 ```
 
 

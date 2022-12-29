@@ -5,7 +5,7 @@
 ###########################
 CONTENEUR=PyLoad
 container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
-im=$(docker images | grep $container | grep latest | awk '{print $3}')
+im=$(docker images | grep -i $container | grep latest | awk '{print $3}')
 
 ##########################################################################################################################################################
 echo "pre-uninstall"

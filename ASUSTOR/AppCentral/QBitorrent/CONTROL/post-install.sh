@@ -19,7 +19,7 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --restart no \
---net=host \
+--net=bridge \
 --dns="8.8.8.8" \
 --env PUID=0 \
 --env PGID=0 \

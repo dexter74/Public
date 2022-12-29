@@ -33,6 +33,10 @@ Solution: unless-stopped
 |  Bridge  | Nginx         | Opérationnel [Release 2.0]     |
 |  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |
 
+
+
+| Network  |  Application  | Statut de l'application        |
+| -------- | ------------- | ------------------------------ |
 |  Bridge  | Cloud9        | Opérationnel [Release 1.0]     |
 |  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |
 |  Bridge  | Dozzle        | Opérationnel [Release 1.0]     |

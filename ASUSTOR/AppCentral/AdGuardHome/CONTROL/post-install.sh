@@ -5,8 +5,8 @@
 ######################################
 CONTENEUR=AdGuardHome
 IMAGE=adguard/adguardhome
-RESTART=unless-stopped
-# WebUI=80
+RESTART=always
+# WebUI=80 | unless-stopped
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

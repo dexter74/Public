@@ -18,7 +18,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/NginxReverseProxy   	&& apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Plex          		&& apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin    		&& apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Portainer     		&& apkg-tools_py3.py create .
-cd ~/APPZ/ASUSTOR/AppCentral/Pyload/      && apkg-tools_py3.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Pyload/             && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/QBitorrent    		&& apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio 		&& apkg-tools_py3.py create .
 ########################################################################################

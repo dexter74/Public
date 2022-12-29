@@ -9,6 +9,8 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 
 
 **Problématique:** Les conteneurs ne se lance pas au démarrage de la machine.
+**Solution:** unless-stopped
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

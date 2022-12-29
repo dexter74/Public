@@ -12,6 +12,11 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 ```
 Bug: Les conteneurs ne se lance pas au démarrage de la machine.
 Solution: unless-stopped
+
+
+    "version":"2.0", 
+RESTART=unless-stopped
+$IMAGE:latest
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

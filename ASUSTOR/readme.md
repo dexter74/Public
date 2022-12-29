@@ -22,7 +22,7 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 
 | Network  |  Application  | Statut de l'application        |
 | -------- | ------------- | ------------------------------ |
-|  Host    | AdGuardHome   | Opérationnel [Release 1.0]     |
+|  Host    | AdGuardHome   | En cours de révision           |
 |  Bridge  | BitWarden     | Opérationnel [Release 1.0]     |
 |  Bridge  | Cloud9        | Opérationnel [Release 1.0]     |
 |  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |

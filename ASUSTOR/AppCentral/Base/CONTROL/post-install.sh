@@ -6,6 +6,7 @@
 CONTENEUR=
 IMAGE=
 HTTP=
+RESTART=no
 IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -17,8 +18,8 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart no \
---net=host \
+--restart $RESTART \
+--net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --label cacher="oui" \

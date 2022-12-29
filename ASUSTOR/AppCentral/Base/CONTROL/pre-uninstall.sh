@@ -3,6 +3,7 @@
 ##########################################################################################################################################################
 # Déclaration de Variable #
 ###########################
+IMAGE=
 CONTENEUR=
 container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
 im=$(docker images | grep $container | grep latest | awk '{print $3}')
@@ -14,15 +15,16 @@ echo $im
 
 ##########################################################################################################################################################
 if [ ! -z $container ]; then 
-	docker kill $container
+	#docker kill $container
 	sleep 2
-	docker rm -f $container
+	#docker rm -f $container
 fi
 
 ##########################################################################################################################################################
 if [ ! -z $im ]; then 
 	if [ "$APKG_PKG_STATUS" == "uninstall" ]; then
-		docker rmi -f $im
+		sleep 1
+		#docker rmi -f $im
 	fi
 fi
 

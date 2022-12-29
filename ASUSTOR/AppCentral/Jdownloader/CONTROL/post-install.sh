@@ -19,7 +19,7 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --restart $RESTART \
---net=bridge \
+--net=host \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --env TZ="Europe\Paris" \

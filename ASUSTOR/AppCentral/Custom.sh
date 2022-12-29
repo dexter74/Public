@@ -15,3 +15,9 @@ docker stop PyLoad
 docker stop qBittorrent
 docker stop Emby
 docker stop AdGuardHome" > docker_stop.sh
+
+
+sh /usr/local/AppCentral/docker-ce/CONTROL/pre-install.sh
+sh /usr/local/AppCentral/docker-ce/CONTROL/post-install.sh
+sh /usr/local/AppCentral/docker-ce/CONTROL/pre-uninstall.sh
+sh /usr/local/AppCentral/docker-ce/CONTROL/start-stop.sh

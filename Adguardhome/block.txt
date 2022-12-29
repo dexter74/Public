@@ -9,6 +9,7 @@
 ||c.adsco.re^
 ||comfreeads.com^
 ||crystal-blocker.com^
+||dreamsappsonline.com^
 ||eabithecon.xyz^
 ||edgecleaner.info^
 ||file-download.store^
@@ -17,6 +18,7 @@
 ||gleamsdargue.digital^
 ||hardloop.fr^
 ||imprintmake.com^
+||install.dreamsappsonline.com^
 ||intedure-virsoles.com^
 ||lulyhadchos.xyz^
 ||maxcdn.bootstrapcdn.com^

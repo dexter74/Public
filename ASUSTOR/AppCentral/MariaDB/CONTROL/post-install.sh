@@ -6,6 +6,7 @@
 CONTENEUR=MariaDB
 HTTP=3306:3306
 IMAGE=linuxserver/mariadb
+RESTART=no
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -17,7 +18,7 @@ docker container rm -f $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart no \
+--restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
 --env TZ="Europe/Paris" \

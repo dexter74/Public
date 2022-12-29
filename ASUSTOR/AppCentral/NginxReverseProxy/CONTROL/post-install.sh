@@ -5,7 +5,7 @@
 ###########################
 CONTENEUR=ReverseProxy
 IMAGE=jc21/nginx-proxy-manager
-RESTART=no
+RESTART=unless-stopped
 
 MYSQL_HOST=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 MYSQL_PORT='3306'
@@ -41,16 +41,9 @@ docker run -d \
 --publish $PORT1 \
 --publish $PORT2 \
 --label cacher="oui" \
-$IMAGE
-
-
-
-
-
-
+$IMAGE:latest
 
 ##########################################################################################################################################################
 # Code retour de fermeture #
 ############################
 exit 0
-

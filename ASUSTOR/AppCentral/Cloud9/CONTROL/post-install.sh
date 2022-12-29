@@ -8,6 +8,8 @@ IMAGE=linuxserver/cloud9
 HTTP=1000:8000
 WEBUI_USER=admin
 WEBUI_PASS=admin
+RESTART=unless-stopped
+
 IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -19,7 +21,7 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart no \
+--restart $RESTART \
 --net=bridge \
 --env TZ="Europe/Paris" \
 --env USERNAME="$WEBUI_USER" \

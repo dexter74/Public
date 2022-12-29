@@ -25,7 +25,6 @@ docker run -d \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
 --volume /usr/builtin/etc/certificate:/sslcerts/:ro \
---cidfile="/usr/local/AppCentral/AdGuardHome/adguardhome.pid" \
 --label cacher="oui" \
 $IMAGE:latest
 

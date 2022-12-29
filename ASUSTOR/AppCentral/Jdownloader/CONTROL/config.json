@@ -7,7 +7,7 @@
     "conflicts":"",
     "developer":"Jdownloader",
     "maintainer":"Jdownloader",
-    "email":"support@jdownloader.org",
+    "email":"support@XXXXXXX.xx",
     "website":"https://jdownloader.org",
     "architecture":"x86-64",
     "firmware":"4.1.0",
@@ -17,7 +17,7 @@
     "privace-statement":"" },
 
   "adm-desktop":{
-                "app":{ "type":"custom", "protocol":"http", "port":"5800",  "url":"/"},
+                "app":{ "type":"custom", "protocol":"http", "port":"27015",  "url":"/"},
                 "privilege":{ "accessible":"administrators", "customizable": "true" }
                 },
 
@@ -29,7 +29,7 @@
 		{ "name":"Video", "description":"Dossier Video Requis" }
 		],
 
-	"port":[ "5800", "5900", "3129" ],
+	"port":[ "27015", "27016" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}

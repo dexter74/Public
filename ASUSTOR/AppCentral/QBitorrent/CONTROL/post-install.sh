@@ -7,6 +7,7 @@ PORT=6881:6881
 WEBUI=1007
 MEMORY=512m
 IMAGE=linuxserver/qbittorrent
+RESTART=unless-stopped
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -18,7 +19,7 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart no \
+--restart $RESTART \
 --net=bridge \
 --dns="8.8.8.8" \
 --env PUID=0 \

@@ -1,12 +1,12 @@
 {
   "general":{ 
-    "package":"PyLOad", 
-    "name":"PyLOad", 
+    "package":"Pyload", 
+    "name":"Pyload", 
     "version":"1.0", 
     "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
-    "developer":"pyLoad Team", 
+    "developer":"PyLoad-Team", 
     "maintainer":"pyload.net", 
     "email":"admin@pyload.net", 
     "website":"https://pyload.net", 
@@ -27,7 +27,6 @@
       "accessible":"administrators", 
       "customizable": "true" }
   },
-
   "register":{
     "symbolic-link":{},
       "share-folder":[

@@ -37,6 +37,7 @@
 ||poweredby.jads.co^
 ||prmtracking3.com^
 ||prmtracking3.com^
+||refersmartapp.com^
 ||s10.histats.com^
 ||sstatic1.histats.com^
 ||st.chatango.com^

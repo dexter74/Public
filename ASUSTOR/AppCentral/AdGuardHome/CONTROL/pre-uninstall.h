@@ -4,28 +4,15 @@
 # Déclaration de Variable #
 ###########################
 CONTENEUR=AdGuardHome
-container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
-im=$(docker images | grep $container | grep latest | awk '{print $3}')
 
 ##########################################################################################################################################################
 echo "pre-uninstall"
-echo $container
-echo $im
 
 ##########################################################################################################################################################
-if [ ! -z $container ]; then 
-	docker kill $container
+if [ ! -z $CONTENEUR ]; then 
+	docker kill $CONTENEUR
 	sleep 2
-	docker rm -f $container
-fi
-
-##########################################################################################################################################################
-# APKG_PKG_STATUS=uninstall #
-#############################
-if [ ! -z $im ]; then 
-	if [ "$APKG_PKG_STATUS" == "uninstall" ]; then
-		docker rmi -f $im
-	fi
+	docker rm -f $CONTENEUR
 fi
 
 ##########################################################################################################################################################

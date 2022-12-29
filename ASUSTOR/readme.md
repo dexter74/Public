@@ -24,20 +24,20 @@ Solution: unless-stopped
 <br />
 
 
-| Network  |  Application  | Statut de l'application        |
-| -------- | ------------- | ------------------------------ |
-|  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |
-|  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |
-|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |
-|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |
-|  Bridge  | Nginx         | Opérationnel [Release 2.0]     |
-|  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |
+| Network  |  Application  | Statut de l'application        | Observation          |
+| -------- | ------------- | ------------------------------ | -------------------- |
+|  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              |
+|  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              |
+|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     | Lent à se lancer     |
+|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              |
+|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              |
+|  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              |
+|  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              |
 
 
 
 | Network  |  Application  | Statut de l'application        | Observation          |
 | -------- | ------------- | ------------------------------ | -------------------- |
-|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     | Lent à se lancer     |
 |  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | Dozzle        | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |

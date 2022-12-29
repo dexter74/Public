@@ -6,7 +6,7 @@
 CONTENEUR=MariaDB
 HTTP=3306:3306
 IMAGE=linuxserver/mariadb
-RESTART=no
+RESTART=unless-stopped
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

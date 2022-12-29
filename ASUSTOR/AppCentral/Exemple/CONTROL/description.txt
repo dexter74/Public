@@ -1,1 +1,3 @@
-Application ASUSTOR exemple.
+Application de présentation d'une application ASUSTOR.
+
+Ajout d'une dépendance: jre

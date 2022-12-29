@@ -5,6 +5,8 @@
 ###########################
 CONTENEUR=ReverseProxy
 IMAGE=jc21/nginx-proxy-manager
+RESTART=no
+
 MYSQL_HOST=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 MYSQL_PORT='3306'
 MYSQL_DB='database'
@@ -24,7 +26,7 @@ docker container rm -f $CONTENEUR
 ##########################
 docker run -d \
 --name $CONTENEUR \
---restart no \
+--restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /share/Docker/$CONTENEUR:/config \

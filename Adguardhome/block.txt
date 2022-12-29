@@ -37,6 +37,7 @@
 ||prmtracking3.com^
 ||prmtracking3.com^
 ||s10.histats.com^
+||sstatic1.histats.com^
 ||st.chatango.com^
 ||tomcleaneraddon.com^
 ||topmusicalcomedy.com^

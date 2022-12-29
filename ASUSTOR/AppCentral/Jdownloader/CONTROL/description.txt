@@ -1,1 +1,1 @@
-JDownloader est un gestionnaire de téléchargement libre écrit en Java.
+JDownloader est un gestionnaire de telechargement libre ecrit en Java.

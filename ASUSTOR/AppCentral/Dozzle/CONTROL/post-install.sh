@@ -5,6 +5,7 @@
 ######################################
 CONTENEUR=Dozzle
 IMAGE=amir20/dozzle
+RESTART=unless-stopped
 HTTP=1005:8080
 
 ##########################################################################################################################################################
@@ -17,17 +18,13 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart no \
+--restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /var/run/docker.sock:/var/run/docker.sock \
 --publish $HTTP \
 --label cacher="oui" \
-$IMAGE
-
-
-#--env \
-
+$IMAGE:latest
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

@@ -44,13 +44,13 @@ $IMAGE:latest
 
 | Network  |  Application  | Statut de l'application        | Observation          |
 | -------- | ------------- | ------------------------------ | -------------------- |
-|  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | NordVPN       | En cours de test               |                      |
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]|       |
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      |
+|  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     |                      |
 |  ??????  | Jackett       | A Faire                        |                      |
 |  ??????  | Jdownloader   | A Faire                        |                      |
 |  ??????  | Radarr        | A Faire                        |                      |

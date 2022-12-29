@@ -5,6 +5,7 @@
 ######################################
 CONTENEUR=AdGuardHome
 IMAGE=adguard/adguardhome
+RESTART=no
 # WebUI=80
 
 ##########################################################################################################################################################
@@ -19,7 +20,7 @@ docker run -d \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
 --net=host \
---restart no \
+--restart $RESTART \
 --env TZ="Europe/Paris" \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \

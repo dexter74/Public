@@ -8,9 +8,11 @@ Le projet suivant à pour objectif, de faire des applications sous Docker avec l
 J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés facilement.
 
 
-**Problématique:** Les conteneurs ne se lance pas au démarrage de la machine.
-**Solution:** unless-stopped
-
+**Version: 1.0**
+```
+Bug: Les conteneurs ne se lance pas au démarrage de la machine.
+Solution: unless-stopped
+```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

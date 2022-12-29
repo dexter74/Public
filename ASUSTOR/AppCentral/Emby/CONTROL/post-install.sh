@@ -6,6 +6,7 @@ CONTENEUR=Emby
 IMAGE=emby/embyserver
 HTTP=8096:8096
 HTTPS=8920:8920
+RESTART=no
 
 ##########################################################################################################################################################
 # Arrêt du Conteneur #
@@ -16,6 +17,7 @@ docker stop $CONTENEUR
 # Lancement du Conteneur #
 ##########################
 docker run -d --name $CONTENEUR \
+--restart $RESTART \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \

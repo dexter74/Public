@@ -18,7 +18,7 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --restart no \
---net=host \
+--net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /share/Download:/Download \

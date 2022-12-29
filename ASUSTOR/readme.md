@@ -11,12 +11,6 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 **Version: 1.0**
 ```
 Bug: Les conteneurs ne se lance pas au démarrage de la machine.
-Solution: unless-stopped
-
-
-    "version":"2.0", 
-RESTART=unless-stopped
-$IMAGE:latest
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -35,7 +29,7 @@ $IMAGE:latest
 |  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | Cloud9        | Opérationnel [Release 2.0]     | Lent à se lancer     |
 |  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              |
+|  Bridge  | Emby 	        | Opérationnel [Release 2.0]    |  Aucune              |
 |  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              |

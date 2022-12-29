@@ -11,7 +11,7 @@ echo "pre-uninstall"
 ##########################################################################################################################################################
 if [ ! -z $CONTENEUR ]; then 
 	docker kill $CONTENEUR
-	sleep 2
+	sleep 5
 	docker rm -f $CONTENEUR
 fi
 

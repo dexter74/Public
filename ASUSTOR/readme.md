@@ -89,7 +89,8 @@ sh ./APPZ/ASUSTOR/AppCentral/start.sh
 mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk .
 ls *.apk;
 
-mv *.apk /mnt/DL
+mkdir -p /mnt/DL/APK 2>/dev/null;
+mv *.apk  /mnt/DL/APK;
 ```
 
 ##### E. Volumes

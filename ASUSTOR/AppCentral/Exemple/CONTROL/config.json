@@ -3,7 +3,7 @@
       "package":"sample-custom-apk",
       "name":"Sample custom APK",
       "version":"1.0.0",
-      "depends":[ "JRE" ],
+      "depends":[ "jre" ],
       "conflicts":[],
       "developer":"ASUSTOR",
       "maintainer":"ASUSTOR",

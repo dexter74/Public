@@ -4,7 +4,7 @@
 # Déclaration de la variable #
 ##############################
 IMAGE=vaultwarden/server
-CONTENEUR=bitwarden
+CONTENEUR=Bitwarden
 PORT0=7777:80
 PORT1=3012:3012
 RESTART=no

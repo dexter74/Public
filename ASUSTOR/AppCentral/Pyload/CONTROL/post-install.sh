@@ -22,6 +22,7 @@ docker run -d \
 --hostname $CONTENEUR \
 --volume /share/Docker/Pyload:/opt/pyload/pyload-config \
 --volume /share/Download:/opt/pyload/Downloads \
+--volume /share/Video:/opt/pyload/Video \
 --publish $HTTP \
 --label cacher="oui" \
 $IMAGE:latest

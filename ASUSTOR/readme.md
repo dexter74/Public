@@ -35,24 +35,24 @@ Solution: unless-stopped
 
 
 
-| Network  |  Application  | Statut de l'application        |
-| -------- | ------------- | ------------------------------ |
-|  Bridge  | Cloud9        | Opérationnel [Release 1.0]     |
-|  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |
-|  Bridge  | Dozzle        | Opérationnel [Release 1.0]     |
-|  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |
-|  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |
-|  Bridge  | NordVPN       | En cours de test               |
-|  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |
-|  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]     |
-|  Bridge  | Portainer     | Opérationnel [Release 1.0]     |
-|  ??????  | Jackett       | A Faire                        |
-|  ??????  | Jdownloader   | A Faire                        |
-|  ??????  | Radarr        | A Faire                        |
-|  ??????  | Sonarr        | A Faire                        |
-|  ??????  | docker-ce     | A faire                        |
-|  ??????  | Wireguard     | Module Wireguard.ko absent     |
-|  ??????  | writl/pyload  | A faire                        |
+| Network  |  Application  | Statut de l'application        | Observation          |
+| -------- | ------------- | ------------------------------ | -------------------- |
+|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     | Lent à se lancer     |
+|  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |                      |
+|  Bridge  | Dozzle        | Opérationnel [Release 1.0]     |                      |
+|  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |
+|  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      |
+|  Bridge  | NordVPN       | En cours de test               |                      |
+|  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      |
+|  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]|       |
+|  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      |
+|  ??????  | Jackett       | A Faire                        |                      |
+|  ??????  | Jdownloader   | A Faire                        |                      |
+|  ??????  | Radarr        | A Faire                        |                      |
+|  ??????  | Sonarr        | A Faire                        |                      |
+|  ??????  | docker-ce     | A faire                        |                      |
+|  ??????  | Wireguard     | Module Wireguard.ko absent     |                      |
+|  ??????  | writl/pyload  | A faire                        |                      |
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### III. Création des Appz sur une machine Debian

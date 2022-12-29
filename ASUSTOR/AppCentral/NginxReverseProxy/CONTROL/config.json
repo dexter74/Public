@@ -1,8 +1,8 @@
 {
 "general":{ 
-  "package":"Nginx", 
+  "package":"NginxReverseProxy", 
   "name":"Nginx Reverse Proxy", 
-  "version":"1.0", 
+  "version":"2.0", 
   "depends": [ "docker-ce", "MariaDB" ], 
     "conflicts":"", 
     "developer":"Nginx", 

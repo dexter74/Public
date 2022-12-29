@@ -13,6 +13,7 @@ CONTENEUR=AdGuardHome
 
 case "$1" in
   start)
+    sleep 10
     docker start $CONTENEUR
     sleep 5
     ;;

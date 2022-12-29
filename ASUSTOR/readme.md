@@ -34,6 +34,7 @@ $IMAGE:latest
 |  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | Cloud9        | Opérationnel [Release 2.0]     | Lent à se lancer     |
+|  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              |
@@ -44,7 +45,6 @@ $IMAGE:latest
 | Network  |  Application  | Statut de l'application        | Observation          |
 | -------- | ------------- | ------------------------------ | -------------------- |
 |  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |                      |
-|  Bridge  | Dozzle        | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | NordVPN       | En cours de test               |                      |

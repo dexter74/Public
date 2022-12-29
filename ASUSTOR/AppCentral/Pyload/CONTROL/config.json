@@ -1,12 +1,12 @@
 {
   "general":{
-    "package":"Exemple",
-    "name":"Exemple",
+    "package":"PyLoad",
+    "name":"PyLoad",
     "version":"1.0",
     "depends": [ "docker-ce(>=20.10.2.r2)"],
-    "conflicts":"Exemple",
-    "developer":"Exemple",
-    "maintainer":"Exemple",
+    "conflicts":"",
+    "developer":"PyLoad",
+    "maintainer":"PyLoad",
     "email":"support@XXXXXXX.xx",
     "website":"https://wwww.",
     "architecture":"x86-64",

@@ -5,7 +5,7 @@
 ######################################
 CONTENEUR=Jdownloader
 IMAGE=jlesage/jdownloader-2
-HTTP=5800
+HTTP=5800:5800
 RESTART=no
 IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 ##########################################################################################################################################################
@@ -19,14 +19,17 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --restart $RESTART \
---net=host \
+--net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
+--volume /share/Download:/Download \
+--volume /share/Video:/Video \
+--volume /share/Music:/Music \
 --env TZ="Europe\Paris" \
 --label cacher="oui" \
+--publish $HTTP \
 $IMAGE:latest
 
-#--publish $HTTP \
 
 
 ##########################################################################################################################################################

@@ -7,7 +7,7 @@ IMAGE=vaultwarden/server
 CONTENEUR=Bitwarden
 PORT0=7777:80
 PORT1=3012:3012
-RESTART=no
+RESTART=unless-stopped
 
 ##########################################################################################################################################################
 # General Settings #

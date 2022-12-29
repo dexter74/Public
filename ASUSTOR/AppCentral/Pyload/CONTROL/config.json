@@ -17,7 +17,7 @@
     "privace-statement":"" },
 
   "adm-desktop":{
-                "app":{ "type":"custom", "protocol":"http", "port":"XXXXXXX",  "url":"/"},
+                "app":{ "type":"custom", "protocol":"http", "port":"1070",  "url":"/"},
                 "privilege":{ "accessible":"administrators", "customizable": "true" }
                 },
 
@@ -29,7 +29,7 @@
 		{ "name":"Video", "description":"Dossier Video Requis" }
 		],
 
-	"port":[ "27015", "27016" ],
+	"port":[ "1070" ],
 	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }
 	}

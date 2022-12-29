@@ -3,26 +3,26 @@
 ##########################################################################################################################################################
 # Déclaration de Variable #
 ###########################
+IMAGE=writl/pyload
 CONTENEUR=PyLoad
-container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
-im=$(docker images | grep -i $container | grep latest | awk '{print $3}')
+
+
 
 ##########################################################################################################################################################
 echo "pre-uninstall"
-echo $container
-echo $im
+echo $CONTENEUR
 
 ##########################################################################################################################################################
-if [ ! -z $container ]; then 
-	docker kill $container
+if [ ! -z $CONTENEUR ]; then 
+	docker kill $CONTENEUR
 	sleep 2
-	docker rm -f $container
+	docker rm -f $CONTENEUR
 fi
 
 ##########################################################################################################################################################
 if [ ! -z $im ]; then 
 	if [ "$APKG_PKG_STATUS" == "uninstall" ]; then
-		docker rmi -f $im
+		docker rmi -f $IMAGE
 	fi
 fi
 

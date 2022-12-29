@@ -6,6 +6,7 @@
 CONTENEUR=PyLoad
 IMAGE=writl/pyload
 HTTP=8888:8000
+RESTART=always
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -17,7 +18,7 @@ docker container rm -f $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart no \
+--restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /share/Docker/Pyload:/opt/pyload/pyload-config \

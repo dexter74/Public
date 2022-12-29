@@ -1,1 +1,1 @@
-Application exemple de ASUSTOR.
+Application exemple de ASUSTOR. (Auto-démarre: OK)

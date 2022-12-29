@@ -43,7 +43,7 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 |  ??????  | Sonarr        | A Faire                        |
 |  ??????  | docker-ce     | A faire                        |
 |  ??????  | Wireguard     | Module Wireguard.ko absent     |
-
+|  ??????  | writl/pyload  | A faire                        |
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### III. Création des Appz sur une machine Debian

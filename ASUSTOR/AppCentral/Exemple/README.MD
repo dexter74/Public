@@ -1,1 +1,1 @@
-Cette application a été faite par ASUSTOR. (Ajout d'un dépendance: JRE)
+Application exemple de ASUSTOR.

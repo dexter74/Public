@@ -7,8 +7,8 @@ docker start ReverseProxy
 docker start bitwarden" > docker_start.sh
 
 echo "clear;
-docker stop ReverseProxy
 docker stop bitwarden
+docker stop ReverseProxy
 docker stop MariaDB
 docker stop qBittorrent
 docker stop Emby

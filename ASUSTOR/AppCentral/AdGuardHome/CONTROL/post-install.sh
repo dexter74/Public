@@ -24,6 +24,7 @@ docker run -d \
 --env TZ="Europe/Paris" \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
+--volume /usr/builtin/etc/certificate:/sslcerts/:ro \
 --label cacher="oui" \
 $IMAGE:latest
 

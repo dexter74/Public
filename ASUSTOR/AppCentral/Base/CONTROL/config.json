@@ -4,7 +4,7 @@
     "name":"Exemple",
     "version":"1.0",
     "depends": [ "docker-ce(>=20.10.2.r2)"],
-    "conflicts":"Exemple",
+    "conflicts":"",
     "developer":"Exemple",
     "maintainer":"Exemple",
     "email":"support@XXXXXXX.xx",

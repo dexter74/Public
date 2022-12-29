@@ -28,19 +28,20 @@ Solution: unless-stopped
 | -------- | ------------- | ------------------------------ |
 |  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |
 |  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |
+|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |
 |  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |
 |  Bridge  | Nginx         | Opérationnel [Release 2.0]     |
+|  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |
+
 |  Bridge  | Cloud9        | Opérationnel [Release 1.0]     |
 |  Bridge  | CodeServer    | Opérationnel [Release 1.0]     |
 |  Bridge  | Dozzle        | Opérationnel [Release 1.0]     |
-|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |
 |  Bridge  | NordVPN       | En cours de test               |
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]     |
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |
-|  Bridge  | QBitorrent    | Opérationnel [Alpha 1.0]       |
 |  ??????  | Jackett       | A Faire                        |
 |  ??????  | Jdownloader   | A Faire                        |
 |  ??????  | Radarr        | A Faire                        |

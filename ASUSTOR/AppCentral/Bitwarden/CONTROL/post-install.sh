@@ -7,6 +7,7 @@ IMAGE=vaultwarden/server
 CONTENEUR=bitwarden
 PORT0=7777:80
 PORT1=3012:3012
+RESTART=no
 
 ##########################################################################################################################################################
 # General Settings #
@@ -36,7 +37,7 @@ docker container rm -f $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---restart no \
+--restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/data \

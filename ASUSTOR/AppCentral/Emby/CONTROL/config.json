@@ -2,7 +2,7 @@
 "general":{ 
   "package":"Emby", 
   "name":"Emby", 
-  "version":"1.0", 
+  "version":"2.0", 
   "depends": [ 
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 

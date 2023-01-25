@@ -29,7 +29,7 @@ Bug: Les conteneurs ne se lance pas au démarrage de la machine.
 |  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | Cloud9        | Opérationnel [Release 2.0]     | Lent à se lancer     |
 |  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | Emby 	        | Opérationnel [Release 2.0]    |  Aucune              |
+|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              |
@@ -52,6 +52,7 @@ Bug: Les conteneurs ne se lance pas au démarrage de la machine.
 |  ??????  | docker-ce     | A faire                        |                      |
 |  ??????  | Wireguard     | Module Wireguard.ko absent     |                      |
 |  ??????  | writl/pyload  | A faire                        |                      |
+|  ??????  | Wiki.JS       | A faire                        |                      |
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### III. Création des Appz sur une machine Debian

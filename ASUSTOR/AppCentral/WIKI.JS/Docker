@@ -1,0 +1,68 @@
+################
+version: '3.9' #
+services:      #
+################
+#
+#
+#####################################################
+  CN_PostgreSQL:
+    # --------------------------------------------- #
+    image: 'postgres:11-alpine'
+    container_name: 'CN_PostgreSQL'
+    hostname: 'CN_PostgreSQL'
+    # --------------------------------------------- #
+    restart: 'unless-stopped'
+    network_mode: 'bridge'
+    # --------------------------------------------- #
+    environment:
+      POSTGRES_DB: 'wiki'
+      POSTGRES_PASSWORD: 'Ganon+Stop-2'
+      POSTGRES_USER: 'wikijs'
+    # --------------------------------------------- #
+    volumes:
+      - 'PostgreSQL_Data:/var/lib/postgresql/data'
+    # --------------------------------------------- #
+    ports:
+      - "5432:5432"
+#####################################################
+#
+#
+#####################################################
+  CN_Wiki_JS:
+    # --------------------------------------------- #
+    image: 'ghcr.io/requarks/wiki:2'
+    container_name: 'CN_Wiki_JS'
+    hostname: 'CN_Wiki_JS'
+    # --------------------------------------------- #
+    restart: 'unless-stopped'
+    network_mode: 'bridge'
+    # --------------------------------------------- #
+    depends_on:
+      - 'CN_PostgreSQL'
+    # --------------------------------------------- #
+    environment:
+      HA_ACTIVE: true
+      DB_TYPE: 'postgres'
+      DB_HOST: '172.17.0.1'
+      DB_PORT: '5432'
+      DB_USER: 'wikijs'
+      DB_PASS: 'Ganon+Stop-2'
+      DB_NAME: 'wiki'
+    # --------------------------------------------- #
+    ports:
+      - '8484:3000'
+    # --------------------------------------------- #
+    healthcheck:
+      test: ["CMD", "curl", "http://127.0.0.1:3000"]
+#####################################################
+#
+#
+###########################
+# Déclaration des volumes #
+###########################
+volumes:
+  # ---------------- #
+  PostgreSQL_Data:
+    name: 'PostgreSQL_Data'
+    external: false
+  # ---------------- #

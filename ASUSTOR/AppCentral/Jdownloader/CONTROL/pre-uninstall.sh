@@ -3,7 +3,7 @@
 ##########################################################################################################################################################
 # Déclaration de Variable #
 ###########################
-CONTENEUR=
+CONTENEUR=jdownloader
 container=$(docker container ls -a | grep $CONTENEUR |awk '{print $1}')
 im=$(docker images | grep $container | grep latest | awk '{print $3}')
 

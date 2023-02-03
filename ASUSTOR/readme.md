@@ -87,16 +87,16 @@ chmod u+x  /usr/bin/apkg-*;
 ```console
 clear;
 cd;
-rm -rf ~/APPZ
-git clone https://github.com/dexter74/Public.git ~/APPZ
-chmod -R 777 ~/APPZ
+rm -rf ./APPZ
+git clone https://github.com/dexter74/Public.git ./APPZ
+chmod -R 777 ./APPZ
 ```
 
 ##### D. Création d'une Appz
 ```
-rm /mnt/DL/APK/*.apk;
 sh ./APPZ/ASUSTOR/AppCentral/start.sh;
-mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk .;
+mv ./APPZ/ASUSTOR/AppCentral/*/*.apk /home/marc/;
+chown marc:users /home/marc/*.apk; 
 ```
 
 ##### E. Volumes

@@ -5,7 +5,7 @@
 # nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
 
 ########################################################################################
-cd ~/APPZ/ASUSTOR/AppCentral/Exemple                     && apkg-tools_py3.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Exemple                    && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome   		&& apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden     		&& apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Cloud9       		&& apkg-tools_py3.py create .

@@ -22,6 +22,7 @@ docker run -d \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
+--volume /share/Download:/output \
 --publish $HTTP \
 --label cacher="oui" \
 $IMAGE:latest

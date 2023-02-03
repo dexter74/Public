@@ -95,7 +95,6 @@ chmod -R 777 ./APPZ
 ##### D. Création d'une Appz
 ```
 clear;
-nano ./APPZ/ASUSTOR/AppCentral/Emby/CONTROL/*.json;
 sh ./APPZ/ASUSTOR/AppCentral/start.sh;
 mv ./APPZ/ASUSTOR/AppCentral/*/*.apk /home/marc/;
 chown marc:users /home/marc/*.apk; 

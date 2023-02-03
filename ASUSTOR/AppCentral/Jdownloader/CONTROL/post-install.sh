@@ -3,11 +3,10 @@
 ##########################################################################################################################################################
 # Déclaration de la variable de test #
 ######################################
-CONTENEUR=
-IMAGE=
-HTTP=
+CONTENEUR=jdownloader
+IMAGE=jlesage/jdownloader-2
+HTTP=3333:5800
 RESTART=unless-stopped
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -23,11 +22,9 @@ docker run -d \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
+--publish $HTTP \
 --label cacher="oui" \
 $IMAGE:latest
-
-#--publish $HTTP \
-#--env \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

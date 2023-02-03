@@ -25,8 +25,7 @@
     "symbolic-link":{},
       "share-folder":[
 		{ "name":"Docker", "description":"Dossier Docker Requis" },
-		{ "name":"Download", "description":"Dossier Download Requis" },
-		{ "name":"Video", "description":"Dossier Video Requis" }
+		{ "name":"Download", "description":"Dossier Download Requis" }
 		],
 
 	"port":[ "3333" ],

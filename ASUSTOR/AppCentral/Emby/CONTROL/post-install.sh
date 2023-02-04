@@ -26,6 +26,7 @@ docker run -d --name $CONTENEUR \
 --publish $HTTP \
 --publish $HTTPS \
 --device /dev/dri/renderD128:/dev/dri/renderD128 \
+--device /dev/dri/card0:/dev/dri/card0 \
 --label cacher="oui" \
 $IMAGE
 

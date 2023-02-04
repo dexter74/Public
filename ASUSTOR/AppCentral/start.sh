@@ -7,7 +7,7 @@
 ########################################################################################
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple    && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Base     && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/Base       && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Cloud9 && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Dozzle && apkg-tools_py3.py create .

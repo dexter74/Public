@@ -96,8 +96,8 @@ chmod -R 777 ./APPZ
 ```
 clear;
 sh ./APPZ/ASUSTOR/AppCentral/start.sh;
-mv ./APPZ/ASUSTOR/AppCentral/*/*.apk /home/marc/;
-chown marc:users /home/marc/*.apk; 
+mv ./APPZ/ASUSTOR/AppCentral/*/*.apk /home/marc/Téléchargements;
+chown marc:users /home/marc/Téléchargements/**.apk; 
 ```
 
 ##### E. Volumes

@@ -24,7 +24,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/QBitorrent    		&& apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio 		&& apkg-tools_py3.py create .
 ########################################################################################
 # En cours de test:
- cd ~/APPZ/ASUSTOR/AppCentral/Jdownloader      && apkg-tools_py3.py create .
+ cd ~/APPZ/ASUSTOR/AppCentral/Jdownloader         && apkg-tools_py3.py create .
 ########################################################################################
 # En Developpement
 # cd ~/APPZ/ASUSTOR/AppCentral/Pyload/          && apkg-tools_py3.py create .

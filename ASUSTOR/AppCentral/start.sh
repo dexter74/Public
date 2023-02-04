@@ -1,9 +1,7 @@
 ########################################################################################
 # https://github.com/dexter74/Archives/tree/main/Docker/V1/2.Conteneurs
-
 ########################################################################################
 # nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
-
 ########################################################################################
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .
@@ -23,7 +21,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/QBitorrent         && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio      && apkg-tools_py3.py create .
 ########################################################################################
-# En cours de test:
+# En cours de test
  cd ~/APPZ/ASUSTOR/AppCentral/Jdownloader       && apkg-tools_py3.py create .
 ########################################################################################
 # En Developpement

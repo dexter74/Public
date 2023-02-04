@@ -25,6 +25,7 @@ docker run -d --name $CONTENEUR \
 --net=bridge \
 --publish $HTTP \
 --publish $HTTPS \
+--device /dev/dri/renderD128:/dev/dri/renderD128 \
 --label cacher="oui" \
 $IMAGE
 

@@ -31,6 +31,9 @@
                    { "name":"Docker", "description":"Dossier Docker Requis" },
                    { "name":"Download", "description":"Dossier Download Requis" },
                    { "name":"Music", "description":"Dossier Music Requis" },
+                   { "name":"Music", "description":"Dossier Music Requis" },
+                   { "name":"MyArchive1", "description":"Dossier MyArchive1 Requis" },
+                   { "name":"MyArchive2", "description":"Dossier MyArchive2 Requis" },
                    { "name":"Video", "description":"Dossier Video Requis" }
                    ],
 	"port":[ "8096", "8920" ],

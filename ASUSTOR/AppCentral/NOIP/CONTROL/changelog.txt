@@ -1,3 +1,4 @@
-Conteneur: aanousakis/no-ip
 Commande: docker container run -d -e USERNAME=user1 -e PASSWORD=123 -e "DOMAINS=domain1.ddns.net" -e INTERVAL=5 aanousakis/no-ip
 
+CONTENEUR=NOIP
+IMAGE=aanousakis/no-ip

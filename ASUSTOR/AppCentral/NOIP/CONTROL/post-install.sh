@@ -6,8 +6,10 @@
 CONTENEUR=NOIP
 IMAGE=aanousakis/no-ip
 RESTART=unless-stopped
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
-
+IDENTIFIANT=email@wanadoo.fr
+MOTDEPASSE=Passw0rd2023
+MONDOMAIN=mondomain.ddn.net
+INTERVAL_MAJ_IP=1440
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
@@ -21,10 +23,10 @@ docker run -d \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
---env USERNAME="" \
---env PASSWORD="" \
---env DOMAINS="" \
---env INTERVAL="" \
+--env USERNAME="$IDENTIFIANT" \
+--env PASSWORD="$MOTDEPASSE" \
+--env DOMAINS="$MONDOMAIN" \
+--env INTERVAL="$INTERVAL_MAJ_IP" \
 $IMAGE:latest
 
 #--publish $HTTP \

@@ -3,8 +3,6 @@
       "package":"No-IP",
       "name":"Update DYNDNS",
       "version":"1.0.0",
-      "depends":[ "jre" ],
-      "conflicts":[],
       "developer":"Marc Jaffré",
       "maintainer":"Marc Jaffré",
       "email":"teste74@hotmail.fr",

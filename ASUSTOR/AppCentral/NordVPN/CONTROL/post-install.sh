@@ -14,7 +14,7 @@ TECHNO="NordLynx"
 PAYS="Switzerland"
 RESEAU_AUTORISE="192.168.1.0/24, 192.168.2.0/24"
 IMAGE="bubuntux/nordvpn"
-PORT0="1007:1007"
+QBITORRENT="1007:1007"
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -36,7 +36,7 @@ docker run -d \
 --env CONNECT="$PAYS" \
 --env TECHNOLOGY="$TECHNO" \
 --env NETWORK="$RESEAU_AUTORISE" \
---publish $PORT0 \
+--publish $QBITORRENT \
 $IMAGE
 
 ##########################################################################################################################################################

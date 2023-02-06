@@ -5,7 +5,6 @@
 ######################################
 CONTENEUR=NOIP
 IMAGE=aanousakis/no-ip
-
 RESTART=unless-stopped
 IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 

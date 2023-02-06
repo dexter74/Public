@@ -4,10 +4,17 @@
 # Déclaration de la variable #
 ##############################
 CONTENEUR=NordVPN
-IMAGE=bubuntux/nordvpn
-NORDVPN_USER=
-NORDVPN_PASS=
-PORT0=1007:1007
+RESTART="unless-stopped"
+RESEAU="bridge"
+PERMISSION_1="NET_ADMIN"
+PERMISSION_2="NET_RAW"
+UTILISATEUR=""
+MOTDEPASSE=""
+TECHNO="NordLynx"
+PAYS="Switzerland"
+RESEAU_AUTORISE="192.168.1.0/24, 192.168.2.0/24"
+IMAGE="bubuntux/nordvpn"
+PORT0="1007:1007"
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -18,24 +25,19 @@ docker container rm -f  $CONTENEUR
 # Lancement du Conteneur #
 ##########################
 docker run -d \
---name=$CONTENEUR \
---restart no \
---net=bridge \
---cap-add="NET_ADMIN" \
---cap-add="NET_RAW" \
+--name="$CONTENEUR" \
+--restart "$RESTART" \
+--net="$RESEAU" \
+--cap-add="$PERMISSION_1" \
+--cap-add="$PERMISSION_2" \
 --sysctl net.ipv6.conf.all.disable_ipv6="1" \
---env USER="$NORDVPN_USER" \
---env PASS="$NORDVPN_PASS" \
---env CONNECT="Switzerland" \
---env TECHNOLOGY="NordLynx" \
---env NETWORK="192.168.1.0/24, 192.168.2.0/24" \
---label cacher="oui" \
+--env USER="$UTILISATEUR" \
+--env PASS="$MOTDEPASSE" \
+--env CONNECT="$PAYS" \
+--env TECHNOLOGY="$TECHNO" \
+--env NETWORK="$RESEAU_AUTORISE" \
+--publish $PORT0 \
 $IMAGE
-
-# --publish $PORT0 \
-
-
-
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

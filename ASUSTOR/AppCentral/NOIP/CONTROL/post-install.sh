@@ -6,6 +6,7 @@
 CONTENEUR=NOIP
 IMAGE=aanousakis/no-ip
 RESTART=unless-stopped
+RESEAU=bridge
 IDENTIFIANT=email@wanadoo.fr
 MOTDEPASSE=Passw0rd2023
 MONDOMAIN=mondomain.ddn.net
@@ -21,7 +22,7 @@ docker container rm -f  $CONTENEUR
 docker run -d \
 --name=$CONTENEUR \
 --restart $RESTART \
---net=bridge \
+--net=$RESEAU \
 --hostname $CONTENEUR \
 --env USERNAME="$IDENTIFIANT" \
 --env PASSWORD="$MOTDEPASSE" \

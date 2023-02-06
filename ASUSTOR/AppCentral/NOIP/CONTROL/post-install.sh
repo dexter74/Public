@@ -20,10 +20,10 @@ docker container rm -f  $CONTENEUR
 # Lancement du Conteneur #
 ##########################
 docker run -d \
---name=$CONTENEUR \
---restart $RESTART \
---net=$RESEAU \
---hostname $CONTENEUR \
+--name="$CONTENEUR" \
+--restart "$RESTART" \
+--net="$RESEAU" \
+--hostname "$CONTENEUR" \
 --env USERNAME="$IDENTIFIANT" \
 --env PASSWORD="$MOTDEPASSE" \
 --env DOMAINS="$MONDOMAIN" \

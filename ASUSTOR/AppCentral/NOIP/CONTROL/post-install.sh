@@ -22,9 +22,9 @@ docker run -d \
 --net=bridge \
 --hostname $CONTENEUR \
 --env USERNAME="" \
---env PASSWORD=""
---env DOMAINS=""
---env INTERVAL=""
+--env PASSWORD="" \
+--env DOMAINS="" \
+--env INTERVAL="" \
 $IMAGE:latest
 
 #--publish $HTTP \

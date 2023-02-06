@@ -22,6 +22,8 @@ docker run -d --name $CONTENEUR \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
 --volume /share/Music:/Music \
+--volume /share/MyArchive1:/MyArchive1 \
+--volume /share/MyArchive2:/MyArchive2 \
 --net=bridge \
 --publish $HTTP \
 --publish $HTTPS \

@@ -1,0 +1,19 @@
+{
+   "general":{
+      "package":"No-IP",
+      "name":"Update DYNDNS",
+      "version":"1.0.0",
+      "depends":[ "jre" ],
+      "conflicts":[],
+      "developer":"Marc Jaffré",
+      "maintainer":"Marc Jaffré",
+      "email":"teste74@hotmail.fr",
+      "website":"http://drthrax74.ddns.net",
+      "architecture":"any",
+      "firmware":"2.1.0"
+   },
+   "privilege":{
+      "accessible":"users",
+      "customizable":true
+   }
+}

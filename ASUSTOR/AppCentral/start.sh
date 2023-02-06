@@ -1,8 +1,8 @@
 ########################################################################################
 # https://github.com/dexter74/Archives/tree/main/Docker/V1/2.Conteneurs
 ########################################################################################
-# nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
 ########################################################################################
+#  Container Ready for Deploy
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
@@ -21,9 +21,19 @@ cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/QBitorrent         && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio      && apkg-tools_py3.py create .
 ########################################################################################
-# En cours de test
+# Container in Testing
  cd ~/APPZ/ASUSTOR/AppCentral/Jdownloader       && apkg-tools_py3.py create .
- cd ~/APPZ/ASUSTOR/AppCentral/NOIP              && apkg-tools_py3.py create .
+
+########################################################################################
+# Container Edit and Ready for Deploy
+# --------------------------------------------------------------------------------------
+# nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
+# cd   ~/APPZ/ASUSTOR/AppCentral/NordVPN        && apkg-tools_py3.py create .
+# --------------------------------------------------------------------------------------
+# nano ~/APPZ/ASUSTOR/AppCentral/NOIP/CONTROL/post-install.sh;
+# cd ~/APPZ/ASUSTOR/AppCentral/NOIP             && apkg-tools_py3.py create .
+# --------------------------------------------------------------------------------------
+
 
 ########################################################################################
 # En Developpement
@@ -31,8 +41,4 @@ cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio      && apkg-tools_py3.py create .
 # cd ~/APPZ/ASUSTOR/AppCentral/Jackett          && apkg-tools_py3.py create .
 # cd ~/APPZ/ASUSTOR/AppCentral/Radarr           && apkg-tools_py3.py create .
 # cd ~/APPZ/ASUSTOR/AppCentral/Sonarr           && apkg-tools_py3.py create .
-
 ########################################################################################
-# Tentative KO
-# cd ~/APPZ/ASUSTOR/AppCentral/NordVPN		&& apkg-tools_py3.py create .
-# cd ~/APPZ/ASUSTOR/AppCentral/Wireguard	&& apkg-tools_py3.py create .

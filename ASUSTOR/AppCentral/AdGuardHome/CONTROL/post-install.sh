@@ -5,7 +5,7 @@
 ######################################
 CONTENEUR=AdGuardHome
 IMAGE=adguard/adguardhome
-RESTART=always
+RESTART=unless-stopped
 # WebUI=80 | unless-stopped
 
 ##########################################################################################################################################################

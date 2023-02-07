@@ -98,6 +98,7 @@ clear;
 sh ./APPZ/ASUSTOR/AppCentral/start.sh;
 mv ./APPZ/ASUSTOR/AppCentral/*/*.apk /home/marc/Téléchargements;
 chown marc:users /home/marc/Téléchargements/*.apk; 
+rm -rf APPZ;
 ```
 
 ##### E. Volumes

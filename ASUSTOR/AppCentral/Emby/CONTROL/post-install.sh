@@ -16,7 +16,9 @@ docker stop $CONTENEUR
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
-docker run -d --name $CONTENEUR \
+docker run -d \
+--name $CONTENEUR \
+--hostname $CONTENEUR \
 --restart $RESTART \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \

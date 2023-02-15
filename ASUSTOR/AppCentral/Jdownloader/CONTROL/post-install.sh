@@ -3,7 +3,7 @@
 ##########################################################################################################################################################
 # Déclaration de la variable de test #
 ######################################
-CONTENEUR=jdownloader
+CONTENEUR=Jdownloader
 IMAGE=jlesage/jdownloader-2
 HTTP=3333:5800
 RESTART=unless-stopped

@@ -5,7 +5,7 @@
     "version":"1.0",
     "depends": [""],
     "conflicts":"",
-    "developer":"Drthrax74",
+    "developer":"Jackett",
     "maintainer":"Drthrax74",
     "email":"Drthrax74@gmail.com",
     "website":"https://github.com/Jackett/Jackett",

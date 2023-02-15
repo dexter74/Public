@@ -1,0 +1,1 @@
+Jackett est une application qui permet de faire un lien entre Radarr et Sonarr et vos trackers torrent.

@@ -6,7 +6,7 @@
     "depends": [ "docker-ce(>=20.10.2.r2)", "MariaDB" ], 
     "conflicts":"", 
     "developer":"Bitwarden", 
-    "maintainer":"Bitwarden", 
+    "maintainer":"Drthrax74", 
     "email":"support@bitwarden.com", 
     "website":"https://bitwarden.com/", 
     "architecture":"x86-64", 

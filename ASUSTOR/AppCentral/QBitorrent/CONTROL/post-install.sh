@@ -4,7 +4,7 @@
 ######################################
 CONTENEUR=qBittorrent
 PORT=6881:6881
-WEBUI=1111:1007
+WEBUI=1110:1007
 MEMORY=512m
 IMAGE=linuxserver/qbittorrent
 RESTART=unless-stopped

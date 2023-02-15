@@ -1,0 +1,1 @@
+ Radarr est une branche indépendante de Sonarr retravaillée pour le téléchargement automatique de films via Usenet et BitTorrent.

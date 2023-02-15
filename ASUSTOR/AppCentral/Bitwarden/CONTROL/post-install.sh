@@ -39,7 +39,7 @@ docker run -d \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
---volume /volume1/Docker/:/data \
+--volume /volume1/Docker/$CONTENEUR:/data \
 --env DOMAIN="https://${MYSQL_HOST}" \
 --env DATA_FOLDER="$DATA_FOLDER" \
 --env ADMIN_TOKEN="$ADMIN_TOKEN" \

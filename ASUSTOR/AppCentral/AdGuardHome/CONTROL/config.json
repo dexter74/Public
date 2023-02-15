@@ -6,7 +6,7 @@
 		"depends": [ "docker-ce"], 
 		"conflicts":"", 
 		"developer":"AdGuardHome", 
-		"maintainer":"AdGuardHome", 
+		"maintainer":"Drthrax74", 
 		"email":"support@adguardhome.com",
 		"website":"https://adguard.com/fr", 
 		"architecture":"x86-64", 

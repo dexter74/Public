@@ -27,7 +27,7 @@ Bug: Les conteneurs ne se lance pas au démarrage de la machine.
 | -------- | ------------- | ------------------------------ | -------------------- |
 |  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     | Lent à se lancer     |
+|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     |  Lent à se lancer    |
 |  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              |
 |  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              |
@@ -45,7 +45,7 @@ Bug: Les conteneurs ne se lance pas au démarrage de la machine.
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]|       |
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     |                      |
-|  ??????  | Jackett       | A Faire                        |                      |
+|  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     |
 |  ??????  | Jdownloader   | A Faire                        |                      |
 |  ??????  | Radarr        | A Faire                        |                      |
 |  ??????  | Sonarr        | A Faire                        |                      |

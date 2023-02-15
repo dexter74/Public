@@ -1,0 +1,1 @@
+Dozzle est une application Web permettant d'accéder au contenu des fichiers logs de conteneurs Docker en toute simplicité.

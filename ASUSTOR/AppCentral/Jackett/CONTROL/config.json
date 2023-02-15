@@ -3,7 +3,7 @@
     "package":"Jackett",
     "name":"Jackett",
     "version":"1.0",
-    "depends": [ ""],
+    "depends": [""],
     "conflicts":"",
     "developer":"Drthrax74",
     "maintainer":"Drthrax74",

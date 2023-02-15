@@ -18,7 +18,6 @@ docker container rm -f  $CONTENEUR
 ##########################
 docker run -d \
 --name=$CONTENEUR \
---hostname=Jackett \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \

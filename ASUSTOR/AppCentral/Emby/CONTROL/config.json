@@ -30,7 +30,7 @@
     "share-folder":[ 
                    { "name":"Docker", "description":"Dossier Docker Requis" },
                    { "name":"Download", "description":"Dossier Download Requis" },
-                   { "name":"Music", "description":"Dossier Music Requis",
+                   { "name":"Music", "description":"Dossier Music Requis" },
                    { "name":"Video", "description":"Dossier Video Requis" }
                    ],
 	"port":[ "8096", "8920" ],

@@ -3,7 +3,7 @@
     "package":"Radarr",
     "name":"Radarr",
     "version":"1.0",
-    "depends": [ ""],
+    "depends": [""],
     "conflicts":"",
     "developer":"Radarr",
     "maintainer":"Drthrax74",

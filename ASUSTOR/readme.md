@@ -95,9 +95,9 @@ chmod -R 777 ./APPZ
 ##### D. Création d'une Appz
 ```
 clear;
+rm -f /mnt/Download/APK/*.apk
 sh ./APPZ/ASUSTOR/AppCentral/start.sh;
-mv ./APPZ/ASUSTOR/AppCentral/*/*.apk /home/marc/Téléchargements;
-chown marc:users /home/marc/Téléchargements/*.apk; 
+mv ./APPZ/ASUSTOR/AppCentral/*/*.apk /mnt/Download/APK/
 rm -rf APPZ;
 ```
 

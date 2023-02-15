@@ -7,7 +7,7 @@
     "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"", 
     "developer":"Dozzle", 
-    "maintainer":"Dozzle", 
+    "maintainer":"Drthrax74", 
     "email":"", 
     "website":"https://dozzle.dev/", 
     "architecture":"x86-64", 

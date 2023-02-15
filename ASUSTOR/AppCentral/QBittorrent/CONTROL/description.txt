@@ -1,12 +1,10 @@
-The qBittorrent project aims to provide an open-source software alternative to µTorrent.
-Additionally, qBittorrent runs and provides the same features on all major platforms (FreeBSD, Linux, macOS, OS/2, Windows).
-qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.
+qBittorrent est un client BitTorrent libre disponible sur PC.
 
-Default username and password for WebUI: admin/adminadmin
-Please change the password from the Settings of qBittorrent webUI.
-Enable HTTPS connection and apply ADM SSL certificate by default, please apply validate certificate by using qBittorrent on Sonarr and Radarr.
+Identifiant  : admin
+Mot de passe : adminadmin
 
-Note:
-1. The "/downloads" folder of qBittorrent binds to "/share/Download" shared folder in NAS, please find files in that folder.
-2. The "/shared" folder of qBittorrent binds to shared folder root of NAS, you can import files from other shared folders.
-3. The docker version is maintained by LinuxServer.io.
+Mise en service:
+ - Eteindre le conteneur
+ - Editer le fichier /volume1/Docker/Qbitorrent/qBittorrent/qBittorrent.conf
+ - Ajouter ou éditer la ligne pour obtenir WebUI\HostHeaderValidation=false
+ - Relancer le conteneur

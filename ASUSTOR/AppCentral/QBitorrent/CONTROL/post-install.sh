@@ -27,8 +27,9 @@ docker run -d \
 --env TZ=Europe\Paris \
 --env WEBUI_PORT=1007 \
 --volume /volume1/Docker/Qbitorrent:/config \
---volume /volume1/Video:/Video \
 --volume /volume1/Download:/downloads \
+--volume /volume1/Music:/Music \
+--volume /volume1/Video:/Video \
 --publish $WEBUI \
 --publish $PORT \
 --label cacher="oui" \

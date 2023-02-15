@@ -10,8 +10,10 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 
 **Version: 1.0**
 ```
-Bug: Les conteneurs ne se lance pas au démarrage de la machine.
-   : UID et GID 911
+Bug:
+- UID: 911 
+- GID: 911
+> Jackett, MariaDB, Emby 
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

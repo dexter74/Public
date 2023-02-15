@@ -23,6 +23,7 @@ docker run -d \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --publish $HTTP \
+--dns 8.8.8.8 \
 --env TZ="Europe/Paris" \
 --env AUTO_UPDATE="true" \
 --label cacher="oui" \

@@ -21,7 +21,7 @@ docker run -d \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
---volume /volume1/Docker/$CONTENEUR:/config \
+--volume /volume1/Docker/:/config \
 --publish $HTTP \
 --dns 8.8.8.8 \
 --env TZ="Europe/Paris" \

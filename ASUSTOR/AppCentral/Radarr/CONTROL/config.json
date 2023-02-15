@@ -1,7 +1,7 @@
 {
   "general":{
     "package":"Radarr",
-    "name":"Radarr",
+    "name":"Télécharger Films et Jeux",
     "version":"1.0",
     "depends": [ ""],
     "conflicts":"",

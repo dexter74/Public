@@ -25,8 +25,10 @@ docker run -d \
 --volume /volume1/Download:/downloads \
 --volume /volume1/Music:/Music \
 --volume /volume1/Video:/Video \
---publish $HTTP \
 --env TZ="Europe/Paris" \
+--env PUID=1000 \
+--env PGID=1000 \
+--publish $HTTP \
 --label cacher="oui" \
 $IMAGE:latest
 

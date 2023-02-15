@@ -1,0 +1,1 @@
+Radarr permet d'automatiser les téléchargement de vos vidéos entre votre tracker et votre stockage.

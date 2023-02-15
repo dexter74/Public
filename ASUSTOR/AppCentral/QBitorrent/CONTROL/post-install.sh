@@ -4,7 +4,7 @@
 ######################################
 CONTENEUR=qBittorrent
 PORT=6881:6881
-WEBUI=1007
+WEBUI=1111:1007
 MEMORY=512m
 IMAGE=linuxserver/qbittorrent
 RESTART=unless-stopped
@@ -29,7 +29,7 @@ docker run -d \
 --volume /volume1/Docker/Qbitorrent:/config \
 --volume /volume1/Video:/Video \
 --volume /volume1/Download:/downloads \
---publish $WEBUI:1007 \
+--publish $WEBUI \
 --publish $PORT \
 --label cacher="oui" \
 $IMAGE:latest

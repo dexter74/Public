@@ -3,9 +3,9 @@
       "package":"No-IP",
       "name":"Update DYNDNS",
       "version":"1.0.0",
-      "developer":"Marc Jaffré",
-      "maintainer":"Marc Jaffré",
-      "email":"teste74@hotmail.fr",
+      "developer":"NoIP",
+      "maintainer":"Drthrax74",
+      "email":"Drthrax74@gmail.com",
       "website":"http://drthrax74.ddns.net",
       "architecture":"any",
       "firmware":"2.1.0"

@@ -6,7 +6,7 @@
     "depends": [ "docker-ce(>=20.10.2.r2)"], 
     "conflicts":"NexClipper", 
     "developer":"NexClipper", 
-    "maintainer":"NexClipper", 
+    "maintainer":"Drthrax74", 
     "email":"", 
     "website":"https://nexclipper.io/", 
     "architecture":"x86-64", 

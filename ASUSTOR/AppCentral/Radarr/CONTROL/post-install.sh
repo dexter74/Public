@@ -22,6 +22,9 @@ docker run -d \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
+--volume /volume1/Download:/downloads \
+--volume /volume1/Music:/Music \
+--volume /volume1/Video:/Video \
 --publish $HTTP \
 --env TZ="Europe/Paris" \
 --label cacher="oui" \

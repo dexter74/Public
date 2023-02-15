@@ -1,1 +1,1 @@
-Radarr permet d'automatiser les téléchargement de vos vidéos entre votre tracker et votre stockage.
+15-02-2023: Création du projet Radarr

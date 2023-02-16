@@ -25,6 +25,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio      && apkg-tools_py3.py create .
  cd ~/APPZ/ASUSTOR/AppCentral/Jackett           && apkg-tools_py3.py create .
  cd ~/APPZ/ASUSTOR/AppCentral/Flaresolverr      && apkg-tools_py3.py create .
  cd ~/APPZ/ASUSTOR/AppCentral/Radarr            && apkg-tools_py3.py create .
+ cd ~/APPZ/ASUSTOR/AppCentral/Sonarr            && apkg-tools_py3.py create .
 
 ########################################################################################
 # Container Edit and Ready for Deploy

@@ -25,6 +25,8 @@ docker run -d \
 --publish $HTTP \
 --dns 8.8.8.8 \
 --env TZ="Europe/Paris" \
+--env PUID=1000 \
+--env PGID=1000 \
 --env AUTO_UPDATE="true" \
 --label cacher="oui" \
 $IMAGE:latest

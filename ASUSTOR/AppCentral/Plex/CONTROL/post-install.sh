@@ -24,6 +24,8 @@ docker run -d \
 --volume /share/Download:/Download \
 --volume /share/Music:/Music \
 --volume /share/Video:/Video \
+--device /dev/dri/renderD128:/dev/dri/renderD128 \
+--device /dev/dri/card0:/dev/dri/card0 \
 --label cacher="oui" \
 $IMAGE:latest
 

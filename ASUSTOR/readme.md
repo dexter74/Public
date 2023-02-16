@@ -47,7 +47,7 @@ Correctif:
 
 | Network  |  Application  | Statut de l'application        | Observation          |  Port  |
 | -------- | ------------- | ------------------------------ | -------------------- | ------ |
-|  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |  1010  |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      | ?????? |
 |  Bridge  | NordVPN       | En cours de test               |                      | ?????? |
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      | ?????? |

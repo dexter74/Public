@@ -4,8 +4,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## I. Présentation
-Le projet suivant à pour objectif, de faire des applications sous Docker avec l'image sur le portail ASUSTOR.
-J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés facilement.
+Ce projet à pour objectif de construire des conteneurs prêt à l'emploie avec l'accès au partage Docker, Download, Video, Music. 
 
 
 **Version: 1.0**

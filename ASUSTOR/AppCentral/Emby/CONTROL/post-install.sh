@@ -25,10 +25,10 @@ docker run -d \
 --volume /share/Video:/Video \
 --volume /share/Music:/Music \
 --net=bridge \
---publish $HTTP \
---publish $HTTPS \
 --device /dev/dri/renderD128:/dev/dri/renderD128 \
 --device /dev/dri/card0:/dev/dri/card0 \
+--publish $HTTP \
+--publish $HTTPS \
 --label cacher="oui" \
 $IMAGE
 

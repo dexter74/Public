@@ -1,1 +1,8 @@
 Jackett est une application qui permet de faire un lien entre Radarr et Sonarr et vos trackers torrent.
+
+
+Pour ajouter tout les Index:
+
+URL      : http://192.168.1.32:1111
+API Path : /torznab/all/api
+API Key  : XXXXXXX

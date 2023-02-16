@@ -32,33 +32,29 @@ Correctif:
 <br />
 <br />
 
-
 | Network  |  Application  | Statut de l'application        | Observation          |  Port  |
 | -------- | ------------- | ------------------------------ | -------------------- | ------ |
 |  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
 |  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
 |  Bridge  | Cloud9        | Opérationnel [Release 2.0]     |  Lent à se lancer    | ?????? |
+|  ??????  | docker-ce     | A faire                        |                      | ?????? |
 |  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
 |  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
-|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
-|  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
-|  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              | ?????? |
-
-
-| Network  |  Application  | Statut de l'application        | Observation          |  Port  |
-| -------- | ------------- | ------------------------------ | -------------------- | ------ |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |  1010  |
+|  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
+|  Bridge  | Jdownloader   | Opérationnel [Release 1.0]     | En cours de test     |  3333  |
+|  Bridge  | Librespee     | Opérationnel [Release 1.0]     | En cours de test     | 27016  |
+|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
 |  Bridge  | NordVPN       | En cours de test               |                      | ?????? |
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      | ?????? |
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]|       | ?????? |
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      | ?????? |
-|  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     | CodeServer           |  8443  |
-|  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
-|  Bridge  | Jdownloader   | Opérationnel [Release 1.0]     | En cours de test     |  3333  |
+|  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              | ?????? |
 |  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
 |  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
-|  ??????  | docker-ce     | A faire                        |                      | ?????? |
+|  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     | CodeServer           |  8443  |
 |  ??????  | Wireguard     | Module Wireguard.ko absent     |                      | ?????? |
 |  ??????  | writl/pyload  | A faire                        |                      | ?????? |
 |  ??????  | Wiki.JS       | A faire                        |                      | ?????? |

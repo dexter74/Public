@@ -21,11 +21,13 @@ docker run -d \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
---env TZ="Europe/Paris" \
 --env PASSWORD="password" \
 --env SUDO_PASSWORD="admin" \
 --env PROXY_DOMAIN="" \
 --env DEFAULT_WORKSPACE="/config/workspace" \
+--env TZ="Europe/Paris" \
+--env PUID=1000 \
+--env PGID=1000 \
 --publish $HTTP \
 --label cacher="oui" \
 $IMAGE

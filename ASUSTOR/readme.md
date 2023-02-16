@@ -52,7 +52,7 @@ Correctif:
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      | ?????? |
 |  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              |  1110  |
 |  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     |  1112  |
-|  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     |  1111  |
+|  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     |  1113  |
 |  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     | CodeServer           |  8443  |
 |  ??????  | Wireguard     | Module Wireguard.ko absent     |                      | ?????? |
 |  ??????  | writl/pyload  | A faire                        |                      | ?????? |

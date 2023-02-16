@@ -43,12 +43,12 @@ Correctif:
 |  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     |  1111  |
 |  Bridge  | Jdownloader   | Opérationnel [Release 1.0]     | En cours de test     |  3333  |
 |  Bridge  | Librespeed    | Opérationnel [Release 1.0]     | En cours de test     |  27016 |
-|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              | ------ |
+|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              |  3306  |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      |  10051 |
-|  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
-|  Bridge  | NordVPN       | En cours de test               |                      | ?????? |
-|  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      | ?????? |
-|  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]|       | ?????? |
+|  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              |   81   |
+|  Bridge  | NordVPN       | A configurer pour l'authentification |                | ------ |
+|  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      |  8081  |
+|  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0] |      |  32400 |
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      | ?????? |
 |  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              | ?????? |
 |  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |

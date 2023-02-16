@@ -1,0 +1,1 @@
+Visual Studio Code est un éditeur de code extensible.

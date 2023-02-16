@@ -51,8 +51,8 @@ Correctif:
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0] |      |  32400 |
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      | ?????? |
 |  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              |  1110  |
-|  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
-|  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
+|  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     |  1112  |
+|  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     |  1111  |
 |  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     | CodeServer           |  8443  |
 |  ??????  | Wireguard     | Module Wireguard.ko absent     |                      | ?????? |
 |  ??????  | writl/pyload  | A faire                        |                      | ?????? |

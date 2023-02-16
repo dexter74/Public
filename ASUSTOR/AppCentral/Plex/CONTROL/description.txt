@@ -1,0 +1,1 @@
+Plex est un logiciel client-serveur de gestion multimédia qui permet d'accéder à des films, séries, musiques et photos sur le serveur peu importe où le client se situe, s'il a une connexion Internet

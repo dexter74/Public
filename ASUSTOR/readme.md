@@ -10,11 +10,14 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 
 **Version: 1.0**
 ```
-Bug:
-- UID: 911 
-- GID: 911
+Dozzle: 
+ - Rechercher : User.*911
 
-Fix:
+Erreur:
+ - UID: 911 
+ - GID: 911
+
+Correctif:
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
 --env PGID=1000 \

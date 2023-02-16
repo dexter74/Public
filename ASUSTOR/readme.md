@@ -34,18 +34,18 @@ Correctif:
 
 | Network  |  Application  | Statut de l'application        | Observation          |  Port  |
 | -------- | ------------- | ------------------------------ | -------------------- | ------ |
-|  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
-|  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
-|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     |  Lent à se lancer    | ?????? |
+|  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              |  3272  |
+|  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              |  7777  |
+|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     |  Lent à se lancer    |  1000  |
 |  ??????  | docker-ce     | A faire                        |                      | ?????? |
-|  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
-|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
+|  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              |  1005  |
+|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              |  8096  |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |  1010  |
-|  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
+|  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     |  1111  |
 |  Bridge  | Jdownloader   | Opérationnel [Release 1.0]     | En cours de test     |  3333  |
-|  Bridge  | Librespee     | Opérationnel [Release 1.0]     | En cours de test     | 27016  |
-|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
-|  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | Librespeed    | Opérationnel [Release 1.0]     | En cours de test     |  27016 |
+|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              | ------ |
+|  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      |  10051 |
 |  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
 |  Bridge  | NordVPN       | En cours de test               |                      | ?????? |
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      | ?????? |

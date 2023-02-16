@@ -37,7 +37,6 @@ Correctif:
 |  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              |  3272  |
 |  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              |  7777  |
 |  Bridge  | Cloud9        | Opérationnel [Release 2.0]     |  Lent à se lancer    |  1000  |
-|  ??????  | docker-ce     | A faire                        |                      | ?????? |
 |  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              |  1005  |
 |  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              |  8096  |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |  1010  |

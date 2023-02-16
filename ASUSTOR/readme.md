@@ -33,36 +33,35 @@ Correctif:
 <br />
 
 
-| Network  |  Application  | Statut de l'application        | Observation          |
-| -------- | ------------- | ------------------------------ | -------------------- |
-|  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     |  Lent à se lancer    |
-|  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              |
-|  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              |
+| Network  |  Application  | Statut de l'application        | Observation          |  Port  |
+| -------- | ------------- | ------------------------------ | -------------------- | ------ |
+|  Host    | AdGuardHome   | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
+|  Bridge  | BitWarden     | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
+|  Bridge  | Cloud9        | Opérationnel [Release 2.0]     |  Lent à se lancer    | ?????? |
+|  Bridge  | Dozzle        | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
+|  Bridge  | Emby 	        | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
+|  Bridge  | MariaDB       | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
+|  Bridge  | Nginx         | Opérationnel [Release 2.0]     |  Aucune              | ?????? |
+|  Bridge  | QBitorrent    | En cours de Test [Release 2.0] |  Aucune              | ?????? |
 
 
-
-| Network  |  Application  | Statut de l'application        | Observation          |
-| -------- | ------------- | ------------------------------ | -------------------- |
-|  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      |
-|  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      |
-|  Bridge  | NordVPN       | En cours de test               |                      |
-|  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      |
-|  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]|       |
-|  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      |
-|  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     |                      |
-|  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     |
-|  ??????  | Jdownloader   | A Faire                        |                      |
-|  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     |
-|  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     |
-|  ??????  | docker-ce     | A faire                        |                      |
-|  ??????  | Wireguard     | Module Wireguard.ko absent     |                      |
-|  ??????  | writl/pyload  | A faire                        |                      |
-|  ??????  | Wiki.JS       | A faire                        |                      |
+| Network  |  Application  | Statut de l'application        | Observation          |  Port  |
+| -------- | ------------- | ------------------------------ | -------------------- | ------ |
+|  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | NordVPN       | En cours de test               |                      | ?????? |
+|  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]|       | ?????? |
+|  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
+|  ??????  | Jdownloader   | A Faire                        |                      | ?????? |
+|  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
+|  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
+|  ??????  | docker-ce     | A faire                        |                      | ?????? |
+|  ??????  | Wireguard     | Module Wireguard.ko absent     |                      | ?????? |
+|  ??????  | writl/pyload  | A faire                        |                      | ?????? |
+|  ??????  | Wiki.JS       | A faire                        |                      | ?????? |
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### III. Création des Appz sur une machine Debian

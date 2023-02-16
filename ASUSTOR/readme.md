@@ -13,7 +13,11 @@ J'ai pu remarqué que certains conteneurs sont instables et peuvent plantés fac
 Bug:
 - UID: 911 
 - GID: 911
-> Jackett, MariaDB, Emby 
+
+Fix:
+--env TZ="Europe/Paris" \
+--env PUID=1000 \
+--env PGID=1000 \
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

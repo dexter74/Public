@@ -20,6 +20,9 @@ docker run -d \
 --restart no \
 --net=bridge \
 --hostname $CONTENEUR \
+--env TZ="Europe/Paris" \
+--env PUID=1000 \
+--env PGID=1000 \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /share/Download:/Download \
 --volume /share/Music:/Music \
@@ -28,11 +31,6 @@ docker run -d \
 --device /dev/dri/card0:/dev/dri/card0 \
 --label cacher="oui" \
 $IMAGE:latest
-
-#--publish $HTTP \
-#--env \
-
-
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

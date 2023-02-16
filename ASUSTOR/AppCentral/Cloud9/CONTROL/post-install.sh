@@ -30,6 +30,7 @@ docker run -d \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/code \
 --volume /var/run/docker.sock:/var/run/docker.sock \
+--volume "/share/User Homes":/share \
 --label cacher="oui" \
 $IMAGE:latest
 

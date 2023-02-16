@@ -21,11 +21,13 @@ docker run -d \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
---env TZ="Europe/Paris" \
 --env MYSQL_ROOT_PASSWORD="root" \
 --env MYSQL_DATABASE="database" \
 --env MYSQL_USER="username" \
 --env MYSQL_PASSWORD="password" \
+--env TZ="Europe/Paris" \
+--env PUID=1000 \
+--env PGID=1000 \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --publish $HTTP \
 --label cacher="oui" \

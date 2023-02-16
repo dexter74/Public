@@ -1,0 +1,1 @@
+Sonarr est une application qui permet de surveiller et télécharger des séries, et d'organiser votre médiathèque.

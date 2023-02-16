@@ -23,9 +23,11 @@ docker run -d \
 --name=$CONTENEUR \
 --restart $RESTART \
 --net=bridge \
---env TZ="Europe/Paris" \
 --env USERNAME="$WEBUI_USER" \
 --env PASSWORD="$WEBUI_PASS" \
+--env TZ="Europe/Paris" \
+--env PUID=1000 \
+--env PGID=1000 \
 --publish $HTTP \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/code \

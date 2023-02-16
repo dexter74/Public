@@ -53,7 +53,7 @@ Correctif:
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                      | ?????? |
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0]|       | ?????? |
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      | ?????? |
-|  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     |                      | ?????? |
+|  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     | CodeServer           |  8443  |
 |  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
 |  ??????  | Jdownloader   | A Faire                        |                      | ?????? |
 |  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |

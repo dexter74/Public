@@ -55,7 +55,7 @@ Correctif:
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                      | ?????? |
 |  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     | CodeServer           |  8443  |
 |  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
-|  ??????  | Jdownloader   | A Faire                        |                      | ?????? |
+|  Bridge  | Jdownloader   | Opérationnel [Release 1.0]     | En cours de test     |  3333  |
 |  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
 |  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     | ?????? |
 |  ??????  | docker-ce     | A faire                        |                      | ?????? |

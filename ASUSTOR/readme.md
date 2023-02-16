@@ -27,9 +27,6 @@ Correctif:
 
 ## II. Etat d'avancement des conteneurs ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))
 
-# Voir Pour la relance des conteneurs après reboot du NAS
-
-<br />
 <br />
 
 | Network  |  Application  | Statut de l'application        | Observation          |  Port  |

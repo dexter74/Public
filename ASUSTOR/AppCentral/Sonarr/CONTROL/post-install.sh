@@ -22,6 +22,7 @@ docker run -d \
 --net=bridge \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
+--volume /volume1/Docker/$CONTENEUR/tv:/tv \
 --volume /volume1/Download:/downloads \
 --volume /volume1/Music:/Music \
 --volume /volume1/Video:/Video \

@@ -50,8 +50,8 @@ Bug:
 |  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     |                      |
 |  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test     |
 |  ??????  | Jdownloader   | A Faire                        |                      |
-|  ??????  | Radarr        | A Faire                        |                      |
-|  ??????  | Sonarr        | A Faire                        |                      |
+|  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test     |
+|  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test     |
 |  ??????  | docker-ce     | A faire                        |                      |
 |  ??????  | Wireguard     | Module Wireguard.ko absent     |                      |
 |  ??????  | writl/pyload  | A faire                        |                      |

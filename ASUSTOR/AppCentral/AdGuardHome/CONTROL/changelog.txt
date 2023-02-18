@@ -1,7 +1,10 @@
-2023-02-18: Mise en Bridge
+2023-02-18:
+- Mise en Bridge du conteneur
+- Redémarrage du conteneur après relance du NAS réussi.
+
 
 2022-12-29: AdGuardHome version 1.0 sortie !
-> Installation: OK
-> Déstallation: OK
+- Installation: OK
+- Déstallation: OK
 
 

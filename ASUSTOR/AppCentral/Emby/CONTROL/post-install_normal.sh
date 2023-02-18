@@ -19,12 +19,12 @@ docker stop $CONTENEUR
 docker run -d \
 --name $CONTENEUR \
 --hostname $CONTENEUR \
+--net=bridge \
 --restart $RESTART \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
 --volume /share/Music:/Music \
---net=bridge \
 --device /dev/dri/renderD128:/dev/dri/renderD128 \
 --device /dev/dri/card0:/dev/dri/card0 \
 --publish $HTTP \

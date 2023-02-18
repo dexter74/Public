@@ -17,8 +17,14 @@
 
 
 	"adm-desktop":{
-		"app":{ "type":"internal" },
-		"privilege":{ "accessible":"administrators", "customizable": true }
+		"app":{ 
+			"type":"internal"
+		     },
+		
+		"privilege":{
+			"accessible":"administrators",
+			"customizable": true
+			}
 		},
 
 	"register":{ 

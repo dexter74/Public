@@ -17,30 +17,11 @@
 
 
 	"adm-desktop":{
-		"app":{ 
-			"type":"custom",
-			"protocol":"http",
-			"port":"81",
-			"url":"/"
-			},  
-		"privilege":{
-			"accessible":"users",
-			"customizable": true 
-			}
-		},
+		"app":{ "type":"custom", "protocol":"http",  "port":"81", "url":"/" },  
+		"privilege":{ "accessible":"users", "customizable": true } },
 
-
-	"register":{
-		"share-folder":[ {
-			"name":"Docker",
-			"description":"Dossier Docker Requis"
-			} ],
-
-		"port":[ 
-			"81",
-			"1443",
-			"8080"
-			]
-
-		   }
+	"register":{ "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
+		"port":[  "81", "1443", "8080" ],
+		"boot-priority":{  "start-order":80, "stop-order":20 }
+		  }
 }

@@ -6,7 +6,7 @@
 CONTENEUR=AdGuardHome
 IMAGE=adguard/adguardhome
 RESTART=unless-stopped
-WEBUI=3272
+
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
@@ -26,7 +26,7 @@ docker create -i -t \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
 --publish 53:53/tcp     \
 --publish 53:53/udp     \
---publish $WEBUI:80/tcp \
+--publish 80:80/tcp \
 --publish 443:443/tcp   \
 --publish 443:443/udp   \
 --publish 3000:3000/tcp \

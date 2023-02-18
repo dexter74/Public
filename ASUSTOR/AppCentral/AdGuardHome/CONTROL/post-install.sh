@@ -11,21 +11,21 @@ RESTART=unless-stopped
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
-docker container rm -f  $CONTENEUR
+docker container rm -f $CONTENEUR
 
 ##########################################################################################################################################################
 # Création du Conteneur #
 #########################
-docker run -d \
+docker create -i -t \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
 --net=host \
 --restart $RESTART \
 --env TZ="Europe/Paris" \
+--volume /usr/builtin/etc/certificate:/sslcerts/:ro \
+--volume /etc/localtime:/etc/localtime:ro \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
---volume /usr/builtin/etc/certificate:/sslcerts/:ro \
---label cacher="oui" \
 $IMAGE:latest
 
 # --publish 3000:3000 \
@@ -39,7 +39,6 @@ docker start $CONTENEUR
 # Changer le port WebUI #
 #########################
 # sed -i -e 's/80/$WebUI/g' /volume1/Docker/$CONTENEUR/conf/AdGuardHome.yaml
-
 
 ##########################################################################################################################################################
 # Code retour de Fermeture #

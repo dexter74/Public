@@ -3,8 +3,7 @@
 ########################################################################################
 #  Container Ready for Deploy
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .
-
-#cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
 ########################################################################################
 # Container was required fix reboot NAS
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .

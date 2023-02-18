@@ -1,28 +1,30 @@
 {
-"general":{ 
-  "package":"Emby", 
-  "name":"Emby", 
-  "version":"2.0", 
-  "depends": [ 
-    "docker-ce(>=20.10.2.r2)"], 
-    "conflicts":"", 
-    "developer":"Emby", 
-    "maintainer":"Emby Corp", 
-    "email":"support@emby.media", 
-    "website":"https://emby.media", 
-    "architecture":"x86-64", 
-    "firmware":"4.1.0", 
-    "default-lang":"fr-FR",
-    "privace-statement":"https://emby.media/privacy.html" },
-"adm-desktop":{
-  "app":{
-    "type":"custom",
-    "protocol":"http", 
-    "port":"8096", 
-    "url":"/"},  
-  "privilege":{
-    "accessible":"users", 
-    "customizable": "true" }
+	"general":{
+		  "package":"Emby", 
+		  "name":"Emby", 
+		  "version":"2.0", 
+		  "depends": [ "docker-ce" ],
+		  "conflicts":"", 
+		  "developer":"Emby", 
+		  "maintainer":"Emby Corp", 
+		  "email":"support@emby.media", 
+		  "website":"https://emby.media", 
+		  "architecture":"x86-64", 
+		  "firmware":"4.1.0", 
+		  "default-lang":"fr-FR",
+		  "privace-statement":"https://emby.media/privacy.html"
+	          },
+
+	"adm-desktop":{
+		  "app":{
+			  "type":"custom",
+			  "protocol":"http", 
+			  "port":"8096", 
+			  "url":"/"},
+			  "privilege":{
+			  "accessible":"users", 
+			  "customizable": "true"
+			}
 
 },
 "register":{

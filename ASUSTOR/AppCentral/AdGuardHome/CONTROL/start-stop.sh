@@ -9,6 +9,7 @@ PORT=3272
 case "$1" in
     start)
         echo "Start $CONTAINER_NAME container..."
+        docker stop  $CONTAINER_NAME
         sed -i -e "s/80/$PORT/g" /share/Docker/AdGuardHome/conf/AdGuardHome.yaml
         docker start $CONTAINER_NAME
         sleep 3 

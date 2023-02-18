@@ -4,14 +4,12 @@
 # Déclaration de Variable #
 ###########################
 CONTENEUR=AdGuardHome
-PORT=3272
 
 case "$1" in
     start)
         echo "Start $CONTAINER_NAME container..."
         docker start $CONTAINER_NAME
         sleep 3 
-                        
         ;;
     stop)
     	echo "Stop $CONTAINER_NAME container..."
@@ -31,4 +29,3 @@ case "$1" in
         ;;
 esac
 exit 0
-

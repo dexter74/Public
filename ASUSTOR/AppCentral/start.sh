@@ -13,7 +13,7 @@
 cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden          && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Cloud9             && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Dozzle             && apkg-tools_py3.py create .
-cd ~/APPZ/ASUSTOR/AppCentral/Emby               && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/Emby               && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/FileBrowser        && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/LibreSpeed         && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Nexclipper         && apkg-tools_py3.py create .

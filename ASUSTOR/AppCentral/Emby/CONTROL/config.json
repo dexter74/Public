@@ -27,8 +27,6 @@
 			      "customizable": true
 			      }
 		     },
-	
-
 	"register":{
 		   "share-folder":[
 			   	  { "name":"Docker", "description":"Dossier Docker Requis" },
@@ -47,6 +45,6 @@
 			  "8096", 
 			  "8920"
 		          ]
-	           }
 
+	           }
 }

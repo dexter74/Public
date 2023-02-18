@@ -1,4 +1,4 @@
-2023-02-18: Installation sur le port 3000 et 80 Webui
+2023-02-18: Mise en Bridge
 
 2022-12-29: AdGuardHome version 1.0 sortie !
 > Installation: OK

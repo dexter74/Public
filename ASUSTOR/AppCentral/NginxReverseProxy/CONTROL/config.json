@@ -29,7 +29,13 @@
 			}
 		},
 
-	"register":{}
+
+	"register":{
+		"share-folder":[ {
+			"name":"Docker",
+			"description":"Dossier Docker Requis"
+			} ]
+		   }
 
 
 

@@ -39,6 +39,14 @@
                   		  { "name":"MyArchive3", "description":"Dossier MyArchive3 Requis" },
                   		  { "name":"Video", "description":"Dossier Video Requis" }
 			   	  ]
+		   "boot-priority":{
+		                   "start-order":80,
+		                   "stop-order":20
+		                   },
+		   "port":[
+			  "8096", 
+			  "8920"
+		          ]
 	           }
 
 }

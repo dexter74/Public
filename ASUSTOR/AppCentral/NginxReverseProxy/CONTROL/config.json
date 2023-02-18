@@ -1,18 +1,18 @@
 {
-"general":{ 
-  "package":"Nginx-Reverse-Proxy", 
-  "name":"Nginx Reverse Proxy", 
-  "version":"2.0", 
-  "depends": [ "docker-ce", "MariaDB" ], 
-    "conflicts":"", 
-    "developer":"Nginx", 
-    "maintainer":"Drthrax74", 
-    "email":"Drthrax74@gmail.com", 
-    "website":"https://www.nginx.com", 
-    "architecture":"x86-64", 
-    "firmware":"4.1.0", 
-    "default-lang":"fr-FR",
-    "privace-statement":"" },
+	"general":{ 
+  	  	"package":"Nginx-Reverse-Proxy", 
+  	  	"name":"Nginx Reverse Proxy", 
+  	  	"version":"2.0", 
+  	  	"depends": [ "docker-ce", "MariaDB" ], 
+  	  	"conflicts":"", 
+  	  	"developer":"Nginx", 
+  	  	"maintainer":"Drthrax74", 
+  	  	"email":"Drthrax74@gmail.com", 
+  	  	"website":"https://www.nginx.com", 
+  	  	"architecture":"x86-64", 
+  	  	"firmware":"4.1.0", 
+  	  	"default-lang":"fr-FR",
+  	  	"privace-statement":"" },
 
 "adm-desktop":{
   "app":{
@@ -25,12 +25,10 @@
     "customizable": "true" }
   },
 
-
 "register":{
-	"symbolic-link":{},
     	"share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
 	"port":[ "81", "1443", "8080" ],
-	"boot-priority":[{ "start-order":"3", "stop-order":"90" }],
-	"prerequisites":{  "enable-service":[], "restart-service":[] }
+	"boot-priority":{ "start-order":"3", "stop-order":"90" }
 	}
+
 }

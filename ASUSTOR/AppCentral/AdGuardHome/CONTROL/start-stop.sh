@@ -8,6 +8,7 @@ CONTENEUR=AdGuardHome
 case "$1" in
     start)
         echo "Start $CONTAINER_NAME container..."
+        sed -i -e "s/80/$PORT/g" /share/Docker/AdGuardHome/conf/AdGuardHome.yaml
         docker start $CONTAINER_NAME
         sleep 3 
                         
@@ -30,3 +31,4 @@ case "$1" in
         ;;
 esac
 exit 0
+

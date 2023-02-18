@@ -15,7 +15,6 @@ case "$1" in
         ;;
     stop)
     	echo "Stop $CONTAINER_NAME container..."
-        sed -i -e "s/80/$PORT/g" /share/Docker/AdGuardHome/conf/AdGuardHome.yaml
     	docker stop $CONTAINER_NAME
     	sleep 3
         ;;

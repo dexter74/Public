@@ -26,10 +26,10 @@ docker create -i -t \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
 --publish 53:53/tcp     \
 --publish 53:53/udp     \
---publish 80:80/tcp     \
+--publish $WEBUI:80/tcp \
 --publish 443:443/tcp   \
 --publish 443:443/udp   \
---publish $WEBUI:3000/tcp \
+--publish 3000:3000/tcp \
 $IMAGE:latest
 
 

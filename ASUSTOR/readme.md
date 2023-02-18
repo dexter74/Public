@@ -9,8 +9,6 @@ Ce projet à pour objectif de construire des conteneurs prêt à l'emploie avec 
 
 **Version: 1.0** (Problème)
 ```
-Adguardhome: A réviser !! (Semble ne pas marcher au niveau du DNS)
-
 Les conteneurs ne veulent pas se relancé après le redémarrage du NAS. 
 Le conteneur Base est pas correcte (Start-stop, docker create -i -t \)
 ```

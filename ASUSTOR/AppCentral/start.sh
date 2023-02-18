@@ -4,7 +4,7 @@
 #  Container Ready for Deploy
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .
 
-cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
 ########################################################################################
 # Container was required fix reboot NAS
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .
@@ -16,7 +16,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/FileBrowser        && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/LibreSpeed         && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Nexclipper         && apkg-tools_py3.py create .
-cd ~/APPZ/ASUSTOR/AppCentral/NginxReverseProxy 	&& apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/NginxReverseProxy 	&& apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Plex               && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin         && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .

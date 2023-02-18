@@ -2,8 +2,10 @@
 # https://github.com/dexter74/Archives/tree/main/Docker/V1/2.Conteneurs
 ########################################################################################
 #  Container Ready for Deploy
-#cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .
+########################################################################################
+# Container was required fix reboot NAS
+#cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden          && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Cloud9             && apkg-tools_py3.py create .
@@ -26,7 +28,6 @@ cd ~/APPZ/ASUSTOR/AppCentral/NginxReverseProxy 	&& apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Jackett           && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Radarr            && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Sonarr            && apkg-tools_py3.py create .
-
 ########################################################################################
 # Container Edit and Ready for Deploy
 # --------------------------------------------------------------------------------------

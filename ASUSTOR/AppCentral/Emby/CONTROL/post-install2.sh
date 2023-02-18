@@ -19,6 +19,7 @@ docker stop $CONTENEUR
 docker run -d \
 --name $CONTENEUR \
 --hostname $CONTENEUR \
+--net=bridge \
 --restart $RESTART \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
@@ -26,7 +27,7 @@ docker run -d \
 --volume /share/Music:/Music \
 --volume /share/MyArchive1:/MyArchive1 \
 --volume /share/MyArchive2:/MyArchive2 \
---net=bridge \
+--volume /share/MyArchive3:/MyArchive3 \
 --publish $HTTP \
 --publish $HTTPS \
 --device /dev/dri/renderD128:/dev/dri/renderD128 \

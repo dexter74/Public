@@ -4,6 +4,7 @@
 # Déclaration de Variable #
 ###########################
 CONTENEUR=AdGuardHome
+PORT=3272
 
 case "$1" in
     start)

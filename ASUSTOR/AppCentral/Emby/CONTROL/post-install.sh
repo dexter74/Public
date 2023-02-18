@@ -16,7 +16,7 @@ docker stop $CONTENEUR
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
-docker run -d \
+docker create -i -t \
 --name $CONTENEUR \
 --hostname $CONTENEUR \
 --net=bridge \

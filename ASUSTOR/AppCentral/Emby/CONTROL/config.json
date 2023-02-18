@@ -38,7 +38,7 @@
                   		  { "name":"MyArchive2", "description":"Dossier MyArchive2 Requis" },
                   		  { "name":"MyArchive3", "description":"Dossier MyArchive3 Requis" },
                   		  { "name":"Video", "description":"Dossier Video Requis" }
-			   	  ]
+			   	  ],
 		   "boot-priority":{
 		                   "start-order":80,
 		                   "stop-order":20

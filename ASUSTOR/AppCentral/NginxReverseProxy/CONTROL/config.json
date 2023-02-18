@@ -34,9 +34,13 @@
 		"share-folder":[ {
 			"name":"Docker",
 			"description":"Dossier Docker Requis"
-			} ]
+			} ],
+
+		"port":[ 
+			"81",
+			"1443",
+			"8080"
+			]
+
 		   }
-
-
-
 }

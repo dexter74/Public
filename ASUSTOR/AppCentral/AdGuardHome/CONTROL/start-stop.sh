@@ -2,25 +2,25 @@
 
 echo "start-stop"
 
-CONTAINER_NAME=AdGuardHome
+CONTENEUR=AdGuardHome
  
 case "$1" in
     start)
-        echo "Start $CONTAINER_NAME container..."
-        docker start $CONTAINER_NAME
+        echo "Start $CONTENEUR container..."
+        docker start $CONTENEUR
         sleep 3 
                         
         ;;
     stop)
-    	echo "Stop $CONTAINER_NAME container..."
-    	docker stop $CONTAINER_NAME
+    	echo "Stop $CONTENEUR container..."
+    	docker stop $CONTENEUR
     	sleep 3
         ;;
     reload)
-    	echo "Reload $CONTAINER_NAME container..."
-    	docker stop  $CONTAINER_NAME
+    	echo "Reload $CONTENEUR container..."
+    	docker stop  $CONTENEUR
     	sleep 3
-    	docker start $CONTAINER_NAME
+    	docker start $CONTENEUR
     	sleep 3
         ;;
     *)

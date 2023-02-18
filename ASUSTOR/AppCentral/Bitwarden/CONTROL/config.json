@@ -21,7 +21,8 @@
                       },
 	
 	"register":{
-		   "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ]
+		   "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
+		   "port":[7777]
 	           }
 
 }

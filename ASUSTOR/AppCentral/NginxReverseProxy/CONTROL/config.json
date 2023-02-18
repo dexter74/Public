@@ -13,6 +13,7 @@
     "firmware":"4.1.0", 
     "default-lang":"fr-FR",
     "privace-statement":"" },
+
 "adm-desktop":{
   "app":{
     "type":"custom",
@@ -22,11 +23,12 @@
   "privilege":{
     "accessible":"users", 
     "customizable": "true" }
+  },
 
-},
+
 "register":{
 	"symbolic-link":{},
-    "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
+    	"share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
 	"port":[ "81", "1443", "8080" ],
 	"boot-priority":[{ "start-order":"3", "stop-order":"90" }],
 	"prerequisites":{  "enable-service":[], "restart-service":[] }

@@ -18,8 +18,7 @@ case "$1" in
     start)
         echo "Start $CONTENEUR container..."
         docker start $CONTENEUR
-        sleep 3 
-                        
+        sleep 3
         ;;
     stop)
     	echo "Stop $CONTENEUR container..."

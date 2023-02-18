@@ -31,11 +31,8 @@
 		   "share-folder":[
 			   	  { "name":"Docker", "description":"Dossier Docker Requis" },
 			   	  { "name":"Download", "description":"Dossier Download Requis" },
-                  		  { "name":"Music", "description":"Dossier Music Requis" }
-                  		  _{ "name":"MyArchive1", "description":"Dossier MyArchive1 Requis" },
-                  		  _{ "name":"MyArchive2", "description":"Dossier MyArchive2 Requis" },
-                  		  _{ "name":"MyArchive3", "description":"Dossier MyArchive3 Requis" },
-                  		  _{ "name":"Video", "description":"Dossier Video Requis" }
+                  		  { "name":"Music", "description":"Dossier Music Requis" },
+                  		  { "name":"Video", "description":"Dossier Video Requis" }
 			   	  ],
 		   "boot-priority":{
 		                   "start-order":80,

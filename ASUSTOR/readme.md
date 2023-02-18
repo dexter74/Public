@@ -7,19 +7,9 @@
 Ce projet à pour objectif de construire des conteneurs prêt à l'emploie avec l'accès au partage Docker, Download, Video, Music. 
 
 
-**Version: 1.0**
+**Version: 1.0** (Problème)
 ```
-Dozzle: 
- - Rechercher : User.*911
-
-Erreur:
- - UID: 911 
- - GID: 911
-
-Correctif:
---env TZ="Europe/Paris" \
---env PUID=1000 \
---env PGID=1000 \
+Les conteneurs ne veulent pas se relancé après le redémarrage du NAS. 
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

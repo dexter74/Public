@@ -2,7 +2,7 @@
 	"general":{ 
 		"package":"AdGuardHome", 
 		"name":"AdGuardHome", 
-		"version":"2.0", 
+		"version":"1.0", 
 		"depends": [ "docker-ce"], 
 		"conflicts":"", 
 		"developer":"AdGuardHome", 

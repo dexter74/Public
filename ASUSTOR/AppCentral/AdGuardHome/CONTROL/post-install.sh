@@ -18,7 +18,6 @@ docker container rm -f $CONTENEUR
 docker create -i -t \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
---net=bridge \
 --restart $RESTART \
 --env TZ="Europe/Paris" \
 --volume /usr/builtin/etc/certificate:/sslcerts/:ro \

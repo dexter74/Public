@@ -1,24 +1,27 @@
 {
 	"general":{ 
-		"package":"Bitwarden", 
-		"name":"Bitwarden", 
-		"version":"2.0", 
-		"depends": [ "docker-ce", "MariaDB" ], 
-		"conflicts":"", 
-		"developer":"Bitwarden", 
-		"maintainer":"Drthrax74", 
-		"email":"Drthrax74@gmail.com", 
-		"website":"https://bitwarden.com/", 
-		"architecture":"x86-64", 
-		"firmware":"4.1.0", 
-		"default-lang":"fr-FR",
-		"privace-statement":"https://bitwarden.com/privacy/" },
-
-	"adm-desktop":{
-		"app":{ "type":"custom", "protocol":"http", "port":"7777",  "url":"/"},
-		"privilege":{ "accessible":"administrators", "customizable": true } 
-                },
+                  "package":"Bitwarden", 
+                  "name":"Bitwarden", 
+                  "version":"2.0", 
+                  "depends": [ "docker-ce", "MariaDB" ], 
+                  "conflicts":"", 
+                  "developer":"Bitwarden", 
+                  "maintainer":"Drthrax74", 
+                  "email":"Drthrax74@gmail.com", 
+                  "website":"https://bitwarden.com/", 
+                  "architecture":"x86-64", 
+                  "firmware":"4.1.0", 
+                  "default-lang":"fr-FR",
+                  "privace-statement":"https://bitwarden.com/privacy/"
+                  },
 	
-	"register":{ "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ]  }
+	"adm-desktop":{
+		      "app":{ "type":"custom", "protocol":"http", "port":"7777",  "url":"/"},
+		      "privilege":{ "accessible":"administrators", "customizable": true } 
+                      },
+	
+	"register":{
+		   "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ]
+	           }
 
 }

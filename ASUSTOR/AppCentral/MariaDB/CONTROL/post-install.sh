@@ -27,7 +27,7 @@ docker create -i -t \
 --env MYSQL_PASSWORD="password" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
---env PGID=1000 \
+--env PGID=100 \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --publish $HTTP \
 --label cacher="oui" \

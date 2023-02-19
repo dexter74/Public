@@ -22,17 +22,17 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --net=bridge \
 --restart $RESTART \
---volume /share/Docker/:/config \
+--volume /share/Docker/$CONTENEUR:/config \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
 --volume /share/Music:/Music \
 --device /dev/dri:/dev/dri \
---env JELLYFIN_PublishedServerUrl=$IP_NAS \
---env TZ=Europe/Paris \
---env UID=1000 \
---env GID=100 \
---publish $HTTP \
---publish $HTTPS \
+--env JELLYFIN_PublishedServerUrl="$IP_NAS" \
+--env TZ="Europe/Paris" \
+--env UID="1000" \
+--env GID="100" \
+--publish "$HTTP" \
+--publish "$HTTPS" \
 --label cacher="oui" \
 $IMAGE
 

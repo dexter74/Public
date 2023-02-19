@@ -23,7 +23,7 @@ docker create -i -t \
 --net=bridge \
 --dns="8.8.8.8" \
 --env PUID=1000 \
---env PGID=1000 \
+--env PGID=100 \
 --env TZ=Europe\Paris \
 --env WEBUI_PORT=1007 \
 --volume /volume1/Docker/Qbitorrent:/config \

@@ -5,7 +5,9 @@
 CONTENEUR=Jellyfin
 IMAGE=linuxserver/jellyfin
 HTTP=8097:8096
+HTTPS=8921:8920
 RESTART=unless-stopped
+IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
 # Arrêt du Conteneur #
@@ -26,16 +28,15 @@ docker create -i -t \
 --volume /share/Music:/Music \
 --device /dev/dri/renderD128:/dev/dri/renderD128 \
 --device /dev/dri/card0:/dev/dri/card0 \
+--env JELLYFIN_PublishedServerUrl=$IP_NAS \
+--env TZ=	Europe/Paris \
 --env UID=1000 \
 --env GID=100 \
 --publish $HTTP \
+--publish $HTTPS \
 --label cacher="oui" \
 $IMAGE
 
-# --env UID=1000 \ # The UID to run emby as (default: 2)
-# --env GID=100 \ # The GID to run emby as (default 2)
-# --env GIDLIST=100 \ # A comma-separated list of additional GIDs to run emby as (default: 2)
- 
 ##########################################################################################################################################################
 # Code retour de fermeture #
 ############################

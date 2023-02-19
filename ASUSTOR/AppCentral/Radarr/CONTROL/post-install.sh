@@ -27,7 +27,7 @@ docker create -i -t \
 --volume /volume1/Video:/Video \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
---env PGID=1000 \
+--env PGID=100 \
 --publish $HTTP \
 --label cacher="oui" \
 $IMAGE:latest

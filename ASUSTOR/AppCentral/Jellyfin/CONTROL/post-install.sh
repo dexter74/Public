@@ -26,8 +26,7 @@ docker create -i -t \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
 --volume /share/Music:/Music \
---device /dev/dri/renderD128:/dev/dri/renderD128 \
---device /dev/dri/card0:/dev/dri/card0 \
+--device /dev/dri:/dev/dri \
 --env JELLYFIN_PublishedServerUrl=$IP_NAS \
 --env TZ=	Europe/Paris \
 --env UID=1000 \

@@ -12,8 +12,8 @@
 	          "architecture":"x86-64",
 	          "firmware":"4.1.0", 
                   "default-lang":"fr-FR",
-	          "memory-limit":"256",
-	          "memory-advice":"128",
+	          "memory-limit":"128",
+	          "memory-advice":"256",
 	          "privace-statement":"https://adguard.com/en/privacy/home.html"
 	          },
 	

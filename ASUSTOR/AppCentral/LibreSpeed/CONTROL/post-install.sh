@@ -23,7 +23,7 @@ docker run -d --name=$CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
---env PGID=1000 \
+--env PGID=100 \
 --env PASSWORD="password" \
 --publish $HTTP \
 $IMAGE

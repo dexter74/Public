@@ -5,7 +5,8 @@
 ######################################
 CONTENEUR=wireguard
 IMAGE=linuxserver/wireguard
-HTTP=51820:51820
+RESTART=unless-stopped
+PORT=51820:51820
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -15,14 +16,14 @@ docker container rm -f  $CONTENEUR
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
-docker run -d \
+docker create -i -t \
 --name=$CONTENEUR \
---restart no \
+--restart $RESTART \
 --net=host \
 --cap-add="NET_ADMIN" \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
---publish $HTTP \
+--publish $PORT \
 --label cacher="oui" \
 $IMAGE:latest
 

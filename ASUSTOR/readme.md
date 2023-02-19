@@ -10,7 +10,8 @@ Ce projet à pour objectif de construire des conteneurs prêt à l'emploie avec 
 **Version: 1.0** (Problème)
 ```
 Les conteneurs ne veulent pas se relancé après le redémarrage du NAS. 
-Le conteneur Base et le squelette est à modifier (Start-stop, docker create -i -t \)
+Le conteneur Base et le squelette est à modifier .
+docker create -i -t \
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------

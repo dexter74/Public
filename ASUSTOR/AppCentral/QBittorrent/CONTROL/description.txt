@@ -8,3 +8,6 @@ Mise en service:
  - Editer le fichier /volume1/Docker/Qbitorrent/qBittorrent/qBittorrent.conf
  - Ajouter ou éditer la ligne pour obtenir WebUI\HostHeaderValidation=false
  - Relancer le conteneur
+
+
+# Start-stop.sh :  mv "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" "/share/Docker/Qbitorrent/qBittorrent/qBittorrent.conf" 2>/dev/null

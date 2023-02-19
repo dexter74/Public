@@ -1,24 +1,23 @@
 {
 	"general":{ 
-		"package":"AdGuardHome", 
-		"name":"AdGuardHome", 
-		"version":"1.0", 
-		"depends": [ "docker-ce"], 
-		"conflicts":"", 
-		"developer":"AdGuardHome", 
-		"maintainer":"Drthrax74", 
-		"email":"Drthrax74@gmail.com",
-		"website":"https://adguard.com/fr", 
-		"architecture":"x86-64", 
-		"firmware":"4.1.0", 
-		"privace-statement":"https://adguard.com/en/privacy/home.html" 
-	},
+	          "package":"AdGuardHome", 
+	          "name":"AdGuardHome", 
+	          "version":"1.0", 
+	          "depends": [ "docker-ce"], 
+	          "conflicts":"", 
+	          "developer":"AdGuardHome", 
+	          "maintainer":"Drthrax74", 
+	          "email":"Drthrax74@gmail.com",
+	          "website":"https://adguard.com/fr", 
+	          "architecture":"x86-64", 
+	          "firmware":"4.1.0", 
+	          "privace-statement":"https://adguard.com/en/privacy/home.html" 
+	          },
+	
 	"adm-desktop":{
-		"app":{ "port":"3272", "protocol":"http", "type":"custom", "url":"/" },
-		"privilege":{ "accessible":"users", "customizable": true } },
-	
-	
-	
+		      "app":{ "port":"3272", "protocol":"http", "type":"custom", "url":"/" },
+		      "privilege":{ "accessible":"users", "customizable": true } 
+	              },
 	"register":{ 	
 		"share-folder":[ 
 			       { "name":"Docker", "description":"Data and files directory for Docker Apps" }
@@ -28,7 +27,7 @@
 		        	"stop-order":20
 		                },
 		"port":[
-			3000
+		       3000
 		       ]
 		}
 }

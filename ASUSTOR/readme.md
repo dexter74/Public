@@ -30,7 +30,7 @@ docker create -i -t \
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                                       |  1010  |
 |  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test                      |  1111  |
 |  Bridge  | Jdownloader   | Opérationnel [Release 1.0]     | En cours de test                      |  3333  |
-|  Bridge  | Jellyfin      | Opérationnel [Release 1.0]     | Aucune                                |  8097  |
+|  Bridge  | Jellyfin      | En cours de vérification       | Aucune                                |  8097  |
 |  Bridge  | Librespeed    | Opérationnel [Release 1.0]     | En cours de test                      |  27016 |
 |  Bridge  | MariaDB       | Opérationnel [Release 1.0]     | Aucune                                |  3306  |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                                       |  10051 |

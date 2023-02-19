@@ -29,8 +29,8 @@ docker create -i -t \
 --device /dev/dri:/dev/dri \
 --env JELLYFIN_PublishedServerUrl="$IP_NAS" \
 --env TZ="Europe/Paris" \
---env PGID="1000" \
---env GID="100" \
+--env PUID="1000" \
+--env PGID="100" \
 --publish "$HTTP" \
 --publish "$HTTPS" \
 --label cacher="oui" \

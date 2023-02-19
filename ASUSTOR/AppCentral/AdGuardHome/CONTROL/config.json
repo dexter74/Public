@@ -1,25 +1,27 @@
 {
-	"general":{ 
-	          "package":"AdGuardHome", 
-	          "name":"AdGuardHome", 
-	          "version":"1.0", 
-	          "depends": [ "docker-ce"], 
-	          "conflicts":"", 
-	          "developer":"AdGuardHome", 
-	          "maintainer":"Drthrax74", 
+	"general":{
+	          "package":"AdGuardHome",
+	          "name":"AdGuardHome",
+	          "version":"1.0",
+	          "depends": [ "docker-ce"],
+	          "conflicts":"",
+	          "developer":"AdGuardHome",
+	          "maintainer":"Drthrax74",
 	          "email":"Drthrax74@gmail.com",
-	          "website":"https://adguard.com/fr", 
-	          "architecture":"x86-64", 
-	          "firmware":"4.1.0", 
-	          "privace-statement":"https://adguard.com/en/privacy/home.html" 
+	          "website":"https://adguard.com/fr",
+	          "architecture":"x86-64",
+	          "firmware":"4.1.0",
+	          "memory-limit":"256",
+	          "memory-advice":"128",
+	          "privace-statement":"https://adguard.com/en/privacy/home.html"
 	          },
 	
 	"adm-desktop":{
 		      "app":{ "port":"3272", "protocol":"http", "type":"custom", "url":"/" },
-		      "privilege":{ "accessible":"users", "customizable": true } 
+		      "privilege":{ "accessible":"users", "customizable": true }
 	              },
 	"register":{ 	
-		"share-folder":[ 
+		"share-folder":[
 			       { "name":"Docker", "description":"Data and files directory for Docker Apps" }
 		               ],
 		"boot-priority":{

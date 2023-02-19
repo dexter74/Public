@@ -16,7 +16,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 ########################################################################################
 # Container was required fix reboot NAS
-#cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Cloud9             && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/FileBrowser        && apkg-tools_py3.py create .

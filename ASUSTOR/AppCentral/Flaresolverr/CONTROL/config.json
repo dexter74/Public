@@ -1,37 +1,36 @@
 {
-  "general":{
-    "package":"Flaresolverr",
-    "name":"Flaresolverr",
-    "version":"1.0",
-    "depends": ["docker-ce(>=20.10.2.r2)"],
-    "conflicts":"",
-    "developer":"Flaresolverr",
-    "maintainer":"Drthrax74",
-    "email":"Drthrax74@gmail.com",
-    "website":"https://github.com/FlareSolverr/FlareSolverr",
-    "architecture":"x86-64",
-    "firmware":"4.1.0",
-    "default-lang":"fr-FR",
-    "memory-limit":"2048",
-    "memory-advice":"2048"
+	"general":{
+	          "package":"Flaresolverr",
+	          "name":"Flaresolverr",
+	          "version":"1.0",
+	          "depends": [ "docker-ce" ],
+	          "conflicts":"",
+	          "developer":"Flaresolverr",
+	          "maintainer":"Drthrax74",
+	          "email":"Drthrax74@gmail.com",
+	          "website":"https://github.com/FlareSolverr/FlareSolverr",
+	          "architecture":"x86-64",
+	          "firmware":"4.1.0",
+	          "default-lang":"fr-FR",
+	          "memory-limit":"2048",
+	          "memory-advice":"2048"
   },
 
-  "adm-desktop":{
-                "app":{ "type":"custom", "protocol":"http", "port":"1115",  "url":"/"},
-                "privilege":{ "accessible":"administrators", "customizable": "true" }
-                },
+	"adm-desktop":{
+	              "app":{ "type":"custom", "protocol":"http", "port":"1115",  "url":"/"},
+	              "privilege":{ "accessible":"administrators", "customizable": true }
+	              },
 
-  "register":{
-    "symbolic-link":{},
-      "share-folder":[
-		{ "name":"Docker", "description":"Dossier Docker Requis" },
-		{ "name":"Download", "description":"Dossier Download Requis" },
-		{ "name":"Music", "description":"Dossier Music Requis" },
-		{ "name":"Video", "description":"Dossier Video Requis" }
-		],
+	"register":{
+	           "share-folder":[
+			          {"name":"Docker", "description":"Dossier Docker Requis" },
+			          { "name":"Download", "description":"Dossier Download Requis" },
+			          { "name":"Music", "description":"Dossier Music Requis" },
+			          { "name":"Video", "description":"Dossier Video Requis" }
+			          ],
 
-	"port":[ "1115" ],
-	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
-	"prerequisites":{  "enable-service":[], "restart-service":[] }
-	}
+	           
+	           "boot-priority":{ "start-order":20, "stop-order":80 },
+	           "port":[ "1115" ]
+		   }
 }

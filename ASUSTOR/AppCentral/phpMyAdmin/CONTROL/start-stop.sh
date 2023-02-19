@@ -6,29 +6,37 @@
 CONTENEUR=phpMyAdmin
 
 ##########################################################################################################################################################
-# Arrêt / Relance / Mise à jour #
-#################################
-case "$1" in
-  start)
-    docker start $CONTENEUR
-    sleep 3
-    ;;
-  stop)
-    docker stop $CONTENEUR
-    sleep 3
-    ;;
-  reload)
-    docker stop $CONTENEUR
-    sleep 3
-    docker start $CONTENEUR
-    ;;
-  *)
-   echo "Usage: $0 {start|stop|reload}"
-   exit 1
-   ;;
-esac
+# Message d'information #
+#########################
+echo "start-stop"
 
 ##########################################################################################################################################################
-# Code retour de fermeture #
+# Start-Stop #
+##############
+case "$1" in
+    start)
+        echo "Start $CONTENEUR container..."
+        docker start $CONTENEUR
+        sleep 3
+        ;;
+    stop)
+    	echo "Stop $CONTENEUR container..."
+    	docker stop $CONTENEUR
+    	sleep 3
+        ;;
+    reload)
+    	echo "Reload $CONTENEUR container..."
+    	docker stop  $CONTENEUR
+    	sleep 3
+    	docker start $CONTENEUR
+    	sleep 3
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|reload}"
+        exit 1
+        ;;
+esac
+##########################################################################################################################################################
+# Code retour de Fermeture #
 ############################
 exit 0

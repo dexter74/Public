@@ -2,6 +2,7 @@
 ! Title: AdGuardHome by Drthrax74
 ! Description: Domaine autorisé
 !
+@@||iknowwhatyoudownload.com^
 @@||yggtorrent.fi^
 @@||yggtorrent.lo^
 @@||pool.ntp.org^

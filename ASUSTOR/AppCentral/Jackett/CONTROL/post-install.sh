@@ -21,13 +21,13 @@ docker create -i -t \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
---volume /volume1/Docker:/config \
---publish $HTTP \
 --dns 8.8.8.8 \
+--env AUTO_UPDATE="true" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
 --env PGID=100 \
---env AUTO_UPDATE="true" \
+--volume /volume1/Docker:/config \
+--publish $HTTP \
 --label cacher="oui" \
 $IMAGE:latest
 

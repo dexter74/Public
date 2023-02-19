@@ -30,6 +30,8 @@ cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
 
 ########################################################################################
 # Container in Testing
+cd ~/APPZ/ASUSTOR/AppCentral/Jellyfin          && apkg-tools_py3.py create .
+
 ########################################################################################
 # Container Edit and Ready for Deploy
 # --------------------------------------------------------------------------------------

@@ -21,6 +21,7 @@ case "$1" in
     stop)
     	echo "Stop $CONTENEUR container..."
     	docker stop $CONTENEUR
+        mv "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" "/share/Docker/Qbitorrent/qBittorrent/qBittorrent.conf" 2>/dev/null
     	sleep 3
         ;;
     reload)

@@ -22,7 +22,7 @@ docker run -d \
 --hostname $CONTENEUR \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
---env PGID=1000 \
+--env PGID=100 \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /share/Download:/Download \
 --volume /share/Music:/Music \

@@ -1,0 +1,3 @@
+19-02-2023: Correctif du conteneur après relance du NAS
+ - Docker run en docker create
+ - Config.json

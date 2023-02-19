@@ -1,1 +1,1 @@
-jellyfin
+23-02-19: Création du projet Jellyfin, en cours de test

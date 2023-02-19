@@ -17,15 +17,15 @@ docker container rm -f  $CONTENEUR
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
-docker run -d \
+docker create -i -t \
 --name=$CONTENEUR \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
---volume /volume1/Docker/$CONTENEUR:/config \
 --label cacher="oui" \
 $IMAGE:latest
 
+# --volume /volume1/Docker/$CONTENEUR:/XXXXX \
 #--publish $HTTP \
 #--env \
 

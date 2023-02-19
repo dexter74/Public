@@ -3,7 +3,7 @@
                   "package":"Jackett",
                   "name":"Jackett",
                   "version":"1.0",
-                  "depends": [" docker-ce" ],
+                  "depends": [ "docker-ce" ],
                   "conflicts":"",
                   "developer":"Jackett",
                   "maintainer":"Drthrax74",

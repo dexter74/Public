@@ -1,2 +1,8 @@
 Jellyfin est un logiciel de serveur multimédia sous licence libre, conçu pour organiser, lire et partager des fichiers multimédias numériques sur des appareils en réseau.
 C'est un fork d'Emby créé au moment où ce dernier est passé sous une licence comemrciale, et un modèle économique par abonnement.
+
+Montage:
+- /share/Docker/Jellyfin : /config
+- /share/Download        : /Download
+- /share/Video           : /Video
+- /share/Music           : /Music

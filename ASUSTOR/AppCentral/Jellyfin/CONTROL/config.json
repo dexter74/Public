@@ -5,7 +5,7 @@
 		  "version":"1.0", 
 		  "depends": [ "docker-ce" ],
 		  "conflicts":"", 
-		  "developer":"Emby", 
+		  "developer":"Jellyfin", 
 		  "maintainer":"Drthrax74", 
 		  "email":"Drthrax74@gmail.com", 
 		  "website":"https://jellyfin.org/", 

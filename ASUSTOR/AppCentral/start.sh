@@ -21,9 +21,9 @@ cd ~/APPZ/ASUSTOR/AppCentral/Jackett           && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Jdownloader       && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/LibreSpeed         && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Nexclipper         && apkg-tools_py3.py create .
-cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin         && apkg-tools_py3.py create .
-cd ~/APPZ/ASUSTOR/AppCentral/Plex               && apkg-tools_py3.py create .
-cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin         && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/Plex               && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Radarr            && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr            && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio      && apkg-tools_py3.py create .

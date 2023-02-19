@@ -27,7 +27,7 @@ docker run -d \
 --env DEFAULT_WORKSPACE="/config/workspace" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
---env PGID=1000 \
+--env PGID=100 \
 --publish $HTTP \
 --label cacher="oui" \
 $IMAGE

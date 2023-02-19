@@ -20,10 +20,9 @@
 	
 	
 	"register":{ 	
-		"share-folder":[ {
-		               "name":"Docker", 
-		               "description":"Data and files directory for Docker Apps" 
-		               } ],
+		"share-folder":[ 
+			       { "name":"Docker", "description":"Data and files directory for Docker Apps" }
+		               ],
 		"boot-priority":{
 		        	"start-order":80,
 		        	"stop-order":20

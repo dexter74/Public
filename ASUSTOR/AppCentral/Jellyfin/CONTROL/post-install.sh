@@ -40,3 +40,5 @@ $IMAGE
 # Code retour de fermeture #
 ############################
 exit 0
+
+# docker container rm -f Jellyfin

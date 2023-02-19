@@ -3,7 +3,8 @@
 ##########################################################################################################################################################
 # Déclaration de Variable #
 ###########################
-container=$(docker container ls -a | grep AdGuardHome | awk '{print $1}')
+CONTENEUR=AdGuardHome
+container=$(docker container ls -a | grep $CONTENEUR | awk '{print $1}')
 im=$(docker images | grep adguard/adguardhome | grep latest | awk '{print $3}')
 
 ##########################################################################################################################################################

@@ -24,10 +24,10 @@ sysctl -p;
 #####################################
 rm -rf   /share/Docker/$CONTENEUR/{privatekey,publickey,wg0.conf} 2>/dev/null;
 mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
-#cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR | true;
-#cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR | true;
-#cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR | true;
-#sleep 2
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR 2>/dev/null;
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR 2>/dev/null;
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR 2>/dev/null;
+sleep 2
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

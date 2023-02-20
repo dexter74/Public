@@ -16,11 +16,11 @@ docker container rm -f  $CONTENEUR
 ##########################################################################################################################################################
 # Mise en place de la configuration #
 #####################################
-rm -rf /share/Docker/$CONTENEUR;
-mkdir /share/Docker/$CONTENEUR;
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR
+rm -rf /share/Docker/$CONTENEUR | true;
+mkdir /share/Docker/$CONTENEUR | true;
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR | true;
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR | true;
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR | true;
 sleep 2
 
 ##########################################################################################################################################################

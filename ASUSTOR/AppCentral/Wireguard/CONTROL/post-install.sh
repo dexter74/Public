@@ -53,7 +53,7 @@ docker create -i -t                                                    \
 --env PGID="100"                                                       \
 --env TZ="EUROPE\PAris"                                                \
 --cap-add="NET_ADMIN"                                                  \
- --cap-add="SYS_MODULE"                                                \
+--cap-add="SYS_MODULE"                                                 \
 --sysctl net.ipv4.conf.all.src_valid_mark=1                            \
 --volume "/share/Docker/Wireguard/privatekey":/config/privatekey       \
 --volume "/share/Docker/Wireguard/publickey":/config/publickey         \

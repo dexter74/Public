@@ -3,7 +3,7 @@
 ##########################################################################################################################################################
 # Déclaration de la variable de test #
 ######################################
-CONTENEUR=wireguard
+CONTENEUR=Wireguard
 IMAGE=linuxserver/wireguard
 RESTART=unless-stopped
 PORT=51820:51820/UDP

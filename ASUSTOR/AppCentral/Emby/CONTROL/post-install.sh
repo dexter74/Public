@@ -21,9 +21,9 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --net=bridge \
 --restart $RESTART \
---env UID=1000 \
---env GUID=100 \
---env GIDLIST=100 \
+--env UID=0 \
+--env GUID=0 \
+--env GIDLIST=0 \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \

@@ -53,10 +53,10 @@ docker create -i -t                                                    \
 --env PGID="100"                                                       \
 --env TZ="EUROPE\PAris"                                                \
 --cap-add="NET_ADMIN"                                                  \
---volume /volume1/Docker/$CONTENEUR:/config                            \
---volume /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey:/config/privatekey \
---volume /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey:/config/publickey   \
---volume /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf:/config/wg0.conf     \
+#--volume /volume1/Docker/$CONTENEUR:/config                           \
+--volume "/share/Docker/Wireguard/privatekey":/config/privatekey       \
+--volume "/share/Docker/Wireguard/publickey":/config/publickey         \
+--volume "/share/Docker/Wireguard/wg0.conf":/config/wg0.conf           \
 --volume /usr/local/AppCentral/adm-kernel-extensions/lib/:/lib/modules \
 --label cacher="oui"                                                   \
 $IMAGE:latest

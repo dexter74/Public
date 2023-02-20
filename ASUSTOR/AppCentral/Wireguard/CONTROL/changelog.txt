@@ -1,10 +1,14 @@
 23-02-20: 
 - Création du projet
 - Le script post-install.sh fait les actions suivantes:
- > Forwading dans le NAS
- > Génére les fichiers de configuration Vide
-  > mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
-  > rm -rf   /share/Docker/$CONTENEUR/{privatekey,publickey,wg0.conf} 2>/dev/null;
-  > mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR 2>/dev/null;
-  > mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR 2>/dev/null;
-  > mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR 2>/dev/null; 
+Forwading dans le NAS
+mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
+rm -rf   /share/Docker/$CONTENEUR/{privatekey,publickey,wg0.conf} 2>/dev/null;
+mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR 2>/dev/null;
+mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR 2>/dev/null;
+mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR 2>/dev/null; 
+
+ifconfig wg0 down
+ifconfig wg0 192.168.2.1
+ip add show wg0
+ifconfig wg0 up

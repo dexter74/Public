@@ -30,8 +30,8 @@ sysctl -p;
 ##########################################################################################################################################################
 # Mise en place de la configuration #
 #####################################
-mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
-#rm -rf   /share/Docker/$CONTENEUR/{privatekey,publickey,wg0.conf} 2>/dev/null;
+#rm -rf   /share/Docker/$CONTENEUR 2>/dev/null;
+#mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
 #touch /share/Docker/$CONTENEUR 2>/dev/null;
 #touch /share/Docker/$CONTENEUR 2>/dev/null;
 #touch /share/Docker/$CONTENEUR 2>/dev/null; 
@@ -54,6 +54,9 @@ docker create -i -t                                                    \
 --env TZ="EUROPE\PAris"                                                \
 --cap-add="NET_ADMIN"                                                  \
 --volume /volume1/Docker/$CONTENEUR:/config                            \
+--volume /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey:/config/privatekey \
+--volume /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey:/config/publickey   \
+--volume /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf:/config/wg0.conf     \
 --volume /usr/local/AppCentral/adm-kernel-extensions/lib/:/lib/modules \
 --label cacher="oui"                                                   \
 $IMAGE:latest

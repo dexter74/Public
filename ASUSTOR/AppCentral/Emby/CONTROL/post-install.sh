@@ -21,21 +21,21 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --net=bridge \
 --restart $RESTART \
---env UID=0 \
---env GUID=0 \
---env GIDLIST=0 \
+--env UID=1000 \
+--env GUID=100 \
+--env GIDLIST=100 \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
 --volume /share/Music:/Music \
---publish $HTTP \
+--device /dev/dri/renderD128:/dev/dri/renderD128 \
+--device /dev/dri/card0:/dev/dri/card0 \--publish $HTTP \
 --publish $HTTPS \
 --label cacher="oui" \
 $IMAGE
 
 
-# --device /dev/dri/renderD128:/dev/dri/renderD128 \
-# --device /dev/dri/card0:/dev/dri/card0 \
+
 # --env UID=1000 \ # The UID to run emby as (default: 2)
 # --env GID=100 \ # The GID to run emby as (default 2)
 # --env GIDLIST=100 \ # A comma-separated list of additional GIDs to run emby as (default: 2)

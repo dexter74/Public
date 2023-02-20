@@ -8,8 +8,8 @@ IMAGE=linuxserver/wireguard
 RESTART=unless-stopped
 PORT=51820:51820/UDP
 
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
-IP_GW=$(ip route | grep default | cut -d "a" -f 3 | cut -c 2-12)
+IP_NAS=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+IP_GW=$(ip route | grep default   | cut -d "a" -f 3 | cut -c 2-12)
 IP_DNS=$(cat /etc/resolv.conf | head -n 1 | cut -c 12-25)
 
 ##########################################################################################################################################################

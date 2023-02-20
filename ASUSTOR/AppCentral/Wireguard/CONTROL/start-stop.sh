@@ -22,6 +22,7 @@ case "$1" in
     stop)
     	echo "Stop $CONTENEUR container..."
     	docker stop $CONTENEUR
+        ifconfig show wg0
     	sleep 3
         ;;
     reload)

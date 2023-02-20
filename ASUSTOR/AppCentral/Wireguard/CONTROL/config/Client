@@ -1,3 +1,9 @@
+# Configuration Client:
+# - Configurer le serveur de résolution : DNS=
+# - Configurer la taille des paquets    : MTU=
+# - Forcer tout le Trafic dans le VPN   : AllowedIPs = 0.0.0.0/0, ::/0
+# - Autoriser un Sous-réseau            : AllowedIPs = X.X.X.X/Y, 0.0.0.0/0, ::/0
+
 [Interface]
 PrivateKey = 6F91qZF8VAp2xlH2FROUXqTxajtyxvtqStWjyyQpx2o=
 ListenPort = 51820

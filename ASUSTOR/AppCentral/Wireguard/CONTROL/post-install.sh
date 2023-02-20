@@ -18,9 +18,9 @@ docker container rm -f  $CONTENEUR
 #####################################
 rm -rf /share/Docker/$CONTENEUR;
 mkdir /share/Docker/$CONTENEUR;
-cp ./config/privatekey /share/Docker/$CONTENEUR
-cp ./config/publickey  /share/Docker/$CONTENEUR
-cp ./config/wg0.conf   /share/Docker/$CONTENEUR
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR
+cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

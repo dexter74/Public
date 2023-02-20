@@ -18,9 +18,9 @@ docker container rm -f  $CONTENEUR
 #####################################
 rm -rf /share/Docker/$CONTENEUR;
 mkdir /share/Docker/$CONTENEUR;
-mv ./config/privatekey /share/Docker/$CONTENEUR
-mv ./config/publickey  /share/Docker/$CONTENEUR
-mv ./config/wg0.conf   /share/Docker/$CONTENEUR
+cp ./config/privatekey /share/Docker/$CONTENEUR
+cp ./config/publickey  /share/Docker/$CONTENEUR
+cp ./config/wg0.conf   /share/Docker/$CONTENEUR
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

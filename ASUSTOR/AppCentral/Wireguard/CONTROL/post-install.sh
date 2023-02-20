@@ -7,6 +7,9 @@ CONTENEUR=Wireguard
 IMAGE=linuxserver/wireguard
 RESTART=unless-stopped
 PORT=51820:51820/UDP
+IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+IP_GW=$(ip route | grep default | cut -d "a" -f 3 | cut -c 2-12)
+IP_DNS=$(cat /etc/resolv.conf | head -n 1 | cut -c 12-25)
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -26,11 +29,11 @@ sysctl -p;
 ##########################################################################################################################################################
 # Mise en place de la configuration #
 #####################################
-rm -rf   /share/Docker/$CONTENEUR/{privatekey,publickey,wg0.conf} 2>/dev/null;
 mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR 2>/dev/null;
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR 2>/dev/null;
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR 2>/dev/null;
+rm -rf   /share/Docker/$CONTENEUR/{privatekey,publickey,wg0.conf} 2>/dev/null;
+mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR 2>/dev/null;
+mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR 2>/dev/null;
+mv /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR 2>/dev/null;
 sleep 2
 
 ##########################################################################################################################################################
@@ -40,7 +43,7 @@ docker create -i -t                                                    \
 --name=$CONTENEUR                                                      \
 --hostname $CONTENEUR                                                  \
 --net=host                                                             \
---dns 192.168.1.1                                                      \
+--dns $IP_DNS                                                          \
 --restart $RESTART                                                     \
 --env PUID="1000"                                                      \
 --env PGID="100"                                                       \

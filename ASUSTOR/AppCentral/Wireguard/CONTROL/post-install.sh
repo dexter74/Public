@@ -11,17 +11,22 @@ PORT=51820:51820/UDP
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
-docker container rm -f  $CONTENEUR
+docker container rm -f $CONTENEUR
+
+
+##########################################################################################################################################################
+# Forwading #
+#############
 
 ##########################################################################################################################################################
 # Mise en place de la configuration #
 #####################################
-rm -rf /share/Docker/$CONTENEUR | true;
-mkdir /share/Docker/$CONTENEUR | true;
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR | true;
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR | true;
-cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR | true;
-sleep 2
+rm -rf /share/Docker/$CONTENEUR 2>/dev/null;
+mkdir /share/Docker/$CONTENEUR 2>/dev/null;
+#cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR | true;
+#cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR | true;
+#cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR | true;
+#sleep 2
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

@@ -21,6 +21,7 @@ mkdir /share/Docker/$CONTENEUR;
 cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR
 cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR
 cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR
+sleep 2
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

@@ -13,7 +13,6 @@ PORT=51820:51820/UDP
 ##########################
 docker container rm -f $CONTENEUR
 
-
 ##########################################################################################################################################################
 # Prise en charge du Forwading #
 ################################
@@ -23,7 +22,7 @@ sysctl -p;
 ##########################################################################################################################################################
 # Mise en place de la configuration #
 #####################################
-rm -rf   /share/Docker/$CONTENEUR 2>/dev/null;
+rm -rf   /share/Docker/$CONTENEUR/{privatekey,publickey,wg0.conf} 2>/dev/null;
 mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
 #cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR | true;
 #cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR | true;

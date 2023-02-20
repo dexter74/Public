@@ -28,13 +28,14 @@ docker create -i -t \
 --volume /share/Download:/Download \
 --volume /share/Video:/Video \
 --volume /share/Music:/Music \
---device /dev/dri/renderD128:/dev/dri/renderD128 \
---device /dev/dri/card0:/dev/dri/card0 \
 --publish $HTTP \
 --publish $HTTPS \
 --label cacher="oui" \
 $IMAGE
 
+
+# --device /dev/dri/renderD128:/dev/dri/renderD128 \
+# --device /dev/dri/card0:/dev/dri/card0 \
 # --env UID=1000 \ # The UID to run emby as (default: 2)
 # --env GID=100 \ # The GID to run emby as (default 2)
 # --env GIDLIST=100 \ # A comma-separated list of additional GIDs to run emby as (default: 2)

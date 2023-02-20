@@ -14,6 +14,15 @@ PORT=51820:51820/UDP
 docker container rm -f  $CONTENEUR
 
 ##########################################################################################################################################################
+# Mise en place de la configuration #
+#####################################
+rm -rf /volume1/Docker/$CONTENEUR;
+mkdir /volume1/Docker/$CONTENEUR;
+mv ./config/privatekey /volume1/Docker/$CONTENEUR
+mv ./config/publickey  /volume1/Docker/$CONTENEUR
+mv ./config/wg0.conf   /volume1/Docker/$CONTENEUR
+
+##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
 docker create -i -t                                                    \

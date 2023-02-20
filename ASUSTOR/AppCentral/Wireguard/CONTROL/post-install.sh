@@ -29,7 +29,7 @@ sleep 2
 docker create -i -t                                                    \
 --name=$CONTENEUR                                                      \
 --hostname $CONTENEUR                                                  \
---net=bridge                                                           \
+--net=host                                                             \
 --dns 192.168.1.1                                                      \
 --restart $RESTART                                                     \
 --env PUID="1000"                                                      \
@@ -40,10 +40,10 @@ docker create -i -t                                                    \
 --sysctl net.ipv4.conf.all.src_valid_mark=1                            \
 --volume /volume1/Docker/$CONTENEUR:/config                            \
 --volume /usr/local/AppCentral/adm-kernel-extensions/lib/:/lib/modules \
---publish $PORT                                                        \
 --label cacher="oui"                                                   \
 $IMAGE:latest
 
+#--publish $PORT                                                        \
 # --cap-add="SYS_MODULE" \
 
 ##########################################################################################################################################################

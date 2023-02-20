@@ -41,8 +41,6 @@ docker create -i -t                                                    \
 --env PGID="100"                                                       \
 --env TZ="EUROPE\PAris"                                                \
 --cap-add="NET_ADMIN"                                                  \
---sysctl net.ipv4.ip_forward=1                                         \
---sysctl net.ipv4.conf.all.src_valid_mark=1                            \
 --volume /volume1/Docker/$CONTENEUR:/config                            \
 --volume /usr/local/AppCentral/adm-kernel-extensions/lib/:/lib/modules \
 --label cacher="oui"                                                   \
@@ -50,6 +48,8 @@ $IMAGE:latest
 
 #--publish $PORT                                                        \
 # --cap-add="SYS_MODULE" \
+#--sysctl net.ipv4.conf.all.src_valid_mark=1                            \
+#--sysctl net.ipv4.ip_forward=1                                         \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

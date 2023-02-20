@@ -13,11 +13,20 @@ PostUp     = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING
 PostDown   = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth1 -j MASQUERADE
 
 #############################################################################################################
-# Client 1 #
-############
+# Clients #
+###########
 [Peer]
-PublicKey = HxgkL4PXlnr/TTek0N4wL2szsaMAQze7NLdkwvDGkD0=
-AllowedIPs = 192.168.20.2/32
+PublicKey  = JXtUuxYYQE1YBJsxiAiG2EdAJs/5cXdLKcX/J/3T/Vk=
+AllowedIPs = 10.0.0.2/32
+
+[Peer]
+PublicKey  = 9PM8zGiDKWwjZgxQC3yygFPer9aO58DtQCeM3HfyHTY=
+AllowedIPs = 10.0.0.3/32
+
+[Peer]
+PublicKey  = O18/9fKBQoNLvRlw9C9iZU9gHeR67++8/NNaC7nfT00=
+AllowedIPs = 10.0.0.4/32
+
 
 #############################################################################################################
 # Seed           : Azft/BmHlu+ubO+mm/o5ZvDE9rHSItqXBfxVUZv+yWc3LnzhZufWDtZ0pDQ2dO1eEO2a7sGx5fjZg5w4xQcp+3+rd7eR0rL9+6QvD3bLxng0ddqn8RK7kJE2GO+MI08xZGBvqdTrwAE/LtzL/IisrLe1xQAPmSiuMoVmiXVtD2EAajnKCAUIum482udWqGFdDtAerA+qj434cfgRwegU2ShRIRgwgr7ovNUMrGCh/IjCpEUDeuPhrxIAJMaFCuBA5XKoUo0hzfeHD5NinutpvwNY/+FK77FdR4mwzVMysHy6YoZzP7/L/KBi8pMmrN1PBqW8qjMAyc/hUzyFEorBZQ==

@@ -16,11 +16,11 @@ docker container rm -f  $CONTENEUR
 ##########################################################################################################################################################
 # Mise en place de la configuration #
 #####################################
-rm -rf /volume1/Docker/$CONTENEUR;
-mkdir /volume1/Docker/$CONTENEUR;
-mv ./config/privatekey /volume1/Docker/$CONTENEUR
-mv ./config/publickey  /volume1/Docker/$CONTENEUR
-mv ./config/wg0.conf   /volume1/Docker/$CONTENEUR
+rm -rf /share/Docker/$CONTENEUR;
+mkdir /share/Docker/$CONTENEUR;
+mv ./config/privatekey /share/Docker/$CONTENEUR
+mv ./config/publickey  /share/Docker/$CONTENEUR
+mv ./config/wg0.conf   /share/Docker/$CONTENEUR
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

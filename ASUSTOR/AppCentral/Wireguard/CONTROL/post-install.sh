@@ -15,14 +15,16 @@ docker container rm -f $CONTENEUR
 
 
 ##########################################################################################################################################################
-# Forwading #
-#############
+# Prise en charge du Forwading #
+################################
+echo "net.ipv4.ip_forward=1" > /etc/sysctl.conf;
+sysctl -p;
 
 ##########################################################################################################################################################
 # Mise en place de la configuration #
 #####################################
-rm -rf /share/Docker/$CONTENEUR 2>/dev/null;
-mkdir /share/Docker/$CONTENEUR  2>/dev/null;
+rm -rf   /share/Docker/$CONTENEUR 2>/dev/null;
+mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
 #cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR | true;
 #cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR | true;
 #cp /volume1/.@plugins/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR | true;

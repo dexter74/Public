@@ -7,6 +7,14 @@ Radarr est une branche indépendante de Sonarr retravaillée pour le télécharg
 - Format Film Standard: {Movie Title:FR} ({Release Year})
 - Format de dossier de film: {Movie Title:FR} - {Quality Title} ({Release Year})
 
+Dossiers racine:
+/downloads/Torrent/Radarr
+/Video/Dessins-Animes
+/Video/Films
+/Video
+
+Qbitorrent: /downloads/Torrent/
+
 ###########
 # Profils #
 ###########
@@ -14,7 +22,6 @@ Radarr est une branche indépendante de Sonarr retravaillée pour le télécharg
 - Renommer Any en Tous formats
 - [SD] Décocher SDTV, DVDSCR, TELECINE, TELESYNC, CAM, WORKPRINT, Unknown
 - [Profils de retard] Protocole préféré: Seulement Torrent
-
 
 #########################
 # Formats personnalisés #

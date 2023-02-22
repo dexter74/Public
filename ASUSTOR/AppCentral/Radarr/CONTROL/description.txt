@@ -64,6 +64,10 @@ Seed Time                        : -1
 Priorité de l'indexeur           :  1
 Client de Téléchargement         : qBittorrent
 
+Options:
+ - Taille maximum: 4096 MB
+
+
 #############################
 # Clients de téléchargement #
 #############################

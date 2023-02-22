@@ -46,7 +46,7 @@ Dossiers racine:
 #########################
 Nom: Format personnalisé
  - Language      : French (Obligatoire)
- - Release Title : \b(VF||VFF|FRENCH|TRUEFRENCH|MULTI)\b (Obligatoire)
+ - Release Title : \b(VF|VFF|FRENCH|TRUEFRENCH|MULTI)\b (Obligatoire)
  - Release Title : \b(420p|720p|1080p)\b
 
 

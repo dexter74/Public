@@ -32,4 +32,4 @@ Delay Profiles: Only Torrent
 
 Release Profiles:
  - Must Not Contain : VO,RAW,ENG,ENGLISH
- - Prefered         : VF,VFF,FRENCH,TRUEFRENCH,SUBFRENCH,MULTI
+ - Contain          : Fr,VF,VFF,FRENCH,TRUEFRENCH,SUBFRENCH,MULTI

@@ -1,1 +1,23 @@
 Sonarr est une application qui permet de surveiller et télécharger des séries, et d'organiser votre médiathèque.
+
+
+##############
+# Qbitorrent #
+##############
+Dossier de téléchargement: /downloads/Torrent/
+
+####################
+# Media Management #
+####################
+
+Episode Naming:
+ - Standard Episode Format : S{season:00}E{episode:00} - {Episode Title}
+ - Anime Episode Format    : S{season:00}E{episode:00} - {Episode Title}
+ - Series Folder Format    : {Series Title}
+ - Season Folder Format    : Saison {season:00}
+
+Folders:
+ - Delete empty folders: Cocher
+
+/downloads/Torrent/Sonarr
+/Video/Series

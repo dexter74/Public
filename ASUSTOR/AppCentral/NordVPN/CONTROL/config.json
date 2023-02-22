@@ -1,28 +1,36 @@
 {
-  "general":{
-    "package":"NordVPN",
-    "name":"NordVPN",
-    "version":"1.0",
-    "depends": [ "docker-ce(>=20.10.2.r2)"],
-    "conflicts":"NordVPN",
-    "developer":"NordVPN",
-    "maintainer":"Drthrax74",
-    "email":"Drthrax74@gmail.com",
-    "website":"https://nordvpn.com/fr/",
-    "architecture":"x86-64",
-    "firmware":"4.1.0",
-    "default-lang":"fr-FR",
-    "privace-statement":"https://nordvpn.com/fr/features/vpn-security/" },
+	"general":{
+		  "package":"NordVPN",
+		  "name":"NordVPN",
+		  "version":"1.0",
+		  "depends": [ "docker-ce(>=20.10.2.r2)"],
+		  "conflicts":"NordVPN",
+		  "developer":"NordVPN",
+		  "maintainer":"Drthrax74",
+		  "email":"Drthrax74@gmail.com",
+		  "website":"https://nordvpn.com/fr/",
+		  "architecture":"x86-64",
+		  "firmware":"4.1.0",
+		  "default-lang":"fr-FR",
+		  "privace-statement":"https://nordvpn.com/fr/features/vpn-security/" },
 
-  "adm-desktop":{
-                "app":{ "type":"internal" },
-                "privilege":{ "accessible":"administrators", "customizable": "true" }
-                },
+	"adm-desktop":{
+		      "app":{
+                            "type":"internal"
+		            },
+		      "privilege":{ 
+			          "accessible":"administrators",
+			          "customizable": true
+			          }
+		      },
 
-  "register":{
-    "symbolic-link":{},
-    "share-folder":[ { "name":"Docker", "description":"Dossier Docker Requis" } ],
-	"boot-priority":[{ "start-order":"55", "stop-order":"3" }],
-	"prerequisites":{  "enable-service":[], "restart-service":[] }
-	}
+	"register":{
+		   "share-folder":[
+			   	  { "name":"Docker", "description":"Dossier Docker Requis" }
+		   	          ],
+		   "boot-priority":{
+		                   "start-order":80,
+		                   "stop-order":20
+		                   },
+		   }
 }

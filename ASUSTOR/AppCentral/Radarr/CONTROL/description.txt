@@ -1,1 +1,34 @@
- Radarr est une branche indépendante de Sonarr retravaillée pour le téléchargement automatique de films via Usenet et BitTorrent.
+Radarr est une branche indépendante de Sonarr retravaillée pour le téléchargement automatique de films via Usenet et BitTorrent.
+
+######################
+# Gestion des médias #
+######################
+- Renommer Films: Coché
+- Format Film Standard: {Movie Title:FR} ({Release Year})
+- Format de dossier de film: {Movie Title:FR} - {Quality Title} ({Release Year})
+
+###########
+# Profils #
+###########
+- Language French 
+- Renommer Any en Tous formats
+- [SD] Décocher SDTV, DVDSCR, TELECINE, TELESYNC, CAM, WORKPRINT, Unknown
+- [Profils de retard] Protocole préféré: Seulement Torrent
+
+
+#########################
+# Formats personnalisés #
+#########################
+Nom: Mon Format
+Conditions:
+ - Size:
+  -> Nom: Taille min-max
+  -> Min: 1 GB
+  -> Max: 6 GB
+  -> Obligatoire: Cocher
+
+ - Language:
+  -> Nom: Langue
+  -> Language: French
+  -> Obligatoire: Cocher
+

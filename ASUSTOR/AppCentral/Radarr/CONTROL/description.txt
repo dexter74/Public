@@ -4,6 +4,11 @@ https://wp.upandclear.org/2021/06/08/installer-et-utiliser-radarr-bis-telecharge
 https://wp.upandclear.org/2016/04/03/jackett-votre-moteur-de-recherche-bittorrent-personnalise/
 https://wp.upandclear.org/2021/06/05/radarr-liste-tmdb-genre-annee-note/
 
+##############
+# Qbitorrent #
+##############
+Dossier de téléchargement: /downloads/Torrent/
+
 #########
 # Films #
 #########
@@ -24,7 +29,7 @@ Dossiers racine:
 /Video/Films
 /Video
 
-Qbitorrent: /downloads/Torrent/
+
 
 ###########
 # Profils #

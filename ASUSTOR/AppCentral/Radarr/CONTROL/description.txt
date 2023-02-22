@@ -1,5 +1,8 @@
 Radarr est une branche indépendante de Sonarr retravaillée pour le téléchargement automatique de films via Usenet et BitTorrent.
 
+https://wp.upandclear.org/2021/06/08/installer-et-utiliser-radarr-bis-telechargement-automatique-de-films/
+https://wp.upandclear.org/2016/04/03/jackett-votre-moteur-de-recherche-bittorrent-personnalise/
+
 ######################
 # Gestion des médias #
 ######################
@@ -38,7 +41,6 @@ Conditions:
   -> Nom         : Langue
   -> Language    : French
   -> Obligatoire : Cocher
-
 
 #############
 # Indexeurs #

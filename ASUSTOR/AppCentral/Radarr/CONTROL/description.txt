@@ -35,7 +35,7 @@ Dossiers racine:
 ###########
 # Profils #
 ###########
-- Language French 
+- Language French
 - Renommer Any en Tous les formats
 - [SD] Décocher SDTV, DVDSCR, TELECINE, TELESYNC, CAM, WORKPRINT, Unknown
 - [Profils de retard] Protocole préféré: Seulement Torrent
@@ -66,7 +66,7 @@ Torznab:
  - Activer la recherche automatique : Cocher
  - Activer la recherche interactive : Cocher
  - Multi Languages                  : FRENCH
- - Remove year from search string   : Cocher (Important: Lors de la recherche dans Jackett, l'année ne sera pas émis: TITRE au lieu de TITRE + ANNÉE) 
+ - Remove year from search string   : Cocher (Important: Lors de la recherche dans Jackett, l'année ne sera pas émis: TITRE au lieu de TITRE + ANNÉE)
  - Minimum Seeders                  :  1
  - Seed Ratio / Time                :  0
  - Priorité de l'indexeur           :  1

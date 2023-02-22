@@ -21,6 +21,7 @@ Le menu Découvrir se met à jour par rapport à la LISTE
 - Format Film Standard: {Movie Title:FR} ({Release Year})
 - Format de dossier de film: {Movie Title:FR} {Quality Title} ({Release Year})
 - Supprimer les dossiers vides: Cocher
+- Remove year from search string: Cocher (Important !)
 
 
 Dossiers racine:

@@ -2,6 +2,7 @@ Radarr est une branche indépendante de Sonarr retravaillée pour le télécharg
 
 https://wp.upandclear.org/2021/06/08/installer-et-utiliser-radarr-bis-telechargement-automatique-de-films/
 https://wp.upandclear.org/2016/04/03/jackett-votre-moteur-de-recherche-bittorrent-personnalise/
+https://wp.upandclear.org/2021/06/05/radarr-liste-tmdb-genre-annee-note/
 
 ######################
 # Gestion des médias #

@@ -5,7 +5,6 @@ https://wp.upandclear.org/2016/04/03/jackett-votre-moteur-de-recherche-bittorren
 https://wp.upandclear.org/2021/06/05/radarr-liste-tmdb-genre-annee-note/
 
 
-- Remove year from search string: Cocher (Important !)
 
 
 ##############
@@ -33,48 +32,21 @@ Dossiers racine:
 /Video
 
 
-
 ###########
 # Profils #
 ###########
 - Language French 
-- Renommer Any en Tous formats
+- Renommer Any en Tous les formats
 - [SD] Décocher SDTV, DVDSCR, TELECINE, TELESYNC, CAM, WORKPRINT, Unknown
 - [Profils de retard] Protocole préféré: Seulement Torrent
-
 
 #########################
 # Formats personnalisés #
 #########################
-Nom: Mon Format
-Conditions:
- - Size:
-  -> Nom         : Taille min-max
-  -> Size min.   : 1 GB
-  -> Size Max.   : 6 GB
-  -> Obligatoire : Cocher
-
- - Language:
-  -> Nom         : Langue
-  -> Language    : French
-  -> Obligatoire : Cocher
-
-#############
-# Indexeurs #
-#############
-Nom                              : YGGTorrent
-Activer le RSS                   : Cocher
-Activer la recherche automatique : Cocher
-Activer la recherche interactive : Cocher
-Multi Languages                  : FRENCH
-Remove year from search string   : Cocher
-Minimum Seeders                  :  1
-Seed Time                        : -1
-Priorité de l'indexeur           :  1
-Client de Téléchargement         : qBittorrent
-
-Options:
- - Taille maximum: 4096 MB
+Nom: Format personnalisé
+ - Language      : French (Obligatoire)
+ - Release Title : \b(VF||VFF|FRENCH|TRUEFRENCH|MULTI)\b
+ - Release Title : \b(420p|720p|1080p)\b
 
 
 #############################
@@ -83,11 +55,28 @@ Options:
 Client de Téléchargement - qBittorrent
  - Category: Radarr
 
- - Gestion des téléchargements terminés
-   > Intervalle de vérification des téléchargements terminés: 5 minutes
 
- - Gestion des échecs de téléchargement
-   > Télécharger à nouveau: Cocher
+#############
+# Indexeurs #
+#############
+Torznab:
+ - Nom                              : YGGTorrent
+ - Activer le RSS                   : Cocher
+ - Activer la recherche automatique : Cocher
+ - Activer la recherche interactive : Cocher
+ - Multi Languages                  : FRENCH
+ - Remove year from search string   : Cocher
+ - Minimum Seeders                  :  1
+ - Seed Ratio / Time                :  0
+ - Priorité de l'indexeur           :  1
+ - Client de Téléchargement         : qBittorrent
+
+Options:
+ - Taille maximum: 4096 MB
+ 
+Restrictions:
+ - Doit Contenir         : VF,VFF,FRENCH,TRUEFRENCH,MULTI
+ - Ne doit pas contenir  : VO,VOSTFR,ENG
 
 ##########
 # Listes #

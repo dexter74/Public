@@ -57,7 +57,6 @@ Seed Time                        : -1
 Priorité de l'indexeur           :  1
 Client de Téléchargement         : qBittorrent
 
-
 #############################
 # Clients de téléchargement #
 #############################
@@ -67,4 +66,12 @@ Client de Téléchargement         : qBittorrent
  - Gestion des échecs de téléchargement
    > Télécharger à nouveau: Cocher
 
-
+##########
+# Listes #
+##########
+RSS List
+ > Nom                         : Yggtorrent
+ > Activer                     : Cocher
+ > Activer l'ajout Automatique : Décocher
+ > Rechercher à l'ajout        : Décocher
+ > RSS LINK                    : (Jackett: Copy RSS FEED)

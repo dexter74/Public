@@ -4,6 +4,13 @@ https://wp.upandclear.org/2021/06/08/installer-et-utiliser-radarr-bis-telecharge
 https://wp.upandclear.org/2016/04/03/jackett-votre-moteur-de-recherche-bittorrent-personnalise/
 https://wp.upandclear.org/2021/06/05/radarr-liste-tmdb-genre-annee-note/
 
+#########
+# Films #
+#########
+Le menu Découvrir se met à jour par rapport à la LISTE
+
+
+
 ######################
 # Gestion des médias #
 ######################

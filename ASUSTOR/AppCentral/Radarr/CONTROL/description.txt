@@ -83,8 +83,11 @@ Restrictions:
 # Listes #
 ##########
 RSS List
- > Nom                         : Yggtorrent
+ > Nom                         : YGGTorrent
  > Activer                     : Cocher
  > Activer l'ajout Automatique : Décocher
+ > Surveiller                  : Film seulement
  > Rechercher à l'ajout        : Décocher
- > RSS LINK                    : (Jackett: Copy RSS FEED)
+ > Disponibilité minimale      : Sorti
+ > Dossier racine              : /downloads/Torrent/Radarr
+ > RSS LINK                    : Lien "Copy RSS FEED" dans Jackett

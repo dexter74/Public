@@ -22,13 +22,39 @@ Radarr est une branche indépendante de Sonarr retravaillée pour le télécharg
 Nom: Mon Format
 Conditions:
  - Size:
-  -> Nom: Taille min-max
-  -> Min: 1 GB
-  -> Max: 6 GB
-  -> Obligatoire: Cocher
+  -> Nom         : Taille min-max
+  -> Size min.   : 1 GB
+  -> Size Max.   : 6 GB
+  -> Obligatoire : Cocher
 
  - Language:
-  -> Nom: Langue
-  -> Language: French
-  -> Obligatoire: Cocher
+  -> Nom         : Langue
+  -> Language    : French
+  -> Obligatoire : Cocher
+
+
+#############
+# Indexeurs #
+#############
+Nom                              : YGGTorrent
+Activer le RSS                   : Cocher
+Activer la recherche automatique : Cocher
+Activer la recherche interactive : Cocher
+Multi Languages                  : FRENCH
+Remove year from search string   : Cocher
+Minimum Seeders                  :  1
+Seed Time                        : -1
+Priorité de l'indexeur           :  1
+Client de Téléchargement         : qBittorrent
+
+
+#############################
+# Clients de téléchargement #
+#############################
+ - Gestion des téléchargements terminés
+   > Intervalle de vérification des téléchargements terminés: 5 minutes
+
+ - Gestion des échecs de téléchargement
+   > Télécharger à nouveau: Cocher
+
 

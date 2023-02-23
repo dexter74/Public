@@ -35,15 +35,16 @@ docker run -d \
 --env OPENVPN_USER="$UTILISATEUR" \
 --env OPENVPN_PASSWORD="$MOTDEPASSE" \
 --env TZ="EUROPE\PARIS" \
---publish 9001:8000 \
---publish "$QBITORRENT" \
---publish "$JACKETT" \
---publish "$RADARR" \
---publish "$SONARR" \
---publish "$FLARESOLVERR" \
 --device "/dev/net/tun:/dev/net/tun" \
 --volume /share/Docker/$CONTENEUR:/gluetun \
 $IMAGE
+
+# --publish 9001:8000 \
+# --publish "$QBITORRENT" \
+# --publish "$JACKETT" \
+# --publish "$RADARR" \
+# --publish "$SONARR" \
+# --publish "$FLARESOLVERR" \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

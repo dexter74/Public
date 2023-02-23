@@ -19,6 +19,7 @@ docker container rm -f  $CONTENEUR
 docker create -i -t \
 --name=$CONTENEUR \
 --network=container:"NordVPN" \
+--restart $RESTART \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /volume1/Download:/downloads \
 --volume /volume1/Music:/Music \
@@ -26,13 +27,13 @@ docker create -i -t \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
 --env PGID=100 \
---publish $HTTP \
 $IMAGE:latest
 
 
-# --restart $RESTART \
 # --net=bridge \
 # --hostname $CONTENEUR \
+# --publish $HTTP \
+
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

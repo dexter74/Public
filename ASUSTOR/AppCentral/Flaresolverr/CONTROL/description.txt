@@ -1,1 +1,5 @@
 FlareSolverr est un serveur proxy pour contourner la protection Cloudflare
+
+Dépendance:
+ - Docker
+ - NordVPN

@@ -9,8 +9,8 @@ RESTART="unless-stopped"
 
 FOURNISSEUR="nordvpn"
 PAYS="Switzerland"
-UTILISATEUR="napoleon744@wanadoo.fr"
-MOTDEPASSE="Azerty74240@"
+UTILISATEUR=""
+MOTDEPASSE=""
 QBITORRENT="1007:1007"
 
 ##########################################################################################################################################################

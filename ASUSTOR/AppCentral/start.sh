@@ -8,13 +8,15 @@ cd ~/APPZ/ASUSTOR/AppCentral/Dozzle             && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Emby               && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Flaresolverr       && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .
-cd ~/APPZ/ASUSTOR/AppCentral/Jellyfin          && apkg-tools_py3.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Jellyfin           && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/NginxReverseProxy  && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/QBittorrent        && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin         && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/NordVPN            && apkg-tools_py3.py create .
+
 ########################################################################################
 # Container was required fix reboot NAS
 #cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
@@ -30,12 +32,10 @@ cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 
 ########################################################################################
 # Container in Testing
-cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
 ########################################################################################
 # Container Edit and Ready for Deploy
 # --------------------------------------------------------------------------------------
-# nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
-# cd   ~/APPZ/ASUSTOR/AppCentral/NordVPN        && apkg-tools_py3.py create .
 # --------------------------------------------------------------------------------------
 # nano ~/APPZ/ASUSTOR/AppCentral/NOIP/CONTROL/post-install.sh;
 # cd ~/APPZ/ASUSTOR/AppCentral/NOIP             && apkg-tools_py3.py create .

@@ -4,7 +4,7 @@
 
 ########################################################################################
 # Edit container before deploy
-#nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
+nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
 
 ########################################################################################
 #  Container Ready for Deploy

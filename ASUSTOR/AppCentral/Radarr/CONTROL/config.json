@@ -3,7 +3,7 @@
 		   "package":"Radarr",
 		   "name":"Radarr",
 		   "version":"1.0",
-		   "depends": [ "docker-ce" ],
+		   "depends": [ "docker-ce", "NordVPN" ],
 		   "conflicts":"",
 		   "developer":"Radarr",
 		   "maintainer":"Drthrax74",
@@ -31,9 +31,5 @@
 	"boot-priority":{
 		        "start-order":80,
 		        "stop-order":20
-	                },
-	"port":[ 
-	       "1112"
-	       ]
-	}
+	                }
 }

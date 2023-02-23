@@ -20,7 +20,7 @@ docker container rm -f  $CONTENEUR
 docker create -i -t \
 --name=$CONTENEUR \
 --restart $RESTART \
---net=bridge \
+--network=container:"NordVPN" \
 --dns="8.8.8.8" \
 --env PUID=1000 \
 --env PGID=100 \
@@ -34,6 +34,9 @@ docker create -i -t \
 --publish $PORT \
 --label cacher="oui" \
 $IMAGE:latest
+
+# --net=bridge \
+# 
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

@@ -1,5 +1,1 @@
 15-02-2023: Création du projet Jackett
-
-Dépendance:
- - Docker
- - NordVPN

@@ -3,7 +3,7 @@
 	          "package":"Flaresolverr",
 	          "name":"Flaresolverr",
 	          "version":"1.0",
-	          "depends": [ "docker-ce", "NordVPN" ],
+	          "depends": [ "docker-ce" ],
 	          "conflicts":"",
 	          "developer":"Flaresolverr",
 	          "maintainer":"Drthrax74",

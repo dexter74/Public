@@ -3,7 +3,7 @@
                   "package":"qBittorrent",
                   "name":"qBittorrent",
                   "version":"1.0",
-                  "depends": [ "docker-ce" ],
+                  "depends": [ "docker-ce", "NordVPN" ],
                   "conflicts":"",
                   "developer":"qBittorrent",
                   "maintainer":"Drthrax74",

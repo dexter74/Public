@@ -10,7 +10,7 @@
 #  Container Ready for Deploy
 #cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden          && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Dozzle             && apkg-tools_py3.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Dozzle             && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Emby               && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Flaresolverr       && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .

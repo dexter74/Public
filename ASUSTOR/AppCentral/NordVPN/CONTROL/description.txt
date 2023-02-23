@@ -1,5 +1,7 @@
 NordVPN est un service de réseau privé virtuel fourni par l'entreprise Nord Security.
 
 Le conteneur expose les ports:
- - Webui de qBittorrent
- 
+ - Jackett
+ - qBittorrent
+ - Radarr
+ - Sonarr

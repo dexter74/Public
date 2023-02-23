@@ -3,7 +3,7 @@
 		   "package":"Radarr",
 		   "name":"Radarr",
 		   "version":"1.0",
-		   "depends": [ "docker-ce", "NordVPN" ],
+		   "depends": [ "docker-ce", "NordVPN", "Jackett" ],
 		   "conflicts":"",
 		   "developer":"Radarr",
 		   "maintainer":"Drthrax74",

@@ -31,7 +31,7 @@
  	 	   "boot-priority":{ 
 			           "start-order":80,
 			           "stop-order":20
-		                   }
+		                   },
                    "port":[ 
 			  "1111"
                           ]

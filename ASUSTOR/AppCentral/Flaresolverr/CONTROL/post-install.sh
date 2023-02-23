@@ -11,7 +11,7 @@ RESTART=unless-stopped
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
-docker container rm -f  $CONTENEUR
+docker container rm -f $CONTENEUR
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #
@@ -20,13 +20,13 @@ docker create -i -t \
 --name=$CONTENEUR \
 --restart $RESTART \
 --network=container:"NordVPN" \
---hostname $CONTENEUR \
 --env LOG_LEVEL=${LOG_LEVEL:-info} \
 --env LOG_HTML=${LOG_HTML:-false} \
 --env CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none} \
 --label cacher="oui" \
 $IMAGE:latest
 
+# --hostname $CONTENEUR \
 
 # --net=bridge \
 # --dns 8.8.8.8 \

@@ -11,7 +11,7 @@ FOURNISSEUR="nordvpn"
 PAYS="Switzerland"
 UTILISATEUR=""
 MOTDEPASSE=""
-QBITORRENT="1007:1007"
+QBITORRENT="1110:1110"
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

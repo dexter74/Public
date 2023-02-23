@@ -9,8 +9,8 @@ RESTART="unless-stopped"
 
 FOURNISSEUR="nordvpn"
 PAYS="Switzerland"
-UTILISATEUR="user@email.com"
-MOTDEPASSE="password"
+UTILISATEUR="napoleon744@wanadoo.fr"
+MOTDEPASSE="Azerty74240@"
 QBITORRENT="1007:1007"
 
 ##########################################################################################################################################################
@@ -30,7 +30,11 @@ docker run -d \
 --env SERVER_REGIONS="$PAYS" \
 --env OPENVPN_USER="$UTILISATEUR" \
 --env OPENVPN_PASSWORD="$MOTDEPASSE" \
+--env TZ="EUROPE\PARIS" \
 --publish "$QBITORRENT" \
+--publish 9001:8000 \
+--device "/dev/net/tun:/dev/net/tun" \
+--volume /share/Docker/$CONTENEUR:/gluetun \
 $IMAGE
 
 ##########################################################################################################################################################
@@ -41,9 +45,7 @@ docker start $CONTENEUR
 ##########################################################################################################################################################
 # Vérification #
 ################
-# docker exec -it $CONTENEUR apk update
-# docker exec -it $CONTENEUR apk add curl
-# docker exec -it $CONTENEUR curl ifconfig.me
+# docker exec -it $CONTENEUR sh
 
 ##########################################################################################################################################################
 # Code Retour en Fermeture #

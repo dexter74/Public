@@ -15,6 +15,7 @@ QBITORRENT="1110:1110"
 JACKETT="1111:1111"
 RADARR="1112:1112"
 SONARR="1113:1113"
+FLARESOLVERR="1115:1115"
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -39,7 +40,7 @@ docker run -d \
 --publish "$JACKETT" \
 --publish "$RADARR" \
 --publish "$SONARR" \
-
+--publish "$FLARESOLVERR" \
 --device "/dev/net/tun:/dev/net/tun" \
 --volume /share/Docker/$CONTENEUR:/gluetun \
 $IMAGE

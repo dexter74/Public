@@ -29,14 +29,13 @@ docker create -i -t \
 --volume /volume1/Download:/downloads \
 --volume /volume1/Music:/Music \
 --volume /volume1/Video:/Video \
---publish $WEBUI \
-
---label cacher="oui" \
 $IMAGE:latest
 
 # --net=bridge \
 # --dns="8.8.8.8" \
 # --publish $PORT \
+# --publish $WEBUI \
+
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

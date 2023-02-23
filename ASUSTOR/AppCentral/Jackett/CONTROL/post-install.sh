@@ -19,18 +19,18 @@ docker container rm -f  $CONTENEUR
 docker create -i -t \
 --name=$CONTENEUR \
 --restart $RESTART \
---network=container:"NordVPN" \
+--hostname $CONTENEUR \
+--net=bridge \
+--dns 8.8.8.8 \
 --env AUTO_UPDATE="true" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
 --env PGID=100 \
 --volume /volume1/Docker:/config \
+--publish $HTTP \
 $IMAGE:latest
 
-# --hostname $CONTENEUR \
-# --publish $HTTP \
-# --net=bridge \
-# --dns 8.8.8.8 \
+#--network=container:"NordVPN" \
 
 
 ##########################################################################################################################################################

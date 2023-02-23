@@ -4,7 +4,7 @@
 
 ########################################################################################
 # Edit container before deploy
-nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
+#nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
 
 ########################################################################################
 #  Container Ready for Deploy
@@ -21,7 +21,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/QBittorrent        && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin         && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
-cd ~/APPZ/ASUSTOR/AppCentral/NordVPN            && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/NordVPN            && apkg-tools_py3.py create .
 
 ########################################################################################
 # Container was required fix reboot NAS

@@ -19,15 +19,17 @@ docker container rm -f  $CONTENEUR
 docker create -i -t \
 --name=$CONTENEUR \
 --restart $RESTART \
---net=bridge \
+--network=container:"NordVPN" \
 --hostname $CONTENEUR \
---dns 8.8.8.8 \
 --env LOG_LEVEL=${LOG_LEVEL:-info} \
 --env LOG_HTML=${LOG_HTML:-false} \
 --env CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none} \
---publish $HTTP \
 --label cacher="oui" \
 $IMAGE:latest
+
+
+# --net=bridge \
+# --dns 8.8.8.8 \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

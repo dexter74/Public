@@ -3,7 +3,7 @@
 	          "package":"Sonarr",
 	          "name":"Sonarr",
 	          "version":"1.0",
-	          "depends": [ "docker-ce", "NordVPN", "Jackett" ],
+	          "depends": [ "docker-ce", "Jackett" ],
 	          "conflicts":"",
 	          "developer":"Sonarr",
 	          "maintainer":"Drthrax74",
@@ -31,6 +31,11 @@
 		"boot-priority":{
 		        	"start-order":80,
 		        	"stop-order":20
-		                }
+		                },
+
+                   "port":[ 
+			  "1113"
+                          ]
+
 		}
 }

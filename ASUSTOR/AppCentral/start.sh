@@ -20,7 +20,7 @@ cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/QBittorrent        && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin         && apkg-tools_py3.py create .
 cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
+cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/NordVPN            && apkg-tools_py3.py create .
 
 ########################################################################################

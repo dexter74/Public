@@ -9,10 +9,12 @@ RESTART="unless-stopped"
 
 FOURNISSEUR="nordvpn"
 PAYS="Switzerland"
-UTILISATEUR=""
+UTILISATEUR="@wanadoo.fr"
 MOTDEPASSE=""
 QBITORRENT="1110:1110"
 JACKETT="1111:1111"
+RADARR="1112:1112"
+SONARR="1113:1113"
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -35,6 +37,9 @@ docker run -d \
 --publish 9001:8000 \
 --publish "$QBITORRENT" \
 --publish "$JACKETT" \
+--publish "$RADARR" \
+--publish "$SONARR" \
+
 --device "/dev/net/tun:/dev/net/tun" \
 --volume /share/Docker/$CONTENEUR:/gluetun \
 $IMAGE

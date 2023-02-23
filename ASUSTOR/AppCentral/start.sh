@@ -1,5 +1,11 @@
 ########################################################################################
 # https://github.com/dexter74/Archives/tree/main/Docker/V1/2.Conteneurs
+
+
+########################################################################################
+# Edit container before deploy
+nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
+
 ########################################################################################
 #  Container Ready for Deploy
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .

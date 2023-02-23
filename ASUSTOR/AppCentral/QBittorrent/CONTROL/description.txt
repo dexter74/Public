@@ -4,6 +4,7 @@ Identifiant  : admin
 Mot de passe : adminadmin
 
 Mise en service:
+ - Création du conteneur NordVPN
  - Eteindre le conteneur
  - Editer le fichier /volume1/Docker/Qbitorrent/qBittorrent/qBittorrent.conf
  - Ajouter ou éditer la ligne pour obtenir WebUI\HostHeaderValidation=false

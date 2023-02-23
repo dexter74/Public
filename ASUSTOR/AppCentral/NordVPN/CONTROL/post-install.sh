@@ -12,6 +12,7 @@ PAYS="Switzerland"
 UTILISATEUR=""
 MOTDEPASSE=""
 QBITORRENT="1110:1110"
+JACKETT="1111:1111"
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -31,8 +32,9 @@ docker run -d \
 --env OPENVPN_USER="$UTILISATEUR" \
 --env OPENVPN_PASSWORD="$MOTDEPASSE" \
 --env TZ="EUROPE\PARIS" \
---publish "$QBITORRENT" \
 --publish 9001:8000 \
+--publish "$QBITORRENT" \
+--publish "$JACKETT" \
 --device "/dev/net/tun:/dev/net/tun" \
 --volume /share/Docker/$CONTENEUR:/gluetun \
 $IMAGE

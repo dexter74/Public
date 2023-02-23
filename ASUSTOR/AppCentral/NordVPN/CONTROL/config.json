@@ -12,17 +12,5 @@
 		  "architecture":"x86-64",
 		  "firmware":"4.1.0",
 		  "default-lang":"fr-FR",
-		  "privace-statement":"https://nordvpn.com/fr/features/vpn-security/" },
-
-	"adm-desktop":{
-		      "app":{
-                            "type":"internal"
-		            },
-		      "privilege":{ 
-			          "accessible":"administrators",
-			          "customizable": true
-			          }
-		      },
-
-
+		  "privace-statement":"https://nordvpn.com/fr/features/vpn-security/" }
 }

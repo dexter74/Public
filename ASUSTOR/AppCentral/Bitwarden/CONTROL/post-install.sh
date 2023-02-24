@@ -12,19 +12,19 @@ RESTART=unless-stopped
 ##########################################################################################################################################################
 # General Settings #
 ####################
+DATA_FOLDER=data
 ADMIN_TOKEN=admin
 
 ##########################################################################################################################################################
 # Read-Only Config #
 ####################
-DATA_FOLDER=data
+MYSQL_HOST=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+MYSQL_DATABASE=bitwarden
+MYSQL_PORT=3306
 
-# Database URL
 MYSQL_USER=bitwarden
 MYSQL_PASS=bitwarden
-MYSQL_HOST=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
-MYSQL_PORT=3306
-MYSQL_DATABASE=bitwarden
+
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

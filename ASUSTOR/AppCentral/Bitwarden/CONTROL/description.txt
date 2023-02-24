@@ -1,3 +1,17 @@
 Bitwarden est un gestionnaire de mots de passe freemium et open source sous licence AGPL, qui permet de générer et de conserver des mots de passe de manière sécurisée.
-
 Port: 7777
+
+###################################################################################################################################################
+# Requête SQL #
+###############
+#
+# Création de la Base de donnée Bitwarden:
+DROP DATABASE bitwarden;
+CREATE DATABASE bitwarden;
+#
+# Création de l'utilisateur:
+GRANT USAGE ON *.* TO `bitwarden`@`%` IDENTIFIED BY PASSWORD '*D92749F9DD166473A4170969FBBE6D76FE5ACD89';
+#
+# Permission de la SQL:
+GRANT ALL PRIVILEGES ON `bitwarden`.* TO `bitwarden`@`%` WITH GRANT OPTION;
+###################################################################################################################################################

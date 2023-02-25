@@ -47,7 +47,6 @@ docker create -i -t \
 --env OVERWRITEPROTOCOL="$PROTOCOL" \
 --volume /volume1/Docker/$CONTENEUR/www:/var/www/html \
 --volume /volume1/Docker/$CONTENEUR/data:/var/www/html/data \
---volume /volume1/Docker/$CONTENEUR/apache2:/etc/apache2 \
 $IMAGE:latest
 
 ##########################################################################################################################################################

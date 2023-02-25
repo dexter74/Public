@@ -26,7 +26,7 @@ docker create -i -t \
 --env PGID=100 \
 --env TZ=Europe\Paris \
 --env WEBUI_PORT=1007 \
---volume /volume1/Docker/Qbitorrent:/config \
+--volume /volume1/Docker/:/config \
 --volume /volume1/Download:/downloads \
 --volume /volume1/Music:/Music \
 --volume /volume1/Video:/Video \

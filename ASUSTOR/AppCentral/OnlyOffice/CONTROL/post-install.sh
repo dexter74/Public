@@ -22,10 +22,15 @@ docker create -i -t \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
---volume /volume1/Docker/$CONTENEUR/logs:/var/log/onlyoffice \
+--env JWT_SECRET="admin" \
+--volume /volume1/Docker/$CONTENEUR/logs:/var/log/onlyoffice       \
 --volume /volume1/Docker/$CONTENEUR/Data:/var/www/onlyoffice/Data  \
+--volume /volume1/Docker/$CONTENEUR/Database:/var/lib/postgresql   \
+--volume /volume1/Docker/$CONTENEUR/Cache:/var/lib/onlyoffice      \
 --publish $HTTP:8000 \
 $IMAGE:latest
+
+
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

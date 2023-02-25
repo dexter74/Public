@@ -32,17 +32,17 @@ docker create -i -t \
 --publish $PORT \
 $IMAGE:latest
 
+# mkdir MONDOSSIER donne : /volume0/usr/builtin/webman/portal/apis/appCentral/, bizarre ?
+
 ##########################################################################################################################################################
 # Démarrage du Conteneur #
 ##########################
 docker start $CONTENEUR
 
 ##########################################################################################################################################################
-# Disponibilité de la SQL #
-###########################
+# Fichier SQL dans le conteneur #
+#################################
 mv /volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql /volume1/Docker/$CONTENEUR;
-
-# mkdir MONDOSSIER donne : /volume0/usr/builtin/webman/portal/apis/appCentral/, bizarre ?
 
 ##########################################################################################################################################################
 # Code Retour en Fermeture #

@@ -60,7 +60,6 @@ $IMAGE:latest
 # Lancement du Conteneur #
 ##########################
 docker start $CONTENEUR
-docker exec -it Nextcloud chown www-data:www-data /var/www/html/data/*
 
 ##########################################################################################################################################################
 # Code retour de Fermeture #

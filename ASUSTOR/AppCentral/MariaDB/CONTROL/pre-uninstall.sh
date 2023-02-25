@@ -17,7 +17,6 @@ if [ ! -z $container ]; then
 	docker kill $container
 	sleep 2
 	docker rm -f $container
-	rm -rf /share/Docker/$CONTENEUR 
 fi
 
 ##########################################################################################################################################################

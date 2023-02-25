@@ -52,7 +52,7 @@ docker create -i -t \
 --env NEXTCLOUD_ADMIN_PASSWORD=$NEXTCLOUD_PASS \
 --env NEXTCLOUD_DATA_DIR=/var/www/html/data \
 --volume /volume1/Docker/$CONTENEUR:/var/www/html \
---volume /home/$USERNAME:/var/www/html/data:ro \
+--volume /home/$USERNAME:/var/www/html/data/Drthrax74: \
 --publish $PORT:80 \
 $IMAGE:latest
 

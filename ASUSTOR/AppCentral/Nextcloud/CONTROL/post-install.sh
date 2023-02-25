@@ -11,14 +11,15 @@ PORT=1120
 ##########################################################################################################################################################
 # Configuration des accès Nextcloud #
 #####################################
+IP_NAS=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+
 NEXTCLOUD_USER="admin"
 NEXTCLOUD_PASS="admin"
-NEXTCLOUD_DOM="cloud9.ddns.net"
+NEXTCLOUD_DOM="$IP_NAS cloud74.ddns.net"
 
 ##########################################################################################################################################################
 # Configuration de la connexion à la BDD #
 ##########################################
-SQL_HOST=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 SQL_PORT="3306"
 SQL_DB="nextcloud"
 SQL_USER="nextcloud"
@@ -37,7 +38,7 @@ docker create -i -t \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
 --restart $RESTART \
---env MYSQL_HOST=${SQL_HOST}:${PORT} \
+--env MYSQL_HOST=${IP_NAS}:${PORT} \
 --env MYSQL_DATABASE=$SQL_DB \
 --env MYSQL_USER=$SQL_USER \
 --env MYSQL_PASSWORD=$SQL_PASS \

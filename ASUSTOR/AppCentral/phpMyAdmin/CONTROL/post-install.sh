@@ -32,20 +32,21 @@ docker create -i -t \
 --env PMA_USER="$MYSQL_USER" \
 --env PMA_PASSWORD="$MYSQL_PASS" \
 --env PMA_PMADB="$PHPMYADMIN_DATABASE" \
+--volume /share/Docker/$CONTENEUR/www:/var/www/html \
+--volume /share/Docker/$CONTENEUR/cfg:/etc/phpmyadmin \
 --publish $PORT \
 --label cacher="oui" \
 $IMAGE
 
 ##########################################################################################################################################################
-# Correctif #
-#############
-docker exec -i $CONTENEUR echo "\$cfg['Lang'] = 'fr';"  >> /etc/phpmyadmin/config.inc.php
-docker exec -i $CONTENEUR cat /etc/phpmyadmin/config.inc.php | grep "\lang"
-
-##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
 docker start $CONTENEUR
+
+##########################################################################################################################################################
+# Correctif #
+#############
+docker exec -i $CONTENEUR bash
 
 ##########################################################################################################################################################
 # Code retour de fermeture #

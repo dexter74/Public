@@ -39,9 +39,9 @@ docker start $CONTENEUR
 ##########################################################################################################################################################
 # Création des BDD #
 ####################
-mkdir MONDOSSIER
-#mv $PWD/requete.sql /volume1/Docker/$CONTENEUR;
-#docker exec -it MariaDB sh -c 'mysql -h 127.0.0.1 -uroot -proot < /config/requete.sql'
+mv /volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql /volume1/Docker/$CONTENEUR;
+sleep 10;
+docker exec -it MariaDB sh -c 'mysql -h 127.0.0.1 -uroot -proot < /config/requete.sql'
 
 ##########################################################################################################################################################
 # Code Retour en Fermeture #

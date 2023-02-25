@@ -21,7 +21,7 @@ docker create -i -t \
 --restart $RESTART \
 --hostname $CONTENEUR \
 --net=bridge \
---dns 8.8.8.8 \
+--dns 192.168.1.1 192.168.1.32 8.8.8.8 \
 --env AUTO_UPDATE="true" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \

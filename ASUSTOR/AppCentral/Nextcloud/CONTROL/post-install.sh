@@ -13,6 +13,7 @@ PORT=1120
 #####################################
 NEXTCLOUD_USER="admin"
 NEXTCLOUD_PASS="admin"
+NEXTCLOUD_DOM="cloud9.ddns.net"
 
 ##########################################################################################################################################################
 # Configuration de la connexion à la BDD #
@@ -22,7 +23,6 @@ SQL_PORT="3306"
 SQL_DB="nextcloud"
 SQL_USER="nextcloud"
 SQL_PASS="nextcloud"
-SQL_DOM="cloud9.ddns.net"
 PROTOCOL="HTTPS"
 
 ##########################################################################################################################################################
@@ -44,6 +44,7 @@ docker create -i -t \
 --env NEXTCLOUD_ADMIN_USER=$NEXTCLOUD_USER \
 --env NEXTCLOUD_ADMIN_PASSWORD=$NEXTCLOUD_PASS \
 --env NEXTCLOUD_DATA_DIR=/var/www/html/data \
+--env NEXTCLOUD_TRUSTED_DOMAINS=$NEXTCLOUD_DOM \
 --volume /volume1/Docker/$CONTENEUR:/var/www/html \
 --publish $PORT:80 \
 $IMAGE:latest

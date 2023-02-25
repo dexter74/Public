@@ -38,11 +38,14 @@ $IMAGE
 #--volume /share/Docker/$CONTENEUR:/etc/phpmyadmin/ \
 
 
-
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
 docker start $CONTENEUR
+
+
+# docker exec -it phpMyAdmin sh -c ' TEST="\$cfg['Lang'] = 'en';" && echo $TEST >> /etc/phpmyadmin/config.inc.php';
+# docker exec -it phpMyAdmin cat /etc/phpmyadmin/config.inc.php
 
 ##########################################################################################################################################################
 # Code retour de fermeture #

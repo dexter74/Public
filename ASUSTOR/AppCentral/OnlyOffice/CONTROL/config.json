@@ -3,7 +3,7 @@
 	          "package":"OnlyOffice",
 	          "name":"OnlyOffice",
 	          "version":"1.0",
-	          "depends": [ "docker-ce", "OnlyOffice" ],
+	          "depends": [ "docker-ce", "NextCloud" ],
 	          "conflicts":"Collabora",
 	          "developer":"OnlyOffice",
 	          "maintainer":"Drthrax74",

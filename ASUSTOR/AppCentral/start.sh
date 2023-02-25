@@ -41,7 +41,7 @@ echo "##########################################";
 echo "# Container in Testing                   #";
 echo "#  > MKcert                              #";
 cd ~/APPZ/ASUSTOR/AppCentral/mkcert              && apkg-tools_py3.py create .
-echo "#  > nextCloud                           #";
+echo "#  > NextCloud                           #";
 cd ~/APPZ/ASUSTOR/AppCentral/Nextcloud           && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
 echo "##########################################";

@@ -22,9 +22,9 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --net=bridge \
 --dns 8.8.8.8 \
---env LOG_LEVEL=${LOG_LEVEL:-info} \
---env LOG_HTML=${LOG_HTML:-false} \
---env CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none} \
+--env LOG_LEVEL=info \
+--env LOG_HTML=false \
+--env CAPTCHA_SOLVER=none \
 --publish $HTTP \
 $IMAGE:latest
 

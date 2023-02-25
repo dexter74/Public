@@ -27,6 +27,7 @@ docker create -i -t \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
 --env PGID=100 \
+--env REMOTE_SQL="/volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql,https://raw.githubusercontent.com/dexter74/Public/main/ASUSTOR/AppCentral/MariaDB/CONTROL/requete.sql"
 --volume /volume1/Docker/$CONTENEUR:/config \
 --publish $PORT \
 $IMAGE:latest

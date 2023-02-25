@@ -59,7 +59,7 @@ docker create -i -t \
 --publish $PORT:80 \
 $IMAGE:latest
 
-# --volume /volume1/Docker/${CONTENEUR}/apps:/var/www/html/custom_apps \
+#--volume /volume1/Docker/${CONTENEUR}/apps:/var/www/html/custom_apps \
 #--volume /volume1/Docker/${CONTENEUR}/data:/var/www/html/data        \
 #--volume /volume1/Docker/${CONTENEUR}/themes:/var/www/html/themes    \
 

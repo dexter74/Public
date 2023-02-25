@@ -4,7 +4,7 @@
 # Déclaration de la variable de test #
 ######################################
 CONTENEUR=MariaDB
-HTTP=3306:3306
+PORT=3306:3306
 IMAGE=linuxserver/mariadb
 RESTART=unless-stopped
 
@@ -29,8 +29,7 @@ docker create -i -t \
 --env PUID=1000 \
 --env PGID=100 \
 --volume /volume1/Docker/$CONTENEUR:/config \
---publish $HTTP \
---label cacher="oui" \
+--publish $PORT \
 $IMAGE:latest
 
 ##########################################################################################################################################################

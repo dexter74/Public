@@ -1,1 +1,11 @@
 Nextcloud est un logiciel libre de site d'hébergement de fichiers et une plateforme de collaboration.
+
+
+Intégrer Collabora:
+ - Applications
+ - Bureau et texte
+ - 
+ - Paramètres d'administration
+
+
+ https://192.168.1.32:1121/

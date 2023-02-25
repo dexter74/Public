@@ -23,6 +23,7 @@ docker create -i -t \
 --env TZ="Europe/Paris" \
 --volume /usr/builtin/etc/certificate:/sslcerts/:ro \
 --volume /etc/localtime:/etc/localtime:ro \
+--volume /volume1/Docker/mkcert:/cert \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
 $IMAGE:latest

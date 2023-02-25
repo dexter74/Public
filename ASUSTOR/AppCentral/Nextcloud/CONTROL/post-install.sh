@@ -16,6 +16,7 @@ PORT=1120
 ##########################################################################################################################################################
 # Configuration des accès Nextcloud #
 #####################################
+USERNAME=$(grep "1000" /etc/passwd | cut -d ":" -f 1)
 IP_NAS=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 NEXTCLOUD_USER="admin"
 NEXTCLOUD_PASS="admin"
@@ -50,6 +51,7 @@ docker create -i -t \
 --env NEXTCLOUD_ADMIN_USER=$NEXTCLOUD_USER \
 --env NEXTCLOUD_ADMIN_PASSWORD=$NEXTCLOUD_PASS \
 --volume /volume1/Docker/$CONTENEUR:/var/www/html \
+--volume /home/$USERNAME:/var/www/html/data:ro \
 --publish $PORT:80 \
 $IMAGE:latest
 

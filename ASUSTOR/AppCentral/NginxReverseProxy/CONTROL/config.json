@@ -4,7 +4,7 @@
 		"name":"Nginx Reverse Proxy", 
 		"version":"1.0", 
 		"depends": ["docker-ce"], 
-		"conflicts": ["MariaDB"] , 
+		"conflicts": ["PHP", "php" ] , 
 		"developer":"Nginx", 
 		"maintainer":"Drthrax74", 
 		"email":"Drthrax74@gmail.com", 

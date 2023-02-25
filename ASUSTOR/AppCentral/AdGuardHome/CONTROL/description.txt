@@ -6,7 +6,7 @@ Mise en service:
  - Arrêter et relancer le conteneur
 
 [Convertir pem en pfx] 
-openssl pkcs12 -inkey rootCA-key.pem -in rootCA.pem -export -out myrootCA.pfx
- 
+openssl pkcs12 -inkey rootCA-key.pem -in rootCA.pem -export -out autorite_certificat.pfx
+
 [Importer certificat] Autorités de certification racines de confiance/Certificats
-myrootCA.pfx
+autorite_certificat.pfx

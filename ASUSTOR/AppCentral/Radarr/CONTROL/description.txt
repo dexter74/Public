@@ -20,8 +20,8 @@ Le menu Découvrir se met à jour par rapport à la LISTE
 # Gestion des médias #
 ######################
 - Renommer Films: Coché
-- Format Film Standard: {Movie Title:FR} ({Release Year})
-- Format de dossier de film: {Movie Title:FR} {Quality Title} ({Release Year})
+- Format Film Standard: {Movie Title:FR} {Quality Title} ({Release Year})
+- Format de dossier de film: {Movie Title:FR} ({Release Year})
 - Supprimer les dossiers vides: Cocher
 
 Dossiers racine:

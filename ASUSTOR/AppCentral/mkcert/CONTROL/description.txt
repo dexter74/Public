@@ -38,7 +38,7 @@ docker start $CONTENEUR;
 #############################################################################################################################################################
 # Monter le Volume dans le conteneur applicatif #
 #################################################
--v /share/Docker/mkcert:/cert
+# -v /share/Docker/mkcert:/cert
 
 # AdguardHome:
 # /cert/bitwarden.local.pem

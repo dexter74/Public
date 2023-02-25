@@ -6,37 +6,39 @@
 # Edit container before deploy
 #nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
 
-echo "##############################"
-echo "# Container Ready for Deploy #"
-echo "#  > AdGuardHome             #"
+echo "##########################################";
+echo "# Container Ready for Deploy             #";
+echo "#  > AdGuardHome                         #";
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .
-echo "#  > BitWarden               #"
+echo "#  > BitWarden                           #";
 cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden          && apkg-tools_py3.py create .
-echo "#  > Dozzle                  #"
+echo "#  > Dozzle                              #";
 cd ~/APPZ/ASUSTOR/AppCentral/Dozzle             && apkg-tools_py3.py create .
-echo "#  > Emby                    #"
+echo "#  > Emby                                #";
 cd ~/APPZ/ASUSTOR/AppCentral/Emby               && apkg-tools_py3.py create .
-echo "#  > Flaresolverr            #"
+echo "#  > Flaresolverr                        #";
 cd ~/APPZ/ASUSTOR/AppCentral/Flaresolverr       && apkg-tools_py3.py create .
-echo "#  > Jackett                 #"
+echo "#  > Jackett                             #";
 cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .
-echo "#  > Jellyfin                #"
+echo "#  > Jellyfin                            #";
 cd ~/APPZ/ASUSTOR/AppCentral/Jellyfin           && apkg-tools_py3.py create .
-echo "#  > Librespeed              #"
+echo "#  > Librespeed                          #";
 cd ~/APPZ/ASUSTOR/AppCentral/LibreSpeed         && apkg-tools_py3.py create .
-echo "#  > MariaDB                 #"
+echo "#  > MariaDB                             #";
 cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
-echo "#  > Nginx Reverse Proxy     #"
+echo "#  > Nginx Reverse Proxy                 #";
 cd ~/APPZ/ASUSTOR/AppCentral/NginxReverseProxy  && apkg-tools_py3.py create .
-echo "#  > QBittorrent             #"
+echo "#  > QBittorrent                         #";
 cd ~/APPZ/ASUSTOR/AppCentral/QBittorrent        && apkg-tools_py3.py create .
-echo "#  > Radarr                  #"
+echo "#  > Radarr                              #";
 cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
-echo "#  > Sonarr                  #"
+echo "#  > Sonarr                              #";
+echo "##########################################";
+            
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 
-########################################################################################
-# Container was required fix reboot NAS
+echo "##########################################";
+echo "# Container was required fix reboot NAS  #";
 #cd ~/APPZ/ASUSTOR/AppCentral/NordVPN            && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .
@@ -48,12 +50,12 @@ cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio      && apkg-tools_py3.py create .
 
-echo "##############################"
-echo "# Container in Testing       #"
+echo "##########################################";
+echo "# Container in Testing                   #";
 #cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
-echo "#  > MKcert                  #"
+echo "#  > MKcert                              #";
 cd ~/APPZ/ASUSTOR/AppCentral/mkcert              && apkg-tools_py3.py create .
-echo "##############################"
+echo "##########################################";
 
 ########################################################################################
 # Container Edit and Ready for Deploy

@@ -1,4 +1,4 @@
-Paramètre Docker pour Bitwarden:
+Pour forcer des paramètres dans Bitwarden:
 
 --env DOMAIN="https://--env DOMAIN="https://mondomain.ddns.net/"
 --env SENDS_ALLOWED="true"

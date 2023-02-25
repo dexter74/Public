@@ -7,7 +7,7 @@ CONTENEUR=MariaDB
 PORT=3306:3306
 IMAGE=linuxserver/mariadb
 RESTART=unless-stopped
-
+SQL="https://raw.githubusercontent.com/dexter74/Public/main/ASUSTOR/AppCentral/MariaDB/CONTROL/requet.sql"
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
@@ -25,6 +25,7 @@ docker create -i -t \
 --env MYSQL_DATABASE="database" \
 --env MYSQL_USER="username" \
 --env MYSQL_PASSWORD="password" \
+--env REMOTE_SQL="$SQL" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
 --env PGID=100 \

@@ -19,7 +19,7 @@ PORT=1120
 IP_NAS=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 NEXTCLOUD_USER="admin"
 NEXTCLOUD_PASS="admin"
-NEXTCLOUD_DOM="192.168.1.32:1120"
+NEXTCLOUD_DOM="192.168.1.32:1120 cloud74.ddns.net:443"
 
 ##########################################################################################################################################################
 # Configuration de la connexion à la BDD #
@@ -43,7 +43,7 @@ docker create -i -t \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
 --restart $RESTART \
---env NEXTCLOUD_TRUSTED_DOMAINS=$NEXTCLOUD_DOM \
+--env NEXTCLOUD_TRUSTED_DOMAINS="$NEXTCLOUD_DOM" \
 --env OVERWRITEPROTOCOL=$PROTOCOL \
 --env MYSQL_HOST=${IP_NAS}:${SQL_PORT} \
 --env MYSQL_DATABASE=$SQL_DB \

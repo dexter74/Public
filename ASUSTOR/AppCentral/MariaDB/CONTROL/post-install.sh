@@ -37,12 +37,13 @@ $IMAGE:latest
 ##########################
 docker start $CONTENEUR
 
-
 ##########################################################################################################################################################
 # Création des BDD #
 ####################
-docker stop $CONTENEUR;
-mv requete.sql /volume1/Docker/$CONTENEUR:
+#docker stop $CONTENEUR;
+#cp /volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql /volume1/Docker/$CONTENEUR;
+#docker start $CONTENEUR;
+#docker exec -it MariaDB mysql -u root -p /config/requete.sql;
 
 ##########################################################################################################################################################
 # Code Retour en Fermeture #

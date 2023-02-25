@@ -45,6 +45,7 @@ docker container rm -f $CONTENEUR 2>/dev/null;
 #########################
 docker create -i -t \
 --name=$CONTENEUR \
+--net=bridge \
 --hostname $CONTENEUR \
 --restart $RESTART \
 --env NEXTCLOUD_TRUSTED_DOMAINS="$NEXTCLOUD_DOM $IP_NAS" \

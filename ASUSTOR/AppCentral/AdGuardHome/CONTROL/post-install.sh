@@ -24,6 +24,7 @@ docker create -i -t \
 --volume /etc/localtime:/etc/localtime:ro \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
+--volume /volume1/Docker/mkcert:/cert \
 --publish 3000:3000/tcp \
 --publish 9000:80/tcp   \
 --publish 3272:3272     \

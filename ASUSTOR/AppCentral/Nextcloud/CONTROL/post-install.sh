@@ -43,7 +43,7 @@ docker create -i -t \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
 --restart $RESTART \
---env MYSQL_HOST=${IP_NAS}:${PORT} \
+--env MYSQL_HOST=${IP_NAS}:${SQL_PORT} \
 --env MYSQL_DATABASE=$SQL_DB \
 --env MYSQL_USER=$SQL_USER \
 --env MYSQL_PASSWORD=$SQL_PASS \

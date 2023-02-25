@@ -7,7 +7,7 @@ CONTENEUR=MariaDB
 PORT=3306:3306
 IMAGE=linuxserver/mariadb
 RESTART=unless-stopped
-SQL="https://raw.githubusercontent.com/dexter74/Public/main/ASUSTOR/AppCentral/MariaDB/CONTROL/requet.sql"
+SQL="https://raw.githubusercontent.com/dexter74/Public/main/ASUSTOR/AppCentral/MariaDB/CONTROL/requete.sql"
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################

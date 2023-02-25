@@ -5,7 +5,7 @@
 ######################################
 IMAGE="vishnunair/docker-mkcert"
 CONTENEUR="mkcert"
-DOMAIN="adguarhome.local,bitwarden.local,nginx.local"
+DOMAIN="bitwarden.local"
 RESTART=unless-stopped
 IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 

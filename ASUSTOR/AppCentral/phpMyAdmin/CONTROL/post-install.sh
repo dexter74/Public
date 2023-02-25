@@ -40,7 +40,8 @@ $IMAGE
 # Correctif #
 #############
 docker exec -i $CONTENEUR echo "\$cfg['Lang'] = 'fr';"  >> /etc/phpmyadmin/config.inc.php
-docker exec -i $CONTENEUR cat /etc/phpmyadmin/config.inc.php | grep lang
+docker exec -i $CONTENEUR cat /etc/phpmyadmin/config.inc.php | grep "\lang"
+
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################

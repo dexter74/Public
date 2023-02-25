@@ -26,9 +26,9 @@ docker create -i -t \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
 --publish 3000:3000/tcp \
 --publish 9000:80/tcp   \
+--publish 3272:3272     \
 --publish 53:53/tcp     \
 --publish 53:53/udp     \
---publish 3272:3272     \
 $IMAGE:latest
 
 #--publish 443:443/tcp   \

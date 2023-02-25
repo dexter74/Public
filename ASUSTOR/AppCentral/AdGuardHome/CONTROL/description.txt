@@ -9,4 +9,4 @@ Mise en service:
 openssl pkcs12 -inkey rootCA-key.pem -in rootCA.pem -export -out autorite_certificat.pfx
 
 [Importer certificat] Autorités de certification racines de confiance/Certificats
-autorite_certificat.pfx
+CERTUTIL -f -p "" -importpfx "C:\Users\teste\Desktop\autorite_certificat.pfx"

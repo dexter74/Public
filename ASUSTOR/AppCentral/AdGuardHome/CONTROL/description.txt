@@ -4,3 +4,6 @@ Mise en service:
  - Aller sur le port 3000
  - Faire l'installation
  - Arrêter et relancer le conteneur
+
+Importer Autorité sous Windows:
+openssl pkcs12 -inkey rootCA-key.pem -in rootCA.pem -export -out myrootCA.pfx

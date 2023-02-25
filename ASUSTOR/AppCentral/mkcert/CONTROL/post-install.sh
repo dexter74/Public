@@ -13,7 +13,6 @@ IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 # Fermeture du Conteneur #
 ##########################
 docker container rm -f $CONTENEUR;
-rm -rf /share/Docker/$CONTENEUR;
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

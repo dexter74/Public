@@ -1,5 +1,6 @@
 Mkcert est un outil simple qui peut être utilisé pour fabriquer des certificats de confiance localement.
 
+
 # Monter le point de montage dans le conteneur si nécessaire : /share/Docker/mkcert:/cert
 # Crée une entrée DNS dans ADGuardHome vers nginx
 # Aller dans Nginx > SSL Certificates
@@ -7,6 +8,15 @@ Mkcert est un outil simple qui peut être utilisé pour fabriquer des certificat
 # *.local.pem
 # *.local-key.pem
 # rootCA.pem
+
+
+asustor.local
+bitwarden.local
+dns.local
+dozzle.local
+emby.local
+nginx.local
+torrent.local
 
 
 Se connecter en SSH

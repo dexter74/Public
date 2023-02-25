@@ -38,7 +38,22 @@ echo "#  > Sonarr                              #";
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 
 echo "##########################################";
-echo "# Container was required fix reboot NAS  #";
+echo "# Container in Testing                   #";
+echo "#  > MKcert                              #";
+cd ~/APPZ/ASUSTOR/AppCentral/mkcert              && apkg-tools_py3.py create .
+echo "#  > nextCloud                           #";
+cd ~/APPZ/ASUSTOR/AppCentral/Nextcloud           && apkg-tools_py3.py create .
+#cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
+echo "##########################################";
+
+
+
+
+
+
+
+#echo "##########################################";
+#echo "# Container was required fix reboot NAS  #";
 #cd ~/APPZ/ASUSTOR/AppCentral/NordVPN            && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .
@@ -49,12 +64,7 @@ echo "# Container was required fix reboot NAS  #";
 #cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Visual_Studio      && apkg-tools_py3.py create .
 
-echo "##########################################";
-echo "# Container in Testing                   #";
-#cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
-echo "#  > MKcert                              #";
-cd ~/APPZ/ASUSTOR/AppCentral/mkcert              && apkg-tools_py3.py create .
-echo "##########################################";
+
 
 ########################################################################################
 # Container Edit and Ready for Deploy

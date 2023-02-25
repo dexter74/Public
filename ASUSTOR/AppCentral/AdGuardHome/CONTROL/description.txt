@@ -5,5 +5,8 @@ Mise en service:
  - Faire l'installation
  - Arrêter et relancer le conteneur
 
-Importer Autorité sous Windows:
+[Convertir pem en pfx] 
 openssl pkcs12 -inkey rootCA-key.pem -in rootCA.pem -export -out myrootCA.pfx
+ 
+[Importer certificat] Autorités de certification racines de confiance/Certificats
+myrootCA.pfx

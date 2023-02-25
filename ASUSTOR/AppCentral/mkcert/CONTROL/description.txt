@@ -13,9 +13,13 @@
 ##############################
 IMAGE="vishnunair/docker-mkcert"
 CONTENEUR="mkcert"
-
-# Pour du multi-domain: dom1,dom2...
 DOMAIN="bitwarden.local,adguarhome.local"
+
+#############################################################################################################################################################
+# Suppression du conteneur #
+############################
+docker container rm -f  $CONTENEUR;
+rm -rf /share/Docker/$CONTENEUR;
 
 #############################################################################################################################################################
 # Création du conteneur #
@@ -30,7 +34,6 @@ $IMAGE:latest;
 # Démarrage du Conteneur #
 ##########################
 docker start $CONTENEUR;
-
 
 #############################################################################################################################################################
 # Monter le Volume dans le conteneur applicatif #

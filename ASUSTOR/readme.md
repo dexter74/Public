@@ -14,6 +14,11 @@ Le conteneur Base et le squelette est à modifier .
 docker create -i -t \
 ```
 
+**phpMyAdmin** (Erreur / Fix)
+```
+https://techoverflow.net/2018/08/15/how-to-fix-phpmyadmin-error-1231-variable-lc_messages-cant-be-set-to-the-value-of/
+```
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## II. Etat d'avancement des conteneurs ([Squelette](https://github.com/dexter74/Public/blob/main/ASUSTOR/AppCentral/Squelette.md))

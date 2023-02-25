@@ -23,6 +23,7 @@ docker create -i -t \
 --net=bridge \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --env TZ="Europe/Paris" \
+--env CUSTOM_RESULTS="true" \
 --env PUID=1000 \
 --env PGID=100 \
 --env PASSWORD="password" \
@@ -31,7 +32,7 @@ $IMAGE
 
 # https://hub.docker.com/r/linuxserver/librespeed
 #--env DB_TYPE="sqlite,mysql,postgresql" \
-#--env CUSTOM_RESULTS="false" \
+#
 #--env DB_HOSTNAME="" \
 #--env DB_PORT="" \
 #--env DB_NAME="" \

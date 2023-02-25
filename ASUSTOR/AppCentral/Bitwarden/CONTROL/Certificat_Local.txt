@@ -2,7 +2,11 @@
 # AdguardHome #
 ###############
 # Pour crée un domain local:
-# - bitwarden.local
+# - Filtres
+# - Réécritures DNS
+# - Ajouter une réécriture DNS
+# - Domaine: bitwarden.local
+# - IP: Adresse IP du NAS
 
 #############################################################################################################################################################
 # Configuration du Conteneur #

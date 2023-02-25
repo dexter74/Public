@@ -37,12 +37,9 @@ $IMAGE:latest
 docker start $CONTENEUR
 
 ##########################################################################################################################################################
-# Création des BDD #
-####################
+# Disponibilité de la SQL #
+###########################
 mv /volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql /volume1/Docker/$CONTENEUR;
-sleep 70;
-docker exec -it MariaDB sh -c 'mysql -h 127.0.0.1 -uroot -proot < /config/requete.sql'
-mysql -h 127.0.0.1 -uroot -proot < /config/requete.sql
 
 # mkdir MONDOSSIER donne : /volume0/usr/builtin/webman/portal/apis/appCentral/, bizarre ?
 

@@ -51,7 +51,7 @@ docker create -i -t \
 --env NEXTCLOUD_ADMIN_USER=$NEXTCLOUD_USER \
 --env NEXTCLOUD_ADMIN_PASSWORD=$NEXTCLOUD_PASS \
 --env NEXTCLOUD_DATA_DIR=/var/www/html/data \
---volume /volume1/Docker/${CONTENEUR}_cfg:/var/www/html \
+--volume /volume1/Docker/${CONTENEUR}_cfg:/var/www/html/config \
 --volume /volume1/Docker/${CONTENEUR}_data:/var/www/html/data \
 --publish $PORT:80 \
 $IMAGE:latest

@@ -5,8 +5,12 @@ Mise en service:
  - Faire l'installation
  - Arrêter et relancer le conteneur
 
-[Convertir pem en pfx] 
-openssl pkcs12 -inkey rootCA-key.pem -in rootCA.pem -export -out autorite_certificat.pfx
+Se connecter en SSH
+ssh root@192.168.1.32
 
-[Importer certificat] Autorités de certification racines de confiance/Certificats
+Convertir pem en pfx:
+openssl pkcs12 -inkey /share/Docker/mkcert/rootCA-key.pem -in /share/Docker/mkcert/rootCA.pem -export -out /share/Docker/mkcert/autorite_certificat.pfx
+
+Importer le certificat:
+scp -i "autorite_certificat.pfx" "Drthrax74@192.168.1.32:/share/Docker/mkcert/autorite_certificat.pfx" C:\Users\teste\Desktop
 CERTUTIL -f -p "" -importpfx "C:\Users\teste\Desktop\autorite_certificat.pfx"

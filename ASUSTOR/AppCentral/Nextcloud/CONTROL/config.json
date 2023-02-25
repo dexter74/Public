@@ -3,7 +3,7 @@
 	          "package":"NextCloud",
 	          "name":"NextCloud",
 	          "version":"1.0",
-	          "depends": [ "docker-ce"],
+	          "depends": [ "docker-ce" ],
 	          "conflicts":"",
 	          "developer":"NextCloud",
 	          "maintainer":"Drthrax74",

@@ -34,7 +34,6 @@ PROTOCOL="HTTPS"
 # Fermeture du Conteneur #
 ##########################
 docker container rm -f $CONTENEUR 2>/dev/null;
-rm -rf  /volume1/Docker/$CONTENEUR 2>/dev/null;
 
 ##########################################################################################################################################################
 # Création du Conteneur #
@@ -56,8 +55,9 @@ $IMAGE:latest
 
 
 #--env NEXTCLOUD_DATA_DIR=/var/www/html/data \
-#
 #--env OVERWRITEPROTOCOL="$PROTOCOL" \
+#rm -rf  /volume1/Docker/$CONTENEUR 2>/dev/null;
+
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################

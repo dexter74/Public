@@ -39,7 +39,9 @@ SQL_PASS="nextcloud"
 # Fermeture du Conteneur #
 ##########################
 docker container rm -f $CONTENEUR 2>/dev/null;
-rm -rf  /volume1/Docker/${CONTENEUR}/{apps,cfg};
+rm -rf  /volume1/Docker/${CONTENEUR}/apps;
+rm -rf  /volume1/Docker/${CONTENEUR}/cfg;
+rm -rf  /volume1/Docker/${CONTENEUR}/themes;
 
 ##########################################################################################################################################################
 # Création du Conteneur #

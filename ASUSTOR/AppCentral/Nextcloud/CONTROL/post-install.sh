@@ -28,7 +28,7 @@ SQL_PORT="3306"
 SQL_DB="nextcloud"
 SQL_USER="nextcloud"
 SQL_PASS="nextcloud"
-PROTOCOL="HTTPS"
+PROTOCOL="HTTP"
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

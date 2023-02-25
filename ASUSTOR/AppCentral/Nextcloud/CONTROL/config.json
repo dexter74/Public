@@ -1,0 +1,34 @@
+{
+	"general":{
+	          "package":"NextCloud",
+	          "name":"NextCloud",
+	          "version":"1.0",
+	          "depends": [ "docker-ce"],
+	          "conflicts":"",
+	          "developer":"NextCloud",
+	          "maintainer":"Drthrax74",
+	          "email":"Drthrax74@gmail.com",
+	          "website":"https://nextcloud.com/fr/",
+	          "architecture":"x86-64",
+	          "firmware":"4.1.0", 
+            "default-lang":"fr-FR",
+	          "privace-statement":"https://nextcloud.com/fr/privacy/"
+	          },
+	
+	"adm-desktop":{
+		      "app":{ "port":"1120", "protocol":"http", "type":"custom", "url":"/" },
+		      "privilege":{ "accessible":"users", "customizable": true }
+	              },
+	"register":{ 	
+		   "share-folder":[
+		                  { "name":"Docker", "description":"Data and files directory for Docker Apps" }
+		                  ],
+		"boot-priority":{
+		        	"start-order":80,
+		        	"stop-order":20
+		                },
+		"port":[
+		       1120
+		       ]
+		}
+}

@@ -16,7 +16,7 @@
 	          },
 	
 	"adm-desktop":{
-		      "app":{ "port":"1120", "protocol":"http", "type":"custom", "url":"/" },
+		      "app":{ "port":"1120", "protocol":"https", "type":"custom", "url":"/" },
 		      "privilege":{ "accessible":"users", "customizable": true }
 	              },
 	"register":{ 	

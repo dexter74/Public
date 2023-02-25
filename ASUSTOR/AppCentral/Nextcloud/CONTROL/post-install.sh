@@ -19,7 +19,7 @@ PORT=1120
 IP_NAS=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 NEXTCLOUD_USER="admin"
 NEXTCLOUD_PASS="admin"
-NEXTCLOUD_DOM="$IP_NAS cloud74.ddns.net"
+NEXTCLOUD_DOM="192.168.1.32:1120"
 
 ##########################################################################################################################################################
 # Configuration de la connexion à la BDD #

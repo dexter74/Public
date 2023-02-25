@@ -22,13 +22,13 @@ torrent.local
 # Se connecter en SSH
 ssh root@192.168.1.32
 
-#Convertir pem en pfx:
+# Convertir pem en pfx:
 openssl pkcs12 -inkey /share/Docker/mkcert/rootCA-key.pem -in /share/Docker/mkcert/rootCA.pem -export -out /share/Docker/mkcert/autorite_certificat.pfx
 
-#Télécharger le certificat:
+# Télécharger le certificat:
 scp -i "autorite_certificat.pfx" "Drthrax74@192.168.1.32:/share/Docker/mkcert/autorite_certificat.pfx" C:\Users\teste\Desktop
 
-#Importer le certificat:
+# Importer le certificat:
 CERTUTIL -f -p "" -importpfx "C:\Users\teste\Desktop\autorite_certificat.pfx"
 
 

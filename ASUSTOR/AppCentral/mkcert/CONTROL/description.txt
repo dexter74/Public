@@ -30,4 +30,4 @@ scp -i "autorite_certificat.pfx" "Drthrax74@192.168.1.32:/share/Docker/mkcert/au
 CERTUTIL -f -p "" -importpfx "C:\Users\teste\Desktop\autorite_certificat.pfx"
 
 
-Supprimer le certificat: Chercher mk
+Supprimer le certificat:  mkcert root@mkcert

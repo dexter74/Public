@@ -24,11 +24,8 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR/logs:/var/log/onlyoffice \
 --volume /volume1/Docker/$CONTENEUR/Data:/var/www/onlyoffice/Data  \
---publish $HTTP:80 \
+--publish $HTTP:8000 \
 $IMAGE:latest
-
-#--env \
-#--volume /var/log/onlyoffice 
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

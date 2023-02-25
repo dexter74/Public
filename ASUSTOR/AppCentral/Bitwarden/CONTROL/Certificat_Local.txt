@@ -45,3 +45,5 @@ docker start $CONTENEUR;
 # /cert/bitwarden.local.pem
 # /cert/bitwarden.local-key.pem
 
+# Nginx Reverse Proxy
+

@@ -1,48 +1,8 @@
-#############################################################################################################################################################
-# AdguardHome #
-###############
-# Pour crée un domain local:
-# - Filtres
-# - Réécritures DNS
-# - Ajouter une réécriture DNS
-# - Domaine: bitwarden.local
-# - IP: Adresse IP du NAS
+Mkcert est un outil simple qui peut être utilisé pour fabriquer des certificats de confiance localement.
 
-#############################################################################################################################################################
-# Configuration du Conteneur #
-##############################
-IMAGE="vishnunair/docker-mkcert"
-CONTENEUR="mkcert"
-DOMAIN="bitwarden.local,adguarhome.local"
-
-#############################################################################################################################################################
-# Suppression du conteneur #
-############################
-docker container rm -f  $CONTENEUR;
-rm -rf /share/Docker/$CONTENEUR;
-
-#############################################################################################################################################################
-# Création du conteneur #
-#########################
-docker create -i -t \
--e domain="$DOMAIN" \
---name $CONTENEUR \
--v /share/Docker/$CONTENEUR:/root/.local/share/mkcert \
-$IMAGE:latest;
-
-##########################################################################################################################################################
-# Démarrage du Conteneur #
-##########################
-docker start $CONTENEUR;
-
-#############################################################################################################################################################
-# Monter le Volume dans le conteneur applicatif #
-#################################################
-# -v /share/Docker/mkcert:/cert
-#
-# Nginx Reverse Proxy
-# /cert/
-#
-# AdguardHome:
-# /cert/adguarhome.local.pem
-# /cert/adguarhome.local-key.pem
+# Monter le point de montage dans le conteneur : /share/Docker/mkcert:/cert
+# Crée une entrée DNS dans ADGuardHome vers nginx
+# Aller dans Nginx > SSL Certificates
+# En haut à droite: SSL Certificates puis Custom
+# *.local.pem
+# *.local-key.pem

@@ -1,15 +1,12 @@
-###################################################################################################################################################
-# Requête SQL #
-###############
-#
-# Purge DB et user
+/* ########################################################################## */
+/* Purge DB et user */
 DROP DATABASE nextcloud;
 DROP USER 'nextcloud'@'%';
 
-# Création de la Base de donnée et de l'utilisateur
+/* Création de la Base de donnée et de l'utilisateur */
 CREATE DATABASE nextcloud;
 CREATE USER 'nextcloud'@'%' IDENTIFIED BY 'nextcloud';
-#
-# Permission de la SQL:
+
+/* Permission de la SQL */ 
 GRANT ALL PRIVILEGES ON `nextcloud`.* TO `nextcloud`@`%` WITH GRANT OPTION;
-###################################################################################################################################################
+/* ########################################################################## */

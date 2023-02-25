@@ -36,8 +36,9 @@ docker create -i -t \
 --label cacher="oui" \
 $IMAGE
 
+docker exec -i $CONTENEUR echo "$cfg['Lang'] = 'en';"  >> /etc/phpmyadmin config.inc.php
+
 ##########################################################################################################################################################
 # Code retour de fermeture #
 ############################
 exit 0
-

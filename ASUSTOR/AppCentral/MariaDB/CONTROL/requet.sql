@@ -2,7 +2,8 @@
 CREATE DATABASE bitwarden;
 CREATE DATABASE nextcloud;
 
-/* Création des utilisateurs */
+/* Création des utilisateurs (USER et MDP) */
+
 CREATE USER 'bitwarden'@'%' IDENTIFIED BY 'bitwarden';
 CREATE USER 'nextcloud'@'%' IDENTIFIED BY 'nextcloud';
 

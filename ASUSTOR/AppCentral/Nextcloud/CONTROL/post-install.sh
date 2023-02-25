@@ -37,19 +37,21 @@ docker create -i -t \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
 --restart $RESTART \
---env NEXTCLOUD_ADMIN_USER="$NEXTCLOUD_USER" \
---env NEXTCLOUD_ADMIN_PASSWORD ="$NEXTCLOUD_PASS" \
---env MYSQL_HOST="$SQL_HOST" \
---env MYSQL_DATABASE="$SQL_PORT" \
---env MYSQL_USER="$SQL_USER" \
---env MYSQL_PASSWORD="$SQL_PASS" \
---env NEXTCLOUD_TRUSTED_DOMAINS="$SQL_DOM" \
---env OVERWRITEPROTOCOL="$PROTOCOL"
---volume /volume1/Docker/$CONTENEUR/www:/var/www/html \
---volume /volume1/Docker/$CONTENEUR/data:/var/www/html/data \
---volume /volume1/Docker/$CONTENEUR/apache2:/etc/apache2 \
 --publish $PORT:80  \
 $IMAGE:latest
+
+# --env NEXTCLOUD_ADMIN_USER="$NEXTCLOUD_USER" \
+# --env NEXTCLOUD_ADMIN_PASSWORD ="$NEXTCLOUD_PASS" \
+# --env MYSQL_HOST="$SQL_HOST" \
+# --env MYSQL_DATABASE="$SQL_PORT" \
+# --env MYSQL_USER="$SQL_USER" \
+# --env MYSQL_PASSWORD="$SQL_PASS" \
+# --env NEXTCLOUD_TRUSTED_DOMAINS="$SQL_DOM" \
+# --env OVERWRITEPROTOCOL="$PROTOCOL"
+# --volume /volume1/Docker/$CONTENEUR/www:/var/www/html \
+# --volume /volume1/Docker/$CONTENEUR/data:/var/www/html/data \
+# --volume /volume1/Docker/$CONTENEUR/apache2:/etc/apache2 \
+
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

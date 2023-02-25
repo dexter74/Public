@@ -15,7 +15,7 @@ IMAGE="vishnunair/docker-mkcert"
 CONTENEUR="mkcert"
 
 # Pour du multi-domain: dom1,dom2...
-DOMAIN="bitwarden.local"
+DOMAIN="bitwarden.local,adguarhome.local"
 
 #############################################################################################################################################################
 # Création du conteneur #

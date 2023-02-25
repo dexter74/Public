@@ -43,13 +43,14 @@ docker create -i -t \
 --env MYSQL_DATABASE="$SQL_PORT" \
 --env MYSQL_USER="$SQL_USER" \
 --env MYSQL_PASSWORD="$SQL_PASS" \
---env NEXTCLOUD_TRUSTED_DOMAINS="$SQL_DOM" \
---env OVERWRITEPROTOCOL="$PROTOCOL" \
 --volume /volume1/Docker/$CONTENEUR/www:/var/www/html \
 --volume /volume1/Docker/$CONTENEUR/data:/var/www/html/data \
 --publish $PORT:80 \
 $IMAGE:latest
 
+
+# --env NEXTCLOUD_TRUSTED_DOMAINS="$SQL_DOM" \
+# --env OVERWRITEPROTOCOL="$PROTOCOL" \
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################

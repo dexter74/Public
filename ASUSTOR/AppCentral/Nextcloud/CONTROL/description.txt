@@ -2,13 +2,13 @@
 # Requête SQL #
 ###############
 #
-# Création de la Base de donnée NextCloud:
+# Purge DB et user
 DROP DATABASE nextcloud;
-CREATE DATABASE nextcloud;
-#
-# Création de l'utilisateur:
 DROP USER 'nextcloud'@'%';
-GRANT USAGE ON *.* TO `nextcloud`@`%` IDENTIFIED BY PASSWORD '*622C4A896C7A2B1DEE6B6713116AFF0182BED69F';
+
+# Création de la Base de donnée et de l'utilisateur
+CREATE DATABASE nextcloud;
+CREATE USER 'nextcloud'@'%' IDENTIFIED BY 'nextcloud';
 #
 # Permission de la SQL:
 GRANT ALL PRIVILEGES ON `nextcloud`.* TO `nextcloud`@`%` WITH GRANT OPTION;

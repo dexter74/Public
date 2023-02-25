@@ -47,7 +47,7 @@ $IMAGE:latest
 # --env MYSQL_USER="$SQL_USER" \
 # --env MYSQL_PASSWORD="$SQL_PASS" \
 # --env NEXTCLOUD_TRUSTED_DOMAINS="$SQL_DOM" \
-# --env OVERWRITEPROTOCOL="$PROTOCOL"
+# --env OVERWRITEPROTOCOL="$PROTOCOL" \
 # --volume /volume1/Docker/$CONTENEUR/www:/var/www/html \
 # --volume /volume1/Docker/$CONTENEUR/data:/var/www/html/data \
 # --volume /volume1/Docker/$CONTENEUR/apache2:/etc/apache2 \

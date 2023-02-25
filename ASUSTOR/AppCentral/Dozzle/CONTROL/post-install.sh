@@ -23,7 +23,6 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --volume /var/run/docker.sock:/var/run/docker.sock \
 --publish $HTTP \
---label cacher="oui" \
 $IMAGE:latest
 
 ##########################################################################################################################################################

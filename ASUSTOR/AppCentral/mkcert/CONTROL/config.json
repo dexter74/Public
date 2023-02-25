@@ -1,0 +1,35 @@
+{
+	"general":{
+		"package":"mkcert",
+		"name":"mkcert",
+		"version":"1.0",
+		"depends": [ "docker-ce" ],
+		"conflicts":"",
+		"developer":"mkcert",
+		"maintainer":"Drthrax74",
+		"email":"Drthrax74@gmail.com",
+		"website":"https://ubunlog.com/fr/mkcert-una-herramienta-para-crear-certificados-ssl-para-el-desarrollo-local/",
+		"architecture":"x86-64",
+		"firmware":"4.1.0",
+		"default-lang":"fr-FR",
+		},
+
+	"adm-desktop":{
+		"app":{ 
+			"type":"internal"
+		     },
+		
+		"privilege":{
+			"accessible":"administrators",
+			"customizable": true
+			}
+		},
+
+	"register":{ 
+		"share-folder":[ {
+			"name":"Docker", 
+			"description":"Dossier Docker Requis" 
+			} ],
+		"boot-priority":{ "start-order":80, "stop-order":20 }
+		}
+}

@@ -22,6 +22,10 @@ echo "#  > Jackett                 #"
 cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .
 echo "#  > Jellyfin                #"
 cd ~/APPZ/ASUSTOR/AppCentral/Jellyfin           && apkg-tools_py3.py create .
+
+echo "#  > Librespee               #"
+cd ~/APPZ/ASUSTOR/AppCentral/LibreSpeed         && apkg-tools_py3.py create .
+
 echo "#  > MariaDB                 #"
 cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
 echo "#  > Nginx Reverse Proxy     #"
@@ -41,7 +45,6 @@ cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Cloud9             && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/FileBrowser        && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Jdownloader       && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/LibreSpeed         && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Nexclipper         && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Plex               && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .

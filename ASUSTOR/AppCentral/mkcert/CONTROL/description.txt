@@ -18,3 +18,6 @@ openssl pkcs12 -inkey /share/Docker/mkcert/rootCA-key.pem -in /share/Docker/mkce
 Importer le certificat:
 scp -i "autorite_certificat.pfx" "Drthrax74@192.168.1.32:/share/Docker/mkcert/autorite_certificat.pfx" C:\Users\teste\Desktop
 CERTUTIL -f -p "" -importpfx "C:\Users\teste\Desktop\autorite_certificat.pfx"
+
+
+Supprimer le certificat: Chercher mk

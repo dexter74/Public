@@ -32,8 +32,7 @@ docker create -i -t \
 --net=bridge \
 --hostname $CONTENEUR \
 --restart $RESTART \
--- env TZ="EUROPE\PARIS" \
---volume \
+--env TZ="EUROPE\PARIS" \
 --publish $PORT:80 \
 $IMAGE:latest
 

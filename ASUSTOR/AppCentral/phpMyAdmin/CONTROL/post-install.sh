@@ -32,10 +32,12 @@ docker create -i -t \
 --env PMA_USER="$MYSQL_USER" \
 --env PMA_PASSWORD="$MYSQL_PASS" \
 --env PMA_PMADB="$PHPMYADMIN_DATABASE" \
---volume /share/Docker/${CONTENEUR}_www:/var/www/html \
---volume /share/Docker/${CONTENEUR}_cfg:/etc/phpmyadmin \
 --publish $PORT \
 $IMAGE
+
+# --volume /share/Docker/${CONTENEUR}_www:/var/www/html \
+# --volume /share/Docker/${CONTENEUR}_cfg:/etc/phpmyadmin \
+
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

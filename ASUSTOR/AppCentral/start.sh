@@ -30,7 +30,7 @@ echo "#  > QBittorrent             #"
 cd ~/APPZ/ASUSTOR/AppCentral/QBittorrent        && apkg-tools_py3.py create .
 echo "#  > Radarr                  #"
 cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
-echo "#  > Sonarr                 #"
+echo "#  > Sonarr                  #"
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 
 ########################################################################################

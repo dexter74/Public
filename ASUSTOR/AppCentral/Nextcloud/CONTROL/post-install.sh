@@ -11,7 +11,7 @@ clear;
 CONTENEUR=Nextcloud
 IMAGE=nextcloud
 RESTART=unless-stopped
-PORT=1120
+NEXTCLOUD_PORT=1120
 
 ##########################################################################################################################################################
 # Configuration des accès Nextcloud #
@@ -58,14 +58,13 @@ docker create -i -t \
 --volume /volume1/Docker/${CONTENEUR}/cfg:/var/www/html/config \
 --volume /volume1/Docker/${CONTENEUR}/data:/var/www/html/data \
 --volume /volume1/Docker/${CONTENEUR}/themes:/var/www/html/themes \
---publish $PORT:80 \
+--publish $NEXTCLOUD_PORT:80 \
 $IMAGE:latest
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
 docker start $CONTENEUR;
-
 
 ##########################################################################################################################################################
 # Code retour de Fermeture #

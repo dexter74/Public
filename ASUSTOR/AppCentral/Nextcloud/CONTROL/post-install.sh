@@ -43,7 +43,6 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --restart $RESTART \
 --env NEXTCLOUD_TRUSTED_DOMAINS="$NEXTCLOUD_DOM $IP_NAS" \
---env OVERWRITEPROTOCOL=$PROTOCOL \
 --env MYSQL_HOST=${IP_NAS}:${SQL_PORT} \
 --env MYSQL_DATABASE=$SQL_DB \
 --env MYSQL_USER=$SQL_USER \
@@ -54,9 +53,9 @@ docker create -i -t \
 --publish $PORT:80 \
 $IMAGE:latest
 
+
 #--env NEXTCLOUD_DATA_DIR=/var/www/html/data \
 #--env OVERWRITEPROTOCOL="$PROTOCOL" \
-
 # docker exec -it Nextcloud cat config/config.php | head -n 28 | tail -n 5
 
 ##########################################################################################################################################################

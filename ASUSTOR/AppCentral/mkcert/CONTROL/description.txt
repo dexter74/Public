@@ -1,0 +1,44 @@
+#############################################################################################################################################################
+# AdguardHome #
+###############
+# Pour crée un domain local:
+# - Filtres
+# - Réécritures DNS
+# - Ajouter une réécriture DNS
+# - Domaine: bitwarden.local
+# - IP: Adresse IP du NAS
+
+#############################################################################################################################################################
+# Configuration du Conteneur #
+##############################
+IMAGE="vishnunair/docker-mkcert"
+CONTENEUR="mkcert"
+
+# Pour du multi-domain: dom1,dom2...
+DOMAIN="bitwarden.local"
+
+#############################################################################################################################################################
+# Création du conteneur #
+#########################
+docker create -i -t \
+-e domain="$DOMAIN" \
+--name $CONTENEUR \
+-v /share/Docker/$CONTENEUR:/root/.local/share/mkcert \
+$IMAGE:latest;
+
+##########################################################################################################################################################
+# Démarrage du Conteneur #
+##########################
+docker start $CONTENEUR;
+
+
+#############################################################################################################################################################
+# Monter le Volume dans le conteneur applicatif #
+#################################################
+-v /share/Docker/mkcert:/cert
+
+# AdguardHome:
+# /cert/bitwarden.local.pem
+# /cert/bitwarden.local-key.pem
+
+# Nginx Reverse Proxy

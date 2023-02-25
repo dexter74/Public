@@ -14,9 +14,9 @@ MYSQL_PASS='root'
 PHPMYADMIN_DATABASE='phpmyadmin'
 
 ##########################################################################################################################################################
-# Arrêt du Conteneur #
-######################
-docker stop $CONTENEUR
+# Suppression du Conteneur #
+############################
+docker container rm -f $CONTENEUR;
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #
@@ -32,22 +32,16 @@ docker create -i -t \
 --env PMA_USER="$MYSQL_USER" \
 --env PMA_PASSWORD="$MYSQL_PASS" \
 --env PMA_PMADB="$PHPMYADMIN_DATABASE" \
+--volume /share/Docker/${CONTENEUR}_www:/var/www/html \
+--volume /share/Docker/${CONTENEUR}_cfg:/etc/phpmyadmin \
 --publish $PORT \
 $IMAGE
-
-# --volume /share/Docker/${CONTENEUR}_www:/var/www/html \
-# --volume /share/Docker/${CONTENEUR}_cfg:/etc/phpmyadmin \
 
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
 docker start $CONTENEUR
-
-##########################################################################################################################################################
-# Correctif #
-#############
-docker exec -i $CONTENEUR bash
 
 ##########################################################################################################################################################
 # Code retour de fermeture #

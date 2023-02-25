@@ -21,6 +21,7 @@ IP_NAS=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 NEXTCLOUD_USER="admin"
 NEXTCLOUD_PASS="admin"
 NEXTCLOUD_DOM="cloud74.ddns.net"
+
 ##########################################################################################################################################################
 # Configuration de la connexion à la BDD #
 ##########################################
@@ -34,7 +35,6 @@ PROTOCOL="HTTPS"
 # Fermeture du Conteneur #
 ##########################
 docker container rm -f $CONTENEUR 2>/dev/null;
-rm -rf  /volume1/Docker/$CONTENEUR 2>/dev/null;
 
 ##########################################################################################################################################################
 # Création du Conteneur #

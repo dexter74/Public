@@ -1,5 +1,21 @@
-docker run -d \
--e domain=dev.localhost.com \
---name mkcert \
--v mkcert-data:/root/.local/share/mkcert \
-vishnunair/docker-mkcert
+#############################################################################################################################################################
+# Configuration du Conteneur #
+##############################
+IMAGE="vishnunair/docker-mkcert"
+CONTENEUR="mkcert"
+DOMAIN="bitwarden.local"
+
+#############################################################################################################################################################
+# Création du conteneur #
+#########################
+docker create -i -t \
+-e domain="$DOMAIN" \
+--name $CONTENEUR \
+-v /share/Docker/$CONTENEUR:/root/.local/share/mkcert \
+$IMAGE:latest;
+
+
+##########################################################################################################################################################
+# Démarrage du Conteneur #
+##########################
+docker start $CONTENEUR;

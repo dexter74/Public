@@ -1,6 +1,6 @@
 Paramètre Docker pour Bitwarden:
 
---env DOMAIN="https://mondomain.ddns.net/"
+--env DOMAIN="https://--env DOMAIN="https://mondomain.ddns.net/"
 --env SENDS_ALLOWED="true"
 --env USER_ATTACHMENT_LIMIT="512"
 --env ORG_ATTACHMENT_LIMIT="512"
@@ -30,7 +30,7 @@ Paramètre Docker pour Bitwarden:
 
 --env _ENABLE_SMTP="false"
 --env SMTP_HOST="smtp.gmail.com"
---env SMTP_SSL="true"--env 
+--env SMTP_SSL="true" 
 --env SMTP_EXPLICIT_TLS="false"
 --env SMTP_PORT="587"
 --env SMTP_FROM="XXXXXXXXX@gmail.com"
@@ -63,13 +63,13 @@ Paramètre Docker pour Bitwarden:
 --env EMERGENCY_REQUEST_TIMEOUT_SCHEDULE="0 5 * * * *"
 --env DOMAIN_SET="false"
 --env DOMAIN_ORIGIN="http://localhost"
---env DOMAIN_PATH=""--env  
+--env DOMAIN_PATH=""
 --env WEB_VAULT_ENABLED="true"
 --env _IP_HEADER_ENABLED="true"
 --env ICON_SERVICE="internal"
 --env EXTENDED_LOGGING="true"
 --env USE_SYSLOG="false"
---env LOG_FILE=""--env --env  
+--env LOG_FILE=""
 --env LOG_LEVEL="info"
 --env ENABLE_DB_WAL="true"
 --env DB_CONNECTION_RETRIES="15"

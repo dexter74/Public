@@ -36,3 +36,6 @@ docker start $CONTENEUR;
 # Monter le Volume dans le conteneur applicatif #
 #################################################
 -v /share/Docker/mkcert:/cert
+
+# /cert/bitwarden.local.pem
+# /cert/bitwarden.local-key.pem

@@ -40,11 +40,14 @@ docker start $CONTENEUR
 ##########################################################################################################################################################
 # Création des BDD #
 ####################
-#docker stop $CONTENEUR;
-#cp /volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql /volume1/Docker/$CONTENEUR;
-#docker start $CONTENEUR;
-#docker exec -it MariaDB mysql -u root -p /config/requete.sql;
+cp /volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql /volume1/Docker/$CONTENEUR
+docker exec -it MariaDB sh -c 'mysql -h 127.0.0.1 -uroot -proot < /config/requete.sql'
 
+docker exec -it MariaDB mysql -uroot -proot -e "CREATE USER 'bitwarden'@'%' IDENTIFIED BY 'bitwarden';"
+docker exec -it MariaDB mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON `bitwarden`.* TO `bitwarden`@`%` WITH GRANT OPTION;"
+docker exec -it MariaDB mysql -uroot -proot -e "CREATE DATABASE nextcloud'@;"
+docker exec -it MariaDB mysql -uroot -proot -e "CREATE USER 'nextcloud'@'%' IDENTIFIED BY 'nextcloud';"
+docker exec -it MariaDB mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON `nextcloud`.* TO `nextcloud`@`%` WITH GRANT OPTION;"
 ##########################################################################################################################################################
 # Code Retour en Fermeture #
 ############################

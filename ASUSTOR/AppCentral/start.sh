@@ -14,18 +14,24 @@ echo "#  > BitWarden               #"
 cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden          && apkg-tools_py3.py create .
 echo "#  > Dozzle                  #"
 cd ~/APPZ/ASUSTOR/AppCentral/Dozzle             && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Emby               && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Flaresolverr       && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Jellyfin           && apkg-tools_py3.py create .
+echo "#  > Emby                    #"
+cd ~/APPZ/ASUSTOR/AppCentral/Emby               && apkg-tools_py3.py create .
+echo "#  > Flaresolverr            #"
+cd ~/APPZ/ASUSTOR/AppCentral/Flaresolverr       && apkg-tools_py3.py create .
+echo "#  > Jackett                 #"
+cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .
+echo "#  > Jellyfin                #"
+cd ~/APPZ/ASUSTOR/AppCentral/Jellyfin           && apkg-tools_py3.py create .
 echo "#  > MariaDB                 #"
 cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
 echo "#  > Nginx Reverse Proxy     #"
 cd ~/APPZ/ASUSTOR/AppCentral/NginxReverseProxy  && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin         && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/QBittorrent        && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
+echo "#  > QBittorrent             #"
+cd ~/APPZ/ASUSTOR/AppCentral/QBittorrent        && apkg-tools_py3.py create .
+echo "#  > Radarr                  #"
+cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
+echo "#  > Sonarr                 #"
+cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 
 ########################################################################################
 # Container was required fix reboot NAS
@@ -57,6 +63,7 @@ echo "##############################"
 # --------------------------------------------------------------------------------------
 ########################################################################################
 # En Developpement
+# cd ~/APPZ/ASUSTOR/AppCentral/phpMyAdmin       && apkg-tools_py3.py create .
 # cd ~/APPZ/ASUSTOR/AppCentral/Pyload/          && apkg-tools_py3.py create .
 # cd ~/APPZ/ASUSTOR/AppCentral/Jackett          && apkg-tools_py3.py create .
 # cd ~/APPZ/ASUSTOR/AppCentral/Radarr           && apkg-tools_py3.py create .

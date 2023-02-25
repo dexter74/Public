@@ -22,10 +22,8 @@ echo "#  > Jackett                 #"
 cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .
 echo "#  > Jellyfin                #"
 cd ~/APPZ/ASUSTOR/AppCentral/Jellyfin           && apkg-tools_py3.py create .
-
-echo "#  > Librespee               #"
+echo "#  > Librespeed              #"
 cd ~/APPZ/ASUSTOR/AppCentral/LibreSpeed         && apkg-tools_py3.py create .
-
 echo "#  > MariaDB                 #"
 cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
 echo "#  > Nginx Reverse Proxy     #"

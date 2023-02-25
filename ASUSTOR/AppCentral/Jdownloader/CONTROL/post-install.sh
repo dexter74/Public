@@ -24,7 +24,6 @@ docker create -i -t \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /share/Download:/output \
 --publish $HTTP \
---label cacher="oui" \
 $IMAGE:latest
 
 ##########################################################################################################################################################

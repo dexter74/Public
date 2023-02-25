@@ -43,6 +43,7 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --restart $RESTART \
 --env NEXTCLOUD_TRUSTED_DOMAINS=$NEXTCLOUD_DOM \
+--env OVERWRITEPROTOCOL=$PROTOCOL
 --env MYSQL_HOST=${IP_NAS}:${SQL_PORT} \
 --env MYSQL_DATABASE=$SQL_DB \
 --env MYSQL_USER=$SQL_USER \

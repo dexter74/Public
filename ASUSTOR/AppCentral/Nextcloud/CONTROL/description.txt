@@ -7,6 +7,7 @@ DROP DATABASE nextcloud;
 CREATE DATABASE nextcloud;
 #
 # Création de l'utilisateur:
+DROP USER 'nextcloud'@'%';
 GRANT USAGE ON *.* TO `nextcloud`@`%` IDENTIFIED BY PASSWORD '*622C4A896C7A2B1DEE6B6713116AFF0182BED69F';
 #
 # Permission de la SQL:

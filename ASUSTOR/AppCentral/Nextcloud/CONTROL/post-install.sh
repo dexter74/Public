@@ -8,7 +8,7 @@ clear;
 ##########################################################################################################################################################
 # Déclaration des variables #
 #############################
-CONTENEUR=Nextcloud
+CONTENEUR=NextCloud
 IMAGE=nextcloud
 RESTART=unless-stopped
 PORT=1120

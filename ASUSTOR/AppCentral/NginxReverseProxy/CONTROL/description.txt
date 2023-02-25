@@ -1,6 +1,8 @@
 Serveur Web Nginx
 
-Identifiant par défaut: admin@example.com / changeme
+Identifiant par défaut: 
+admin@example.com
+changeme
 
 Ports:
 - WebUI : 81

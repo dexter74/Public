@@ -6,7 +6,7 @@
 clear;
 
 ##########################################################################################################################################################
-# Déclaration des variables # 
+# Déclaration des variables #
 #############################
 CONTENEUR=Nextcloud
 IMAGE=nextcloud
@@ -35,6 +35,7 @@ PROTOCOL="HTTP"
 ##########################
 docker container rm -f $CONTENEUR 2>/dev/null;
 rm -rf  /volume1/Docker/$CONTENEUR 2>/dev/null;
+
 ##########################################################################################################################################################
 # Création du Conteneur #
 #########################
@@ -53,7 +54,6 @@ docker create -i -t \
 --volume /volume1/Docker/$CONTENEUR:/var/www/html \
 --publish $PORT:80 \
 $IMAGE:latest
-
 
 #--env NEXTCLOUD_DATA_DIR=/var/www/html/data \
 #--env OVERWRITEPROTOCOL="$PROTOCOL" \

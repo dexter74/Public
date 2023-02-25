@@ -4,9 +4,6 @@ Jackett est une application qui permet de faire un lien entre Radarr et Sonarr e
 Dépendance:
  - Docker
  - Flaresolverr
- - NordVPN
-
-
 
 Pour ajouter tout les Index:
 

@@ -74,7 +74,7 @@ Torznab:
  - Client de Téléchargement         : qBittorrent
 
 Options:
- - Taille maximum: 4096 MB
+ - Taille maximum: 4096 MB (Important)
  
 Restrictions:
  - Doit Contenir         : VF,VFF,FRENCH,TRUEFRENCH,MULTI

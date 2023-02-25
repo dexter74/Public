@@ -21,7 +21,6 @@ docker create -i -t \
 --restart $RESTART \
 --hostname $CONTENEUR \
 --net=bridge \
---dns 192.168.1.1 192.168.1.32 \
 --env AUTO_UPDATE="true" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
@@ -31,7 +30,7 @@ docker create -i -t \
 $IMAGE:latest
 
 #--network=container:"NordVPN" \
-
+#--dns \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

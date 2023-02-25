@@ -25,8 +25,8 @@ docker create -i -t \
 --env MYSQL_USER="username" \
 --env MYSQL_PASSWORD="password" \
 --env TZ="Europe/Paris" \
---env PUID=1000 \
---env PGID=100 \
+--env PUID=0 \
+--env PGID=0 \
 --env REMOTE_SQL="/volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql,https://raw.githubusercontent.com/dexter74/Public/main/ASUSTOR/AppCentral/MariaDB/CONTROL/requete.sql" \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --publish $PORT \

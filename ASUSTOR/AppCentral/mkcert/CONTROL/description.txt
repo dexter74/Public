@@ -39,9 +39,10 @@ docker start $CONTENEUR;
 # Monter le Volume dans le conteneur applicatif #
 #################################################
 # -v /share/Docker/mkcert:/cert
-
+#
+# Nginx Reverse Proxy
+# /cert/
+#
 # AdguardHome:
 # /cert/adguarhome.local.pem
 # /cert/adguarhome.local-key.pem
-
-# Nginx Reverse Proxy

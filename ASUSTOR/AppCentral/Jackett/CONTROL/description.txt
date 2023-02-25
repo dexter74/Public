@@ -5,8 +5,7 @@ Dépendance:
  - Docker
  - Flaresolverr
 
-Pour ajouter tout les Index:
-
-URL      : http://192.168.1.32:1111
-API Path : /torznab/all/api
-API Key  : XXXXXXX
+Pour ajouter tout les index:
+ - URL      : http://192.168.1.32:1111
+ - API Path : /torznab/all/api
+ - API Key  : XXXXXXX

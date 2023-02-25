@@ -49,13 +49,11 @@ docker create -i -t \
 --env NEXTCLOUD_ADMIN_USER=$NEXTCLOUD_USER \
 --env NEXTCLOUD_ADMIN_PASSWORD=$NEXTCLOUD_PASS \
 --env NEXTCLOUD_DATA_DIR=/var/www/html/data \
---env NEXTCLOUD_TRUSTED_DOMAINS="$NEXTCLOUD_DOM" \
---env OVERWRITEPROTOCOL=$PROTOCOL \
 --volume /volume1/Docker/$CONTENEUR:/var/www/html \
 --publish $PORT:80 \
 $IMAGE:latest
 
-# --env NEXTCLOUD_TRUSTED_DOMAINS="$SQL_DOM" \
+# --env NEXTCLOUD_TRUSTED_DOMAINS="$NEXTCLOUD_DOM" \
 # --env OVERWRITEPROTOCOL="$PROTOCOL" \
 ##########################################################################################################################################################
 # Lancement du Conteneur #

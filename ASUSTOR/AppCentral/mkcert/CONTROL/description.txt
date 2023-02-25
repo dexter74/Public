@@ -6,3 +6,4 @@ Mkcert est un outil simple qui peut être utilisé pour fabriquer des certificat
 # En haut à droite: SSL Certificates puis Custom
 # *.local.pem
 # *.local-key.pem
+# rootCA.pem

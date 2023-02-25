@@ -50,15 +50,11 @@ docker create -i -t \
 --env MYSQL_PASSWORD=$SQL_PASS \
 --env NEXTCLOUD_ADMIN_USER=$NEXTCLOUD_USER \
 --env NEXTCLOUD_ADMIN_PASSWORD=$NEXTCLOUD_PASS \
+--env NEXTCLOUD_DATA_DIR=/var/www/html/data \
 --volume /volume1/Docker/$CONTENEUR:/var/www/html \
 --volume /home/$USERNAME:/var/www/html/data:ro \
 --publish $PORT:80 \
 $IMAGE:latest
-
-
-#--env NEXTCLOUD_DATA_DIR=/var/www/html/data \
-#--env OVERWRITEPROTOCOL="$PROTOCOL" \
-# docker exec -it Nextcloud cat config/config.php | head -n 28 | tail -n 5
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

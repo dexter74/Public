@@ -1,5 +1,6 @@
 La version MariaDB est expérimental, elle mérite d'être testé avant .
 
+SSH: docker exec -it MariaDB sh -c 'mysql -h 127.0.0.1 -uroot -proot < /config/requete.sql'
 
 Port de connexion: 3306
 

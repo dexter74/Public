@@ -1,0 +1,5 @@
+docker run -d \
+-e domain=dev.localhost.com \
+--name mkcert \
+-v mkcert-data:/root/.local/share/mkcert \
+vishnunair/docker-mkcert

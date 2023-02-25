@@ -38,10 +38,8 @@ SQL_PASS="nextcloud"
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################
-docker container rm -f $CONTENEUR 2>/dev/null;
-rm -rf /volume1/Docker/${CONTENEUR}/apps   2>/dev/null;
-rm -rf /volume1/Docker/${CONTENEUR}/cfg    2>/dev/null;
-rm -rf /volume1/Docker/${CONTENEUR}/themes 2>/dev/null;
+docker container rm -f $CONTENEUR   2>/dev/null;
+rm -rf /volume1/Docker/${CONTENEUR} 2>/dev/null;
 
 ##########################################################################################################################################################
 # Création du Conteneur #
@@ -58,12 +56,13 @@ docker create -i -t \
 --env MYSQL_PASSWORD=$SQL_PASS \
 --env NEXTCLOUD_ADMIN_USER=$NEXTCLOUD_USER \
 --env NEXTCLOUD_ADMIN_PASSWORD=$NEXTCLOUD_PASS \
---volume /volume1/Docker/${CONTENEUR}/apps:/var/www/html/custom_apps \
 --volume /volume1/Docker/${CONTENEUR}/cfg:/var/www/html/config       \
---volume /volume1/Docker/${CONTENEUR}/data:/var/www/html/data        \
---volume /volume1/Docker/${CONTENEUR}/themes:/var/www/html/themes    \
 --publish $PORT:80 \
 $IMAGE:latest
+
+# --volume /volume1/Docker/${CONTENEUR}/apps:/var/www/html/custom_apps \
+#--volume /volume1/Docker/${CONTENEUR}/data:/var/www/html/data        \
+#--volume /volume1/Docker/${CONTENEUR}/themes:/var/www/html/themes    \
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

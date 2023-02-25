@@ -6,7 +6,7 @@
 IMAGE="vishnunair/docker-mkcert"
 CONTENEUR="mkcert"
 DOMAIN="asustor.local bitwarden.local dns.local dozzle.local emby.local jackett.lan nginx.local radarr.local sonarr.local torrent.local"
-RESTART=unless-stopped
+RESTART=no
 IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################

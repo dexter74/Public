@@ -47,6 +47,7 @@ docker create -i -t \
 --env OVERWRITEPROTOCOL="$PROTOCOL" \
 --volume /volume1/Docker/$CONTENEUR/www:/var/www/html \
 --volume /volume1/Docker/$CONTENEUR/data:/var/www/html/data \
+--publish $PORT:80 \
 $IMAGE:latest
 
 ##########################################################################################################################################################

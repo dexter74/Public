@@ -16,7 +16,8 @@ docker container rm -f  $CONTENEUR
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
-docker run -d --name=$CONTENEUR \
+docker create -i -t \
+--name=$CONTENEUR \
 --hostname $CONTENEUR \
 --restart no \
 --net=bridge \

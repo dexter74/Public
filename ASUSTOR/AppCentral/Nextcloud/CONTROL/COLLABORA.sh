@@ -8,8 +8,8 @@ clear;
 ##########################################################################################################################################################
 # Déclaration des variables #
 #############################
-CONTENEUR=
-IMAGE=
+CONTENEUR=Collabora
+IMAGE=collabora/code
 RESTART=unless-stopped
 PORT=1121
 
@@ -18,7 +18,6 @@ PORT=1121
 #####################################
 USERNAME=$(grep "1000" /etc/passwd | cut -d ":" -f 1)
 IP_NAS=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
-
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -30,8 +29,10 @@ docker container rm -f $CONTENEUR 2>/dev/null;
 #########################
 docker create -i -t \
 --name=$CONTENEUR \
+--net=bridge \
 --hostname $CONTENEUR \
 --restart $RESTART \
+-- env TZ="EUROPE\PARIS" \
 --volume \
 --publish $PORT:80 \
 $IMAGE:latest

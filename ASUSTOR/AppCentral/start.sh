@@ -6,15 +6,14 @@
 # Edit container before deploy
 #nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
 
-########################################################################################
-#  Container Ready for Deploy
+echo "########################################################################################"
+echo "Container Ready for Deploy"
 echo "AdGuardHome"
 cd ~/APPZ/ASUSTOR/AppCentral/AdGuardHome        && apkg-tools_py3.py create .
 echo "BitWarden"
 cd ~/APPZ/ASUSTOR/AppCentral/Bitwarden          && apkg-tools_py3.py create .
 echo "Dozzle"
 cd ~/APPZ/ASUSTOR/AppCentral/Dozzle             && apkg-tools_py3.py create .
-echo ""
 #cd ~/APPZ/ASUSTOR/AppCentral/Emby               && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Flaresolverr       && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Jackett            && apkg-tools_py3.py create .

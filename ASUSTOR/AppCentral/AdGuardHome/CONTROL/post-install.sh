@@ -28,10 +28,11 @@ docker create -i -t \
 --publish 53:53/udp     \
 --publish 9000:80/tcp   \
 --publish 3272:3272     \
---publish 443:443/tcp   \
---publish 443:443/udp   \
 --publish 3000:3000/tcp \
 $IMAGE:latest
+
+#--publish 443:443/tcp   \
+#--publish 443:443/udp   \
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

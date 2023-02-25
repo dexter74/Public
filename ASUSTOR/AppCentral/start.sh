@@ -39,6 +39,8 @@ cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 
 echo "##########################################";
 echo "# Container in Testing                   #";
+echo "#  > Collabora                           #";
+cd ~/APPZ/ASUSTOR/AppCentral/Collabora           && apkg-tools_py3.py create .
 echo "#  > MKcert                              #";
 cd ~/APPZ/ASUSTOR/AppCentral/mkcert              && apkg-tools_py3.py create .
 echo "#  > NextCloud                           #";

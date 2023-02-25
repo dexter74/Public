@@ -42,7 +42,7 @@ docker start $CONTENEUR
 ##########################################################################################################################################################
 # Fichier SQL dans le conteneur #
 #################################
-mv /volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql /volume1/Docker/$CONTENEUR;
+cp /volume1/.@plugins/AppCentral/MariaDB/CONTROL/requete.sql /volume1/Docker/$CONTENEUR;
 
 ##########################################################################################################################################################
 # Code Retour en Fermeture #

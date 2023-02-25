@@ -57,6 +57,7 @@ $IMAGE:latest
 #--env NEXTCLOUD_DATA_DIR=/var/www/html/data \
 #--env OVERWRITEPROTOCOL="$PROTOCOL" \
 
+# docker exec -it Nextcloud cat config/config.php | head -n 28 | tail -n 5
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

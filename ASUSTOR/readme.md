@@ -74,6 +74,7 @@ apt install -y git
 ```console
 clear;
 rm -rf /usr/bin/apkg-*;
+pacman -Sy --noconfirm wget unzip;
 wget --inet4-only https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip;
 unzip -o /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin;
 chmod u+x  /usr/bin/apkg-*;

@@ -42,6 +42,12 @@ $IMAGE:latest
 docker start $CONTENEUR
 
 ##########################################################################################################################################################
+# Correctif Accès #
+###################
+docker stop $CONTENEUR
+mv "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" "/share/Docker/Qbitorrent/qBittorrent/qBittorrent.conf" 2>/dev/null
+
+##########################################################################################################################################################
 # Code Retour en Fermeture #
 ############################
 exit 0

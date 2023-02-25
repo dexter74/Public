@@ -32,7 +32,6 @@ $IMAGE
 
 # https://hub.docker.com/r/linuxserver/librespeed
 #--env DB_TYPE="sqlite,mysql,postgresql" \
-#
 #--env DB_HOSTNAME="" \
 #--env DB_PORT="" \
 #--env DB_NAME="" \

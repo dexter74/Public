@@ -26,7 +26,6 @@ Dossier de téléchargement: /downloads/Torrent/
 Dossiers racine:
  - /downloads/Torrent/Radarr
  - /Video/Dessins-Animes
- - /Video/.Perso
  - /Video/Series
  - /Video/Films
  - /Video

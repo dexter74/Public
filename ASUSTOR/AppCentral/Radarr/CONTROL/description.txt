@@ -13,7 +13,7 @@ Dossier de téléchargement: /downloads/Torrent/
 #########
 # Films #
 #########
-Le menu Découvrir se met à jour par rapport à la LISTE
+ - Le menu Découvrir se met à jour par rapport à la LISTE
 
 ######################
 # Gestion des médias #
@@ -24,12 +24,12 @@ Le menu Découvrir se met à jour par rapport à la LISTE
 - Supprimer les dossiers vides: Cocher
 
 Dossiers racine:
-/downloads/Torrent/Radarr
-/Video/Dessins-Animes
-/Video/.Perso
-/Video/Series
-/Video/Films
-/Video
+ - /downloads/Torrent/Radarr
+ - /Video/Dessins-Animes
+ - /Video/.Perso
+ - /Video/Series
+ - /Video/Films
+ - /Video
 
 ###########
 # Profils #

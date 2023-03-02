@@ -9,7 +9,6 @@ Mkcert est un outil simple qui peut être utilisé pour fabriquer des certificat
 # *.local-key.pem
 # rootCA.pem
 
-
 asustor.local
 bitwarden.local
 dns.local
@@ -19,8 +18,9 @@ nginx.local
 torrent.local
 
 
+
 # Se connecter en SSH
-ssh root@192.168.1.32
+ssh root@192.168.2.2
 
 # Convertir pem en pfx:
 rm /share/Docker/mkcert/autorite_certificat.pfx;
@@ -28,7 +28,7 @@ openssl pkcs12 -inkey /share/Docker/mkcert/rootCA-key.pem -in /share/Docker/mkce
 
 # Télécharger le certificat:
 del C:\Users\teste\Desktop\autorite_certificat.pfx;
-scp -i "autorite_certificat.pfx" "Drthrax74@192.168.1.32:/share/Docker/mkcert/autorite_certificat.pfx" C:\Users\teste\Desktop
+scp -i "autorite_certificat.pfx" "Drthrax74@192.168.2.2:/share/Docker/mkcert/autorite_certificat.pfx" C:\Users\teste\Desktop
 
 # Importer le certificat:
 CERTUTIL -f -p "" -importpfx "C:\Users\teste\Desktop\autorite_certificat.pfx"

@@ -21,6 +21,7 @@ docker create -i -t \
 --name=$CONTENEUR \
 --restart $RESTART \
 --net=bridge \
+--hostname $CONTENEUR \
 --dns="8.8.8.8" \
 --env PUID=1000 \
 --env PGID=100 \

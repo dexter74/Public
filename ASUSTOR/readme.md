@@ -67,7 +67,7 @@ Le binaire cd permet de se déplacer dans l'arborescence des dossiers.
 ##### B. Installer les Packages Requis
 ```
 su;
-apt install -y git
+apt install -y git;
 ```
 
 ##### B. Télécharger les Scripts Python ASUSTOR (Root Requis)

@@ -47,14 +47,10 @@ echo "#  > NextCloud                           #";
 cd ~/APPZ/ASUSTOR/AppCentral/Nextcloud           && apkg-tools_py3.py create .
 echo "#  > Only Office DocumentServer          #";
 cd ~/APPZ/ASUSTOR/AppCentral/OnlyOffice          && apkg-tools_py3.py create .
-
+echo "#  > Amule                               #";
+cd ~/APPZ/ASUSTOR/AppCentral/Amule/              && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
 echo "##########################################";
-
-
-
-
-
 
 
 #echo "##########################################";
@@ -73,7 +69,6 @@ echo "##########################################";
 
 ########################################################################################
 # Container Edit and Ready for Deploy
-# --------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------
 # nano ~/APPZ/ASUSTOR/AppCentral/NOIP/CONTROL/post-install.sh;
 # cd ~/APPZ/ASUSTOR/AppCentral/NOIP             && apkg-tools_py3.py create .

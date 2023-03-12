@@ -18,7 +18,7 @@ docker container rm -f $CONTENEUR
 docker create -i -t \
 --name=$CONTENEUR \
 --hostname $CONTENEUR \
---net=host \
+--net=bridge \
 --restart $RESTART \
 --env TZ="Europe/Paris" \
 --volume /usr/builtin/etc/certificate:/sslcerts/:ro \
@@ -26,16 +26,17 @@ docker create -i -t \
 --volume /volume1/Docker/mkcert:/cert \
 --volume /volume1/Docker/$CONTENEUR/conf:/opt/adguardhome/conf \
 --volume /volume1/Docker/$CONTENEUR/work:/opt/adguardhome/work \
-$IMAGE:latest
+--volume /volume1/Docker/mkcert:/cert \
+--publish 53:53/udp     \
+--publish 53:53/tcp     \
+--publish 3000:3000/tcp \
+--publish 3272:3272     \
+--publish 9000:80/tcp   \
+$IMAGE:latest;
 
-#--publish 9000:80/tcp   \
-#--volume /volume1/Docker/mkcert:/cert \
 #--publish 443:443/tcp   \
 #--publish 443:443/udp   \
-#--publish 53:53/tcp     \
-#--publish 53:53/udp     \
-#--publish 3000:3000/tcp \
-#--publish 3272:3272     \
+#
 
 ##########################################################################################################################################################
 # Lancement du Conteneur #

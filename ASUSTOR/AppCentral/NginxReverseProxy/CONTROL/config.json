@@ -3,7 +3,7 @@
 		"package":"Nginx-Reverse-Proxy", 
 		"name":"Nginx Reverse Proxy", 
 		"version":"1.0", 
-		"depends": ["docker-ce"], 
+		"depends": ["docker-ce", "MariaDB" ], 
 		"conflicts": ["PHP 7.4-7.4.30.r12" ] , 
 		"developer":"Nginx", 
 		"maintainer":"Drthrax74", 

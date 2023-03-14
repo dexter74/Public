@@ -10,3 +10,5 @@ Administrateur:
 Base de donnée crée : mysql
  - Identifiant   : username
  - Mot de passe  : password 
+
+# docker run -d --name adminer --link MariaDB:db -p 3307:8080 adminer 

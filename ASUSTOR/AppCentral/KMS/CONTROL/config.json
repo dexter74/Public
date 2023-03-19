@@ -1,0 +1,46 @@
+{
+	"general":{
+		"package": "kms",
+		"name": "Serveur KMS",
+		"version": "1.0.0",
+		"depends": [ "" ],
+		"conflicts": [ "" ],
+		"developer": "",
+		"maintainer": "Drthrax74",
+		"email": "Drthrax74@gmail.com",
+		"website": "https://github.com/Wind4/vlmcsd",
+		"architecture": "any",
+		"firmware": "2.1.0"
+	},
+
+
+	"adm-desktop":{
+		"app":{ 
+		      "type":"internal"
+	},
+
+
+
+		"privilege":{
+			    "accessible":"administrators",
+			    "customizable": true
+			    }
+		},
+
+
+
+	"register":{ 
+		"share-folder":[ 
+                                 {
+			         "name":"Docker", 
+			         "description":"Dossier Docker Requis" 
+			         }
+		],
+
+
+
+		"boot-priority":{
+                                "start-order":80, "stop-order":20
+                                }
+		}
+}

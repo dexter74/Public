@@ -14,29 +14,13 @@
               },
 
 	"adm-desktop":{
-                  "app": { 
-                        "type": "internal"
-                         },
-                        
-                  "privilege": {
-                              "accessible": "administrators",
-                              "customizable": true
-                               } 
+                  "app": { "type": "internal" },
+                  "privilege": { "accessible": "administrators","customizable": true } 
                   },
-                  
+
 	"register":{
-               "share-folder": [
-                               {
-                              "name": "Docker",
-                              "description": "Dossier Docker Requis"
-                              }
-                              ],
-               "boot-priority": {
-                                "start-order": 80,
-                                "stop-order": 20
-                                },
-               "port": [
-                       1688
-                       ]
-               } 
+               "share-folder": [ {"name": "Docker","description": "Dossier Docker Requis"} ],
+               "boot-priority": { "start-order": 80,"stop-order": 20 },
+               "port": [ 1688 ]
+               }
 }

@@ -32,6 +32,7 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --volume /share/Docker/$CONTENEUR:/config \
 --volume /share/Docker/$CONTENEUR/LetsEncrypt:/etc/letsencrypt \
+--volume /share/Docker/$CONTENEUR/data:/data \
 --env TZ="Europe/Paris" \
 --env DB_MYSQL_HOST="$MYSQL_HOST" \
 --env DB_MYSQL_PORT="$MYSQL_PORT" \

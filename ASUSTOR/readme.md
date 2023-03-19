@@ -6,13 +6,11 @@
 ## I. Présentation
 Ce projet à pour objectif de construire des conteneurs prêt à l'emploie avec l'accès au partage Docker, Download, Video, Music. 
 
+**ReverseProxy**
+```
+Un volume aléatoire est fait ! Un volume Fixe à été oublié à déclarer !
+```
 
-**Version: 1.0** (Problème)
-```
-Les conteneurs ne veulent pas se relancé après le redémarrage du NAS. 
-Le conteneur Base et le squelette est à modifier .
-docker create -i -t \
-```
 
 **phpMyAdmin** (Erreur / Fix)
 ```

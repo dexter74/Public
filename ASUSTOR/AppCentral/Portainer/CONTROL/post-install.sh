@@ -46,7 +46,6 @@ docker create -i -t --name=$CONTENEUR \
 	-v /share/Docker/PortainerCE/data:/data:rw \
 	-v /etc/localtime:/etc/localtime:ro \
 	-v /usr/builtin/etc/certificate:/certs:ro \
-        -v /share/Docker/PortainerCE/letsencrypt/etc/letsencrypt \
 	--restart $RESTART \
 	--label cacher="oui" \
 	portainer/portainer-ce:latest \

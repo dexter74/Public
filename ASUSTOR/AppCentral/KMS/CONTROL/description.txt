@@ -1,0 +1,28 @@
+Le serveur KMS Serveur permet l'activation des systèmes d'exploitation et logiciel Microsoft gratuitement en utilisant les clés GLVK.
+
+Clé GLVK: https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys
+
+# --------------------------------------------------------------
+Guide:
+ - Ouvrir l'invite de commande dos en administrateur
+ - Coller le code en modifiant les variables
+# --------------------------------------------------------------
+title Activation de Windows 
+set KEY=
+set KMS_SERVER=
+cscript //B "%windir%\system32\slmgr.vbs" -upk
+cscript //B "%windir%\system32\slmgr.vbs" -ipk %KEY%
+cscript //B "%windir%\system32\slmgr.vbs" -skms %KMS_SERVER% 
+cscript //B "%windir%\system32\slmgr.vbs" -ato
+"%windir%\system32\slmgr.vbs" -dlv
+
+# --------------------------------------------------------------
+title Activation de la suite Microsoft Office
+set KEY=XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
+set KMS_SERVER=
+cd c:\Program Files (x86)\Microsoft Office\Office16
+cd c:\Program Files\Microsoft Office\Office16
+cscript ospp.vbs /inpkey:%KEY%
+cscript ospp.vbs /sethst:%KMS_SERVER%
+cscript ospp.vbs /act
+# --------------------------------------------------------------

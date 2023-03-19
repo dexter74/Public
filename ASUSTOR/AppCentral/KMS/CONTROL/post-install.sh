@@ -3,11 +3,10 @@
 ##########################################################################################################################################################
 # Déclaration de la variable de test #
 ######################################
-CONTENEUR=
-IMAGE=
-HTTP=
+CONTENEUR=kms
+IMAGE=mikolatero/vlmcsd
+PORT=1688
 RESTART=unless-stopped
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -23,11 +22,8 @@ docker create -i -t \
 --net=bridge \
 --hostname $CONTENEUR \
 --label cacher="oui" \
+--publish $PORT:$PORT \
 $IMAGE:latest
-
-# --volume /volume1/Docker/$CONTENEUR:/XXXXX \
-#--publish $HTTP \
-#--env \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

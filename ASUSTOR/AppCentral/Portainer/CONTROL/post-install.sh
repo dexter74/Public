@@ -5,6 +5,7 @@
 ######################################
 CONTENEUR=Portainer
 IMAGE=portainer/portainer-ce
+RESTART=unless-stopped
 HTTP=19900:9000
 HTTPS=19943:9443
 AUTRE=19800:8000
@@ -16,7 +17,7 @@ docker container rm -f  $CONTENEUR
 ##########################################################################################################################################################
 # Certficat SSL #
 #################
-ADM_SSL_FILE=/usr/builtin/etc/certificate/ssl.pem 
+ADM_SSL_FILE=/usr/builtin/etc/certificate/ssl.pem
 PORTAINER_SSL_FILE=/share/Docker/PortainerCE/data/certs/cert.pem
 PORTAINER_KEY_FILE=/share/Docker/PortainerCE/data/certs/key.pem
 
@@ -45,7 +46,7 @@ docker create -i -t --name=$CONTENEUR \
 	-v /etc/localtime:/etc/localtime:ro \
 	-v /usr/builtin/etc/certificate:/certs:ro \
 	-v /share/Docker/PortainerCE/data:/data:rw \
-	--restart no \
+	--restart $RESTART \
 	--label cacher="oui" \
 	portainer/portainer-ce:latest \
 	--sslcert /certs/ssl.pem --sslkey /certs/ssl.pem \
@@ -54,12 +55,12 @@ docker create -i -t --name=$CONTENEUR \
 ##########################################################################################################################################################
 # Lancement du Conteneur #
 ##########################
-docker start $CONTENEUR
+docker start $CONTENEUR;
 
 ##########################################################################################################################################################
 # Patienter le démarrage du Conteneur #
 #######################################
-sleep 3
+sleep 3;
 
 ##########################################################################################################################################################
 # Code retour de Fermeture #

@@ -7,10 +7,10 @@ source settings.conf | true
 ##########################################################################################################################################################
 # Déclaration de variable #
 ###########################
-IMAGE=linuxserver/wireguard
-CONTENEUR=wireguard
-RESTART=unless-stopped
-PORT=51820
+#IMAGE=linuxserver/wireguard
+#CONTENEUR=wireguard
+#RESTART=unless-stopped
+#PORT=51820
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

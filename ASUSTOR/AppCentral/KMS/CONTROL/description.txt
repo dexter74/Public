@@ -18,7 +18,7 @@ cscript //B "%windir%\system32\slmgr.vbs" -ato
 
 # --------------------------------------------------------------
 title Activation de la suite Microsoft Office
-set KEY=XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
+set KEY=
 set KMS_SERVER=
 cd c:\Program Files (x86)\Microsoft Office\Office16
 cd c:\Program Files\Microsoft Office\Office16

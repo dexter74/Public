@@ -39,12 +39,13 @@ docker create -i -t \
 --env PUID=1000 \
 --env PGID=100 \
 --env TZ=Etc/PARIS \
---volume /sys/module/wireguard:/lib/modules \
+--sysctl net.ipv4.conf.all.src_valid_mark=1 \
 --volume /etc/wireguard/wg0.conf:/config/wg0.conf \
 --publish $PORT \
 $IMAGE:latest
 
-
+#--volume /sys/module/wireguard:/lib/modules \
+#--volume /usr/local/AppCentral/adm-kernel-extensions/lib/:/lib/modules \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

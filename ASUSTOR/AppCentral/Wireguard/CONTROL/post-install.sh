@@ -11,6 +11,7 @@ PORT=51820:51820/UDP
 IP_NAS=$(ip add   | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
 IP_GW=$(ip  route | grep default   | cut -d "a" -f 3 | cut -c 2-12)
 IP_DNS=$(cat /etc/resolv.conf | head -n 1 | cut -c 12-25)
+INTERFACE=$(ip add |  grep -A0 $IP_NAS | cut -d "l" -f 3 | cut -c 2-25)
 
 USER_ID=$(cat  /etc/passwd | tail -n 6 | head -n 1 | cut -d ":" -f 3)
 USER_GID=$(cat /etc/passwd | tail -n 6 | head -n 1 | cut -d ":" -f 4)
@@ -36,6 +37,7 @@ sysctl -p;
 # Mise en place de la configuration #
 #####################################
 mkdir -p /share/Docker/$CONTENEUR 2>/dev/null;
+sed -e "/eth1/$INTERFACE/g" /usr/local/AppCentral/Wireguard/CONTROL/config/wg0.conf
 mv /usr/local/AppCentral/Wireguard/CONTROL/config/privatekey /share/Docker/$CONTENEUR 2>/dev/null;
 mv /usr/local/AppCentral/Wireguard/CONTROL/config/publickey  /share/Docker/$CONTENEUR 2>/dev/null;
 mv /usr/local/AppCentral/Wireguard/CONTROL/config/wg0.conf   /share/Docker/$CONTENEUR 2>/dev/null; 

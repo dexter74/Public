@@ -7,6 +7,7 @@ CONTENEUR=Adminer
 IMAGE=adminer
 PORT=1113:8080
 RESTART=unless-stopped
+SERVER=$(ip add show eth1 | grep inet  | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
@@ -21,8 +22,7 @@ docker create -i -t \
 --net=bridge \
 --hostname $CONTENEUR \
 --restart $RESTART \
---link MariaDB:mariadb \
---env ADMINER_DEFAULT_SERVER=mariadb \
+--env ADMINER_DEFAULT_SERVER=$SERVER \
 --publish $PORT \
 $IMAGE:latest
 

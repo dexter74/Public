@@ -3,7 +3,7 @@
 # Chargement du fichier configuration #
 #######################################
 # /usr/local/AppCentral/Wireguard/CONTROL/settings.conf
-source ./settings.conf;
+source settings.conf;
 
 ##########################################################################################################################################################
 # Télécharger de l'image #

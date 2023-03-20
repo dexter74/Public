@@ -8,11 +8,11 @@ Guide:
  - Coller le code en modifiant les variables
 # --------------------------------------------------------------
 title Activation de Windows 
-set KEY=
-set KMS_SERVER=
+set LICENCE=
+set IP_NAS=
 cscript //B "%windir%\system32\slmgr.vbs" -upk
-cscript //B "%windir%\system32\slmgr.vbs" -ipk %KEY%
-cscript //B "%windir%\system32\slmgr.vbs" -skms %KMS_SERVER% 
+cscript //B "%windir%\system32\slmgr.vbs" -ipk %LICENCE%
+cscript //B "%windir%\system32\slmgr.vbs" -skms %IP_NAS% 
 cscript //B "%windir%\system32\slmgr.vbs" -ato
 "%windir%\system32\slmgr.vbs" -dlv
 
@@ -22,7 +22,7 @@ set KEY=
 set KMS_SERVER=
 cd c:\Program Files (x86)\Microsoft Office\Office16
 cd c:\Program Files\Microsoft Office\Office16
-cscript ospp.vbs /inpkey:%KEY%
-cscript ospp.vbs /sethst:%KMS_SERVER%
+cscript ospp.vbs /inpkey:%LICENCE%
+cscript ospp.vbs /sethst:%IP_NAS%
 cscript ospp.vbs /act
 # --------------------------------------------------------------

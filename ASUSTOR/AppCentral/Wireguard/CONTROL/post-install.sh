@@ -26,12 +26,12 @@ docker create -i -t \
 --env PUID=1000 \
 --env PGID=100 \
 --env TZ=Etc/PARIS \
---volume /sys/module/wireguard::/lib/modules \
+--volume /sys/module/wireguard:/lib/modules \
+--volume /etc/wireguard/wg0.conf:/config/wg0.conf \
 --publish $PORT \
 $IMAGE:latest
 
 
-# --volume /etc/wireguard/wg0.conf:/config/wg0.conf \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

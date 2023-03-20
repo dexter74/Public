@@ -3,12 +3,12 @@
 # Chargement du fichier configuration #
 #######################################
 # /usr/local/AppCentral/Wireguard/CONTROL/settings.conf
-source ./settings.conf;
+#source ./settings.conf;
 
 ##########################################################################################################################################################
 # Télécharger de l'image #
 ##########################
-docker pull $CONTENEUR;
+#docker pull $CONTENEUR;
 
 ##########################################################################################################################################################
 # Lancement de la Génération de la configuration #

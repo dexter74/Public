@@ -1,7 +1,7 @@
 #########################################################
 # Script de génération de la configuration de Wireguard #
 #########################################################
-source ./settings
+source ./settings.conf
 
 # Création du Dossier
 mkdir /etc/wireguard 2>/dev/null;

@@ -1,36 +1,32 @@
 {
 	"general":{
-		"package":"Admineer",
-		"name":"Admineer",
-		"version":"1.0",
-		"depends": [ "docker-ce", "MariaDB" ],
-		"conflicts":"",
-		"developer":"Adminer",
-		"maintainer":"Drthrax74",
-		"email":"Drthrax74@gmail.com",
-		"website":"https://www.adminer.org/",
-		"architecture":"x86-64",
-		"firmware":"4.1.0",
-		"default-lang":"fr-FR"
-		},
+	          "package":"Admineer",
+	          "name":"Admineer",
+	          "version":"1.0",
+	          "depends": [ "docker-ce", "MariaDB" ],
+	          "conflicts":"",
+	          "developer":"Adminer",
+	          "maintainer":"Drthrax74",
+	          "email":"Drthrax74@gmail.com",
+	          "website":"https://www.adminer.org/",
+	          "architecture":"x86-64",
+	          "firmware":"4.1.0",
+	          "default-lang":"fr-FR"
+	          },
 
 	"adm-desktop":{
-		      "app":{ "type":"custom", "protocol":"http", "url":"/", "port":"1113" },
-		      "privilege":{ "accessible":"users", "customizable": true }
+		      "app":{"type":"custom", "protocol":"http", "url":"/", "port":"1113"},
+		      "privilege":{"accessible":"users", "customizable": true}
 	              },
 		
-		"privilege":{
-			"accessible":"administrators",
-			"customizable": true
-			}
-		},
+	"privilege":{
+		    "accessible":"administrators",
+		    "customizable": true
+		    },
 
 	"register":{ 
-		"share-folder":[ {
-			"name":"Docker", 
-			"description":"Dossier Docker Requis" 
-			} ],
-		"boot-priority":{ "start-order":80, "stop-order":20 },
-		"port":[1113]
-		}
+                   "share-folder":[{"name":"Docker", "description":"Dossier Docker Requis"}],
+                   "boot-priority":{"start-order":80, "stop-order":20 },
+		   "port":[1113]
+                   }
 }

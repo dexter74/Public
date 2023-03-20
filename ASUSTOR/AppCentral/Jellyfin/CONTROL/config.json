@@ -16,17 +16,19 @@
 	          },
 
 	"adm-desktop":{
-		  "app":{
+		      "app":{
 			"type":"custom",
 			"protocol":"http", 
 			"port":"8097", 
 			"url":"/"
-		        },
+		      },
+
 		  "privilege":{
 			      "accessible":"users", 
 			      "customizable": true
 			      }
-		     },
+		  },
+
 	"register":{
 		   "share-folder":[
 			   	  { "name":"Docker", "description":"Dossier Docker Requis" },

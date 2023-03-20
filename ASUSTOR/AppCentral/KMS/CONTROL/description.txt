@@ -18,8 +18,8 @@ cscript //B "%windir%\system32\slmgr.vbs" -ato
 
 # --------------------------------------------------------------
 title Activation de la suite Microsoft Office
-set KEY=
-set KMS_SERVER=
+set LICENCE=
+set IP_NAS=
 cd c:\Program Files (x86)\Microsoft Office\Office16
 cd c:\Program Files\Microsoft Office\Office16
 cscript ospp.vbs /inpkey:%LICENCE%

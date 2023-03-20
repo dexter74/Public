@@ -26,9 +26,9 @@ docker create -i -t \
 --env PUID=1000 \
 --env PGID=100 \
 --env TZ=Etc/PARIS \
---publish $PORT \
 --volume /etc/wireguard:/config \
 --volume /sys/module/wireguard::/lib/modules \
+--publish $PORT \
 $IMAGE:latest
 
 ##########################################################################################################################################################

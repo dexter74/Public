@@ -1,3 +1,4 @@
-source ./publickey
-source ./privatekey
-source ./serveur
+#########################################################
+# Script de génération de la configuration de Wireguard #
+#########################################################
+source ./settings

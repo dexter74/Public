@@ -28,6 +28,7 @@ docker create -i -t \
 --env TZ=Etc/PARIS \
 --publish $PORT \
 --volume /etc/wireguard:/config \
+--volume /sys/module/wireguard::/lib/modules \
 $IMAGE:latest
 
 ##########################################################################################################################################################

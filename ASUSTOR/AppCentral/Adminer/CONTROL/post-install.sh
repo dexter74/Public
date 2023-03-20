@@ -23,11 +23,11 @@ docker create -i -t \
 --restart $RESTART \
 --link MariaDB:mariadb \
 --env ADMINER_DEFAULT_SERVER=mariadb \
--- en ADMINER_PLUGINS=' ' \
 --publish $PORT \
 $IMAGE:latest
 
 #--volume /volume1/Docker/$CONTENEUR:/config \
+#--env ADMINER_PLUGINS='' \
 
 ##########################################################################################################################################################
 # Démarrage du Conteneur #

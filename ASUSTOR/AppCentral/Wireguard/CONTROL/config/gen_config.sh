@@ -10,19 +10,20 @@ mkdir /etc/wireguard 2>/dev/null;
 echo "$WIREGUARD_PUBLIC" > /etc/wireguard/publickey
 echo "$WIREGUARD_PRIVATE" > /etc/wireguard/privatekey
 
-echo "
-################################################################################################################
+echo "################################################################################################################
 # Configuration Serveur #
 #########################
 [Interface]
 Address = $WIREGUARD_ADDR
 ListenPort = $WIREGUARD_PORT
 PrivateKey = $WIREGUARD_PRIVATE
+
 ################################################################################################################
 # Pare-Feu #
 ############
 PostUp     = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o $WIREGUARD_NET -j MASQUERADE
 PostDown   = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o $WIREGUARD_NET -j MASQUERADE
+
 ################################################################################################################
 # Clients #
 ###########

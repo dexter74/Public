@@ -17,7 +17,7 @@ case "$1" in
     start)
         echo "Start $CONTENEUR container..."
         source ./settings.conf
-        docker start $CONTENEUR
+        pwd > /root/test
         sleep 3
         ;;
     stop)

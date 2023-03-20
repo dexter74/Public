@@ -35,6 +35,7 @@ docker create -i -t \
 --name=$CONTENEUR \
 --restart $RESTART \
 --net=bridge \
+--dns 8.8.8.8 \
 --hostname $CONTENEUR \
 --cap-add=NET_ADMIN \
 --cap-add=SYS_MODULE \

@@ -8,6 +8,19 @@ RESTART=unless-stopped
 PORT=51820
 IMAGE=linuxserver/wireguard
 #
+
+##########################################################################################################################################################
+# Prise en charge du Forwading #
+################################
+# Default
+echo "net.ipv4.neigh.default.gc_thresh1 = 512
+net.ipv4.neigh.default.gc_thresh2 = 2048
+net.ipv4.neigh.default.gc_thresh3 = 4096" > /etc/sysctl.conf;
+echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf;
+sysctl -p;
+
+
+
 ##########################################################################################################################################################
 # Fermeture du Conteneur #
 ##########################

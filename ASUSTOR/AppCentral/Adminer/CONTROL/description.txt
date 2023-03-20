@@ -1,1 +1,1 @@
-
+Permet la gestion de la Base de donnée depuis une interface Web.

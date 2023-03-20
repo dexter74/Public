@@ -17,7 +17,6 @@ case "$1" in
     start)
         echo "Start $CONTENEUR container..."
         source ./settings.conf
-        pwd > /root/test
         sleep 3
         ;;
     stop)

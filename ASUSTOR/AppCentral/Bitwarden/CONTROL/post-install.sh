@@ -22,7 +22,6 @@ ADMIN_TOKEN=admin
 MYSQL_HOST=$(ip add show eth1 | grep inet  | cut -d "/" -f 1 | cut -c 10-30)
 MYSQL_DATABASE=bitwarden
 MYSQL_PORT=3306
-
 MYSQL_USER=bitwarden
 MYSQL_PASS=bitwarden
 

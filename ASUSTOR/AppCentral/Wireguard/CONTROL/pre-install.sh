@@ -3,7 +3,7 @@
 # Chargement du fichier configuration #
 #######################################
 APKG_PKG_DIR=/usr/local/AppCentral/Wireguard
-source pwd/settings.conf;
+echo "$pwd" > /root/test
 
 ##########################################################################################################################################################
 # Télécharger de l'image #

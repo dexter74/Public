@@ -46,6 +46,7 @@ docker create -i -t \
 --publish $PORT \
 $IMAGE:latest
 
+#--volume /etc/sysctl.conf:/etc/sysctl.conf \
 #--volume /sys/module/wireguard:/lib/modules \
 #--volume /usr/local/AppCentral/adm-kernel-extensions/lib/:/lib/modules \
 

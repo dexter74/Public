@@ -41,6 +41,7 @@ WantedBy=multi-user.target" > /etc/systemd/system/mnt-Download.mount;
 
 
 ```
+systemctl daemon-reload;
 systemctl disable mnt-Download.mount;
 systemctl stop    mnt-Download.mount;
 

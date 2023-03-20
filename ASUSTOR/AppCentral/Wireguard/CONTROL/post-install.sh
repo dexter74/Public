@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source settings.cong | true
+source settings.conf | true
 
 
 

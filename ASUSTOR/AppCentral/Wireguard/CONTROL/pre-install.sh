@@ -3,7 +3,7 @@
 # Chargement du fichier configuration #
 #######################################
 APKG_PKG_DIR=/usr/local/AppCentral/Wireguard
-source $APKG_PKG_DIR/settings.conf;
+source $PKG_DIR/settings.conf;
 
 ##########################################################################################################################################################
 # Télécharger de l'image #

@@ -61,8 +61,8 @@ cd ~/APPZ/ASUSTOR/AppCentral/KMS               && apkg-tools_py3.py create .
 echo "##########################################";
 
 #echo "##########################################";
-#echo "# Container was required fix reboot NAS  #";
-#cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
+echo "# Container was required fix reboot NAS  #";
+cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/NordVPN            && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .

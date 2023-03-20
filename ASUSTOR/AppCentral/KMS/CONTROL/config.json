@@ -1,26 +1,26 @@
 {
 	"general":{
-              "package": "kms",
-              "name": "KMS Server",
-              "version": "1.0.0",
-              "depends": [ "" ],
-              "conflicts": [ "" ],
-              "developer": "Drthrax74",
-              "maintainer": "Drthrax74",
-              "email": "Drthrax74@gmail.com",
-              "website": "https://github.com/Wind4/vlmcsd",
-              "architecture": "any",
-              "firmware": "2.1.0"
-              },
+		  "package": "kms",
+		  "name": "KMS Server",
+		  "version": "1.0.0",
+		  "depends": [ "docker-ce" ],
+		  "conflicts": [ "" ],
+		  "developer": "Drthrax74",
+		  "maintainer": "Drthrax74",
+		  "email": "Drthrax74@gmail.com",
+		  "website": "https://github.com/Wind4/vlmcsd",
+		  "architecture": "any",
+		  "firmware": "2.1.0"
+		  },
 
 	"adm-desktop":{
-                  "app": { "type": "internal" },
-                  "privilege": { "accessible": "administrators","customizable": true } 
-                  },
+                      "app": { "type": "internal" },
+                      "privilege": { "accessible": "administrators","customizable": true } 
+                      },
 
 	"register":{
-               "share-folder": [ {"name": "Docker","description": "Dossier Docker Requis"} ],
-               "boot-priority": { "start-order": 80,"stop-order": 20 },
-               "port": [ 1688 ]
-               }
+                   "share-folder": [ {"name": "Docker","description": "Dossier Docker Requis"} ],
+                   "boot-priority": { "start-order": 80,"stop-order": 20 },
+                   "port": [ 1688 ]
+                   }
 }

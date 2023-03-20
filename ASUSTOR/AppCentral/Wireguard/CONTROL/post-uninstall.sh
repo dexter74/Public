@@ -8,8 +8,8 @@ source ./settings.conf
 ##########################################################################################################################################################
 # Suppression de l'image Docker #
 #################################
-docker container rm -f $CONTENEUR;
-docker image rm -f $IMAGE;
+#docker container rm -f $CONTENEUR;
+#docker image rm -f $IMAGE;
 
 ##########################################################################################################################################################
 # Suppression de la configuration #

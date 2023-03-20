@@ -20,7 +20,7 @@ docker container rm -f  $CONTENEUR
 docker create -i -t \
 --name=$CONTENEUR \
 --restart $RESTART \
---net=bridge \
+--net=host \
 --hostname $CONTENEUR \
 --env JWT_SECRET="admin" \
 --volume /volume1/Docker/$CONTENEUR/logs:/var/log/onlyoffice       \

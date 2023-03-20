@@ -4,6 +4,7 @@
 # Déclaration des variables #
 #############################
 CONTENEUR=wireguard
+IMAGE=linuxserver/wireguard
 
 ##########################################################################################################################################################
 # Suppression de l'image Docker #

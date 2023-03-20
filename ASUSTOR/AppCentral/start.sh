@@ -1,7 +1,6 @@
 ########################################################################################
 # https://github.com/dexter74/Archives/tree/main/Docker/V1/2.Conteneurs
 
-
 ########################################################################################
 # Edit container before deploy
 #nano ~/APPZ/ASUSTOR/AppCentral/NordVPN/CONTROL/post-install.sh;
@@ -37,24 +36,33 @@ cd ~/APPZ/ASUSTOR/AppCentral/Radarr             && apkg-tools_py3.py create .
 echo "#  > Sonarr                              #";          
 cd ~/APPZ/ASUSTOR/AppCentral/Sonarr             && apkg-tools_py3.py create .
 
+
+
 echo "##########################################";
 echo "# Container in Testing                   #";
-echo "#  > Collabora                           #";
-cd ~/APPZ/ASUSTOR/AppCentral/Collabora           && apkg-tools_py3.py create .
-echo "#  > MKcert                              #";
-cd ~/APPZ/ASUSTOR/AppCentral/mkcert              && apkg-tools_py3.py create .
-echo "#  > NextCloud                           #";
-cd ~/APPZ/ASUSTOR/AppCentral/Nextcloud           && apkg-tools_py3.py create .
-echo "#  > Only Office DocumentServer          #";
-cd ~/APPZ/ASUSTOR/AppCentral/OnlyOffice          && apkg-tools_py3.py create .
+
 echo "#  > Amule                               #";
 cd ~/APPZ/ASUSTOR/AppCentral/Amule/              && apkg-tools_py3.py create .
-#cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
-echo "##########################################";
 
+echo "#  > Collabora                           #";
+cd ~/APPZ/ASUSTOR/AppCentral/Collabora           && apkg-tools_py3.py create .
+
+echo "#  > MKcert                              #";
+cd ~/APPZ/ASUSTOR/AppCentral/mkcert              && apkg-tools_py3.py create .
+
+echo "#  > NextCloud                           #";
+cd ~/APPZ/ASUSTOR/AppCentral/Nextcloud           && apkg-tools_py3.py create .
+
+echo "#  > Only Office DocumentServer          #";
+cd ~/APPZ/ASUSTOR/AppCentral/OnlyOffice          && apkg-tools_py3.py create .
+
+echo "#  > Microsoft KMS Server Activator      #";
+cd ~/APPZ/ASUSTOR/AppCentral/KMS               && apkg-tools_py3.py create .
+echo "##########################################";
 
 #echo "##########################################";
 #echo "# Container was required fix reboot NAS  #";
+#cd ~/APPZ/ASUSTOR/AppCentral/Wireguard          && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/NordVPN            && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Base              && apkg-tools_py3.py create .
 #cd ~/APPZ/ASUSTOR/AppCentral/Exemple           && apkg-tools_py3.py create .

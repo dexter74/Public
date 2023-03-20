@@ -1,7 +1,7 @@
 {
 	"general":{
-	          "package":"Admineer",
-	          "name":"Admineer",
+	          "package":"Adminer",
+	          "name":"Adminer",
 	          "version":"1.0",
 	          "depends": [ "docker-ce", "MariaDB" ],
 	          "conflicts":"",

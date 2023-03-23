@@ -3,6 +3,13 @@ qBittorrent est un client BitTorrent libre disponible sur PC.
 Identifiant  : admin
 Mot de passe : adminadmin
 
+Chemin:
+ - /Video/.Perso
+ - /Video/Dessins-Animes
+ - /Video/Films
+ - /Video/Series
+
+
 Mise en service:
  - Création du conteneur NordVPN
  - Eteindre le conteneur

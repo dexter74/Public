@@ -47,5 +47,4 @@ systemctl stop    mnt-Download.mount;
 
 systemctl start   mnt-Download.mount;
 systemctl enable  mnt-Download.mount;
-
 ```

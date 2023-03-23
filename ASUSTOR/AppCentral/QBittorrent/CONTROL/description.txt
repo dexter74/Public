@@ -4,6 +4,7 @@ Identifiant  : admin
 Mot de passe : adminadmin
 
 Chemin:
+ - /downloads/Torrent
  - /Video/.Perso
  - /Video/Dessins-Animes
  - /Video/Films

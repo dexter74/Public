@@ -29,6 +29,8 @@ echo "#  > MariaDB                             #";
 cd ~/APPZ/ASUSTOR/AppCentral/MariaDB            && apkg-tools_py3.py create .
 echo "#  > Nginx Reverse Proxy                 #";
 cd ~/APPZ/ASUSTOR/AppCentral/NginxReverseProxy  && apkg-tools_py3.py create .
+echo "#  > Portainer                           #";
+cd ~/APPZ/ASUSTOR/AppCentral/Portainer          && apkg-tools_py3.py create .
 echo "#  > QBittorrent                         #";
 cd ~/APPZ/ASUSTOR/AppCentral/QBittorrent        && apkg-tools_py3.py create .
 echo "#  > Radarr                              #";

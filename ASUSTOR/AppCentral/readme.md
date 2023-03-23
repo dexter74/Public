@@ -1,3 +1,8 @@
+#### Package
+```
+apt install -y cifs-utils,
+```
+
 #### Monter les partages
 ```
 PARTAGE_IP=192.168.1.32

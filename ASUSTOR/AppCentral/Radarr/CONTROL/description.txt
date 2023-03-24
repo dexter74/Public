@@ -60,6 +60,8 @@ Client de Téléchargement
 #############
 # Indexeurs #
 #############
+Propose le torrent
+
 Torznab:
  - Nom                              : YGGTorrent
  - Activer le RSS                   : Cocher

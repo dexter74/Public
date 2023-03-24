@@ -22,7 +22,7 @@ Dossier de téléchargement: /downloads/Torrent/
 - Format Film Standard: {Movie Title:FR} {Quality Title} ({Release Year})
 - Format de dossier de film: {Movie Title:FR} ({Release Year})
 - Supprimer les dossiers vides: Cocher
-- Réanalyser le dossier de films après l'actualisation: Manuel (Evite l'activité Disque-Dur)
+- Réanalyser le dossier de films après l'actualisation: Manuel (Diminue le taux d'écriture sur le Disque)
 
 Dossiers racine:
  - /downloads/Torrent/Radarr

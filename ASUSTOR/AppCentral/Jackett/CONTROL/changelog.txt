@@ -1,9 +1,14 @@
 24-03-2023: /app/Jackett/ > Jackett limite la requête sur 100
 
 [ En cours d'analyse ]
+
+
 /app/Jackett/Content/bootstrap/bootstrap.min.js
 /app/Jackett/Content/common.js
 /app/Jackett/Content/custom.js
+/app/Jackett/Content/index.html
+/app/Jackett/Content/login.html
+
 /app/Jackett/Content/libs/api.js
 /app/Jackett/Content/libs/bootstrap-multiselect.js
 /app/Jackett/Content/libs/bootstrap-notify.js
@@ -16,6 +21,7 @@
 /app/Jackett/Content/libs/jquery.min.js
 /app/Jackett/Content/libs/moment.min.js
 /app/Jackett/Content/libs/tagify.min.js
+
 
 /app/Jackett/Definitions
 /app/Jackett/Definitions/0daykiev.yml

@@ -51,7 +51,8 @@ Nom: Format personnalisé
 #############################
 # Clients de téléchargement #
 #############################
-Client de Téléchargement - qBittorrent
+Client de Téléchargement 
+ - qBittorrent
  - Category: Radarr
 
 #############

@@ -24,6 +24,7 @@ docker create -i -t \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
+--dns 8.8.8.8 \
 --env PUID=1000 \
 --env GID=1000  \
 --env TZ=Europe/Paris \

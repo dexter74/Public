@@ -23,7 +23,6 @@
 /app/Jackett/Content/libs/tagify.min.js
 
 
-/app/Jackett/Definitions
 /app/Jackett/Definitions/0daykiev.yml
 /app/Jackett/Definitions/0magnet.yml
 /app/Jackett/Definitions/1337x.yml

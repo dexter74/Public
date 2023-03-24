@@ -2,14 +2,20 @@
 
 [ En cours d'analyse ]
 
-/app/radarr/
+/app/radarr/UI/index.js
+/app/radarr/UI/oauth.html
+/app/radarr/UI/login.html
+/app/radarr/UI/Content
+/app/radarr/UI/vendors.js.map
+/app/radarr/UI/vendors.js
+/app/radarr/UI/index.html
+/app/radarr/UI/index.js.map
 
 /app/Jackett/Content/bootstrap/bootstrap.min.js
 /app/Jackett/Content/common.js
 /app/Jackett/Content/custom.js
 /app/Jackett/Content/index.html
 /app/Jackett/Content/login.html
-
 /app/Jackett/Content/libs/api.js
 /app/Jackett/Content/libs/bootstrap-multiselect.js
 /app/Jackett/Content/libs/bootstrap-notify.js

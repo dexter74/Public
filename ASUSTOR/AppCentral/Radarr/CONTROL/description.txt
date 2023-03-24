@@ -70,6 +70,7 @@ Torznab:
 
 Options:
  - Taille maximum: 4096 MB (Important)
+ - Intervalle de synchronisation RSS: 0 (Diminue l'écriture sur les Disques)
  
 Restrictions:
  - Doit Contenir         : VF,VFF,FRENCH,TRUEFRENCH,MULTI

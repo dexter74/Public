@@ -1,6 +1,8 @@
 24-03-2023: /app/Jackett/ > Jackett limite la requête sur 100
 
+[ En cours d'analyse ]
 /app/Jackett/Definitions/yggtorrent.yml
+/app/Jackett/Definitions/yggcookie.yml
 &page=50
 
 

@@ -1,5 +1,8 @@
 24-03-2023: /app/Jackett/ > Jackett limite la requête sur 100
 
+/app/Jackett/Definitions/yggtorrent.yml
+&page=50
+
 
 
 15-02-2023: Création du projet Jackett

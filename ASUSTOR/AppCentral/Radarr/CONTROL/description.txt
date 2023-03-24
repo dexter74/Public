@@ -90,6 +90,7 @@ RSS List
  > Surveiller                  : Film seulement
  > Rechercher à l'ajout        : Décocher
  > Disponibilité minimale      : Sorti
+ > Profil qualité              : HD 720p/1080p
  > Dossier racine              : /downloads/Torrent/Radarr
  > RSS LINK                    : Lien "Copy RSS FEED" dans Jackett et ajouter à la fin &limit=100
 

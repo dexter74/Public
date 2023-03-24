@@ -35,10 +35,13 @@ docker create -i -t \
 --env MOD_AUTO_SHARE_ENABLED=false \
 --env MOD_AUTO_SHARE_DIRECTORIES='/incoming;/my_movies' \
 --env MOD_FIX_KAD_GRAPH_ENABLED=true \
---publish $HTTP:4711 \
 --volume /volume1/Docker/$CONTENEUR/config:/home/amule/.aMule \
 --volume /volume1/Docker/$CONTENEUR/incoming:/incoming \
 --volume /volume1/Docker/$CONTENEUR/temp:/temp \
+--publish 4662:4662  \
+--publish 4665:4665  \
+--publish 4672:4672  \
+--publish $HTTP:4711 \
 $IMAGE:latest;
 
 ##########################################################################################################################################################

@@ -29,7 +29,8 @@ Dossiers racine:
  - /Video/Dessins-Animes
  - /Video/Series
  - /Video/Films
- - /Video
+ - /Video/.Perso/Hentai/
+ - /Video/.Perso/Porno/
 
 ###########
 # Profils #

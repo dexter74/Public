@@ -52,8 +52,10 @@ Nom: Format personnalisé
 # Clients de téléchargement #
 #############################
 Client de Téléchargement 
- - qBittorrent
- - Category: Radarr
+ - Nom      : qBittorrent
+ - Host     : 192.168.1.32
+ - Port     : 1110
+ - Category : Radarr
 
 #############
 # Indexeurs #

@@ -86,7 +86,7 @@ RSS List
  > Rechercher à l'ajout        : Décocher
  > Disponibilité minimale      : Sorti
  > Dossier racine              : /downloads/Torrent/Radarr
- > RSS LINK                    : Lien "Copy RSS FEED" dans Jackett
+ > RSS LINK                    : Lien "Copy RSS FEED" dans Jackett et ajouter à la fin &limit=1000
 
 Source:
 https://wp.upandclear.org/2021/06/08/installer-et-utiliser-radarr-bis-telechargement-automatique-de-films/

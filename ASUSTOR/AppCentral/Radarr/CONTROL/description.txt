@@ -97,6 +97,12 @@ RSS List
 Options:
  - Intervalle de mise à jour de la liste : 24 (Diminue le taux d'écriture sur le Disque)
 
+###############
+# Métadonnées #
+###############
+Options:
+ - Pays de classification: France
+
 
 
 Source:

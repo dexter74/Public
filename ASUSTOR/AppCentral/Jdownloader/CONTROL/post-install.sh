@@ -23,6 +23,7 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /share/Download:/output \
+--volume /home/SFTP:/SFTP \
 --publish $HTTP \
 $IMAGE:latest
 

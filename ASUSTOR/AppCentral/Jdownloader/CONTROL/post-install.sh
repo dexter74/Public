@@ -21,6 +21,8 @@ docker create -i -t \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
+--env USER_ID=0 \
+--env GROUP_ID=0 \
 --volume /volume1/Docker/$CONTENEUR:/config \
 --volume /share/Download:/output \
 --volume /home/SFTP:/SFTP \

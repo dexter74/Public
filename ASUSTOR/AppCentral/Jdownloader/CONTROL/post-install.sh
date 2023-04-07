@@ -21,6 +21,7 @@ docker create -i -t \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
+--env DARK_MODE="1" \
 --env LANG="fr_FR.UTF-8" \
 --env USER_ID="0" \
 --env GROUP_ID="0" \

@@ -28,7 +28,7 @@
 ||gipsiesthyrsi.com^
 ||gleamsdargue.digital^
 ||hardloop.fr^
-! hanime.xxx: a.adtng.com^ ht-cdn2.adtng.com^ htl-cdn.adtng.com^ hw-cdn2.adtng.com^ trafficjunky.net^
+! hanime.xxx: a.adtng.com^ ht-cdn2.adtng.com^ htl-cdn.adtng.com^ hw-cdn2.adtng.com^ trafficjunky.net^ tsyndicate.com^
 ||histats.com^
 ||imprintmake.com^
 ||install.dreamsappsonline.com^
@@ -56,7 +56,6 @@
 ||st.chatango.com^
 ||tomcleaneraddon.com^
 ||topmusicalcomedy.com^
-||tsyndicate.com^
 ||tzegilo.com^
 ||unalboationce.com^
 ||unpredictablehateagent.com^

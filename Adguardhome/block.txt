@@ -50,6 +50,7 @@
 ||prmtracking3.com^
 ||refersmartapp.com^
 ||rxeosevsso.com^
+||s3t3d2y8.afcdn.net^
 ||s10.histats.com^
 ||sstatic1.histats.com^
 ||st.chatango.com^

@@ -21,6 +21,7 @@ docker create -i -t \
 --restart $RESTART \
 --hostname $CONTENEUR \
 --net=bridge \
+--sysctl net.ipv6.conf.all.disable_ipv6=1 \
 --env AUTO_UPDATE="true" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \

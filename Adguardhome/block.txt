@@ -2,9 +2,10 @@
 ! Description: Blocage des domaines SPAM, Virus et cie
 !
 ||1clic1don.fr^
-||apathylahuli.website^
+||a.adtng.com^
 ||abs.proxistore.com^
 ||addresseepaper.com^
+||apathylahuli.website^
 ||aribberoviromy.com^
 ||bargedoctarch.com^
 ||bobabillydirect.org^

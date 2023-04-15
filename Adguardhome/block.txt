@@ -2,7 +2,6 @@
 ! Description: Blocage des domaines SPAM, Virus et cie
 !
 ||1clic1don.fr^
-!a.adtng.com^
 ||abs.proxistore.com^
 ||addresseepaper.com^
 ||apathylahuli.website^
@@ -29,10 +28,8 @@
 ||gipsiesthyrsi.com^
 ||gleamsdargue.digital^
 ||hardloop.fr^
+! hanime.xxx: a.adtng.com^ ht-cdn2.adtng.com^ htl-cdn.adtng.com^ hw-cdn2.adtng.com^ trafficjunky.net^
 ||histats.com^
-!ht-cdn2.adtng.com^
-!htl-cdn.adtng.com^
-!hw-cdn2.adtng.com^
 ||imprintmake.com^
 ||install.dreamsappsonline.com^
 ||intedure-virsoles.com^
@@ -67,6 +64,3 @@
 ||useonlin.com^
 ||usethemarketings.com^
 ||viinxd.com^
-
-
-!trafficjunky.net^

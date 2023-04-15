@@ -22,7 +22,8 @@ docker create -i -t \
 --restart $RESTART \
 --net=bridge \
 --hostname $CONTENEUR \
---dns="8.8.8.8" \
+--sysctl net.ipv6.conf.all.disable_ipv6=1 \
+--dns 8.8.8.8 \
 --env PUID=1000 \
 --env PGID=100 \
 --env TZ=Europe\Paris \

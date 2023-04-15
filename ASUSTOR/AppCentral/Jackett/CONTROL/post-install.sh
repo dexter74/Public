@@ -22,6 +22,7 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --net=bridge \
 --sysctl net.ipv6.conf.all.disable_ipv6=1 \
+--dns 8.8.8.8 \
 --env AUTO_UPDATE="true" \
 --env TZ="Europe/Paris" \
 --env PUID=1000 \
@@ -31,7 +32,6 @@ docker create -i -t \
 $IMAGE:latest
 
 #--network=container:"NordVPN" \
-#--dns 8.8.8.8 \
 
 
 ##########################################################################################################################################################

@@ -69,3 +69,4 @@
 ||hw-cdn2.adtng.com^
 ||trafficjunky.net^
 ||tsyndicate.com^
+||celeritascdn.com^

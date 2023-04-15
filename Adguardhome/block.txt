@@ -1,7 +1,6 @@
-!
 ! Title: AdGuardHome by Drthrax74
 ! Description: Blocage des domaines SPAM, Virus et cie
-|
+!
 ||1clic1don.fr^
 ||apathylahuli.website^
 ||abs.proxistore.com^
@@ -66,4 +65,3 @@
 ||useonlin.com^
 ||usethemarketings.com^
 ||viinxd.com^
-

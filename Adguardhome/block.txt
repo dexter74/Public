@@ -30,6 +30,8 @@
 ||gleamsdargue.digital^
 ||hardloop.fr^
 ||histats.com^
+||ht-cdn2.adtng.com^
+||hw-cdn2.adtng.com^
 ||imprintmake.com^
 ||install.dreamsappsonline.com^
 ||intedure-virsoles.com^

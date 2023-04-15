@@ -62,6 +62,7 @@
 ||useonlin.com^
 ||usethemarketings.com^
 ||viinxd.com^
+||*.xlivrdr.com^
 
 ||a.adtng.com^
 ||ht-cdn2.adtng.com^

@@ -59,7 +59,6 @@
 ||st.chatango.com^
 ||tomcleaneraddon.com^
 ||topmusicalcomedy.com^
-||trafficjunky.net^
 ||tsyndicate.com^
 ||tzegilo.com^
 ||unalboationce.com^
@@ -68,3 +67,6 @@
 ||useonlin.com^
 ||usethemarketings.com^
 ||viinxd.com^
+
+
+!trafficjunky.net^

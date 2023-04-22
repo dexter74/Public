@@ -18,7 +18,7 @@ ADMIN_TOKEN=admin
 ##########################################################################################################################################################
 # Read-Only Config #
 ####################
-#MYSQL_HOST=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+#MYSQL_HOST=$(ip add | grep 192.168.0 | cut -d "/" -f 1 | cut -c 10-30)
 MYSQL_HOST=$(ip add show eth1 | grep inet  | cut -d "/" -f 1 | cut -c 10-30)
 MYSQL_DATABASE=bitwarden
 MYSQL_PORT=3306

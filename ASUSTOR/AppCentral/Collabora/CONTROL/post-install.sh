@@ -7,7 +7,7 @@ CONTENEUR=Collabora
 IMAGE=collabora/code
 HTTP=1121
 RESTART=unless-stopped
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+IP_NAS=$(ip add | grep 192.168.0 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

@@ -7,7 +7,7 @@ CONTENEUR=OnlyOffice
 IMAGE=onlyoffice/documentserver
 HTTP=1121
 RESTART=unless-stopped
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+IP_NAS=$(ip add | grep 192.168.0 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

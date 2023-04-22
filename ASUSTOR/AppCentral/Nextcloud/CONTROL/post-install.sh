@@ -17,7 +17,7 @@ PORT=1120
 # Configuration des accès Nextcloud #
 #####################################
 USERNAME=$(grep "1000" /etc/passwd | cut -d ":" -f 1)
-IP_NAS=$(ip add  | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+IP_NAS=$(ip add | grep 192.168.0 | cut -d "/" -f 1 | cut -c 10-30)
 NEXTCLOUD_USER="admin"
 NEXTCLOUD_PASS="admin"
 NEXTCLOUD_DOM="nextcloud.local nextcloud74.ddns.net"

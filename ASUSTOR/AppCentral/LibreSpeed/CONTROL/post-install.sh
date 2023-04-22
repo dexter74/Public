@@ -6,7 +6,7 @@
 CONTENEUR=LibreSpeed
 IMAGE=linuxserver/librespeed
 HTTP=27016:80
-IP_NAS=$(ip add | grep 192.168.1 | cut -d "/" -f 1 | cut -c 10-30)
+IP_NAS=$(ip add | grep 192.168.0 | cut -d "/" -f 1 | cut -c 10-30)
 
 ##########################################################################################################################################################
 # Fermeture du Conteneur #

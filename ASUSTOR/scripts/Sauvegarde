@@ -8,8 +8,8 @@
 # Series
 # Films
 
-SOURCE=/share/Video/
-DESTINATION=/share/MyArchive1/Video/
+SOURCE=/share/Video/Series
+DESTINATION=/share/MyArchive1/Video/Series
 
 
 

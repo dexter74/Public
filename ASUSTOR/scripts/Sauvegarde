@@ -2,8 +2,8 @@
 # Rsync #
 #########
 
-SOURCE=/volume1/Disk1/
-DESTINATION=/share/USB1-2
+SOURCE=/share/Video/
+DESTINATION=/share/MyArchive1
 
 ####################################
 # Lancer la sauvegarde (Mode test) #

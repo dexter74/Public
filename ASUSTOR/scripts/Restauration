@@ -1,0 +1,90 @@
+#########
+# Rsync #
+#########
+
+# Entware : opkg install nano
+
+##############################################
+# Déclaration des variables d'environnements #
+##############################################
+SOURCE1=/share/USB1-2/Drthrax74/
+SOURCE2=/share/USB1-2/Proxmox/
+SOURCE3=/share/USB3-2/
+SOURCE4=/share/USB1-2/Isabelle74/
+
+DESTINATION1=/share/home/Drthrax74
+DESTINATION2=/share/Proxmox
+DESTINATION3=/share/Videos
+DESTINATION4=/share/home/Isabelle74
+
+##########################
+# Lancer la restauration #
+##########################
+rsync -avu --progress --delete --dry-run  $SOURCE1 $DESTINATION1 ; # Only test (Drthrax74)
+rsync -avu --progress --delete --dry-run  $SOURCE2 $DESTINATION2 ; # Only test (Proxmox)
+rsync -avu --progress --delete --dry-run  $SOURCE3 $DESTINATION3 ; # Only test (Films)
+rsync -avu --progress --delete --dry-run  $SOURCE4 $DESTINATION4 ; # Only test (Isabelle74)
+
+###########################################
+# Lancer la restauration en tâche de fond #
+###########################################
+rm ./*.out ;
+
+nohup rsync -avu --progress $SOURCE1 $DESTINATION1 &> ./Drthrax74.out &
+nohup rsync -avu --progress $SOURCE2 $DESTINATION2 &> ./Proxmox.out &
+nohup rsync -avu --progress $SOURCE3 $DESTINATION3 &> ./Films.out &
+nohup rsync -avu --progress $SOURCE4 $DESTINATION4 &> ./Isabelle74.out &
+
+############################
+# Vérifier si le processus #
+############################
+ps | grep -v grep | grep  rsync
+
+
+################
+# Vérification #
+################
+tail -f ./Drthrax74.out ;
+tail -f ./Proxmox.out ;
+tail -f ./Films.out ;
+tail -f ./Isabelle74.out ;
+
+
+###################################
+# Gestion de l'arrêt du processus #
+###################################
+pidof extbkagent ;
+pidof rsync ;
+kill -s TERM $(pidof extbkagent) ; 
+kill -s KILL $(pidof extbkagent) ;
+
+
+kill -s TERM $(pidof rsync) ;
+kill -s TERM $(pgrep rsync) ;
+kill -s kill $(pidof rsync) ;
+
+
+#############################################
+# Trouver processus qui tient le disque-dur #
+#############################################
+# L'indexation de Windows crée 1 processus / fichier trouver.
+lsof | grep $DESTINATION ; 
+fuser -k -TERM $DESTINATION ;
+fuser -m -k $DESTINATION ;
+
+
+######################################################################################################################################################
+RSYNC:
+-a              : Faire la synchronisation en préservant tous les attributs du système de fichiers
+-v              : Mode Verbose
+-u              : Copier uniquement les fichiers avec une heure de modification plus récente (ou une différence de taille si les heures sont égales)
+--delete        : Supprimer les fichiers du dossier cible qui n'existent pas dans la source.
+-n,             : simule la sauvegarde sans ne rien faire réellement
+--progress      : affiche la progression
+–exclude=MOTIF  : Extension Exclus
+
+Kill:
+1  - HUP qui permet de recharger un process
+9  - KILL qui permet de tuer un process
+15 - TERM qui permet de terminer proprement un process
+######################################################################################################################################################

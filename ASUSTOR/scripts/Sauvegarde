@@ -3,7 +3,7 @@
 #########
 
 SOURCE=/share/Video/
-DESTINATION=/share/MyArchive1/Videos/
+DESTINATION=/share/MyArchive1/Video/
 
 ####################################
 # Lancer la sauvegarde (Mode test) #

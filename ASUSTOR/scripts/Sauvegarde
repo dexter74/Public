@@ -2,8 +2,8 @@
 # Rsync #
 #########
 
-SOURCE=/share/Video/
-DESTINATION=/share/MyArchive1/Video/
+SOURCE=/share/Video/Dessins-Animes
+DESTINATION=/share/MyArchive1/Video/Dessins-Animes
 
 ####################################
 # Lancer la sauvegarde (Mode test) #

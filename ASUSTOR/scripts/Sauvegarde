@@ -2,6 +2,12 @@
 # Rsync #
 #########
 
+# /share/Video/
+# /share/MyArchive1/Video/
+# Dessins-Animes
+# Series
+# Films
+
 SOURCE=/share/Video/Dessins-Animes
 DESTINATION=/share/MyArchive1/Video/Dessins-Animes
 

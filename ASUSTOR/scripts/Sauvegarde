@@ -8,8 +8,10 @@
 # Series
 # Films
 
-SOURCE=/share/Video/Dessins-Animes
-DESTINATION=/share/MyArchive1/Video/Dessins-Animes
+SOURCE=/share/Video/
+DESTINATION=/share/MyArchive1/Video/
+
+
 
 #############
 # Mode Test #

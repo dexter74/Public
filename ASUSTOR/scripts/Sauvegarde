@@ -30,11 +30,11 @@ rsync -avu --progress --delete $SOURCE $DESTINATION;
 
 # Méthode 1:
 rm nohup.out;
-nohup rsync -avu --progress --delete $SOURCE $DESTINATION &;
+nohup rsync -avu --progress --delete $SOURCE $DESTINATION &
 tail -f nohup.out;
 
 # Méthode 2:
-nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &;
+nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &
 tail -f myprogram.out;
 tail -f myprogram.err;
 
@@ -81,7 +81,7 @@ kill -s TERM $(pidof extbkagent);
 kill -s KILL $(pidof extbkagent);
 
 # Relancer la sauvegarde (Ne pas mettre;)
-nohup /usr/builtin/sbin/extbkagent VIDEO &;
+nohup /usr/builtin/sbin/extbkagent VIDEO &
 
 # liste des jobs:
 jobs -l;

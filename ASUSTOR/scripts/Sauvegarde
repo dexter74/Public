@@ -30,7 +30,7 @@ rsync -avu --progress --delete $SOURCE $DESTINATION;
 
 # Méthode 1:
 rm nohup.out;
-nohup rsync -avu --progress --delete $SOURCE $DESTINATION;
+nohup rsync -avu --progress --delete $SOURCE $DESTINATION &;
 tail -f nohup.out;
 
 # Méthode 2:

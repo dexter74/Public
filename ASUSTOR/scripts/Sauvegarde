@@ -10,10 +10,13 @@ DESTINATION=/share/MyArchive1/Video/Dessins-Animes
 ####################################
 rsync -avu --progress --dry-run --delete $SOURCE $DESTINATION;
 
-##################################
-# Lancer Sauvegarde (Réellement) #
-##################################
+#####################
+# Lancer Sauvegarde #
+#####################
+# Supprimer les fichiers du dossier cible qui n'existent pas dans la source.
 rsync -avu --progress --delete $SOURCE $DESTINATION;
+
+
 
 ####################
 # En tâche de fond #
@@ -23,7 +26,6 @@ rsync -avu --progress --delete $SOURCE $DESTINATION;
 rm nohup.out;
 nohup rsync -avu --progress --delete $SOURCE $DESTINATION;
 tail -f nohup.out;
-
 
 # Méthode 2:
 nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &;

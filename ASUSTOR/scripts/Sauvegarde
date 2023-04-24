@@ -3,78 +3,81 @@
 #########
 
 SOURCE=/share/Video/
-DESTINATION=/share/MyArchive1
+DESTINATION=/share/MyArchive1/Videos/
 
 ####################################
 # Lancer la sauvegarde (Mode test) #
 ####################################
-rsync -avu --progress --dry-run --delete $SOURCE $DESTINATION ;
+rsync -avu --progress --dry-run --delete $SOURCE $DESTINATION;
 
 ##################################
 # Lancer Sauvegarde (Réellement) #
 ##################################
-rsync -avu --progress --delete $SOURCE $DESTINATION ;
+rsync -avu --progress --delete $SOURCE $DESTINATION;
 
 ####################
 # En tâche de fond #
 ####################
 
 # Méthode 1:
-rm nohup.out ; nohup rsync -avu --progress --delete  $SOURCE $DESTINATION & 
-tail -f nohup.out
+rm nohup.out;
+nohup rsync -avu --progress --delete $SOURCE $DESTINATION;
+tail -f nohup.out;
 
 
 # Méthode 2:
-nohup rsync -avu --progress --delete  $SOURCE $DESTINATION > myprogram.out 2> myprogram.err & 
-tail -f myprogram.out
-tail -f myprogram.err
+nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &;
+tail -f myprogram.out;
+tail -f myprogram.err;
+
+
 ###################################
 # Gestion de l'arrêt du processus #
 ###################################
-kill -s TERM $(pidof rsync)
-kill -s TERM $(pgrep rsync)
-kill -s kill $(pidof rsync)
+kill -s TERM $(pidof rsync);
+kill -s TERM $(pgrep rsync);
+kill -s kill $(pidof rsync);
 
 ############################
 # Vérifier si le processus #
 ############################
-ps | grep -v grep | grep  rsync
+ps | grep -v grep | grep  rsync;
 
 
 #############################################
 # Trouver processus qui tient le disque-dur #
 #############################################
 # L'indexation de Windows crée 1 processus / fichier trouver.
-lsof | grep $DESTINATION ; 
-fuser -k -TERM $DESTINATION ;
-fuser -m -k $DESTINATION ;
+lsof | grep $DESTINATION;
+fuser -k -TERM $DESTINATION;
+fuser -m -k $DESTINATION;
 
 ------------------------------------------------------------------------------------------------------------------
 ##############
 # Sauvegarde #
 ##############
-Le processus de sauvegarde Externe se nommme: extbkagent et lance la sauvegarde VIDEO.
+Le processus de sauvegarde Externe se nommme: extbkagent et lance la sauvegarde Video.
 
 # Afficher le processus
-ps | grep -v grep | grep extbkagent ;
+ps | grep -v grep | grep extbkagent;
 
 # Récupérer le PID Processus
-pidof extbkagent ;
+pidof extbkagent;
 
 # Envoi du signale d'arrêt du processsus (Propre)
-kill -s TERM $(pidof extbkagent) ; 
+kill -s TERM $(pidof extbkagent);
 
 # Tuer le Processus
-kill -s KILL $(pidof extbkagent) ;
+kill -s KILL $(pidof extbkagent);
 
-# Relancer la sauvegarde (Ne pas mettre ;)
-nohup /usr/builtin/sbin/extbkagent VIDEO &
+# Relancer la sauvegarde (Ne pas mettre;)
+nohup /usr/builtin/sbin/extbkagent VIDEO &;
 
 # liste des jobs:
-jobs -l
+jobs -l;
 
 # Kill un jobs
-jobs %n (n étant le numéro de jobs)
+jobs %n (n étant le numéro de jobs);
 
 
 

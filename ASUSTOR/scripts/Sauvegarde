@@ -51,10 +51,9 @@ kill -s kill $(pidof rsync);
 ############################
 ps | grep -v grep | grep  rsync;
 
-
-#############################################
-# Trouver processus qui tient le disque-dur #
-#############################################
+##########################################
+# Trouver processus qui tient le fichier #
+##########################################
 # L'indexation de Windows crée 1 processus / fichier trouver.
 lsof | grep $DESTINATION;
 fuser -k -TERM $DESTINATION;

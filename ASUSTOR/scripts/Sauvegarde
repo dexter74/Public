@@ -11,9 +11,9 @@
 SOURCE=/share/Video/Dessins-Animes
 DESTINATION=/share/MyArchive1/Video/Dessins-Animes
 
-####################################
-# Lancer la sauvegarde (Mode test) #
-####################################
+#############
+# Mode Test #
+#############
 rsync -avu --progress --dry-run --delete $SOURCE $DESTINATION;
 
 #####################
@@ -21,8 +21,6 @@ rsync -avu --progress --dry-run --delete $SOURCE $DESTINATION;
 #####################
 # Supprimer les fichiers du dossier cible qui n'existent pas dans la source.
 rsync -avu --progress --delete $SOURCE $DESTINATION;
-
-
 
 ####################
 # En tâche de fond #
@@ -58,6 +56,9 @@ ps | grep -v grep | grep  rsync;
 lsof | grep $DESTINATION;
 fuser -k -TERM $DESTINATION;
 fuser -m -k $DESTINATION;
+
+
+
 
 ------------------------------------------------------------------------------------------------------------------
 ##############

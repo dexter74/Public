@@ -8,10 +8,12 @@
 # Series
 # Films
 
+
+#############################
+# Déclaration des variables #
+#############################
 SOURCE=/share/Video/Series
 DESTINATION=/share/MyArchive1/Series
-
-
 
 #############
 # Mode Test #
@@ -27,17 +29,16 @@ rsync -avu --progress --delete $SOURCE $DESTINATION;
 ####################
 # En tâche de fond #
 ####################
-
+#
 # Méthode 1:
 rm nohup.out;
 nohup rsync -avu --progress --delete $SOURCE $DESTINATION &
 tail -f nohup.out;
-
+#
 # Méthode 2:
 nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &
 tail -f myprogram.out;
 tail -f myprogram.err;
-
 
 ###################################
 # Gestion de l'arrêt du processus #
@@ -58,9 +59,6 @@ ps | grep -v grep | grep  rsync;
 lsof | grep $DESTINATION;
 fuser -k -TERM $DESTINATION;
 fuser -m -k $DESTINATION;
-
-
-
 
 ------------------------------------------------------------------------------------------------------------------
 ##############
@@ -88,8 +86,6 @@ jobs -l;
 
 # Kill un jobs
 jobs %n (n étant le numéro de jobs);
-
-
 
 RSYNC:
 -a              : Faire la synchronisation en préservant tous les attributs du système de fichiers

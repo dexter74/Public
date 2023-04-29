@@ -30,7 +30,8 @@ docker create -i -t \
 --volume /share/Music:/Music \
 --volume /share/Video:/Video \
 --device /dev/dri/renderD128:/dev/dri/renderD128 \
---device /dev/dri/card0:/dev/dri/card0 \--publish $HTTP \
+--device /dev/dri/card0:/dev/dri/card0 \
+--publish $HTTP \
 --publish $HTTPS \
 --label cacher="oui" \
 $IMAGE;

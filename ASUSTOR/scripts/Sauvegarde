@@ -1,7 +1,6 @@
 # Oublier: https://unix.stackexchange.com/questions/188737/does-compression-option-z-with-rsync-speed-up-backup
 > rsync -z --compress-level=1
 
-
 #########
 # Rsync #
 #########

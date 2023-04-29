@@ -27,8 +27,8 @@ docker create -i -t \
 --env GIDLIST=100 \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
---volume /share/Video:/Video \
 --volume /share/Music:/Music \
+--volume /share/Video:/Video \
 --device /dev/dri/renderD128:/dev/dri/renderD128 \
 --device /dev/dri/card0:/dev/dri/card0 \--publish $HTTP \
 --publish $HTTPS \

@@ -16,8 +16,9 @@
 #############################
 # Déclaration des variables #
 #############################
-SOURCE=/share/Video/Series
+SOURCE=/share/Video/Series/*
 DESTINATION=/share/MyArchive1/Series
+
 
 #############
 # Mode Test #

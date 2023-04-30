@@ -22,7 +22,7 @@ DESTINATION=/share/MyArchive1/Series
 #############
 # Mode Test #
 #############
-rsync -avu --progress --dry-run --delete $SOURCE $DESTINATION;
+rsync -avu --progress --delete --dry-run $SOURCE $DESTINATION;
 
 #####################
 # Lancer Sauvegarde #
@@ -99,6 +99,20 @@ RSYNC:
 -n,             : simule la sauvegarde sans ne rien faire réellement
 --progress      : affiche la progression
 –exclude=MOTIF  : Extension Exclus
+
+
+# -a: Mode archivage
+# -g: Préserve le groupe
+# -o: Préserve le propriétaire
+# -p: Préserve les permissions
+# -r: Mode récursive
+# -t: Préserve les dates
+# -v: Mode Verbose
+# -u: Ignorer les fichiers supplémentaires destination
+# -z: Mode compression
+# --delete: Miroir Parfait (Si fichier absent dans la destination, il sera supprimé)
+# --progress: Affiche la barre de progression
+# --dry-run: Mode Test
 
 Kill:
 1 - HUP qui permet de recharger un process

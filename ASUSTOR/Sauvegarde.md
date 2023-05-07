@@ -26,11 +26,11 @@ OPTION="-a -g -o -p -r -t -v -u -z --delete-before --progress"
 # -v: Mode Verbose
 # -u: Ignorer les fichiers supplémentaires destination
 # -z: Mode compression
-# --delete-before: Supprime les fichiers absents de la source (Avant la synchronisation)
-# --delete: Miroir Parfait (Si fichier absent dans la destination, il sera supprimé)
-# --dry-run: Mode Test
+# --delete-before : Supprime les fichiers absents de la source (Avant la synchronisation)
+# --delete        : Miroir Parfait (Si fichier absent dans la destination, il sera supprimé)
+# --dry-run       : Mode Test
 # –exclude=MOTIF  : Extension Exclus
-# --progress: Affiche la barre de progression
+# --progress      : Affiche la barre de progression
 ############################################################################################
 ```
 

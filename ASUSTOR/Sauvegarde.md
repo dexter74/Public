@@ -16,7 +16,7 @@ OPTION="-a -g -o -p -r -t -v -u -z --delete-before --progress"
 ```
 
 ```
-############################################################################################
+##############################################################################################
 # -a: Mode archivage
 # -g: Préserve le groupe
 # -o: Préserve le propriétaire
@@ -31,7 +31,7 @@ OPTION="-a -g -o -p -r -t -v -u -z --delete-before --progress"
 # --dry-run       : Mode Test
 # –exclude=MOTIF  : Extension Exclus
 # --progress      : Affiche la barre de progression
-############################################################################################
+##############################################################################################
 ```
 
 #### Simulation de Sauvegarde

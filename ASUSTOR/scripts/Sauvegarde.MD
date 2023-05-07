@@ -10,32 +10,34 @@ OPTION="-arvz --progress --delete-before"
 ```
 
 
-####################
-# En tâche de fond #
-####################
-#
-# Méthode 1:
+#### Méthode 1:
+```bash
 rm nohup.out;
 nohup rsync -avu --progress --delete $SOURCE $DESTINATION &
 tail -f nohup.out;
-#
-# Méthode 2:
+```
+
+#### Méthode 2:
+```bash
 nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &
 tail -f myprogram.out;
 tail -f myprogram.err;
+```bash
 
-###################################
-# Gestion de l'arrêt du processus #
-###################################
+### Gestion de l'arrêt du processus
+```bash
 kill -s TERM $(pidof rsync);
 kill -s TERM $(pgrep rsync);
 kill -s kill $(pidof rsync);
+```
 
-############################
-# Vérifier si le processus #
-############################
+#### Vérifier si le processus
+```bash
 ps | grep -v grep | grep  rsync;
+```bash
 
+
+```bash
 ##########################################
 # Trouver processus qui tient le fichier #
 ##########################################
@@ -99,3 +101,4 @@ Kill:
 1 - HUP qui permet de recharger un process
 9 - KILL qui permet de tuer un process
 15 - TERM qui permet de terminer proprement un process
+```bash

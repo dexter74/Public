@@ -1,35 +1,14 @@
-# Oublier: https://unix.stackexchange.com/questions/188737/does-compression-option-z-with-rsync-speed-up-backup
-> rsync -z --compress-level=1
+#### Déclaration des variables
+```bash
+SOURCE="/share/User Homes/*"
+DESTINATION=/share/MyArchive1/
+```
 
-#########
-# Rsync #
-#########
+#### Déclaration des options
+```bash
+OPTION="-arvz --progress --delete-before"
+```
 
-# /share/Video/
-# /share/MyArchive1/Video/
-
-# Dessins-Animes
-# Series
-# Films
-
-
-#############################
-# Déclaration des variables #
-#############################
-SOURCE=/share/Video/Series/*
-DESTINATION=/share/MyArchive1/Series
-
-
-#############
-# Mode Test #
-#############
-rsync -avu --progress --delete --dry-run $SOURCE $DESTINATION;
-
-#####################
-# Lancer Sauvegarde #
-#####################
-# Supprimer les fichiers du dossier cible qui n'existent pas dans la source.
-rsync -avu --progress --delete $SOURCE $DESTINATION;
 
 ####################
 # En tâche de fond #
@@ -115,7 +94,6 @@ RSYNC:
 # --delete: Supprime les fichiers absents de la source (A la fin de la synchronisation)
 # --progress: Affiche la barre de progression
 # --dry-run: Mode Test
-
 
 Kill:
 1 - HUP qui permet de recharger un process

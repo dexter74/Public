@@ -6,8 +6,29 @@ DESTINATION=/share/MyArchive1/
 
 #### Déclaration des options
 ```bash
+#########################################################################################
+# -a: Mode archivage
+# -g: Préserve le groupe
+# -o: Préserve le propriétaire
+# -p: Préserve les permissions
+# -r: Mode récursive
+# -t: Préserve les dates
+# -v: Mode Verbose
+# -u: Ignorer les fichiers supplémentaires destination
+# -z: Mode compression
+# --delete-before: Supprime les fichiers absents de la source (Avant la synchronisation)
+# --delete: Miroir Parfait (Si fichier absent dans la destination, il sera supprimé)
+# --progress: Affiche la barre de progression
+# --dry-run: Mode Test
+#########################################################################################
+
+
 OPTION="-arvz --progress --delete-before"
 ```
+
+
+
+
 
 
 #### Méthode 1:

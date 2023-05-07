@@ -98,30 +98,6 @@ jobs -l;
 # Kill un jobs
 jobs %n (n étant le numéro de jobs);
 
-RSYNC:
--a              : Faire la synchronisation en préservant tous les attributs du système de fichiers
--v              : Mode Verbose
--u              : Copier uniquement les fichiers avec une heure de modification plus récente (ou une différence de taille si les heures sont égales)
---delete        : Supprimer les fichiers du dossier cible qui n'existent pas dans la source.
--n,             : simule la sauvegarde sans ne rien faire réellement
---progress      : affiche la progression
-–exclude=MOTIF  : Extension Exclus
-
-
-# -a: Mode archivage
-# -g: Préserve le groupe
-# -o: Préserve le propriétaire
-# -p: Préserve les permissions
-# -r: Mode récursive
-# -t: Préserve les dates
-# -v: Mode Verbose
-# -u: Ignorer les fichiers supplémentaires destination
-# -z: Mode compression
-# --delete-before: Supprime les fichiers absents de la source (Avant la synchronisation)
-# --delete: Supprime les fichiers absents de la source (A la fin de la synchronisation)
-# --progress: Affiche la barre de progression
-# --dry-run: Mode Test
-
 Kill:
 1 - HUP qui permet de recharger un process
 9 - KILL qui permet de tuer un process

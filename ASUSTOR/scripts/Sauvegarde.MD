@@ -1,12 +1,12 @@
 #### Déclaration des variables
 ```bash
 SOURCE='/share/User Homes/'
-DESTINATION='/share/MyArchive1/User Homes/'
+DESTINATION='/share/MyArchive1/'
 ```
 
 #### Déclaration des options
 ```bash
-OPTION=""
+OPTION="-a -g -o -p -r -t -v -u -z --delete-before --progress"
 ```
 
 ```

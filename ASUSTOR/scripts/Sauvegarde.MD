@@ -37,16 +37,17 @@ sync $OPTION --dry-run $SOURCE $DESTINATION;
 
 #### Méthode 1:
 ```bash
-rm nohup.out;
-nohup rsync -avu --progress --delete $SOURCE $DESTINATION &
-tail -f nohup.out;
+#rm nohup.out;
+#nohup rsync -avu --progress --delete $SOURCE $DESTINATION &
+#tail -f nohup.out;
 ```
 
 #### Méthode 2:
 ```bash
-nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &
-tail -f myprogram.out;
-tail -f myprogram.err;
+rm myprogram.*;
+#nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &
+#tail -f myprogram.out;
+#tail -f myprogram.err;
 ```bash
 
 ### Gestion de l'arrêt du processus
@@ -62,21 +63,19 @@ ps | grep -v grep | grep  rsync;
 ```bash
 
 
+#### Trouver processus qui tient le fichier
 ```bash
-##########################################
-# Trouver processus qui tient le fichier #
-##########################################
 # L'indexation de Windows crée 1 processus / fichier trouver.
 lsof | grep $DESTINATION;
 fuser -k -TERM $DESTINATION;
 fuser -m -k $DESTINATION;
+```bash
 
 ------------------------------------------------------------------------------------------------------------------
-##############
-# Sauvegarde #
-##############
-Le processus de sauvegarde Externe se nommme: extbkagent et lance la sauvegarde Video.
+#### Sauvegarde Externe
+`Le processus de sauvegarde Externe se nommme: extbkagent et lance la sauvegarde Video.`
 
+```bash
 # Afficher le processus
 ps | grep -v grep | grep extbkagent;
 
@@ -97,9 +96,11 @@ jobs -l;
 
 # Kill un jobs
 jobs %n (n étant le numéro de jobs);
+```
 
 Kill:
+```bash
 1 - HUP qui permet de recharger un process
 9 - KILL qui permet de tuer un process
 15 - TERM qui permet de terminer proprement un process
-```bash
+```

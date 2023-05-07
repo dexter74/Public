@@ -1,1 +1,2 @@
-tail -f *.out
+clear;
+tail -f *.out;

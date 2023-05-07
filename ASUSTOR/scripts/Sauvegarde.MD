@@ -29,7 +29,7 @@ OPTION=""
 
 #### Simulation de Sauvegarde
 ```
-sync $OPTION $SOURCE $DESTINATION --dry-run;
+sync $OPTION --dry-run $SOURCE $DESTINATION;
 ```
 
 

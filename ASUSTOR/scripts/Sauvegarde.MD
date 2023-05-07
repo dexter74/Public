@@ -6,6 +6,10 @@ DESTINATION=/share/MyArchive1/
 
 #### Déclaration des options
 ```bash
+OPTION=""
+```
+
+```
 #########################################################################################
 # -a: Mode archivage
 # -g: Préserve le groupe
@@ -21,11 +25,7 @@ DESTINATION=/share/MyArchive1/
 # --progress: Affiche la barre de progression
 # --dry-run: Mode Test
 #########################################################################################
-
-
-OPTION="-arvz --progress --delete-before"
 ```
-
 
 
 

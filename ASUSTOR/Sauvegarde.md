@@ -1,3 +1,9 @@
+#### Nano
+```bash
+Installer Entware
+Puis taper la commande opkg install nano
+```
+
 #### Déclaration des variables
 ```bash
 SOURCE='/share/User Homes/'

@@ -6,7 +6,7 @@ DESTINATION="/share/MyArchive1/User Homes/"
 
 #### Déclaration des options
 ```bash
-OPTION="-a -g -o -p -r -t -v -u -z --delete-before --progress"
+OPTION=""
 ```
 
 ```

@@ -1,6 +1,10 @@
 clear;
 
+# Chargement de la configuration
 source ./settings.conf
+
+# Protection
+exit;
 
 # Sauvegarde
 rsync $OPTION "$DOCKER_SOURCE"     "$DOCKER_DESTINATION";

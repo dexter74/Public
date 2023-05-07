@@ -6,7 +6,7 @@ source ./settings.conf
 # Protection
 exit;
 
-# Sauvegarde
+# NAS Vers MyArchives1
 rsync $OPTION "$DOCKER_SOURCE"     "$DOCKER_DESTINATION";
 rsync $OPTION "$DOWNLOAD_SOURCE"   "$DOWNLOAD_DESTINATION";
 rsync $OPTION "$HOME_SOURCE"       "$HOME_DESTINATION";

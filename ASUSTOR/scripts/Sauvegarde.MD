@@ -44,11 +44,11 @@ rsync $OPTION --dry-run "$SOURCE" "$DESTINATION";
 
 #### Méthode 2:
 ```bash
-rm myprogram.*;
+#rm myprogram.*;
 #nohup rsync -avu --progress --delete $SOURCE $DESTINATION > myprogram.out 2> myprogram.err &
 #tail -f myprogram.out;
 #tail -f myprogram.err;
-```bash
+```
 
 ### Gestion de l'arrêt du processus
 ```bash

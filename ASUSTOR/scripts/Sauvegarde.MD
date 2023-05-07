@@ -1,7 +1,7 @@
 #### Déclaration des variables
 ```bash
-SOURCE="/share/User Homes/*"
-DESTINATION="/share/MyArchive1/User Homes/"
+SOURCE='/share/User Homes/'
+DESTINATION='/share/MyArchive1/User Homes/'
 ```
 
 #### Déclaration des options
@@ -29,7 +29,7 @@ OPTION=""
 
 #### Simulation de Sauvegarde
 ```
-sync $OPTION $SOURCE $DESTINATION --dry-run;
+rsync $OPTION --dry-run "$SOURCE" "$DESTINATION";
 ```
 
 

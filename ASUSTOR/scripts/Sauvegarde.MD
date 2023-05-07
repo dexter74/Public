@@ -28,7 +28,7 @@ OPTION="-a -g -o -p -r -t -v -u -z --delete-before --progress"
 ```
 
 #### Simulation de Sauvegarde
-```
+```bash
 rsync $OPTION --dry-run "$SOURCE" "$DESTINATION";
 ```
 
@@ -60,8 +60,7 @@ kill -s kill $(pidof rsync);
 #### Vérifier si le processus
 ```bash
 ps | grep -v grep | grep  rsync;
-```bash
-
+```
 
 #### Trouver processus qui tient le fichier
 ```bash
@@ -69,7 +68,7 @@ ps | grep -v grep | grep  rsync;
 lsof | grep $DESTINATION;
 fuser -k -TERM $DESTINATION;
 fuser -m -k $DESTINATION;
-```bash
+```
 
 ------------------------------------------------------------------------------------------------------------------
 #### Sauvegarde Externe

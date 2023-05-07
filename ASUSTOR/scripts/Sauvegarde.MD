@@ -1,7 +1,7 @@
 #### Déclaration des variables
 ```bash
 SOURCE='/share/User Homes/'
-DESTINATION='/share/MyArchive1/'
+DESTINATION='/share/MyArchive1/User Homes/'
 ```
 
 #### Déclaration des options

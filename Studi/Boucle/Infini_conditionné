@@ -1,26 +1,31 @@
 clear;
-RC=1
 
+RC=1
+###############################
+# Fonction Boucle             #
 ###############################
 function boucle {
-while [ RC != 0 ]
-do
- if [ RC != 0 ]
-  then
-      echo "RC corriger"
-      RC=0
-      break
-  else
-      echo "KO"
- fi
-done
+ while [ RC != 0 ]
+ do
+  if [ RC != 0 ]
+   then
+       echo "RC corriger"
+       RC=0
+       break
+   else
+       echo "KO"
+  fi
+ done
 }
+
 ###############################
+
 if [ $RC = 0 ]
  then
   echo "Aucun problème"
  else
-  boucle
+  # Lancement de ma boucle
+  boucle;
 fi
 ###############################
 

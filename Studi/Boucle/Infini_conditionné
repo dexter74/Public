@@ -1,0 +1,70 @@
+clear;
+RC=1
+
+###############################
+function boucle {
+while [ RC != 0 ]
+do
+ if [ RC != 0 ]
+  then
+      echo "RC corriger"
+      RC=0
+      break
+  else
+      echo "KO"
+ fi
+done
+}
+###############################
+if [ $RC = 0 ]
+ then
+  echo "Aucun problème"
+ else
+  boucle
+fi
+###############################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Vérification du montage (0 OK | Autre: KO)
+clear;
+if [ 'df -h | grep /mnt/boot' = "0" ]
+ then
+  echo "Code Retour $?"
+  set RC=$?
+ else
+  echo "Code retour $?"
+  set RC=$?
+fi
+
+#Bouble: Si RC différent de 0 alors bouclé. 
+while [ "RC" != 0 ]
+do
+ #Si RC est différent de 0 alors, passage à RC 0 pour couper la boucle puis cassage de la boucle
+ if [ "RC" != 0 ]
+  then
+  echo "RC remise à 0"
+   RC=0
+   break
+  else
+   echo "KO"
+ fi
+done
+

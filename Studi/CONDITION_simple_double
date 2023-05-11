@@ -1,0 +1,24 @@
+echo '
+MODULE_ENVIRONNEMENT=1
+clear ;
+
+if [ $MODULE_ENVIRONNEMENT = "1" ]
+ then
+  echo "Demarrage du script"
+else
+  echo "Erreur sur le script"
+fi'> 0.sh ; sh 0.sh ;
+
+
+
+echo '
+MODULE_ENVIRONNEMENT=1
+TESTE=1
+clear ;
+
+if [ $MODULE_ENVIRONNEMENT=1 ] && [ $TESTE=1 ]
+ then
+  echo "Demarrage du script"
+else
+  echo "Erreur sur le script"
+fi'> 0.sh ; sh 0.sh ;

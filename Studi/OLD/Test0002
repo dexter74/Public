@@ -1,0 +1,256 @@
+###################################
+# A corriger: Interface Réseau RC #
+###################################
+
+######################################
+# Batch de configuration automatique #
+######################################
+# Vérifier Code Retour: $?
+# Reset pour tester le script:
+echo 'echo "" > /etc/network/interfaces ;
+echo "" > /etc/sysctl.d/70-disable-ipv6.conf ;
+echo "" > /etc/environment ;' > 0.sh ;
+
+echo 'clear ;
+echo "####################"
+echo "# /etc/environment #"
+echo "####################"
+cat /etc/environment ;
+echo ""
+echo "###########################"
+echo "# /etc/network/interfaces #"
+echo "###########################"
+cat /etc/network/interfaces ;
+echo ""
+echo "######################################"
+echo "# /etc/sysctl.d/70-disable-ipv6.conf #"
+echo "######################################"
+cat /etc/sysctl.d/70-disable-ipv6.conf ; echo "" ;'> 2.sh ;
+
+echo '############################################################################################################################################
+export GROUPE_1="supervision"
+export GROUPE_2="docker"
+export COMPTE_1_USER="marc"
+export PASSWD_1_PASS="admin"
+export COMPTE_2_USER="docker"
+export PASSWD_2_PASS="admin123456"
+export COMPTE_1_HOME="/home/$COMPTE_1_USER"
+export COMPTE_2_HOME="/home/$COMPTE_2_USER"
+export SHELL="/bin/bash"
+export HOST_NAME="sldebian02"
+export HOST_DOMAINE="LAN"
+export INTERFACE_NAME="ens18"
+export INTERFACE_ADDRESS="192.168.1.5"
+export INTERFACE_MASK="255.255.255.0"
+export INTERFACE_BROADCAST="192.168.1.255"
+export INTERFACE_GATEWAY="192.168.1.1"
+export INTERFACE_DNS="192.168.1.1"
+export INTERFACE_DOMAINE="LAN"
+export HOST_TIMEZONE_REGION="Europe"
+export HOST_TIMEZONE_VILLE="Paris"
+export HOST_LANGUE="fr_FR.UTF-8"
+export OS_SOURCE="http://ftp.fr.debian.org/debian"
+export OS_RELEASE="buster"
+export OS_RELEASE_BRANCHE="main contrib non-free"
+export KEY_SSH_WINDOWS="ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAs+2hvOiFJvMh7Tdmle+bAYLwEyErLFYE74ljUny/2D2zl6XTZmBw7JEdD3H9mXqeJTk/BGEa2Sn4G0OkwrYH6xnXlwsLRB1Wosa2Q2vX1vG1MxU6e/t7ngsQ74wHGj6Nq5hNZP7EfTfTA6Jo26k9BU5+qj1C4Oq9uvurZuwVl9MYVX59CQb5jKIqgB/obllICqNaGk+msxDSEKh2gFzcEHLa0Kf8R6t+z1m79M+X5I0SLosQluc4edfj77Y3OqPNBooDt5i3MqAJWvzagGStQN2RSs3LUPaMSMleew2qKZEHRzl9u75MaAtKIpH7qe4xHPprDXAF1bKIa2PTNRv9HQ== teste74@hotmail.fr"
+clear ;
+
+
+#####################################################
+# Step_A0: Vérification du contenu environment      #
+#####################################################
+if grep -q "GROUPE_1=supervision" /etc/environment
+# SI RC = 0 (OK)
+then
+echo "Vérification du contenu environment: OK (RC = 0)"
+STEP_A0=0
+# Sinon (RC = 1)
+else
+echo "Vérification du contenu environment: KO (RC = 1)"
+STEP_A0=1
+fi
+
+#########################################################
+# Step_A1: Ajout du contenu dans le fichier Environment #
+#########################################################
+# RC = 0 > Contenue OK
+# RC = 1 > Contenue KO
+
+if [ $STEP_A0 = 1 ]
+ then
+  echo "GROUPE_1=$GROUPE_1
+GROUPE_2=$GROUPE_2
+COMPTE_1_USER=$COMPTE_1_USER
+PASSWD_1_PASS=$PASSWD_1_PASS
+COMPTE_2_USER=$COMPTE_2_USER
+PASSWD_2_PASS=$PASSWD_2_PASS
+COMPTE_1_HOME=$COMPTE_1_HOME
+COMPTE_2_HOME=$COMPTE_2_HOME
+SHELL=$SHELL
+HOST_NAME=$HOST_NAME
+HOST_DOMAINE=$HOST_DOMAINE
+INTERFACE_NAME=$INTERFACE_NAME
+INTERFACE_ADDRESS=$INTERFACE_ADDRESS
+INTERFACE_MASK=$INTERFACE_MASK
+INTERFACE_BROADCAST=$INTERFACE_BROADCAST
+INTERFACE_GATEWAY=$INTERFACE_GATEWAY
+INTERFACE_DNS=$INTERFACE_DNS
+INTERFACE_DOMAINE=$INTERFACE_DOMAINE
+HOST_TIMEZONE_REGION=$HOST_TIMEZONE_REGION
+HOST_TIMEZONE_VILLE=$HOST_TIMEZONE_VILLE
+HOST_LANGUE=$HOST_LANGUE
+OS_SOURCE=$OS_SOURCE
+OS_RELEASE=$OS_RELEASE
+OS_RELEASE_BRANCHE=$OS_RELEASE_BRANCHE
+KEY_SSH_WINDOWS=$KEY_SSH_WINDOWS" > /etc/environment
+Step_A1=1
+echo "Ajout du contenu dans le fichier Environment: OK (RC = 1)"
+
+else
+STEP_A1=0
+echo "Ajout du contenu dans le fichier Environment: OK (RC = 0)"
+fi
+
+##############################
+# STEP_A2: Rédémarrage du PC #
+##############################
+if [ $STEP_A0 = 0 ]
+# RC = 0
+then
+echo "Redémarrage non requis: OK (RC = 0)"
+STEP_A2=0
+# RC = 1
+else
+echo "Commande de reboot (RC = 1)"
+# sleep 2
+# systemctl reboot
+STEP_A2=1
+fi
+
+
+#############################
+# Step_A3: Host et Hostname #
+#############################
+# grep -q "$HOST_NAME"  /etc/hostname
+STEP_A0=0
+Step_A1=0
+STEP_A2=0
+STEP_A3=0
+
+if [ $STEP_A0=0 ] && [ $STEP_A1=0 ]
+then
+echo "Test OK"
+else
+echo "Test KO"
+fi
+
+
+
+
+
+
+#############################
+# Step_A4: Interface Réseau #
+#############################
+# Vérification du contenu environment
+STEP_A0=0
+
+# Ajout du contenu dans le fichier Environment 
+Step_A1=0
+
+# Step A2: Rédémarrage du PC
+STEP_A2=0
+
+# Step_A3: Host et Hostname
+STEP_A3=0
+
+# grep -q "iface ens18 inet static" /etc/network/interfaces
+
+
+
+
+echo "OK"
+echo "auto lo
+iface lo inet loopback
+auto $INTERFACE_NAME
+allow-hotplug $INTERFACE_NAME
+iface $INTERFACE_NAME inet static
+address $INTERFACE_ADDRESS
+netmask $INTERFACE_MASK
+broadcast $INTERFACE_BROADCAST
+gateway $INTERFACE_GATEWAY
+dns-nameservers $INTERFACE_DNS" > /etc/network/interfaces ;
+echo "dns-search $INTERFACE_DOMAINE" >> /etc/network/interfaces ;
+echo "net.ipv6.conf.all.disable_ipv6 = 1" > /etc/sysctl.d/70-disable-ipv6.conf ;
+echo "Configuration des interfaces: OK (RC = 1)"
+STEP_A4=1
+
+echo "KO"
+
+
+
+###########################
+# Nettoyage de la console #
+###########################
+clear ;
+echo "Compte Rendu"
+echo "- [Step A0] Vérification        = $STEP_A0"
+echo "- [Step A1] Environment         = $STEP_A1"
+echo "- [Step A2] Rédémarrage du PC   = $STEP_A2"
+echo "- [Step A3] Host & Hostname     = $STEP_A3"
+echo "- [Step A4] Interface Réseau   = $STEP_A4"
+#echo "- [Step A5] Paquets            = $STEP_A5"
+############################################################################################################################################' > 1.sh
+
+
+
+## Dev
+STEP_A0=0
+STEP_A1=0
+STEP_A2=0
+STEP_A3=0
+STEP_A4=0
+
+
+####################
+# Step_AX: Paquets #
+####################
+# 
+if [ $STEP_A0=0 ] && [ $STEP_A1=0 ] && [ $STEP_A2=0 ] && [ $STEP_A3=0 ] && grep -q "#deb cdrom" /etc/apt/sources.list
+then
+sed -i -- 's/#deb cdrom/deb cdrom/g' /etc/apt/sources.list ;
+rm /etc/apt/sources.list.d/$OS_RELEASE-backports.list ;
+STEP_A4=0
+echo "RC = 0"
+
+STEP_A4=0
+elif [ $STEP_A0=0 ] && [ $STEP_A1=0 ] && [ $STEP_A2=0 ] && [ $STEP_A3=0 ] && grep -q "deb cdrom" /etc/apt/sources.list
+then
+sed -i -- 's/deb cdrom/#deb cdrom/g' /etc/apt/sources.list ;
+echo "deb $OS_SOURCE $OS_RELEASE-backports $OS_RELEASE_BRANCHE" > /etc/apt/sources.list.d/$OS_RELEASE-backports.list ;
+echo "RC = 1"
+STEP_A4=1
+else
+echo "Echec"
+STEP_A4=2
+fi
+
+
+#####################
+# Step A5: Partages #
+#####################
+
+####################################
+# Step A6: Utilisateurs et Groupes #
+####################################
+
+################
+# Step A7: SSH #
+################
+################
+# Compte Rendu #
+################
+
+
+
+

@@ -1,0 +1,39 @@
+echo '
+#################################################################
+# Script de configuration des machines complets avec conditions #
+#################################################################
+MODULE_ENVIRONNEMENT=1
+clear ;
+
+# Définit un RC = 1 au step MODULE_ENVIRONNEMENT=1
+
+#SI:
+if [ $MODULE_ENVIRONNEMENT=1 ]
+	#Alors:
+	then
+	echo "MODULE_ENVIRONNEMENT = $MODULE_ENVIRONNEMENT"
+	RC=1
+  
+#Sinon Si  
+elif [ $MODULE_ENVIRONNEMENT=2 ]
+	#alors:
+	then
+	echo "RC = $MODULE_ENVIRONNEMENT"
+#Sinon  
+else
+	echo "Erreur sur le script"
+fi 
+
+
+
+if [ $RC = "1" ]
+then 
+	echo "REUSSI"
+else 
+	echo "$RC"
+	echo "$TEST"
+fi'> 0.sh ; sh 0.sh ;
+
+
+
+

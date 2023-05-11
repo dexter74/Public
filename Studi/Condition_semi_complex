@@ -1,9 +1,9 @@
-echo '
-#################################################################
-# Script de configuration des machines complets avec conditions #
-#################################################################
+#!/bin/bash
+################################
+# Squelette de conditionnement #
+################################
 MODULE_ENVIRONNEMENT=3
-clear ;
+clear;
 
 #SI:
 if [ $MODULE_ENVIRONNEMENT=1 ]
@@ -27,7 +27,3 @@ if [ $MODULE_ENVIRONNEMENT=1 ]
  else
   echo "Erreur sur le script"
 fi '> 0.sh ; sh 0.sh ;
-
------------------------------------------------
-
-

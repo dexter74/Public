@@ -117,13 +117,12 @@ clear;
 SHARE_SMB1="Dessin-Animee"
 SHARE_SMB2="Films"
 SHARE_SMB3="Serie"
-
 SERVICE=$(systemd-escape -p /mnt/$SHARE_SMB1)
 
 systemctl daemon-reload;
 echo
-systemctl enable "$SERVICE.mount"
 sleep 2
+systemctl enable "$SERVICE.mount";
 echo
 sleep 2
 systemctl enable mnt-"$SHARE_SMB2".mount;

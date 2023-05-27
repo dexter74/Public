@@ -1,4 +1,4 @@
-##### I. Déclaration des variables
+##### I. Fichier Configuration
 
 ```
 ###########################
@@ -19,6 +19,8 @@ SHARE_USER=
 SHARE_PASS=" > credential; nano credential;
 ```
 
+
+##### II. Services
 ```
 ###########################
 # Nettoyage de la console #

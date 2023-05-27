@@ -1,4 +1,4 @@
-##### I. Fichier Configuration
+##### I. Fichier credential
 
 ```
 ###########################
@@ -33,7 +33,6 @@ source credential
 SHARE_SMB1="Dessin-Animee"
 SHARE_SMB2="Films"
 SHARE_SMB3="Serie"
-
 
 #####################
 # Utilisateur Local #

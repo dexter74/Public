@@ -13,6 +13,7 @@
 ||betzapdoson.com^
 ||c.adsco.re^
 ||cagothie.net^
+||cdn.bullion.media^
 ||chatango.com^
 ||clk.tradedoubler.com^
 ||clickadilla.com^
@@ -66,7 +67,6 @@
 ||usethemarketings.com^
 ||viinxd.com^
 ||*.xlivrdr.com^
-
 ||a.adtng.com^
 ||ht-cdn2.adtng.com^
 ||htl-cdn.adtng.com^

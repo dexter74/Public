@@ -2,6 +2,7 @@
 ! Description: Blocage des domaines SPAM, Virus et cie
 !
 ||1clic1don.fr^
+||a.realsrv.com^
 ||abs.proxistore.com^
 ||addresseepaper.com^
 ||apathylahuli.website^

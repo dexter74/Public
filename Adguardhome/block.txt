@@ -25,6 +25,7 @@
 ||edgecleaner.info^
 ||fastslowbrowser.com^
 ||file-download.store^
+||galaxypush.com^
 ||gethurecon.xyz^
 ||gipsiesthyrsi.com^
 ||gleamsdargue.digital^

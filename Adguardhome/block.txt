@@ -55,6 +55,7 @@
 ||s10.histats.com^
 ||sstatic1.histats.com^
 ||st.chatango.com^
+||syndication.realsrv.com^
 ||tomcleaneraddon.com^
 ||topmusicalcomedy.com^
 ||tzegilo.com^

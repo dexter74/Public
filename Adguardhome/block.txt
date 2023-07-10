@@ -12,9 +12,10 @@
 ||betteradsystem^
 ||betzapdoson.com^
 ||c.adsco.re^
-||clk.tradedoubler.com^
 ||cagothie.net^
 ||chatango.com^
+||clk.tradedoubler.com^
+||clickadilla.com^
 ||colinuncaps.com^
 ||comfreeads.com^
 ||crystal-blocker.com^

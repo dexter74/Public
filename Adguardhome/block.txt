@@ -1,6 +1,7 @@
 ! Title: AdGuardHome by Drthrax74
 ! Description: Blocage des domaines SPAM, Virus et cie
 !
+||*.ab1n.net^
 ||*.afcdn.net^
 ||*.xlivrdr.com^
 ||1clic1don.fr^

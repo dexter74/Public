@@ -57,6 +57,7 @@
 ||prmtracking3.com^
 ||prmtracking3.com^
 ||refersmartapp.com^
+||rsc.cdn77.org^
 ||rxeosevsso.com^
 ||s3t3d2y8.afcdn.net^
 ||s10.histats.com^

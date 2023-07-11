@@ -62,6 +62,7 @@
 ||sstatic1.histats.com^
 ||st.chatango.com^
 ||syndication.realsrv.com^
+||th-cdnv1.akamaized.net^
 ||tomcleaneraddon.com^
 ||topmusicalcomedy.com^
 ||tzegilo.com^

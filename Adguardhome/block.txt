@@ -31,6 +31,7 @@
 ||crystal-blocker.com^
 ||deburrfleshes.com^
 ||dreamsappsonline.com^
+||drivenicysecretive.com^
 ||eabithecon.xyz^
 ||edgecleaner.info^
 ||fastslowbrowser.com^
@@ -68,7 +69,9 @@
 ||rxeosevsso.com^
 ||s3t3d2y8.afcdn.net^
 ||s10.histats.com^
+||static1.histats.com^
 ||sstatic1.histats.com^
+||simplewebanalysis.com^
 ||st.chatango.com^
 ||syndication.realsrv.com^
 ||tk6if76q.ab1n.net^

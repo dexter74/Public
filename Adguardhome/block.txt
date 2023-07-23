@@ -7,6 +7,7 @@
 ||*.histats.com^
 ||*.xlivrdr.com^
 ||1clic1don.fr^
+||a.adtng.com^
 ||a.realsrv.com^
 ||abs.proxistore.com^
 ||addresseepaper.com^
@@ -88,7 +89,7 @@
 ||useonlin.com^
 ||usethemarketings.com^
 ||viinxd.com^
-||a.adtng.com^
+||voicedstart.com^
 ||ht-cdn2.adtng.com^
 ||htl-cdn.adtng.com^
 ||hw-cdn2.adtng.com^

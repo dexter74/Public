@@ -74,6 +74,7 @@
 ||rsc.cdn77.org^
 ||rxeosevsso.com^
 ||s3t3d2y8.afcdn.net^
+||s.viijan.com^
 ||s10.histats.com^
 ||static1.histats.com^
 ||sstatic1.histats.com^

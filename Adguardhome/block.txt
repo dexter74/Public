@@ -4,6 +4,7 @@
 !
 ||*.ab1n.net^
 ||*.afcdn.net^
+||*.appspot.com^
 ||*.histats.com^
 ||*.xlivrdr.com^
 ||1clic1don.fr^

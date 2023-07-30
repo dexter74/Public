@@ -18,11 +18,11 @@ Dossier de téléchargement: /downloads/Torrent/
 ######################
 # Gestion des médias #
 ######################
-- Renommer Films: Coché
-- Format Film Standard: {Movie Title:FR} {Quality Title} ({Release Year})
-- Format de dossier de film: {Movie Title:FR} ({Release Year})
-- Supprimer les dossiers vides: Cocher
-- Réanalyser le dossier de films après l'actualisation: Manuel (Diminue le taux d'écriture sur le Disque)
+- Renommer Films                                       : Coché
+- Format de film standard                              : {Movie Title:FR} {Quality Title} ({Release Year})
+- Format de dossier de film                            : {Movie Title:FR} ({Release Year})
+- Supprimer les dossiers vides                         : Cocher
+- Réanalyser le dossier de films après l'actualisation : Manuel (Diminue le taux d'écriture sur le Disque)
 
 Dossiers racine:
  - /downloads/Torrent/Radarr

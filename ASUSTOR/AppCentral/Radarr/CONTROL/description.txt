@@ -68,7 +68,7 @@ Torznab:
  - Activer la recherche automatique : Cocher
  - Activer la recherche interactive : Cocher
  - Multi Languages                  : FRENCH
- - Remove year from search string   : Cocher (Important: Lors de la recherche dans Jackett, l'année ne sera pas émis: TITRE au lieu de TITRE + ANNÉE)
+ - Remove year from search string   : Cocher (Lors de la recherche, ne rechercher que le titre et ne pas ajouter l'année)
  - Minimum Seeders                  :  1
  - Seed Ratio / Time                :  0
  - Priorité de l'indexeur           :  1

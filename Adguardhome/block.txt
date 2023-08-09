@@ -54,13 +54,12 @@
 ||impunekotoite.com^
 ||landing1.brazzersnetwork.com^
 ||lawishkukri.com^
+||media.licdn.com^
 ||lpmedia.justservingfiles.net^
 ||lulyhadchos.xyz^
 ||maxcdn.bootstrapcdn.com^
 ||myrrhisunition.store^
 ||nanouwho.com^
-||stop-bot.com^
-||stripchat.com^
 ||nestleareae.tech^
 ||noulassimpolder.com^
 ||positiveweb.org^
@@ -80,6 +79,8 @@
 ||sstatic1.histats.com^
 ||simplewebanalysis.com^
 ||st.chatango.com^
+||stop-bot.com^
+||stripchat.com^
 ||syndication.realsrv.com^
 ||tk6if76q.ab1n.net^
 ||th-cdnv1.akamaized.net^

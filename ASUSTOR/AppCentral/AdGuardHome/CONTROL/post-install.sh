@@ -34,7 +34,7 @@ docker create -i -t \
 --publish 53:53/udp     \
 --publish 53:53/tcp     \
 --publish 3000:3000/tcp \
---publish 3272:3272     \
+--publish 3272:80       \
 $IMAGE:latest;
 
 #--publish 9000:80/tcp   \

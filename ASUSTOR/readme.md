@@ -67,16 +67,19 @@ Le binaire cd permet de se déplacer dans l'arborescence des dossiers.
 ```
 
 ##### B. Installer les Packages Requis
+```bash
+clear;
+apt install -y git   1>/dev/null;
+apt install -y unzip 1>/dev/null;
+apt install -y wget  1>/dev/null;
+
 ```
-su;
-apt install -y git 1>/dev/null;
-```
+
 
 ##### B. Télécharger les Scripts Python ASUSTOR (Root Requis)
 ```console
 clear;
 rm -rf /usr/bin/apkg-*;
-apt install -y wget unzip;
 wget --inet4-only https://downloadgb.asustor.com/developer/APKG_Utilities_2.0_0517.zip -O /tmp/APKG_Utilities_2.0_0517.zip;
 unzip -o /tmp/APKG_Utilities_2.0_0517.zip -d /usr/bin;
 chmod u+x  /usr/bin/apkg-*;

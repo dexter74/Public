@@ -33,7 +33,7 @@ https://techoverflow.net/2018/08/15/how-to-fix-phpmyadmin-error-1231-variable-lc
 |  Bridge  | BitWarden     | Opérationnel [Release 1.0]     | Aucune                                |  7777  |
 |  Bridge  | Cloud9        | Opérationnel [Release 1.0]     | Lent à se lancer                      |  1000  |
 |  Bridge  | Dozzle        | Opérationnel [Release 1.0]     | Aucune                                |  1005  |
-|  Bridge  | Emby 	        | Opérationnel [Release 1.0]     | Aucune                                |  8096  |
+|  Bridge  | Emby 	       | Opérationnel [Release 1.0]     | Aucune                                |  8096  |
 |  Bridge  | FileBrowser   | Opérationnel [Release 1.0]     |                                       |  1010  |
 |  Bridge  | Jackett       | Opérationnel [Release 1.0]     | En cours de test                      |  1111  |
 |  Bridge  | Jdownloader   | Opérationnel [Release 1.0]     | En cours de test                      |  3333  |
@@ -47,7 +47,7 @@ https://techoverflow.net/2018/08/15/how-to-fix-phpmyadmin-error-1231-variable-lc
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                                       |  8081  |
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0] |                       |  32400 |
 |  Bridge  | Portainer     | Opérationnel [Release 1.0]     |                                       | ?????? |
-|  Bridge  | QBitorrent    | En cours de Test [Release 1.0] | Aucune                                |  1110  |
+|  Bridge  | QBitorrent    | En cours de Test [Release 1.0] | Config et catégorie                   |  1110  |
 |  Bridge  | Radarr        | Opérationnel [Release 1.0]     | En cours de test                      |  1112  |
 |  Bridge  | Sonarr        | Opérationnel [Release 1.0]     | En cours de test                      |  1113  |
 |  Bridge  | Visual_Studio | Opérationnel [Release 1.0]     | CodeServer                            |  8443  |

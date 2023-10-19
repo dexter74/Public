@@ -46,7 +46,6 @@ echo "# Container in Testing                   #";
 echo "#  > Adminer                             #";
 cd ~/APPZ/ASUSTOR/AppCentral/Adminer/           && apkg-tools_py3.py create .
 
-
 echo "#  > Amule                               #";
 cd ~/APPZ/ASUSTOR/AppCentral/Amule/              && apkg-tools_py3.py create .
 

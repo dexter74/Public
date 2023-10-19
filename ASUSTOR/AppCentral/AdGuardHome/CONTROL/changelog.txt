@@ -1,3 +1,7 @@
+2023-10-19:
+- Docker-compose: Le port 80 de l'application est rediriger sur le port 3272 .
+
+
 2023-02-18:
 - Docker run remplacé par docker create (docker create -i -t ...)
 - Mise en Bridge du conteneur

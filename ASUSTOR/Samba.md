@@ -82,7 +82,7 @@ guest ok       = no
 valid users    = %S
 
 [SYSTEM]
-comment        = Acces au dossier root
+comment        = Acces au dossier Système
 path           = /
 browseable     = yes
 writable       = yes
@@ -90,6 +90,18 @@ read only      = no
 valid users    = marc
 force user     = root
 guest ok       = no
+
+
+[root]
+comment        = Acces au dossier root
+path           = /root
+browseable     = yes
+writable       = yes
+read only      = no
+valid users    = marc
+force user     = root
+guest ok       = no
+
 # ==================================================================
 ;   write list = root, @lpadmin
 # ================================================================== " > /etc/samba/smb.conf;

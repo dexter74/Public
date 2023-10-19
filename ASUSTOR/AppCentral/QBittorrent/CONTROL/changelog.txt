@@ -1,2 +1,2 @@
-15-02-2023: [Tentative] Correctif du problème unathorized.
+15-02-2023: [En cour de vérification] Correctif du problème unathorized.
 > start-stop.sh : Déplacement du fichier qBittorrent.conf qui est dans Appcentral dans le dossier Docker.

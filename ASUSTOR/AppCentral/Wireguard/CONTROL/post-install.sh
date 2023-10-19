@@ -42,12 +42,12 @@ docker create -i -t \
 --cap-add=SYS_MODULE \
 --env PUID=1000 \
 --env PGID=100 \
---env TZ=Etc/PARIS \
---sysctl net.ipv4.conf.all.src_valid_mark=1 \
+--env TZ=Europe\Paris \
 --volume /etc/wireguard/wg0.conf:/config/wg0.conf \
 --publish $PORT \
 $IMAGE:latest
 
+# --sysctl net.ipv4.conf.all.src_valid_mark=1 \
 #--volume /etc/sysctl.conf:/etc/sysctl.conf \
 #--volume /sys/module/wireguard:/lib/modules \
 #--volume /usr/local/AppCentral/adm-kernel-extensions/lib/:/lib/modules \

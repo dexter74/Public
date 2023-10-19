@@ -42,6 +42,7 @@ https://techoverflow.net/2018/08/15/how-to-fix-phpmyadmin-error-1231-variable-lc
 |  Bridge  | MariaDB       | Opérationnel [Release 1.0]     | Aucune                                |  3306  |
 |  Bridge  | NexClipper    | Opérationnel [Release 1.0]     |                                       |  10051 |
 |  Bridge  | Nginx         | Opérationnel [Release 1.0]     | Aucune                                |   81   |
+|  Bridge  | Nginx         | Opérationnel [Release 1.0]     | Aucune                                |  1443  |
 |  Bridge  | NordVPN       | A configurer pour l'authentification |                                 | ------ |
 |  Bridge  | phpMyAdmin    | Opérationnel [Release 1.0]     |                                       |  8081  |
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0] |                       |  32400 |

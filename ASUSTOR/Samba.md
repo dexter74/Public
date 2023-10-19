@@ -3,9 +3,7 @@
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### I. Déploiement de Samba
-#### A. Installation de Samba
+### I. Configuration de la carte-réseau
 ```bash
 clear;
 # ------------------------------------------------------------------------------
@@ -45,7 +43,7 @@ systemctl restart networking;
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### I. Déploiement de Samba
+### II. Déploiement de Samba
 #### A. Installation de Samba
 ```bash
 clear;
@@ -153,7 +151,11 @@ testparm -s /etc/samba/smb.conf;
 systemctl restart smbd;
 ```
 
-#### C. Permettre la découverte réseau sous Windows
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### II. Déploiement de WSDD
+#### A. Permettre la découverte réseau sous Windows
 ```bash
 clear;
 echo "deb http://ftp.de.debian.org/debian sid main" > /etc/apt/sources.list.d/sid.list;
@@ -163,13 +165,9 @@ rm /etc/apt/sources.list.d/sid.list;
 apt update 1>/dev/null;
 ```
 
-#### D. Gestions des services
+#### B. Gestions des services
 ```bash
 clear;
-
-systemctl restart smbd;
 systemctl restart wsdd;
-
-systemctl enable smbd;
 systemctl enable wsdd;
 ```

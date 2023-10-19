@@ -11,3 +11,18 @@
  > ifconfig wg0 192.168.2.1
  > ip add show wg0
  > ifconfig wg0 up
+
+
+# ======================================================================================================
+[Interface]
+PrivateKey = 6F91qZF8VAp2xlH2FROUXqTxajtyxvtqStWjyyQpx2o=
+ListenPort = 51820
+Address = 10.0.0.2/24
+DNS = 10.0.0.1
+
+[Peer]
+PublicKey = AExeAE6MgH0ofW4WxSDLXoIuvoGyW6UPjWCUfya+Dno=
+AllowedIPs = 192.168.1.0/24, 0.0.0.0/0, ::/0
+Endpoint = 192.168.1.32:51820
+
+# ======================================================================================================

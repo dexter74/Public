@@ -1,6 +1,6 @@
 #### Package
 ```
-apt install -y cifs-utils,
+apt install -y cifs-utils;
 ```
 
 #### Monter les partages
@@ -48,11 +48,12 @@ WantedBy=multi-user.target" > /etc/systemd/system/mnt-Download.mount;
 ```
 ```
 systemctl daemon-reload;
-systemctl stop    mnt-Download.mount;
-
-systemctl restart mnt-Download.mount;
-systemctl start   mnt-Download.mount;
 
 systemctl disable mnt-Download.mount;
+systemctl stop    mnt-Download.mount;
+
 systemctl enable  mnt-Download.mount;
+systemctl start   mnt-Download.mount;
+systemctl restart mnt-Download.mount;
+
 ```

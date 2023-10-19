@@ -113,6 +113,11 @@ docker image  prune -a -f
 docker system prune -a -f
 ```
 
+##### G. Configuration de dockher
+```
+/volume1/.@plugins/AppCentral/docker-ce/CONTROL/config.json
+```
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <p align='center'> cd /usr/local/AppCentral/ </p>
 

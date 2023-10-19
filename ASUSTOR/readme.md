@@ -96,7 +96,8 @@ git clone https://github.com/dexter74/Public.git ~/APPZ 2>/dev/null;
 ```
 
 ##### D. Création d'une Appz
-```
+```bash
+clear;
 rm -f /mnt/Download/APK/*.apk,
 sh ~/APPZ/ASUSTOR/AppCentral/start.sh;
 mv ~/APPZ/ASUSTOR/AppCentral/*/*.apk /mnt/Download/APK/;
@@ -104,12 +105,14 @@ rm -rf ~/APPZ;
 ```
 
 ##### E. Volumes
-```
+```bash
+clear;
 ls -l "/volume1/.@plugins/AppCentral/docker-ce/docker_lib/volumes/" | cut -d ":" -f 2 | cut -c 4-80
 ```
 
 ##### F. Nettoyage du Système
-```
+```bash
+clear;
 docker images prune -a
 docker volume prune -f
 docker image  prune -a -f

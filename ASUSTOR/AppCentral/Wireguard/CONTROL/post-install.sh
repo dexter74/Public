@@ -38,8 +38,8 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --cap-add=NET_ADMIN \
 --cap-add=SYS_MODULE \
---env PUID=0 \
---env PGID=0 \
+--env PUID=1000 \
+--env PGID=100 \
 --env TZ=Europe\Paris \
 --volume /etc/wireguard/wg0.conf:/config/wg0.conf \
 --publish $PORT \

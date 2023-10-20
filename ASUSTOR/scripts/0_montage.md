@@ -7,7 +7,7 @@ apt install -y cifs-utils;
 
 #### Monter les partages
 ```bash
-PARTAGE_IP=192.168.1.32
+PARTAGE_IP=
 PARTAGE_USER=
 PARTAGE_PASS=
 PARTAGE_ID=1000

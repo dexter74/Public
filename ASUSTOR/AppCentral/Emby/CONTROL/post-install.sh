@@ -22,9 +22,9 @@ docker create -i -t \
 --hostname $CONTENEUR \
 --net=bridge \
 --restart $RESTART \
---env UID=1000 \
---env GUID=100 \
---env GIDLIST=100 \
+--env UID="1000" \
+--env GUID="100" \
+--env GIDLIST="100" \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Music:/Music \

@@ -2,6 +2,11 @@ Bitwarden est un gestionnaire de mots de passe freemium et open source sous lice
 Port: 7777
 
 ###################################################################################################################################################
+# Connexion à la BDD #
+######################
+docker exec -it MariaDB sh -c 'mysql -h 127.0.0.1 -uroot -proot';
+
+###################################################################################################################################################
 # Requête SQL #
 ###############
 #
@@ -14,4 +19,5 @@ GRANT USAGE ON *.* TO `bitwarden`@`%` IDENTIFIED BY PASSWORD '*D92749F9DD166473A
 #
 # Permission de la SQL:
 GRANT ALL PRIVILEGES ON `bitwarden`.* TO `bitwarden`@`%` WITH GRANT OPTION;
+#
 ###################################################################################################################################################

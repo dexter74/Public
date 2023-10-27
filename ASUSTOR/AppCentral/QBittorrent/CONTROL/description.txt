@@ -19,5 +19,7 @@ Mise en service:
  - Relancer le conteneur
 
 
-# Start-stop.sh : 
-mv "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" "/share/Docker/Qbitorrent/qBittorrent/qBittorrent.conf"
+# Start-stop.sh :
+docker stop qBittorrent;
+cat "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" > "/share/Docker/Qbitorrent/qBittorrent/qBittorrent.conf";
+docker start qBittorrent;

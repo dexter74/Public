@@ -4,7 +4,8 @@
 ######################################
 CONTENEUR=qBittorrent
 PORT=6881:6881
-WEBUI=1110:1110
+WEBUI=1110
+PORT=1110
 MEMORY=512m
 IMAGE=linuxserver/qbittorrent
 RESTART=unless-stopped
@@ -27,13 +28,13 @@ docker create -i -t \
 --env PUID=1000 \
 --env PGID=100 \
 --env TZ=Europe\Paris \
---env WEBUI_PORT=1007 \
+--env WEBUI_PORT=$PORT \
 --volume /volume1/Docker/:/config \
 --volume /volume1/Download:/downloads \
 --volume /volume1/Music:/Music \
 --volume /volume1/Video:/Video \
 --publish $PORT \
---publish $WEBUI \
+--publish "$PORT:$WEBUI" \
 $IMAGE:latest
 
 #--network=container:"NordVPN" \

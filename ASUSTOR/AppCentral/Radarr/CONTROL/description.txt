@@ -25,10 +25,10 @@ Dossier de téléchargement: /downloads/Torrent/
 - Réanalyser le dossier de films après l'actualisation : Manuel (Diminue le taux d'écriture sur le Disque)
 
 Dossiers racine:
- - /downloads/Torrent/Radarr
- - /Video/Dessins-Animes
- - /Video/Series
- - /Video/Films
+ - /downloads/Torrent/Radarr/
+ - /Video/Dessins-Animes/
+ - /Video/Series/
+ - /Video/Films/
  - /Video/.Perso/Hentai/
  - /Video/.Perso/Porno/
 

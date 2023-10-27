@@ -15,14 +15,14 @@ echo "start-stop"
 case "$1" in
     start)
         echo "Start $CONTENEUR container..."
-        mv "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" "/share/Docker/Qbitorrent/qBittorrent/qBittorrent.conf" 2>/dev/null
+        cat "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" > "/share/Docker/qBittorrent/qBittorrent.conf";
         docker start $CONTENEUR
         sleep 3
         ;;
     stop)
     	echo "Stop $CONTENEUR container..."
     	docker stop $CONTENEUR
-        mv "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" "/share/Docker/Qbitorrent/qBittorrent/qBittorrent.conf" 2>/dev/null
+        cat "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" > "/share/Docker/qBittorrent/qBittorrent.conf";
     	sleep 3
         ;;
     reload)

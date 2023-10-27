@@ -1,4 +1,4 @@
-27/10/2023: Modification de la configuration et du conteneur
+27/10/2023: Modification de la configuration et du conteneur + config.json
 
 15-02-2023: Correctif du problème unathorized.
 > start-stop.sh : Déplacement du fichier qBittorrent.conf qui est dans Appcentral dans le dossier Docker.

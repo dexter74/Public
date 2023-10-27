@@ -47,7 +47,7 @@ docker start $CONTENEUR
 # Correctif Accès #
 ###################
 docker stop $CONTENEUR;
-mv "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" "/share/Docker/qBittorrent/qBittorrent.conf" 2>/dev/null
+cat "/volume1/.@plugins/AppCentral/qBittorrent/CONTROL/qBittorrent.conf" > "/share/Docker/qBittorrent/qBittorrent.conf";
 sleep 3;
 docker start $CONTENEUR;
 

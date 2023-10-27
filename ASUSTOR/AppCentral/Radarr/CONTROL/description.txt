@@ -48,15 +48,6 @@ Nom: Format personnalisé
  - Release Title : \b(VF|VFF|FRENCH|TRUEFRENCH|MULTI)\b (Obligatoire)
  - Release Title : \b(420p|720p|1080p)\b
 
-#############################
-# Clients de téléchargement #
-#############################
-Client de Téléchargement 
- - Nom      : qBittorrent
- - Host     : 192.168.0.3
- - Port     : 1110
- - Category : Radarr
-
 #############
 # Indexeurs #
 #############
@@ -81,6 +72,15 @@ Options:
 Restrictions:
  - Doit Contenir         : VF,VFF,FRENCH,TRUEFRENCH,MULTI
  - Ne doit pas contenir  : VO,VOSTFR,ENG
+
+#############################
+# Clients de téléchargement #
+#############################
+Client de Téléchargement 
+ - Nom      : qBittorrent
+ - Host     : 192.168.0.3
+ - Port     : 1110
+ - Category : Radar
 
 ##########
 # Listes #

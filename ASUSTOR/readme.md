@@ -6,6 +6,15 @@
 ## I. Présentation
 Ce projet à pour objectif de construire des conteneurs prêt à l'emploie avec l'accès au partage Docker, Download, Video, Music. 
 
+**Evolution**
+```
+https://docs.docker.com/compose/compose-file/compose-file-v2
+device_read_bps, device_write_bps
+device_read_iops, device_write_iops
+weight
+weight_device
+```
+
 **ReverseProxy**
 ```
 Un volume aléatoire est fait ! Un volume Fixe à été oublié à déclarer !

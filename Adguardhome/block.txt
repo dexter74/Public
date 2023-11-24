@@ -7,6 +7,7 @@
 ||*.appspot.com^
 ||*.histats.com^
 ||*.xlivrdr.com^
+||*.doubleclick.net^
 ||1clic1don.fr^
 ||a.adtng.com^
 ||a.realsrv.com^
@@ -35,6 +36,7 @@
 ||d1p0vowokmovqz.cloudfront.net^
 ||deburrfleshes.com^
 ||ditcherstorify.guru^
+||doubleclick.net^
 ||dreamsappsonline.com^
 ||drivenicysecretive.com^
 ||eabithecon.xyz^

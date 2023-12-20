@@ -46,7 +46,7 @@ Enable RSS                   : Cocher
 Enable Automatic Search      : Cocher
 Enable Interactive Search    : Cocher
 Categories                   : 
-Anime Categories             : TV/Anime | Film/Vidéo: [Animation Série, Série TV
+Anime Categories             : TV/Anime | Film/Vidéo: [Animation Série, Série TV]
 Anime Standard Format Search : Cocher
 Minimum Seeders              :  1
 Seed Ratio / Time            :  0

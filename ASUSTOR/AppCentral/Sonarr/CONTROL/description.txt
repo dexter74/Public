@@ -9,6 +9,7 @@ Dépendances:
 Fichier corrompu: [Error] VideoFileInfoReader: Unable to parse media info from file:
 ----------------------------------------------------------------------------------------------------------
 
+# A voir: https://github.com/TheUltimateC0der/alternatrr
 
 
 

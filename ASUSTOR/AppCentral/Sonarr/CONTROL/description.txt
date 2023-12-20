@@ -15,7 +15,7 @@ Dossier de téléchargement: /downloads/Torrent/
 ####################
 
 Episode Naming:
- - Standard Episode Format : {Series Title} - {season:00}X{episode:00} - {Episode Title}
+ - Standard Episode Format : {Series cleanTitle} - {season:00}X{episode:00} - {Episode cleanTitle}
  - Anime Episode Format    : S{season:00}E{episode:00} - {Episode Title}
  - Series Folder Format    : {Series Title}
  - Season Folder Format    : Saison {season:00}

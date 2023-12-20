@@ -16,9 +16,12 @@ Dossier de téléchargement: /downloads/Torrent/
 
 Episode Naming:
  - Standard Episode Format : {Series cleanTitle} - {season:00}X{episode:00} - {Episode cleanTitle}
- - Anime Episode Format    : S{season:00}E{episode:00} - {Episode Title}
- - Series Folder Format    : {Series Title}
+ - Daily Episode Format    : {Series cleanTitle} - {season:00}X{episode:00} - {Episode cleanTitle}
+ - Anime Episode Format    : {Series cleanTitle} - {season:00}X{episode:00} - {Episode cleanTitle}
+
+ - Series Folder Format    : {Series CleanTitle} ({Series Year})
  - Season Folder Format    : Saison {season:00}
+ - Specials Folder Format  : OAV
 
 Folders:
  - Delete empty folders: Cocher

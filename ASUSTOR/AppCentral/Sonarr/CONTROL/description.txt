@@ -24,11 +24,11 @@ Dossier de téléchargement: /downloads/Torrent/
 ####################
 
 Episode Naming:
- - Standard Episode Format : {Series cleanTitle} - {season:00}X{episode:00} - {Episode cleanTitle}
- - Daily Episode Format    : {Series cleanTitle} - {season:00}X{episode:00} - {Episode cleanTitle}
- - Anime Episode Format    : {Series cleanTitle} - {season:00}X{episode:00} - {Episode cleanTitle}
+ - Standard Episode Format : {Series cleanTitle:FR} - {season:00}X{episode:00} - {Episode cleanTitle:FR}
+ - Daily Episode Format    : {Series cleanTitle:FR} - {season:00}X{episode:00} - {Episode cleanTitle:FR}
+ - Anime Episode Format    : {Series cleanTitle:FR} - {season:00}X{episode:00} - {Episode cleanTitle:FR}
 
- - Series Folder Format    : {Series CleanTitle} ({Series Year})
+ - Series Folder Format    : {Series CleanTitle:FR} ({Series Year})
  - Season Folder Format    : Saison {season:00}
  - Specials Folder Format  : OAV
 

@@ -36,8 +36,9 @@ Episode Naming:
 Folders:
  - Delete empty folders: Cocher
 
-/downloads/Torrent/Sonarr
-/Video/Series
+/media/Download/Torrent/Sonarr/
+/media/Media_1/
+/media/Media_2/
 
 
 ############

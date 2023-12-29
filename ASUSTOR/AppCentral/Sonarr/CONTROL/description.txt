@@ -30,7 +30,7 @@ Episode Naming:
  - Anime Episode Format    : {Series cleanTitle:FR} - {season:00}X{episode:00} - {Episode cleanTitle:FR}
 
  - Series Folder Format    : {Series CleanTitle:FR} ({Series Year})
- - Season Folder Format    : Saison {season:00}
+ - Season Folder Format    : Saison {season:0}
  - Specials Folder Format  : OAV
 
 Folders:

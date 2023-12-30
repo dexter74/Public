@@ -13,6 +13,8 @@ device_read_bps, device_write_bps
 device_read_iops, device_write_iops
 weight
 weight_device
+
+[DOC] https://downloadgb.asustor.com/developer/App_Central_Developer_Guide_4.0.0_20210517.pdf
 ```
 
 **ReverseProxy**

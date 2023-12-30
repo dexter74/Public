@@ -29,7 +29,7 @@ Episode Naming:
  - Daily Episode Format    : {Series cleanTitle:FR} - {season:00}X{episode:00} - {Episode cleanTitle:FR}   | {Series Title} - {Air-Date} - {Episode Title} {Quality Full}
  - Anime Episode Format    : {Series cleanTitle:FR} - {season:00}X{episode:00} - {Episode cleanTitle:FR}   | {Series Title} - S{season:00}E{episode:00} - {Episode Title} {Quality Full} 
 
- - Series Folder Format    : {Series CleanTitle:FR} ({Series Year})   | {Series Title}
+ - Series Folder Format    : {Series CleanTitle} ({Series Year})   | {Series Title}
  - Season Folder Format    : Saison {season:0}
  - Specials Folder Format  : OAV
 

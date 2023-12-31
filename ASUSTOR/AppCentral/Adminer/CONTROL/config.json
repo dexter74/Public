@@ -15,7 +15,7 @@
 	          },
 
 	"adm-desktop":{
-		      "app":{"type":"custom", "protocol":"http", "url":"/", "port":"1113"},
+		      "app":{"type":"custom", "protocol":"http", "url":"/", "port":"1118"},
 		      "privilege":{"accessible":"users", "customizable": true}
 	              },
 		
@@ -27,6 +27,6 @@
 	"register":{ 
                    "share-folder":[{"name":"Docker", "description":"Dossier Docker Requis"}],
                    "boot-priority":{"start-order":80, "stop-order":20 },
-		   "port":[1113]
+		   "port":[1118]
                    }
 }

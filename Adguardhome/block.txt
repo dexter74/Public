@@ -2,13 +2,14 @@
 ! Description: Blocage des domaines SPAM, Virus et cie
 ! La liste HaGeZi Personal Black & White autorise des sites bloqués
 !
+||1clic1don.fr^
+||*.3lift.com^
 ||*.ab1n.net^
 ||*.afcdn.net^
 ||*.appspot.com^
 ||*.histats.com^
 ||*.xlivrdr.com^
 ||*.doubleclick.net^
-||1clic1don.fr^
 ||a.adtng.com^
 ||a.realsrv.com^
 ||abs.proxistore.com^
@@ -51,6 +52,7 @@
 ||hardloop.fr^
 ||hastyarmistice.com^
 ||histats.com^
+||img.3lift.com^
 ||imprintmake.com^
 ||install.dreamsappsonline.com^
 ||intedure-virsoles.com^

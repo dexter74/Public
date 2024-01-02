@@ -13,6 +13,7 @@
 ||a.adtng.com^
 ||a.realsrv.com^
 ||abs.proxistore.com^
+||adclick.g.doubleclick.net^
 ||addresseepaper.com^
 ||apathylahuli.website^
 ||aribberoviromy.com^

@@ -1,6 +1,6 @@
 ##### I. Fichier credential
 
-```
+```bash
 ###########################
 # Nettoyage de la console #
 ###########################
@@ -21,7 +21,7 @@ SHARE_PASS=" > credential; nano credential;
 
 
 ##### II. Services
-```
+```bash
 ###########################
 # Nettoyage de la console #
 ###########################
@@ -111,7 +111,7 @@ echo "[Unit]
 ```
 
 #### II. Gestion des services
-```
+```bash
 clear;
 # Nom des partages
 SHARE_SMB1="Dessin-Animee"

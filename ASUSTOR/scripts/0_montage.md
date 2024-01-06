@@ -1,5 +1,4 @@
 #### Package
-```
 ```bash
 clear;
 apt install -y cifs-utils;
@@ -13,7 +12,6 @@ PARTAGE_PASS=
 PARTAGE_ID=1000
 PARTAGE_GID=1000
 ```
-
 
 ```bash
 clear;

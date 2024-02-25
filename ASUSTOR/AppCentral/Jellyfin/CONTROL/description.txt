@@ -24,10 +24,7 @@ Transcodage:
    > Activer l'encodage matériel
    > Activer l'encodeur matériel H.264 basse consommation de Intel
    > Activer l'encodeur matériel HEVC basse consommation de Intel
-   > 
-   > 
-   > 
-
+   > Autoriser l'encodage au format HEVC
 
 -----------------------------------------------------------------------------------------------
 Decodage Video:   /usr/lib/jellyfin-ffmpeg/vainfo

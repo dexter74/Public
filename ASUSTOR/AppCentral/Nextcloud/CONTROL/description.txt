@@ -4,7 +4,6 @@ Nextcloud est un logiciel libre de site d'hébergement de fichiers et une platef
 Intégrer Collabora:
  - Applications
  - Bureau et texte
- - 
  - Paramètres d'administration
 
 

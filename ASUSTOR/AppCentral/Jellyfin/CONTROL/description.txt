@@ -27,46 +27,46 @@ Transcodage:
    > Autoriser l'encodage au format HEVC
 
 -----------------------------------------------------------------------------------------------
-Decodage Video:   /usr/lib/jellyfin-ffmpeg/vainfo
+Decodage Video:  /usr/lib/jellyfin-ffmpeg/vainfo
+- Trying display: drm
+- libva info: VA-API version 1.19.0
+- libva info: Trying to open /usr/lib/jellyfin-ffmpeg/lib/dri/iHD_drv_video.so
+- libva info: Found init function __vaDriverInit_1_XX
+- libva info: va_openDriver() returns 0
+- vainfo: VA-API version: X.X (libva X.X.X)
+- vainfo: Driver version: Intel iHD driver for Intel(R) Gen Graphics - X.X.X (XXXX)
 
-Trying display: drm
-libva info: VA-API version 1.19.0
-libva info: Trying to open /usr/lib/jellyfin-ffmpeg/lib/dri/iHD_drv_video.so
-libva info: Found init function __vaDriverInit_1_19
-libva info: va_openDriver() returns 0
-vainfo: VA-API version: 1.19 (libva 2.19.0)
-vainfo: Driver version: Intel iHD driver for Intel(R) Gen Graphics - 23.3.2 (95dc859)
-vainfo: Supported profile and entrypoints
-      VAProfileNone                   : VAEntrypointVideoProc
-      VAProfileNone                   : VAEntrypointStats
-      VAProfileMPEG2Simple            : VAEntrypointVLD
-      VAProfileMPEG2Main              : VAEntrypointVLD
-      VAProfileH264Main               : VAEntrypointVLD
-      VAProfileH264Main               : VAEntrypointEncSlice
-      VAProfileH264Main               : VAEntrypointFEI
-      VAProfileH264Main               : VAEntrypointEncSliceLP
-      VAProfileH264High               : VAEntrypointVLD
-      VAProfileH264High               : VAEntrypointEncSlice
-      VAProfileH264High               : VAEntrypointFEI
-      VAProfileH264High               : VAEntrypointEncSliceLP
-      VAProfileVC1Simple              : VAEntrypointVLD
-      VAProfileVC1Main                : VAEntrypointVLD
-      VAProfileVC1Advanced            : VAEntrypointVLD
-      VAProfileJPEGBaseline           : VAEntrypointVLD
-      VAProfileJPEGBaseline           : VAEntrypointEncPicture
-      VAProfileH264ConstrainedBaseline: VAEntrypointVLD
-      VAProfileH264ConstrainedBaseline: VAEntrypointEncSlice
-      VAProfileH264ConstrainedBaseline: VAEntrypointFEI
-      VAProfileH264ConstrainedBaseline: VAEntrypointEncSliceLP
-      VAProfileVP8Version0_3          : VAEntrypointVLD
-      VAProfileVP8Version0_3          : VAEntrypointEncSlice
-      VAProfileHEVCMain               : VAEntrypointVLD
-      VAProfileHEVCMain               : VAEntrypointEncSlice
-      VAProfileHEVCMain               : VAEntrypointFEI
-      VAProfileHEVCMain10             : VAEntrypointVLD
-      VAProfileHEVCMain10             : VAEntrypointEncSlice
-      VAProfileVP9Profile0            : VAEntrypointVLD
-      VAProfileVP9Profile2            : VAEntrypointVLD
+- vainfo: Supported profile and entrypoints
+-      VA Profile  None                       : VAEntrypointVideoProc
+-      VA Profile  None                       : VAEntrypointStats
+-      VA Profile  MPEG2  Simple               : VAEntrypointVLD
+-      VA Profile  MPEG2  Main                 : VAEntrypointVLD
+-      VA Profile  H264   Main                 : VAEntrypointVLD
+-      VA Profile  H264   Main                 : VAEntrypointEncSlice
+-      VA Profile  H264   Main                 : VAEntrypointFEI
+-      VA Profile  H264   Main                 : VAEntrypointEncSliceLP
+-      VA Profile  H264   High                 : VAEntrypointVLD
+-      VA Profile  H264   High                 : VAEntrypointEncSlice
+-      VA Profile  H264   High                 : VAEntrypointFEI
+-      VA Profile  H264   High                 : VAEntrypointEncSliceLP
+-      VA Profile  VC1    Simple               : VAEntrypointVLD
+-      VA Profile  VC1    Main                 : VAEntrypointVLD
+-      VA Profile  VC1    Advanced             : VAEntrypointVLD
+-      VA Profile  JPEG   Baseline             : VAEntrypointVLD
+-      VA Profile  JPEG   Baseline             : VAEntrypointEncPicture
+-      VA Profile  H264   Constrained Baseline : VAEntrypointVLD
+-      VA Profile  H264   Constrained Baseline : VAEntrypointEncSlice
+-      VA Profile  H264   Constrained Baseline : VAEntrypointFEI
+-      VA Profile  H264   Constrained Baseline : VAEntrypointEncSliceLP
+-      VA Profile  VP8    Version0_3           : VAEntrypointVLD
+-      VA Profile  VP8    Version0_3           : VAEntrypointEncSlice
+-      VA Profile  HEVC   Main                 : VAEntrypointVLD
+-      VA Profile  HEVC   Main                 : VAEntrypointEncSlice
+-      VA Profile  HEVC   Main                 : VAEntrypointFEI
+-      VA Profile  HEVC   Main10               : VAEntrypointVLD
+-      VA Profile  HEVC   Main10               : VAEntrypointEncSlice
+-      VA Profile  VP9    Profile0             : VAEntrypointVLD
+-      VA Profile  VP9    Profile2             : VAEntrypointVLD
 
 -----------------------------------------------------------------------------------------------
-
+/usr/lib/jellyfin-ffmpeg/ffmpeg -v verbose -init_hw_device vaapi=va

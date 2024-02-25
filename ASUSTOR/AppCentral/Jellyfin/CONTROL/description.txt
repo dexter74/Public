@@ -2,13 +2,22 @@ Jellyfin est un logiciel de serveur multimédia sous licence libre, conçu pour 
 C'est un fork d'Emby créé au moment où ce dernier est passé sous une licence comemrciale, et un modèle économique par abonnement.
 
 Montage:
-- /share/Docker/Jellyfin : /config
-- /share/Download        : /Download
-- /share/Video           : /Video
-- /share/Music           : /Music
+- /share/Docker/Jellyfin  : /config
+- /share/Download         : /Download
+- /share/Video            : /Video
+- /share/Music            : /Music
 
-Decodage Video: /usr/lib/jellyfin-ffmpeg/vainfo
+Transcodage:
+ - Accélération matérielle : Video Acceleration API (VAAPI)
+ - Appareil VA-API         : /dev/dri/renderD128
 
+Activer le décodage matériel pour : H264, HEVC, MPEG2, VC1, VP8, VP9, HEVC 10bit et VP9 10bit
+
+
+
+
+-----------------------------------------------------------------------------------------------
+Decodage Video:   /usr/lib/jellyfin-ffmpeg/vainfo
 
 Trying display: drm
 libva info: VA-API version 1.19.0
@@ -48,3 +57,6 @@ vainfo: Supported profile and entrypoints
       VAProfileHEVCMain10             : VAEntrypointEncSlice
       VAProfileVP9Profile0            : VAEntrypointVLD
       VAProfileVP9Profile2            : VAEntrypointVLD
+
+-----------------------------------------------------------------------------------------------
+

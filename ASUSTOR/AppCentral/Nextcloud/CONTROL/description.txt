@@ -8,4 +8,4 @@ Intégrer Collabora:
  - Paramètres d'administration
 
 
- https://192.168.1.32:1121/
+ https://192.168.1.101:1121/

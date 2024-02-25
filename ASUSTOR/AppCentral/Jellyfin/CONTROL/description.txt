@@ -8,12 +8,25 @@ Montage:
 - /share/Music            : /Music
 
 Transcodage:
- - Accélération matérielle : Video Acceleration API (VAAPI)
- - Appareil VA-API         : /dev/dri/renderD128
+ - Accélération matérielle       : Video Acceleration API (VAAPI)
+ - Appareil VA-API               : /dev/dri/renderD128
+ - Activer le décodage matériel  : 
+  > H264
+  > HEVC
+  > MPEG2
+  > VC1
+  > VP8
+  > VP9
+  > HEVC 10bit
+  > VP9 10bit
 
-Activer le décodage matériel pour : H264, HEVC, MPEG2, VC1, VP8, VP9, HEVC 10bit et VP9 10bit
-
-
+ - Options d'encodage matériel   : 
+   > Activer l'encodage matériel
+   > Activer l'encodeur matériel H.264 basse consommation de Intel
+   > Activer l'encodeur matériel HEVC basse consommation de Intel
+   > 
+   > 
+   > 
 
 
 -----------------------------------------------------------------------------------------------

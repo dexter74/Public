@@ -2,7 +2,6 @@
 ! Description: Blocage des domaines SPAM, Virus et cie
 ! La liste HaGeZi Personal Black & White autorise des sites bloqués
 !
-
 ||1clic1don.fr^
 ||*.3lift.com^
 ||*.ab1n.net^

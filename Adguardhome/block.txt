@@ -98,6 +98,7 @@
 ||stop-bot.com^
 ||stripchat.com^
 ||syndication.realsrv.com^
+||sxypix.com^
 ||tk6if76q.ab1n.net^
 ||th-cdnv1.akamaized.net^
 ||thongwarily.com^

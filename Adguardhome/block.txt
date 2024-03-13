@@ -9,6 +9,7 @@
 ||*.magsrv.com^
 ||*.pemsrv.com^
 ||*.realsrv.com^
+||*.tapioni.com^
 ||*.xlivrdr.com^
 ||abs.proxistore.com^
 ||adclick.g.doubleclick.net^
@@ -57,6 +58,7 @@
 ||install.dreamsappsonline.com^
 ||intedure-virsoles.com^
 ||impunekotoite.com^
+||kgfjrb711.com^
 ||ku42hjr2e.com^
 ||landing1.brazzersnetwork.com^
 ||lawishkukri.com^

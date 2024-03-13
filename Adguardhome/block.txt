@@ -5,6 +5,7 @@
 ||*.adtng.com^
 ||*.afcdn.net^
 ||*.appspot.com^
+||*.adtng.com^
 ||*.doubleclick.net^
 ||*.histats.com^
 ||*.magsrv.com^

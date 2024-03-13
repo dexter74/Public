@@ -9,6 +9,7 @@
 ||*.magsrv.com^
 ||*.pemsrv.com^
 ||*.realsrv.com^
+||*.rmshqa.com^
 ||*.tapioni.com^
 ||*.xlivrdr.com^
 ||abs.proxistore.com^

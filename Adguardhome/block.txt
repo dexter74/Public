@@ -123,3 +123,4 @@
 ! Title: AdGuardHome by Drthrax74
 ! Description: Blocage des domaines SPAM, Virus et cie
 ! La liste HaGeZi Personal Black & White autorise des sites bloqués
+! NOPUB: sxyprn.com

@@ -10,6 +10,7 @@
 ||*.appspot.com^
 ||*.doubleclick.net^
 ||*.histats.com^
+||*.magsrv.com^
 ||*.pemsrv.com^
 ||*.realsrv.com^
 ||*.xlivrdr.com^

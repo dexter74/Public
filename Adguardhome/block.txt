@@ -29,11 +29,13 @@
 ||cdn.bullion.media^
 ||cdn.cloudimagesb.com^
 ||cdn.creative-bars1.com^
+||celeritascdn.com^
 ||chatango.com^
 ||clk.tradedoubler.com^
 ||clickadilla.com^
 ||colinuncaps.com^
 ||comfreeads.com^
+||crazyvideotodownload.com^
 ||crystal-blocker.com^
 ||d1p0vowokmovqz.cloudfront.net^
 ||deburrfleshes.com^
@@ -109,7 +111,7 @@
 ||hw-cdn2.adtng.com^
 ||trafficjunky.net^
 ||tsyndicate.com^
-||celeritascdn.com^
+||untivegus.co.in^
 !
 ! Title: AdGuardHome by Drthrax74
 ! Description: Blocage des domaines SPAM, Virus et cie

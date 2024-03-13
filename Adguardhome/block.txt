@@ -1,4 +1,6 @@
 @@||*.adtng.com^
+@@||*.trafficdeposit.com^
+
 ||1clic1don.fr^
 ||5i68sbhin.com^
 ||*.3lift.com^
@@ -13,7 +15,6 @@
 ||*.realsrv.com^
 ||*.rmshqa.com^
 ||*.tapioni.com^
-||*.trafficdeposit.com^
 ||*.xlivrdr.com^
 ||abs.proxistore.com^
 ||adclick.g.doubleclick.net^

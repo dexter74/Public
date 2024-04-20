@@ -104,9 +104,9 @@ jobs -l;
 jobs %n (n étant le numéro de jobs);
 ```
 
-Kill:
+**Kill:**
 ```bash
-1 - HUP qui permet de recharger un process
-9 - KILL qui permet de tuer un process
+1  - HUP qui permet de recharger un process
+9  - KILL qui permet de tuer un process
 15 - TERM qui permet de terminer proprement un process
 ```

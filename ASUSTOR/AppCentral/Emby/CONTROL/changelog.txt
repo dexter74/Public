@@ -1,1 +1,2 @@
+17/11/25: /usr/local/AppCentral/Emby/CONTROL/post-install.sh
 23/02/18: Docker Create + Start-stop

@@ -62,6 +62,7 @@ https://techoverflow.net/2018/08/15/how-to-fix-phpmyadmin-error-1231-variable-lc
 |  Bridge  | Jellyfin      | En cours de vérification                       | Aucune                |  8097  |
 |  ------- | ------------- | ---------------------------------------------- | --------------------- | ------ |
 |  Bridge  | NordVPN       | A configurer pour l'authentification           |                       |  ????? |
+|  Bridge  | Crontab-ui    | alseambusher/crontab-ui                        | A faire de 0          |  ????? |
 |  Bridge  | Plex          | Revoir Script sur la suppression [Release 1.0] |                       |  32400 |
 |  Bridge  | QBitorrent    | En cours de Test [Release 1.0]                 | Config et catégorie   |  1110  |
 |  ??????  | Wireguard     | Module Wireguard.ko absent                     |                       |  51820 |

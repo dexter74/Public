@@ -25,6 +25,7 @@ docker create -i -t \
 --env UID="1000" \
 --env GUID="100" \
 --env GIDLIST="100" \
+--env LIBVA_DRIVER_NAME=iHD \
 --volume /share/Docker/Emby:/config \
 --volume /share/Download:/Download \
 --volume /share/Music:/Music \
